@@ -33,33 +33,46 @@
 
             \large\textbf{Pravokotna projekcija}
             ~\\
-            ~\\
 
             \normalsize
             \begin{columns}
-                \column{0.60\textwidth}
-                    Dani sta točka $T$ in premica $p$. Naj bo $q$ tista pravokotnica na premico $p$, ki poteka skozi točko $T$. 
-                    Presečišče $T'$ premice $q$ s premico $p$ imenujemo \textbf{pravokotna projekcija} točke $T$ na premico $p$. 
-                    Točka $T'$ je točki $T$ najbližja točka premice $p$. \\
-                    ~\\
-                    \textbf{Razdalja} točke $T$ od premice $p$ je: $d(T,p)=\left\lvert TT'\right\rvert$.
+                \column{0.62\textwidth}
+                    \begin{alertblock}{}
+                        Dani sta točka $T$ in premica $p$. Naj bo $q$ tista pravokotnica na premico $p$, ki poteka skozi točko $T$. 
+                        Presečišče $T'$ premice $q$ s premico $p$ imenujemo \textbf{pravokotna projekcija} točke $T$ na premico $p$. 
+                        Točka $T'$ je točki $T$ najbližja točka premice $p$. \\
+                    \end{alertblock}
+                    % ~\\
+                    \begin{alertblock}{}
+                        \textbf{Razdalja} točke $T$ od premice $p$ je: \\ $\quad \quad \quad \quad d(T,p)=d(T,T')=\left\lvert TT'\right\rvert$. \\
+                    \end{alertblock} ~\\
+
                 \column{0.35\textwidth}            
                     \begin{figure}
                     \includegraphics[scale=0.5]{Slike in skice/Pravokotna_projekcija.png}
                     \end{figure}
             \end{columns}
+
+            Pravokotna projekcija daljice $AB$ na premico je daljica $A'B'$, katere krajišči sta pravokotni projekciji točko $A$ in $B$.
+
             
         \end{frame}
 
         \begin{frame}
             \large\textbf{Toge preslikave}
             ~\\
-            ~\\
             \normalsize
-                Preslikave v ravnini, ki ohranjajo razdaljo so \textbf{toge preslikave}.
-                $$d(A,B)=d(A',B')$$
 
-                Med toge preslikave spadajo:
+            \begin{alertblock}{}
+                \textbf{Toga preslikava} (izometrija) je preslikava v ravnini, ki ohranja razdalje.
+                \begin{align*}
+                    \tau:~ &A \mapsto A' \\ 
+                    \tau:~ &B \mapsto B' \\ 
+                    d(A,B)&=d(A',B')
+                \end{align*}
+            \end{alertblock}
+
+            Med toge preslikave spadajo:
                 \begin{itemize}
                     \item \textbf{vzporedni premiki};
                     \item \textbf{zrcaljenje preko premice};
@@ -67,8 +80,7 @@
                     \item \textbf{rotacija okoli točke}.
                 \end{itemize}
 
-                ~\\
-                Če kombiniramo več togih premikov, je dobljena preslikava spet togi premik.
+            Če kombiniramo več togih premikov, je dobljena preslikava spet togi premik.
 
         \end{frame}
 
@@ -77,16 +89,45 @@
             ~\\
             ~\\
             \normalsize
-            \textbf{Vzporedni premik} ali \textbf{translacija} za usmerjeno daljico (vektor) $\overrightarrow{AB}$ preslika točko $T$ v tako točko $T'$, da sta daljici $TT'$ in $AB$ enako dolgi, vzporedni in enako usmerjeni (vektorja $\overrightarrow{TT'}$ in $\overrightarrow{AB}$ sta enaka). \\
+            \textbf{Vzporedni premik} ali \textbf{translacija} za dano usmerjeno daljico (vektor) $\overrightarrow{AB}$ preslika točko $T$ v tako točko $T'$, da sta daljici $TT'$ in $AB$ enako dolgi, vzporedni in enako usmerjeni (vektorja $\overrightarrow{TT'}$ in $\overrightarrow{AB}$ sta enaka). \\
             
             \begin{figure}
                 \includegraphics[scale=0.5]{Slike in skice/Vzporedni_premik_tocke.png}
                 \includegraphics[scale=0.5]{Slike in skice/Vzporedni_premik_trikotnika.png}
             \end{figure}
 
-            Vzporedni premik ohranja orientacijo likov, daljice preslika v enako dolge vzporedne daljice, ohranja velikost kotov, like preslika v skladne like, nima negibnih točk za $\overrightarrow{MN}\neq \overrightarrow{0}$.
+            Vzporedni premik ohranja orientacijo likov, daljice preslika v enako dolge vzporedne daljice, ohranja velikost kotov, like preslika v skladne like, nima negibnih točk za $\overrightarrow{AB}\neq \overrightarrow{0}$.
 
         \end{frame}
+
+
+        \begin{frame}
+            \large\textbf{Rotacija/vrtenje okoli točke}
+            ~\\
+            ~\\
+            \normalsize
+            \textbf{Vrtenje} ali \textbf{zasuk} oziroma \textbf{rotacija} za kot $\alpha$ okrog točke $O$ preslika točko $T$ v točko $T'$, da velja: $\left\lvert OT\right\rvert = \left\lvert OT'\right\rvert$  in $\angle TOT' = \alpha$.
+
+
+            \begin{figure}
+                \includegraphics[scale=0.6]{Slike in skice/Rotacija tocke_okoli_tocke.png}
+                \includegraphics[scale=0.6]{Slike in skice/Rotacija_lika_okoli_tocke.png}
+            \end{figure}
+
+            Vrtenje okoli točke preslika daljice v enako dolge daljice, ohranja velikosti kotov in orientacijo likov, like preslika v skladne like, premice pa ne preslika v vzporedne premice. 
+
+        \end{frame}
+
+        % \begin{frame}
+            
+        %     Če smo kot  odmerili v smeri, ki je nasprotna smeri vrtenja urinega kazalca, smo točko $T$ zavrteli v \textbf{pozitivni smeri} za kot $\alpha$, sicer pa v \textbf{negativni smeri}. 
+        %     Namesto smeri vrtenja lahko usmerimo kot: vrtenju v pozitivni smeri ustreza \textbf{pozitivni kot}, vrtenju v negativni smeri pa \textbf{negativni kot}. \\
+        %     ~\\
+
+        %     Vrtenje okoli točke preslika daljice v enako dolge daljice, ohranja velikosti kotov in orientacijo likov, like preslika v skladne like, premice pa ne preslika v vzporedne premice. 
+
+        % \end{frame}
+
 
         \begin{frame}
             \large\textbf{Zrcaljenje preko premice}
@@ -122,31 +163,6 @@
         \end{frame}
 
 
-        \begin{frame}
-            \large\textbf{Rotacija/vrtenje okoli točke}
-            ~\\
-            ~\\
-            \normalsize
-            \textbf{Vrtenje} ali \textbf{zasuk} oziroma \textbf{rotacija} za kot $\alpha$ okrog točke $O$ preslika točko $T$ v točko $T'$, da velja: $\left\lvert OT\right\rvert = \left\lvert OT'\right\rvert$  in $\angle TOT' = \alpha$.
-
-
-            \begin{figure}
-                \includegraphics[scale=0.6]{Slike in skice/Rotacija tocke_okoli_tocke.png}
-                \includegraphics[scale=0.6]{Slike in skice/Rotacija_lika_okoli_tocke.png}
-            \end{figure}
-
-        \end{frame}
-
-        \begin{frame}
-            
-            Če smo kot  odmerili v smeri, ki je nasprotna smeri vrtenja urinega kazalca, smo točko $T$ zavrteli v \textbf{pozitivni smeri} za kot $\alpha$, sicer pa v \textbf{negativni smeri}. 
-            Namesto smeri vrtenja lahko usmerimo kot: vrtenju v pozitivni smeri ustreza \textbf{pozitivni kot}, vrtenju v negativni smeri pa \textbf{negativni kot}. \\
-            ~\\
-
-            Vrtenje okoli točke preslika daljice v enako dolge daljice, ohranja velikosti kotov in orientacijo likov, like preslika v skladne like, premice pa ne preslika v vzporedne premice. 
-
-        \end{frame}
-
 
         \begin{frame}
             \large\textbf{Simetrija}
@@ -154,10 +170,10 @@
             ~\\
             \normalsize
 
-            Množica točk $\mathcal{M}$ je \textbf{simetrična/somerna glede na premico} $p$, če se pri zrcaljenju čez premico $p$ preslika sama vase. Premico $p$ imenujemo \textbf{simetrala} (somernica, simetrijska os) množice $\mathcal{M}$. \\
+            Množica točk $\mathcal{M}$ je \textbf{simetrična/somerna glede na premico} $p$, če se pri zrcaljenju čez premico $p$ preslika sama vase. Premico $p$ imenujemo \textbf{simetrala}, \textbf{somernica}, \textbf{simetrijska os} množice $\mathcal{M}$. \\
             ~\\
             
-            Množica točk $\mathcal{M}$ je (središčno) \textbf{simetrična/somerna glede na točko} $T$, če se pri zrcaljenju čez točko $T$ preslika sama vase. Točko $T$ imenujemo \textbf{center simetrije} množice $\mathcal{M}$. 
+            Množica točk $\mathcal{M}$ je \textbf{središčno simetrična/somerna glede na točko} $T$, če se pri zrcaljenju čez točko $T$ preslika sama vase. Točko $T$ imenujemo \textbf{center simetrije} množice $\mathcal{M}$. 
             \begin{figure}
                 \includegraphics[scale=0.45]{Slike in skice/Simetrija.png}
             \end{figure}
