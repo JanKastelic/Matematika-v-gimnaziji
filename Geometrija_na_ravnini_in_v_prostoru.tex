@@ -169,14 +169,20 @@
             ~\\
             ~\\
             \normalsize
+            \begin{columns}
+                \column{0.65\textwidth}
+                Množica točk $\mathcal{M}$ je \textbf{simetrična/somerna glede na premico} $p$, če se pri zrcaljenju čez premico $p$ preslika sama vase. Premico $p$ imenujemo \textbf{simetrala}, \textbf{somernica}, \textbf{simetrijska os} množice $\mathcal{M}$. \\
+                 ~\\      
+                 ~\\      
+                Množica točk $\mathcal{M}$ je \textbf{središčno simetrična/somerna glede na točko} $T$, če se pri zrcaljenju čez točko $T$ preslika sama vase. Točko $T$ imenujemo \textbf{center simetrije} množice $\mathcal{M}$. 
+                \column{0.32\textwidth}
+                \begin{figure}
+                    \includegraphics[scale=0.25]{Slike in skice/Simetrija glede na premico.png}
 
-            Množica točk $\mathcal{M}$ je \textbf{simetrična/somerna glede na premico} $p$, če se pri zrcaljenju čez premico $p$ preslika sama vase. Premico $p$ imenujemo \textbf{simetrala}, \textbf{somernica}, \textbf{simetrijska os} množice $\mathcal{M}$. \\
-            ~\\
-            
-            Množica točk $\mathcal{M}$ je \textbf{središčno simetrična/somerna glede na točko} $T$, če se pri zrcaljenju čez točko $T$ preslika sama vase. Točko $T$ imenujemo \textbf{center simetrije} množice $\mathcal{M}$. 
-            \begin{figure}
-                \includegraphics[scale=0.45]{Slike in skice/Simetrija.png}
-            \end{figure}
+                    \includegraphics[scale=0.25]{Slike in skice/Simetrija glede na točko.png}
+                \end{figure}
+            \end{columns}
+
 
         \end{frame}
 
@@ -185,6 +191,144 @@
         \begin{frame}
             \frametitle{Trikotnik}
 
+            \begin{alertblock}{}
+                \textbf{Trikotnik} je lik/množica točk v ravnini, omejena s tremi daljicami -- \textbf{stranice} ($a, b, c$), ki povezujejo tri nekolinearne točke ($A, B, C$) v ravnini. Te točke imenujemo \textbf{oglišča} trikotnika.
+            \end{alertblock}
+            
+            \begin{figure}
+                \includegraphics[scale=0.7]{Slike in skice/Trikotnik.png}    
+            \end{figure}
+
+            V trikotniku $\triangle ABC$  so $\alpha, \beta$ in $\gamma$ \textbf{notranji koti}, njihovi sokoti $\alpha', \beta'$ in $\gamma'$ pa so \textbf{zunanji koti}. 
+            
+        \end{frame}
+
+        \begin{frame}
+            
+            \begin{alertblock}{}
+                Vsota notranjih kotov trikotnika je $180^\circ$: $$\alpha+\beta+\gamma=180^\circ.$$ 
+            \end{alertblock}
+
+            \begin{alertblock}{}
+                Zunanji kot trikotnika je enak vsoti notranjih nepriležnih kotov: 
+                \begin{align*}
+                    \alpha' &= \beta+\gamma \\
+                    \beta' &= \alpha+\gamma \\
+                    \gamma' &= \alpha+\beta
+                \end{align*}
+            \end{alertblock}
+
+            \begin{alertblock}{}
+                Vsota zunanjih kotov trikotnika je $360^\circ$: $$\alpha'+\beta'+\gamma'=360^\circ.$$ 
+            \end{alertblock}
+
+        \end{frame}
+
+
+        \begin{frame}
+            
+            \begin{alertblock}{}
+                Nasproti daljše stranice trikotnika leži večji notranji kot, nasproti krajše stranice pa manjši notranji kot trikotnika.
+                $$a>b \Leftrightarrow \alpha > \beta$$
+            \end{alertblock}
+
+            \begin{alertblock}{Trikotniška neenakost}
+                Vsaka stranica trikotnika je krajša od vsote dolžin drugih dveh stranic.
+                \begin{align*}
+                    a &< b + c \\
+                    b &< a + c \\
+                    c &< a + b
+                \end{align*}
+            \end{alertblock}
+
+            \begin{alertblock}{}
+                Vsaka stranica trikotnika je daljša od absolutne vrednosti razlike dolžin drugih dveh stranic.
+            \end{alertblock}
+
+        \end{frame}
+
+
+        \begin{frame}
+
+            \begin{alertblock}{}
+                \textbf{Višina} na stranico trikotnika je daljica, ki povezuje nosilko te stranice z nasprotnim ogliščem in je pravokotna na to nosilko. 
+                Njena dolžina je razdalja oglišča od nasprotne stranice.
+            \end{alertblock}
+
+            \begin{figure}
+                \includegraphics[scale=0.5]{Slike in skice/Visina_in_visinska_tocka.png}
+            \end{figure}
+
+            \begin{alertblock}{}
+                Nosilke vseh treh višin na stranice trikotnika se sekajo v eni točki, ki jo imenujemo \textbf{višinska točka} ali \textbf{ortocenter}. Standardna oznaka: $V$ ali $H$.
+            \end{alertblock}
+
+        \end{frame}
+
+
+        \begin{frame}
+
+            \begin{alertblock}{}
+                \textbf{Težiščnica} na stranico trikotnika je daljica, ki povezuje razpolovišče te stranice z nasprotnim ogliščem. 
+            \end{alertblock}
+
+            \begin{figure}
+                \includegraphics[scale=0.5]{Slike in skice/Teziscnice_in_tezisce.png}
+            \end{figure}
+
+            \begin{alertblock}{}
+                Vse tri trikotnikove težiščnice se sekajo v eni točki -- \textbf{težišču} ali \textbf{baricentru} trikotnika. 
+                Težišče deli težiščnico v razmerju $1:2$.
+            \end{alertblock}
+
+        \end{frame}
+
+
+        \begin{frame}
+
+            \begin{alertblock}{}
+                Simetrale vseh treh stranic trikotnika se sekajo v eni točki. Ta točka je \textbf{središče trikotniku očrtane krožnice}. 
+            \end{alertblock}
+
+            \begin{figure}
+                \includegraphics[scale=0.55]{Slike in skice/Trikotniku_ocrtana_kroznica.png}
+            \end{figure}
+
+            Očrtana krožnica poteka skozi vsa tri oglišča trikotnika. Vse tri stranice trikotnika so tetive te krožnice.
+
+        \end{frame}
+
+
+        \begin{frame}
+
+            \begin{alertblock}{}
+                Simetrale notranjih kotov trikotnika se sekajo v eni točki. Ta točka je \textbf{središče trikotniku včrtane krožnice}.
+            \end{alertblock}
+
+            \begin{figure}
+                \includegraphics[scale=0.65]{Slike in skice/Trikotniku_vcrtana_kroznica.png}
+            \end{figure}
+            
+            Včrtana krožnica ima vse tri stranice trikotnika za tangente.
+
+        \end{frame}
+
+
+        \begin{frame}
+
+            \begin{alertblock}{}
+                Težišče, središče trikotniku očrtane kroznice, središče trikotniku včrtane krožnice in višinska točka so \textbf{znamenite točke trikotnika}.
+
+            \end{alertblock}
+
+            \begin{alertblock}{}
+                Višinska točka, središče očrtane krožnice in težišče so vedno kolinearne. Premico, ki jih povezuje, imenujemo \textbf{Eulerjeva premica}.
+            \end{alertblock}
+
+            \begin{figure}
+                \includegraphics[scale=0.23]{Slike in skice/Eulerjeva_premica.png}
+            \end{figure}
+            
 
         \end{frame}
 
