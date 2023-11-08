@@ -1819,43 +1819,176 @@
         \end{frame}
 
         \begin{frame}
-            \large\textbf{Vrste trikotnikov}
-            ~\\
-            ~\\
+            \large\textbf{Vrste trikotnikov -- glede na stranice}
+            % ~\\
             \normalsize
-            Delitev glede na stranice:
             \begin{columns}
-                \column{0.32\textwidth}
+                \column<2->{0.35\textwidth}
                 \begin{exampleblock}{}
                     RAZNOSTRANIČNI TRIKOTNIK 
 
                     \begin{figure}
-                        
+                        \begin{tikzpicture}
+                            % \clip (0,0) rectangle (14.000000,10.000000);
+                            {\footnotesize
+                            
+                            % Marking point A by circle
+                            \draw [line width=0.016cm] (1.500000,1.500000) circle (0.040000);%
+                            \draw (1.500000,1.500000) node [anchor=north] { $A$ };%
+                            
+                            % Marking point B by circle
+                            \draw [line width=0.016cm] (6.000000,1.500000) circle (0.040000);%
+                            \draw (6.000000,1.500000) node [anchor=north] { $B$ };%
+                            
+                            % Marking point C by circle
+                            \draw [line width=0.016cm] (4.500000,4.500000) circle (0.040000);%
+                            \draw (4.500000,4.500000) node [anchor=south] { $C$ };%
+                            
+                            % Changing color 255 0 0
+                            \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                            \color{r255g0b0}% 
+                            
+                            % Drawing segment B C
+                            \draw [line width=0.016cm] (5.982111,1.535777) -- (4.517889,4.464223);%
+                            
+                            % Marking point a
+                            \draw (5.250000,3.000000) node [anchor=south west] { $a$ };%
+                            
+                            % Changing color 0 255 0
+                            \definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+                            \color{r0g255b0}% 
+                            
+                            % Drawing segment A C
+                            \draw [line width=0.016cm] (1.528284,1.528284) -- (4.471716,4.471716);%
+                            
+                            % Marking point b
+                            \draw (3.000000,3.000000) node [anchor=south east] { $b$ };%
+                            
+                            % Changing color 0 0 255
+                            \definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+                            \color{r0g0b255}% 
+                            
+                            % Drawing segment A B
+                            \draw [line width=0.016cm] (1.540000,1.500000) -- (5.960000,1.500000);%
+                            
+                            % Marking point c
+                            \draw (3.750000,1.500000) node [anchor=north] { $c$ };%
+                            \color{black}
+                            }
+                        \end{tikzpicture}
+                            
                     \end{figure}
 
-                    vse tri stranice so različno dolge $\Rightarrow$ vsi trije koti so različni
+                    vse tri stranice različno dolge 
+                    % $\Rightarrow$ vsi trije koti so različni
                     
                 \end{exampleblock}
-                \column{0.32\textwidth}
+                \column<3->{0.27\textwidth}
                 \begin{exampleblock}{}
                     ENAKOKRAKI TRIKOTNIK 
 
                     \begin{figure}
-                        
+                        \begin{tikzpicture}
+                            % \clip (0,0) rectangle (14.000000,10.000000);
+                            {\footnotesize
+                            
+                            % Marking point A by circle
+                            \draw [line width=0.016cm] (1.500000,1.500000) circle (0.040000);%
+                            \draw (1.500000,1.500000) node [anchor=north] { $A$ };%
+                            
+                            % Marking point B by circle
+                            \draw [line width=0.016cm] (5.000000,1.500000) circle (0.040000);%
+                            \draw (5.000000,1.500000) node [anchor=north] { $B$ };%
+                            
+                            % Marking point C by circle
+                            \draw [line width=0.016cm] (3.250000,5.000000) circle (0.040000);%
+                            \draw (3.250000,5.000000) node [anchor=south] { $C$ };%
+                            
+                            % Changing color 255 0 0
+                            \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                            \color{r255g0b0}% 
+                            
+                            % Drawing segment B C
+                            \draw [line width=0.016cm] (4.982111,1.535777) -- (3.267889,4.964223);%
+                            
+                            % Marking point a
+                            \draw (4.125000,3.250000) node [anchor=south west] { $a$ };%
+                            
+                            % Drawing segment A C
+                            \draw [line width=0.016cm] (1.517889,1.535777) -- (3.232111,4.964223);%
+                            
+                            % Marking point a
+                            \draw (2.375000,3.250000) node [anchor=south east] { $a$ };%
+                            
+                            % Changing color 0 0 255
+                            \definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+                            \color{r0g0b255}% 
+                            
+                            % Drawing segment A B
+                            \draw [line width=0.016cm] (1.540000,1.500000) -- (4.960000,1.500000);%
+                            
+                            % Marking point c
+                            \draw (3.250000,1.500000) node [anchor=north] { $c$ };%
+                            \color{black}
+                            }
+                        \end{tikzpicture}
+                            
                     \end{figure}
 
-                    dve stranici sta enako dolgi $\Rightarrow$ kota ob osnovnici sta skladna
+                    dve stranici enako dolgi 
+                    % $\Rightarrow$ kota ob osnovnici sta skladna
                     
                 \end{exampleblock}                
-                \column{0.32\textwidth}
+                \column<4->{0.31\textwidth}
                 \begin{exampleblock}{}
                     ENAKOSTRANIČNI ali PRAVILNI TRIKOTNIK 
 
                     \begin{figure}
-                        
+                        \begin{tikzpicture}
+                            % \clip (0,0) rectangle (14.000000,10.000000);
+                            {\footnotesize
+                            
+                            % Marking point A by circle
+                            \draw [line width=0.016cm] (1.500000,1.500000) circle (0.040000);%
+                            \draw (1.500000,1.500000) node [anchor=north] { $A$ };%
+                            
+                            % Marking point B by circle
+                            \draw [line width=0.016cm] (5.500000,1.500000) circle (0.040000);%
+                            \draw (5.500000,1.500000) node [anchor=north] { $B$ };%
+                            
+                            % Marking point C by circle
+                            \draw [line width=0.016cm] (3.500000,5.000000) circle (0.040000);%
+                            \draw (3.500000,5.000000) node [anchor=south] { $C$ };%
+                            
+                            % Changing color 0 255 0
+                            \definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+                            \color{r0g255b0}% 
+                            
+                            % Drawing segment B C
+                            \draw [line width=0.016cm] (5.480154,1.534730) -- (3.519846,4.965270);%
+                            
+                            % Marking point a
+                            \draw (4.500000,3.250000) node [anchor=south west] { $a$ };%
+                            
+                            % Drawing segment A C
+                            \draw [line width=0.016cm] (1.519846,1.534730) -- (3.480154,4.965270);%
+                            
+                            % Marking point a
+                            \draw (2.500000,3.250000) node [anchor=south east] { $a$ };%
+                            
+                            % Drawing segment A B
+                            \draw [line width=0.016cm] (1.540000,1.500000) -- (5.460000,1.500000);%
+                            
+                            % Marking point a
+                            \draw (3.500000,1.500000) node [anchor=north] { $a$ };%
+                            \color{black}
+                            }
+                        \end{tikzpicture}
+                            
                     \end{figure}
 
-                    vse tri stranice so enako dolge $\Rightarrow$ vsi trije koti so skladni
+                    vse tri stranice enako dolge 
+                    % $\Rightarrow$ vsi trije koti so skladni
                     
                 \end{exampleblock}            
             \end{columns}
@@ -1869,42 +2002,169 @@
         \end{frame}
 
         \begin{frame}
-            ~\\
-            ~\\
+            \large\textbf{Vrste trikotnikov -- glede na kote}
+            % ~\\
             \normalsize
-            Delitev glede na kote:
             \begin{columns}
-                \column{0.32\textwidth}
+                \column<2->{0.35\textwidth}
                 \begin{exampleblock}{}
                     OSTROKOTNI TRIKOTNIK 
 
                     \begin{figure}
-                        
+                        \begin{tikzpicture}
+                            % \clip (0,0) rectangle (14.000000,10.000000);
+                            {\footnotesize
+                            
+                            % Marking point A by circle
+                            \draw [line width=0.016cm] (1.500000,1.500000) circle (0.040000);%
+                            \draw (1.500000,1.500000) node [anchor=north] { $A$ };%
+                            
+                            % Marking point B by circle
+                            \draw [line width=0.016cm] (6.000000,1.500000) circle (0.040000);%
+                            \draw (6.000000,1.500000) node [anchor=north] { $B$ };%
+                            
+                            % Marking point C by circle
+                            \draw [line width=0.016cm] (4.500000,4.500000) circle (0.040000);%
+                            \draw (4.500000,4.500000) node [anchor=south] { $C$ };%
+                            
+                            % Drawing segment A B
+                            \draw [line width=0.016cm] (1.540000,1.500000) -- (5.960000,1.500000);%
+                            
+                            % Drawing segment A C
+                            \draw [line width=0.016cm] (1.528284,1.528284) -- (4.471716,4.471716);%
+                            
+                            % Drawing segment B C
+                            \draw [line width=0.016cm] (5.982111,1.535777) -- (4.517889,4.464223);%
+                            
+                            % Changing color 0 0 255
+                            \definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+                            \color{r0g0b255}% 
+                            
+                            % Marking point \gamma
+                            \draw (4.400000,4.200000) node [anchor=north] { $\gamma$ };%
+                            
+                            % Marking point \alpha
+                            \draw (1.800000,1.500000) node [anchor=south west] { $\alpha$ };%
+                            
+                            % Marking point \beta
+                            \draw (5.800000,1.500000) node [anchor=south east] { $\beta$ };%
+                            \color{black}
+                            }
+                        \end{tikzpicture}
+                            
                     \end{figure}
 
                     ima tri ostre notranje kote
                     
                 \end{exampleblock}
-                \column{0.32\textwidth}
+                \column<3->{0.29\textwidth}
                 \begin{exampleblock}{}
                     TOPOKOTNI TRIKOTNIK 
 
                     \begin{figure}
-                        
+                        \begin{tikzpicture}
+                            % \clip (0,0) rectangle (14.000000,10.000000);
+                            {\footnotesize
+                            
+                            % Marking point A by circle
+                            \draw [line width=0.016cm] (1.500000,1.500000) circle (0.040000);%
+                            \draw (1.500000,1.500000) node [anchor=north] { $A$ };%
+                            
+                            % Marking point B by circle
+                            \draw [line width=0.016cm] (4.000000,1.500000) circle (0.040000);%
+                            \draw (4.000000,1.500000) node [anchor=north] { $B$ };%
+                            
+                            % Marking point C by circle
+                            \draw [line width=0.016cm] (5.000000,4.000000) circle (0.040000);%
+                            \draw (5.000000,4.000000) node [anchor=south] { $C$ };%
+                            
+                            % Drawing segment A B
+                            \draw [line width=0.016cm] (1.540000,1.500000) -- (3.960000,1.500000);%
+                            
+                            % Drawing segment A C
+                            \draw [line width=0.016cm] (1.532549,1.523250) -- (4.967451,3.976750);%
+                            
+                            % Drawing segment B C
+                            \draw [line width=0.016cm] (4.014856,1.537139) -- (4.985144,3.962861);%
+                            
+                            % Changing color 0 0 255
+                            \definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+                            \color{r0g0b255}% 
+                            
+                            % Marking point \gamma
+                            \draw (4.500000,3.600000) node [anchor=north] { $\gamma$ };%
+                            
+                            % Marking point \alpha
+                            \draw (1.800000,1.500000) node [anchor=south west] { $\alpha$ };%
+                            
+                            % Changing color 0 255 0
+                            \definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+                            \color{r0g255b0}% 
+                            
+                            % Marking point \beta
+                            \draw (4.000000,1.500000) node [anchor=south east] { $\beta$ };%
+                            \color{black}
+                            }
+                        \end{tikzpicture}
+                            
                     \end{figure}
 
-                    ima en topi notranji kot, ostala dva kota sta ostra
+                    ima en topi notranji kot, ostala dva kota ostra
                     
                 \end{exampleblock}                
-                \column{0.32\textwidth}
+                \column<4->{0.29\textwidth}
                 \begin{exampleblock}{}
                     PRAVOKOTNI TRIKOTNIK 
 
                     \begin{figure}
-                        
+                        \begin{tikzpicture}
+                            % \clip (0,0) rectangle (14.000000,10.000000);
+                            {\footnotesize
+                            
+                            % Marking point A by circle
+                            \draw [line width=0.016cm] (1.500000,1.500000) circle (0.040000);%
+                            \draw (1.500000,1.500000) node [anchor=north] { $A$ };%
+                            
+                            % Marking point B by circle
+                            \draw [line width=0.016cm] (4.500000,1.500000) circle (0.040000);%
+                            \draw (4.500000,1.500000) node [anchor=north] { $B$ };%
+                            
+                            % Marking point C by circle
+                            \draw [line width=0.016cm] (4.500000,3.500000) circle (0.040000);%
+                            \draw (4.500000,3.500000) node [anchor=south] { $C$ };%
+                            
+                            % Drawing segment A B
+                            \draw [line width=0.016cm] (1.540000,1.500000) -- (4.460000,1.500000);%
+                            
+                            % Drawing segment A C
+                            \draw [line width=0.016cm] (1.533282,1.522188) -- (4.466718,3.477812);%
+                            
+                            % Drawing segment B C
+                            \draw [line width=0.016cm] (4.500000,1.540000) -- (4.500000,3.460000);%
+                            
+                            % Changing color 0 0 255
+                            \definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+                            \color{r0g0b255}% 
+                            
+                            % Marking point \gamma
+                            \draw (4.300000,3.300000) node [anchor=north] { $\gamma$ };%
+                            
+                            % Marking point \alpha
+                            \draw (1.800000,1.500000) node [anchor=south west] { $\alpha$ };%
+                            
+                            % Changing color 255 0 0
+                            \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                            \color{r255g0b0}% 
+                            
+                            % Marking point \beta
+                            \draw (4.500000,1.500000) node [anchor=south east] { $\beta$ };%
+                            \color{black}
+                            }
+                        \end{tikzpicture}
+                            
                     \end{figure}
 
-                    ima en pravi notranji kot, ostala dva kot sta ostra
+                    ima en pravi notranji kot, ostala dva kot ostra
                     
                 \end{exampleblock}            
             \end{columns}
@@ -1920,6 +2180,94 @@
 
         \begin{frame}
             \frametitle{Krog}
+
+            \begin{columns}
+                
+                \column{0.6\textwidth}
+                    \pause
+                    \begin{alertblock}{}
+                        \textbf{Krožnica} je množica ravninskih točk, ki so enako oddaljene od dane točke $S$. Točko $S$ imenujemo \textbf{središče} krožnice, razdalja $r$ med središčem in poljubno točko na krožnici pa je \textbf{polmer} ali \textbf{radij} krožnice.
+                    \end{alertblock}
+                    ~\\
+
+                    \pause
+                    \begin{alertblock}{}
+                        \textbf{Krog} s središčem $S$ in polmerom $r$ je množica ravninskih točk, katerih oddaljenost od središča je manjša ali enaka $r$. To pomeni, da je krog del ravnine omejen s krožnico.
+                    \end{alertblock}
+        
+                \column{0.38\textwidth}
+                    \begin{figure}
+                        \begin{tikzpicture}
+                            % \clip (0,0) rectangle (14.000000,10.000000);
+                            {\footnotesize
+                            
+                            % Changing color 255 0 0
+                            \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                            \color{r255g0b0}% 
+                            
+                            % Drawing segment S R
+                            \draw [line width=0.032cm] (3.040000,3.000000) -- (4.500000,3.000000);%
+                            
+                            % Marking point r
+                            \draw (3.750000,3.000000) node [anchor=south] { $r$ };%
+                            
+                            % Changing color 0 0 255
+                            \definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+                            \color{r0g0b255}% 
+                            
+                            % Marking point S by circle
+                            \draw [line width=0.032cm] (3.000000,3.000000) circle (0.040000);%
+                            \draw (3.000000,3.000000) node [anchor=south] { $S$ };%
+                            
+                            % Changing color 0 0 0
+                            \definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+                            \color{r0g0b0}% 
+                            
+                            % Drawing circle S R
+                            \draw [line width=0.032cm] (3.000000,3.000000) circle (1.500000);%
+                            \color{black}
+                            }
+                            \end{tikzpicture}                            
+                    \end{figure}
+
+                    \begin{figure}
+                        \begin{tikzpicture}
+                            % \clip (0,0) rectangle (14.000000,10.000000);
+                            {\footnotesize
+                            
+                            % Changing color 255 255 0
+                            \definecolor{r255g255b0}{rgb}{1.000000,1.000000,0.000000}%
+                            \color{r255g255b0}% 
+                            
+                            % Filling circle s
+                            \fill (3.000000,3.000000) circle (1.500000);%
+                            
+                            % Changing color 0 0 0
+                            \definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+                            \color{r0g0b0}% 
+                            
+                            % Drawing circle S R
+                            \draw [line width=0.016cm] (3.000000,3.000000) circle (1.500000);%
+                            
+                            % Drawing segment S R
+                            \draw [line width=0.032cm] (3.040000,3.000000) -- (4.500000,3.000000);%
+                            
+                            % Marking point r
+                            \draw (3.750000,3.000000) node [anchor=south] { $r$ };%
+                            
+                            % Marking point S by circle
+                            \draw [line width=0.032cm] (3.000000,3.000000) circle (0.040000);%
+                            \draw (3.000000,3.000000) node [anchor=south] { $S$ };%
+                            \color{black}
+                            }
+                            \end{tikzpicture}
+                            
+                    \end{figure}
+            \end{columns}
+           
+
+
+
         \end{frame}
 
     \subsection{Štirikotnik}
