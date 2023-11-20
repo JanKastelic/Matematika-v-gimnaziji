@@ -1,0 +1,27 @@
+area 10 10 60 40
+
+point A 15 15
+point B 60 15
+point C 27 35
+
+cmark_t C
+cmark_b A
+cmark_b B
+
+drawsegment A C
+drawsegment A B
+drawsegment B C
+
+point \alpha 18 15
+mark_t \alpha
+
+point \frac{\pi}{2} 28 35
+mark_b \frac{\pi}{2}
+
+midpoint pk A C
+midpoint nk B C
+midpoint h A B
+
+mark_b h
+mark_l pk
+mark_rt nk
