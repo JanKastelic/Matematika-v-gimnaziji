@@ -21,10 +21,29 @@
         \end{frame}
 
         \begin{frame}
+
+            \begin{block}{}
+                Glede na predznak razdelimo racionalna števila v tri množice:
+                \begin{enumerate}
+                    \item množico negativnih racionalnih števil $\mathbf{\mathbb{Q}^+}$,
+                    \item množico števila nič: $\mathbf{\{0\}}$ in
+                    \item množico negativnih racionalnih števil: $\mathbf{\mathbb{Q}^-}$.
+                \end{enumerate}
+                $$ \mathbb{Q}=\mathbb{Q}^-\cup\{0\}\cup\mathbb{Q}^+ $$
+            \end{block}
+            
+
+            \only<8->{\begin{block}{}
+                Množica racionalnih števil je povsod gosta, saj lahko med poljubnima racionalnima številoma vedno najdemo racionalno število (posledično je med dvema racionalnima številoma neskončno mnogo racionalnih števil).
+            \end{block}}
+
+        \end{frame}
+
+        \begin{frame}
             \frametitle{Urejenost racionalnih števil}
 
             \only<2->{\begin{alertblock}{}
-                Množica racionalnih števil je urejena z relacijo \textit{biti manjši} ($<$) oziroma \textit{biti večji} ($>$). Za ulomka $\frac{a}{b}$ in $\frac{c}{d}$ ($b,d\in\mathbb{N}$) velja natanko ena izmed treh možnosti:
+                Množica racionalnih števil je \textbf{linearno urejena} z relacijo \textit{biti manjši} ($<$) oziroma \textit{biti večji} ($>$). Za ulomka $\frac{a}{b}$ in $\frac{c}{d}$ ($b,d\in\mathbb{N}$) velja natanko ena izmed treh možnosti:
                 \begin{enumerate}
                     \item<3-> prvi ulomek je večji od drugega $\frac{a}{b}>\frac{c}{d}$ natanko tedaj, ko je $ad>bc$;
                     \item<4-> drugi ulomek je večji od prvega $\frac{a}{b}<\frac{c}{d}$ natanko tedaj, ko je $ad<bc$;
@@ -32,15 +51,14 @@
                 \end{enumerate}
             \end{alertblock}}
 
-            \only<6->{\begin{block}{}
-                V množci ulomkov velja, da je vsak negativen ulomek manjši od vsakega pozitivnega ulomka.
-            \end{block}}
 
-            \only<7->{\begin{block}{}
+            \only<6->{\begin{block}{}
                 Enaka ulomka predstavljata isto racionalno število.
             \end{block}}
 
         \end{frame}
+
+
 
         \begin{frame}
             \only<2->{\begin{block}{}
@@ -127,9 +145,9 @@
             \end{block}}
 
             \only<6->{\begin{block}{}
-                Pri prehodu na nasprotno vrednost se neenačaj obrne:
-                \only<7->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \Rightarrow \quad -\frac{a}{b}>-\frac{c}{d}} $$}
+                V množci ulomkov velja, da je vsak negativen ulomek manjši od vsakega pozitivnega ulomka.
             \end{block}}
+
         \end{frame}
 
         \begin{frame}
@@ -163,8 +181,33 @@
             \end{alertblock}}
 
             \only<8->{\begin{block}{}
-                Množica racionalnih števil je povsod gosta, saj lahko med poljubnima racionalnima številoma vedno najdemo racionalno število (posledično je med dvema racionalnima številoma neskončno mnogo racionalnih števil).
+                Pri prehodu na nasprotno vrednost se neenačaj obrne:
+                \only<9->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \Rightarrow \quad -\frac{a}{b}>-\frac{c}{d}} $$}
             \end{block}}
+
+
+
+        \end{frame}
+
+        \begin{frame}
+            
+            \only<2->{\begin{alertblock}{}
+                Množica racionalnih števil pa je tudi \textbf{delno urejena}, in sicer z relacijo \textit{biti manjši ali enak} ($\leq$) oziroma \textit{biti večji ali enak} ($\geq$). Za ulomka $\frac{a}{b}$ in $\frac{c}{d}$ ($b,d\in\mathbb{N}$) velja vsaj ena izmed možnosti:
+                \begin{enumerate}
+                    \item<3-> prvi ulomek je večji ali enak od drugega $\frac{a}{b}\geq\frac{c}{d}$ natanko tedaj, ko je $ad\geq bc$;
+                    \item<4-> drugi ulomek je večji ali enak od prvega $\frac{a}{b}\geq\frac{c}{d}$ natanko tedaj, ko je $ad\leq bc$;
+                \end{enumerate}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{}
+                Za zgornjo relacijo delne urejenosti veljajo naslednje lastnosti:
+                \begin{itemize}
+                    \item<6-> $\frac{a}{b}\leq\frac{a}{b}$ -- \textbf{refleksivnost};
+                    \item<7-> $\frac{a}{b}\leq\frac{c}{d}  \wedge \frac{c}{d}\leq\frac{a}{b} \Rightarrow \frac{a}{b}=\frac{c}{d}$ -- \textbf{antisimetričnost} in
+                    \item<8-> $\frac{a}{b}\leq\frac{c}{d}  \wedge \frac{c}{d}\leq\frac{e}{f} \Rightarrow \frac{a}{b}\leq\frac{e}{f}$ -- \textbf{tranzitivnost}.
+                \end{itemize}
+            \end{block}}
+
 
         \end{frame}
 
