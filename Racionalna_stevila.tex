@@ -24,7 +24,7 @@
             \frametitle{Urejenost racionalnih števil}
 
             \only<2->{\begin{alertblock}{}
-                Množica racionalnih števil je urejena z relacijo 'biti manjši' oziroma 'biti večji'. Za ulomka $\frac{a}{b}$ in $\frac{c}{d}$ ($b,d\in\mathbb{N}$) velja natanko ena izmed treh možnosti:
+                Množica racionalnih števil je urejena z relacijo \textit{biti manjši} ($<$) oziroma \textit{biti večji} ($>$). Za ulomka $\frac{a}{b}$ in $\frac{c}{d}$ ($b,d\in\mathbb{N}$) velja natanko ena izmed treh možnosti:
                 \begin{enumerate}
                     \item<3-> prvi ulomek je večji od drugega $\frac{a}{b}>\frac{c}{d}$ natanko tedaj, ko je $ad>bc$;
                     \item<4-> drugi ulomek je večji od prvega $\frac{a}{b}<\frac{c}{d}$ natanko tedaj, ko je $ad<bc$;
@@ -136,14 +136,14 @@
             \frametitle{Lastnosti relacije urejenosti}
             
             \only<2->{\begin{alertblock}{Monotonost vsote}
-                Če na obeh straneh neenakosti prištejemo isto število, se neenakost ohrani.
-                \only<3->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \Rightarrow \quad \frac{a}{b}+\frac{e}{f}<\frac{c}{d}+\frac{e}{f}} $$}
-                \only<4->{$$ \mathbf{p<q \quad \Rightarrow \quad p+r<q+r} $$}
+                \only<3->{Če na obeh straneh neenakosti prištejemo isto število, se neenakost ohrani.}
+                \only<4->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \Rightarrow \quad \frac{a}{b}+\frac{e}{f}<\frac{c}{d}+\frac{e}{f}} $$}
+                % \only<5->{$$ \mathbf{p<q \quad \Rightarrow \quad p+r<q+r} $$}
             \end{alertblock}}
 
-            \only<5->{\begin{alertblock}{Tranzitivnost}
-                \only<6->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \wedge \quad \frac{c}{d}<\frac{e}{f} \quad \Rightarrow \quad \frac{a}{b}<\frac{e}{f}} $$}
-                \only<7->{$$ \mathbf{p<q \quad \wedge \quad q<r \quad \Rightarrow \quad p<r} $$}
+            \only<6->{\begin{alertblock}{Tranzitivnost}
+                \only<7->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \wedge \quad \frac{c}{d}<\frac{e}{f} \quad \Rightarrow \quad \frac{a}{b}<\frac{e}{f}} $$}
+                % \only<8->{$$ \mathbf{p<q \quad \wedge \quad q<r \quad \Rightarrow \quad p<r} $$}
             \end{alertblock}}
 
         \end{frame}
@@ -153,14 +153,18 @@
             \only<2->{\begin{alertblock}{}
                 Pri množenju neenakosti s pozitivnim številom se znak neenakosti ohrani.
                 \only<3->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \wedge \quad \frac{e}{f}>0 \quad \Rightarrow \quad \frac{a}{b}\cdot\frac{e}{f}<\frac{c}{d}\cdot\frac{e}{f}} $$}
-                \only<4->{$$ \mathbf{p<q \quad \wedge \quad r>0 \quad \Rightarrow \quad p\cdot r<q\cdot r} $$}
+                % \only<4->{$$ \mathbf{p<q \quad \wedge \quad r>0 \quad \Rightarrow \quad p\cdot r<q\cdot r} $$}
             \end{alertblock}}
 
             \only<5->{\begin{alertblock}{}
                 Pri množenju neenakosti s negativnim številom se znak neenakosti obrne.
                 \only<6->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \wedge \quad \frac{e}{f}<0 \quad \Rightarrow \quad \frac{a}{b}\cdot\frac{e}{f}>\frac{c}{d}\cdot\frac{e}{f}} $$}
-                \only<7->{$$ \mathbf{p<q \quad \wedge \quad r>0 \quad \Rightarrow \quad p\cdot r>q\cdot r} $$}
+                % \only<7->{$$ \mathbf{p<q \quad \wedge \quad r>0 \quad \Rightarrow \quad p\cdot r>q\cdot r} $$}
             \end{alertblock}}
+
+            \only<8->{\begin{block}{}
+                Množica racionalnih števil je povsod gosta, saj lahko med poljubnima racionalnima številoma vedno najdemo racionalno število (posledično je med dvema racionalnima številoma neskončno mnogo racionalnih števil).
+            \end{block}}
 
         \end{frame}
 
