@@ -20,6 +20,150 @@
             \frametitle{Racionalna števila}
         \end{frame}
 
+        \begin{frame}
+            \frametitle{Urejenost racionalnih števil}
+
+            \only<2->{\begin{alertblock}{}
+                Množica racionalnih števil je urejena z relacijo 'biti manjši' oziroma 'biti večji'. Za ulomka $\frac{a}{b}$ in $\frac{c}{d}$ ($b,d\in\mathbb{N}$) velja natanko ena izmed treh možnosti:
+                \begin{enumerate}
+                    \item<3-> prvi ulomek je večji od drugega $\frac{a}{b}>\frac{c}{d}$ natanko tedaj, ko je $ad>bc$;
+                    \item<4-> drugi ulomek je večji od prvega $\frac{a}{b}<\frac{c}{d}$ natanko tedaj, ko je $ad<bc$;
+                    \item<5-> ulomka sta enaka $\frac{a}{b}=\frac{c}{d}$ natanko tedaj, ko je $ad=bc$.
+                \end{enumerate}
+            \end{alertblock}}
+
+            \only<6->{\begin{block}{}
+                V množci ulomkov velja, da je vsak negativen ulomek manjši od vsakega pozitivnega ulomka.
+            \end{block}}
+
+            \only<7->{\begin{block}{}
+                Enaka ulomka predstavljata isto racionalno število.
+            \end{block}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{block}{}
+                Slika večjega racionalnega števila \textcolor{red}{$\frac{a}{b}$} je na številski premici desno od slike manjšega racionalnega števila \textcolor{green}{$\frac{c}{d}$}. \\
+                \only<3->{\centering
+                \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+                    
+                    % Drawing segment A B
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (1.960000,1.500000);%
+                    \draw [line width=0.016cm] (2.040000,1.500000) -- (2.460000,1.500000);%
+                    \draw [line width=0.016cm] (2.540000,1.500000) -- (3.960000,1.500000);%
+                    \draw [line width=0.016cm] (4.040000,1.500000) -- (6.000000,1.500000);%
+                    
+                    % Marking point O by circle
+                    \draw [line width=0.016cm] (2.000000,1.500000) circle (0.040000);%
+                    \draw (2.000000,1.500000) node [anchor=south] { $O$ };%
+                    
+                    % Changing color 255 0 0
+                    \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                    \color{r255g0b0}% 
+                    
+                    % Marking point \frac{a}{b} by circle
+                    \draw [line width=0.016cm] (4.000000,1.500000) circle (0.040000);%
+                    \draw (4.000000,1.500000) node [anchor=north] { $\frac{a}{b}$ };%
+                    
+                    % Changing color 0 255 0
+                    \definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+                    \color{r0g255b0}% 
+                    
+                    % Marking point \frac{c}{d} by circle
+                    \draw [line width=0.016cm] (2.500000,1.500000) circle (0.040000);%
+                    \draw (2.500000,1.500000) node [anchor=north] { $\frac{c}{d}$ };%
+                    \color{black}
+                    }
+                \end{tikzpicture}}    
+            \end{block}}
+
+            \only<4->{\begin{block}{}
+                Slike pozitivnih racionalnih števil ležijo desno, slike negativnih racionalnih števil pa levo od koordinatnega izhodišča. \\
+                \only<5->{\centering
+                \begin{tikzpicture}
+                    
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+                    
+                    % Drawing segment A B
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (3.460000,1.500000);%
+                    \draw [line width=0.016cm] (3.540000,1.500000) -- (6.000000,1.500000);%
+                    
+                    % Changing color 255 0 0
+                    \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                    \color{r255g0b0}% 
+                    
+                    % Drawing segment B O
+                    \draw [line width=0.016cm] (6.000000,1.500000) -- (3.540000,1.500000);%
+                    
+                    % Marking point pozitivna_tevila
+                    \draw (4.750000,1.500000) node [anchor=north] { $pozitivna~ števila$ };%
+                    \draw (4.750000,1.500000) node [anchor=south] { $\mathbb{Q}^+$ };%
+                    
+                    % Changing color 0 255 0
+                    \definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+                    \color{r0g255b0}% 
+                    
+                    % Drawing segment O A
+                    \draw [line width=0.016cm] (3.460000,1.500000) -- (1.000000,1.500000);%
+                    
+                    % Marking point negativna_tevila
+                    \draw (2.250000,1.500000) node [anchor=north] { $negativna~ števila$ };%
+                    \draw (2.250000,1.500000) node [anchor=south] { $\mathbb{Q}^-$ };%
+                    
+                    % Changing color 0 0 0
+                    \definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+                    \color{r0g0b0}% 
+                    
+                    % Marking point O by circle
+                    \draw [line width=0.032cm] (3.500000,1.500000) circle (0.040000);%
+                    \draw (3.500000,1.500000) node [anchor=south] { $O$ };%
+                    \color{black}
+                    }
+                \end{tikzpicture}}
+            \end{block}}
+
+            \only<6->{\begin{block}{}
+                Pri prehodu na nasprotno vrednost se neenačaj obrne:
+                \only<7->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \Rightarrow \quad -\frac{a}{b}>-\frac{c}{d}} $$}
+            \end{block}}
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Lastnosti relacije urejenosti}
+            
+            \only<2->{\begin{alertblock}{Monotonost vsote}
+                Če na obeh straneh neenakosti prištejemo isto število, se neenakost ohrani.
+                \only<3->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \Rightarrow \quad \frac{a}{b}+\frac{e}{f}<\frac{c}{d}+\frac{e}{f}} $$}
+                \only<4->{$$ \mathbf{p<q \quad \Rightarrow \quad p+r<q+r} $$}
+            \end{alertblock}}
+
+            \only<5->{\begin{alertblock}{Tranzitivnost}
+                \only<6->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \wedge \quad \frac{c}{d}<\frac{e}{f} \quad \Rightarrow \quad \frac{a}{b}<\frac{e}{f}} $$}
+                \only<7->{$$ \mathbf{p<q \quad \wedge \quad q<r \quad \Rightarrow \quad p<r} $$}
+            \end{alertblock}}
+
+        \end{frame}
+
+        \begin{frame}
+
+            \only<2->{\begin{alertblock}{}
+                Pri množenju neenakosti s pozitivnim številom se znak neenakosti ohrani.
+                \only<3->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \wedge \quad \frac{e}{f}>0 \quad \Rightarrow \quad \frac{a}{b}\cdot\frac{e}{f}<\frac{c}{d}\cdot\frac{e}{f}} $$}
+                \only<4->{$$ \mathbf{p<q \quad \wedge \quad r>0 \quad \Rightarrow \quad p\cdot r<q\cdot r} $$}
+            \end{alertblock}}
+
+            \only<5->{\begin{alertblock}{}
+                Pri množenju neenakosti s negativnim številom se znak neenakosti obrne.
+                \only<6->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \wedge \quad \frac{e}{f}<0 \quad \Rightarrow \quad \frac{a}{b}\cdot\frac{e}{f}>\frac{c}{d}\cdot\frac{e}{f}} $$}
+                \only<7->{$$ \mathbf{p<q \quad \wedge \quad r>0 \quad \Rightarrow \quad p\cdot r>q\cdot r} $$}
+            \end{alertblock}}
+
+        \end{frame}
+
     \subsection{Algebrski ulomki}
 
         \begin{frame}
