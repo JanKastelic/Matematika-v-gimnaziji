@@ -1,0 +1,262 @@
+\section{Osnove logike in teorije množice}
+
+\begin{frame}
+    \sectionpage
+\end{frame}
+
+\begin{frame}
+    \tableofcontents[currentsection, hideothersubsections]
+\end{frame}
+
+    \subsection{Osnove logike}
+
+        \begin{frame}
+            \frametitle{Izjave}
+
+            \begin{alertblock}{Matematična izjava}
+                \textbf{Matematična izjava} je vsaka smiselna poved, za katero 
+                lahko določimo resničnost oz. pravilnost.
+            \end{alertblock}
+
+            \begin{alertblock}{Logična vrednost matematične izjave}
+                Matematična izjava lahko zavzame dve logični vrednosti:
+                \begin{itemize}
+                    \item izjava je \textbf{resnična}/\textbf{pravilna}, 
+                        oznaka $\mathbf{R}$/$\mathbf{P}$/$\mathbf{1}$/$\mathbf{\top}$;
+                    \item izjava je \textbf{neresnična}/\textbf{nepravilna}, 
+                        oznaka $\mathbf{N}$/$\mathbf{0}$/$\mathbf{\bot }$.
+                \end{itemize}                
+            \end{alertblock}
+
+            \begin{alertblock}{}
+                Izjave označujemo z velikimi tiskanimi črkami ($A$, $B$, $C$ ...).
+            \end{alertblock}
+        \end{frame}
+
+        \begin{frame}
+            \begin{exampleblock}{Naloga ???}
+                
+            \end{exampleblock}
+        \end{frame}
+
+        \begin{frame}
+            \begin{alertblock}{Enostavne in sestavjene izjave}
+                Izjave delimo med:
+                \begin{itemize}
+                    \item \textbf{elementarne}/\textbf{enostavne izjave} -- ne moremo 
+                        jih razstaviti na bolj enostavne;
+                    \item \textbf{sestavljene izjave} -- sestavljene iz elementarnih izjav, 
+                        ki jih med seboj povezujejo \textbf{izjavne povezave} oz. 
+                        \textbf{logična vezja}.
+                \end{itemize}
+            \end{alertblock}
+
+            \begin{alertblock}{}
+                Vrednost sestavljene izjave izračunamo glede na vrednosti elementarnih 
+                izjav in izjavnih povezav med njimi.
+            \end{alertblock}
+            \begin{alertblock}{}
+                Pravilnost sestavljenih izjav nazorno prikazujejo 
+                \textbf{resničnostne}/\textbf{pravilnostne tabele}.
+            \end{alertblock}
+
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Izjavne povezave}
+
+            \begin{alertblock}{Negacija}
+                \textbf{Negacija} izjave $A$ je izjava, ki \textbf{trdi nasprotno} 
+                kot izjava $A$.
+                Oznaka: $\mathbf{\lnot A}$.
+                $$ \mathbf{\lnot A} \quad \quad \textmd{\textbf{Ni res}, da velja izjava A.}$$
+            \end{alertblock}
+
+            \begin{columns}
+                \column{0.65\textwidth} 
+                    \begin{alertblock}{}
+                        Če je izjava $A$ pravilna, je $\lnot A$ nepravilna in obratno: 
+                        če je $\lnot A$ pravilna, je $A$ nepravilna.
+                    \end{alertblock}
+                    \begin{alertblock}{}
+                        Negacija negacije izjave je potrditev izjave. \quad $\lnot(\lnot A)=A$
+                    \end{alertblock}
+
+                \column{0.3\textwidth} 
+                \begin{table}
+                    \centering
+                    \begin{tabular}{||c|c||} 
+                    \hhline{|t:==:t|}
+                    \rowcolor[rgb]{0.843,0.718,0.718} $A$ & $\lnot A$  \\ 
+                    \hhline{|:==:|}
+                    $P$                                   & $N$                       \\ 
+                    \hline
+                    $N$                                   & $P$                       \\
+                    \hhline{|b:==:b|}
+                    \end{tabular}                    
+                \end{table}                
+
+            \end{columns}
+        \end{frame}
+
+        \begin{frame}
+            \begin{alertblock}{Konjunkcija}
+                \textbf{Konjunkcija} izjav $A$ in $B$ nastane tako, da povežemo izjavi $A$ in $B$ 
+                z \textbf{in hkrati}.
+                $$ \mathbf{A\land B} \quad \quad \textmd{Velja izjava A \textbf{in hkrati} izjava B.}$$
+            \end{alertblock}
+            \begin{columns}
+                \column{0.6\textwidth} 
+                    \begin{alertblock}{}
+                        Če sta izjavi $A$ in $B$ pravilni, je pravilna tudi njuna konjunkcija, 
+                        če je pa ena od izjav nepravilna, je nepravilna tudi njuna konjunkcija.
+                    \end{alertblock}
+
+                \column{0.35\textwidth} 
+                    \begin{table}
+                        \centering
+                        \begin{tabular}{||c|c|c||} 
+                        \hhline{|t:===:t|}
+                        \rowcolor[rgb]{0.843,0.718,0.718} $A$ & $B$ & $A\land B$  \\ 
+                        \hhline{|:===:|}
+                        $P$ & $P$ & $P$                         \\ 
+                        \hline
+                        $P$ & $N$ & $N$                         \\ 
+                        \hline
+                        $N$ & $P$ & $N$                         \\ 
+                        \hline
+                        $N$ & $N$ & $N$                         \\
+                        \hhline{|b:===:b|}
+                        \end{tabular}
+                    \end{table}
+
+            \end{columns}
+
+
+        \end{frame}
+
+        \begin{frame}
+            \begin{alertblock}{Disjunkcija}
+                \textbf{Disjunkcija} izjav $A$ in $B$ nastane s povezavo \textbf{ali}.
+                $$ \mathbf{A\lor B} \quad \quad \textmd{Velja izjava A \textbf{ali} izjava B 
+                (lahko tudi obe hkrati).}$$
+            \end{alertblock}
+            \begin{columns}
+                \column{0.62\textwidth} 
+                    \begin{alertblock}{}
+                        Disjunkcija je nepravilna, če sta nepravilni obe izjavi, ki jo sestavljata,
+                        v preostalih treh primerih je pravilna.
+                    \end{alertblock}
+
+                \column{0.35\textwidth} 
+                    \begin{table}
+                        \centering
+                        \begin{tabular}{||c|c|c||} 
+                        \hhline{|t:===:t|}
+                        \rowcolor[rgb]{0.843,0.718,0.718} $A$ & $B$ & $A\lor B$  \\ 
+                        \hhline{|:===:|}
+                        $P$ & $P$ & $P$                         \\ 
+                        \hline
+                        $P$ & $N$ & $P$                         \\ 
+                        \hline
+                        $N$ & $P$ & $P$                         \\ 
+                        \hline
+                        $N$ & $N$ & $N$                         \\
+                        \hhline{|b:===:b|}
+                        \end{tabular}
+                    \end{table}
+
+            \end{columns}
+
+
+        \end{frame}
+
+        \begin{frame}
+            \begin{alertblock}{Implikacija}
+                \textbf{Implikacija} izjav $A$ in $B$ je sestavljena izjava, ki jo lahko beremo
+                na različne načine.
+                $$ \mathbf{A\Rightarrow B} \quad \quad \textmd{\textbf{Če} velja izjava A, 
+                \textbf{potem} velja izjava B. / \textbf{Iz} A \textbf{sledi} B.}$$
+                Izjava $A$ je \textbf{pogoj} ali \textbf{privzetek}, izjava $B$ pa 
+                \textbf{(logična) posledica} izjave $A$.
+            \end{alertblock}
+            \begin{columns}
+                \column{0.62\textwidth} 
+                    \begin{alertblock}{}
+                        Implikacija je nepravilna, ko je izjava $A$ pravilna, izjava $B$ pa 
+                        nepravilna, v preostalih treh primerih je pravilna.
+                    \end{alertblock}
+
+                \column{0.35\textwidth} 
+                    \begin{table}
+                        \centering
+                        \begin{tabular}{||c|c|c||} 
+                        \hhline{|t:===:t|}
+                        \rowcolor[rgb]{0.843,0.718,0.718} $A$ & $B$ & $A\Rightarrow B$  \\ 
+                        \hhline{|:===:|}
+                        $P$ & $P$ & $P$                         \\ 
+                        \hline
+                        $P$ & $N$ & $N$                         \\ 
+                        \hline
+                        $N$ & $P$ & $P$                         \\ 
+                        \hline
+                        $N$ & $N$ & $P$                         \\
+                        \hhline{|b:===:b|}
+                        \end{tabular}
+                    \end{table}
+
+            \end{columns}
+        \end{frame}
+
+        \begin{frame}
+            \begin{alertblock}{Ekvivalenca}
+                \textbf{Ekvivalenca} izjavi $A$ in $B$ poveže s \textbf{če in samo če} oz.
+                \textbf{natanko tedaj, ko}.
+                \begin{align*} 
+                    \mathbf{A\Leftrightarrow B} \quad \quad &\textmd{Izjava A velja, \textbf{če in
+                    samo če} velja izjava B.} / \\
+                        &\textmd{Izjava A velja \textbf{natanko tedaj, ko} velja izjava B.}
+                \end{align*}
+            \end{alertblock}
+
+
+            \begin{columns}
+                \column{0.62\textwidth} 
+                    \begin{alertblock}{}
+                        Ekvivalenca dveh izjav je pravilna, če imata obe izjavi enako vrednost 
+                        (ali sta obe pravilni ali obe nepravilni), in nepravilna, če imata izjavi
+                        različno vrednost.
+                    \end{alertblock}
+                    \begin{block}{}
+                        Ekvivalentni/enakovredni izjavi pomenita eno in isto, lahko ju nadomestimo 
+                        drugo z drugo.
+                    \end{block}
+
+                \column{0.35\textwidth} 
+                    \begin{table}
+                        \centering
+                        \begin{tabular}{||c|c|c||} 
+                        \hhline{|t:===:t|}
+                        \rowcolor[rgb]{0.843,0.718,0.718} $A$ & $B$ & $A\Leftrightarrow B$  \\ 
+                        \hhline{|:===:|}
+                        $P$ & $P$ & $P$                         \\ 
+                        \hline
+                        $P$ & $N$ & $N$                         \\ 
+                        \hline
+                        $N$ & $P$ & $N$                         \\ 
+                        \hline
+                        $N$ & $N$ & $P$                         \\
+                        \hhline{|b:===:b|}
+                        \end{tabular}
+                    \end{table}
+
+            \end{columns}
+        \end{frame}
+
+
+        
+    \subsection{Množice}
+
+        \begin{frame}
+            \frametitle{Množice}
+        \end{frame}
