@@ -172,6 +172,33 @@
         \end{frame}
 
         \begin{frame}
+            \begin{block}{Komutativnost konjunkcije in disjunkcije}
+                $$ A\land B = B\land A  \quad \quad \quad
+                 A\lor B = B\lor A$$
+            \end{block}      
+            
+            \begin{block}{Asociativnost konjunkcije in disjunkcije}
+                $$(A\land B)\land C = A\land(b\land C) \quad \quad \quad
+                (A\lor B)\lor C = A\lor (B\lor C) $$
+            \end{block}
+
+            \begin{block}{Distributivnost zakona za konjunkcijo in disjunkcijo}
+                $$(A\lor B)\land C = (A\land C)\lor(B\land C) \quad \quad \quad
+                (A\land B)\lor C = (A\lor C)\land(B\lor C) $$
+            \end{block}
+
+            \begin{block}{De Morganova zakona}
+                \begin{itemize}
+                    \item negacija konjunkcije je disjunkcija negacij: 
+                        $\lnot(A\land B)=\lnot A\lor\lnot B$
+                    \item negacija disjunkcije je konjunkcija negacij: 
+                        $\lnot(A\lor B)=\lnot A\land\lnot B$
+                \end{itemize}                
+            \end{block}
+        
+        \end{frame}
+
+        \begin{frame}
             \begin{alertblock}{Implikacija}
                 \textbf{Implikacija} izjav $A$ in $B$ je sestavljena izjava, ki jo lahko beremo
                 na različne načine.
@@ -254,6 +281,43 @@
         \end{frame}
 
 
+        \begin{frame}
+            \begin{block}{Vrstni red operacij}
+                Kadar so izjave povezane z več izjavnimi povezavami, pri določanju logične 
+                vrednosti upoštevamo oklepaje in naslednji \textbf{vrstni red} oz.~ 
+                \textbf{prioriteto izjavnih povezav}:
+                \begin{enumerate}
+                    \item negacija,
+                    \item konjunkcija,
+                    \item disjunkcija,
+                    \item implikacija,
+                    \item ekvivalenca.
+                \end{enumerate}
+            \end{block}
+            \begin{block}{}
+                Če moramo zapored izvesti več enakih izjavnih povezav, velja pravilo združevanja 
+                od leve proti desni.
+            \end{block}
+        \end{frame}
+
+        \begin{frame}
+            \begin{alertblock}{Tavtologija}
+                \textbf{Tavtologija} ali \textbf{logično pravilna izjava} je sestavljena izjava, 
+                ki je pri vseh naborih vrednosti elementarnih izjav, iz katerih je sestavjena, pravilna.
+            \end{alertblock}
+
+            \begin{alertblock}{Protislovje}
+                \textbf{Protislovje} je sestavljena izjava, ki ni nikoli pravilna.
+            \end{alertblock}
+
+            \begin{block}{Kvantifikatorja}
+                \begin{itemize}
+                    \item $\forall$ (beri 'vsak') -- izjava velja za vsak element dane množice
+                    \item $\exists$ (beri 'obstaja' ali 'eksistira') -- izjava je pravilna za vsaj en element dane množice
+                \end{itemize}
+            \end{block}
+
+        \end{frame}
         
     \subsection{Množice}
 
