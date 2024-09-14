@@ -34,9 +34,37 @@
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga ???}
-                
+            \begin{exampleblock}{Naloga}
+                Ali so naslednje povedi izjave?
+                \begin{itemize}   
+                    \item Danes sije sonce.
+                    \item Koliko je ura?
+                    \item Piramida je geometrijski lik.
+                    \item Daj mi jabolko.
+                    \item Število $12$ deli število $3$.
+                    \item Število $3$ deli število $10$.
+                    \item Ali si pisal matematični test odlično?
+                    \item Matematični test si pisal odlično.
+                    \item Ali je $10~dl$ isto kot $1~l$?
+                    \item Število $41$ je praštevilo.
+                \end{itemize}
             \end{exampleblock}
+        \end{frame}
+
+        \begin{frame}
+            \begin{exampleblock}{Naloga}
+                Spodnjim izjavam določite logične vrednosti.
+                \begin{itemize}   
+                    \item $A$: Najvišja gora v Evropi je Mont Blanc.
+                    \item $B$: Število je deljivo s $4$ natanko takrat, ko je vsota števk deljiva s $4$.
+                    \item $C$: Ostanek pri deljenju s $4$ je lahko $1$, $2$ ali $3$.
+                    \item $D$: Mesec februar ima vedno vsaj 28 dni.
+                    \item $E$: Vsa praštevila so liha števila.
+                    \item $F$: Število $1$ je naravno število.
+                    \item $G$: Praštevil je neskončno mnogo.
+                \end{itemize}
+            \end{exampleblock}
+            
         \end{frame}
 
         \begin{frame}
@@ -46,8 +74,8 @@
                     \item \textbf{elementarne}/\textbf{enostavne izjave} -- ne moremo 
                         jih razstaviti na bolj enostavne;
                     \item \textbf{sestavljene izjave} -- sestavljene iz elementarnih izjav, 
-                        ki jih med seboj povezujejo \textbf{izjavne povezave} oz. 
-                        \textbf{logična vezja}.
+                        ki jih med seboj povezujejo \textbf{logične operacije} (imenovane 
+                        tudi izjavne povezave oz.~ logična vezja).
                 \end{itemize}
             \end{alertblock}
 
@@ -63,7 +91,7 @@
         \end{frame}
 
         \begin{frame}
-            \frametitle{Izjavne povezave}
+            \frametitle{Logične operacije}
 
             \begin{alertblock}{Negacija}
                 \textbf{Negacija} izjave $A$ je izjava, ki \textbf{trdi nasprotno} 
@@ -100,10 +128,25 @@
         \end{frame}
 
         \begin{frame}
+            \begin{exampleblock}{Naloga}
+                Izjavam določite logično vrednost, potem jih zanikajte in določite logično vrednost negacij.
+                \begin{itemize}
+                    \item $A$: $5 \cdot 8 = 30$
+                    \item $B$: Število $3$ je praštevilo.
+                    \item $C$: Največje dvomestno število je $99$.
+                    \item $D$: Število $62$ je večratnik števila $4$.
+                    \item $E$: Praštevil je neskončno mnogo.
+                    \item $F$: $7 \leq 5$
+                    \item $G$: Naša pisava je cirilica.
+                \end{itemize}
+            \end{exampleblock}
+        \end{frame}
+
+        \begin{frame}
             \begin{alertblock}{Konjunkcija}
                 \textbf{Konjunkcija} izjav $A$ in $B$ nastane tako, da povežemo izjavi $A$ in $B$ 
                 z \textbf{in hkrati}.
-                $$ \mathbf{A\land B} \quad \quad \textmd{Velja izjava A \textbf{in hkrati} izjava B.}$$
+                $$ \mathbf{A\land B} \quad \quad \textmd{Velja izjava A \textbf{in (hkrati)} izjava B.}$$
             \end{alertblock}
             \begin{columns}
                 \column{0.6\textwidth} 
@@ -133,6 +176,21 @@
             \end{columns}
 
 
+        \end{frame}
+
+        \begin{frame}
+            \begin{exampleblock}{Naloga}
+                Določite logično vrednost konjunkcijam.
+                \begin{itemize}
+                    \item Število $28$ je večratnik števila $3$ in večkratnik števila $8$.
+                    \item Število $7$ je praštevilo in je deljivo s številom $1$.
+                    \item Vsakemu celemu številu lahko pripišemo nasprotno število in obratno število.
+                    \item Ostanki pri deljenju števila s $3$ so lahko $0$, $1$ ali $2$, 
+                        pri deljenju s $5$ pa $0$, $1$, $2$, $3$ ali $4$.
+                    \item Število je deljivo s $3$, če je vosta števk deljiva s $3$, in je 
+                        deljivo z $9$, če je vsota števk deljiva z $9$.
+                \end{itemize}
+            \end{exampleblock}
         \end{frame}
 
         \begin{frame}
@@ -172,6 +230,21 @@
         \end{frame}
 
         \begin{frame}
+            \begin{exampleblock}{Naloga}
+                Določite logično vrednost disjunkcijam.
+                \begin{itemize}
+                    \item Število $24$ je večratnik števila $3$ ali $8$.
+                    \item Število $35$ ni večratnik števila $7$ ali $6$.
+                    \item Število $5$ deli število $16$ ali $18$.
+                    \item Ploščina kvadrata s stranico $a$ je $a^2$ ali obseg kvadrata je $4a$.
+                    \item Ni res, da je vsota notranjih kotov trikotnika $160^\circ$, ali ni res, 
+                        da Pitagorov izrek velja v poljubnem trikotniku.
+                \end{itemize}
+            \end{exampleblock}
+        \end{frame}
+
+
+        \begin{frame}
             \begin{block}{Komutativnost konjunkcije in disjunkcije}
                 $$ A\land B = B\land A  \quad \quad \quad
                  A\lor B = B\lor A$$
@@ -196,6 +269,20 @@
                 \end{itemize}                
             \end{block}
         
+        \end{frame}
+
+        \begin{frame}
+            \begin{exampleblock}{Naloga}
+                Katere od spodnjih izjav so pravilne in katere nepravilne?
+                \begin{itemize}
+                    \item $(3\cdot 4 = 12)\land(12:4=3)$
+                    \item $(a^3\cdot a^5=a^15)\lor (a^3\cdot a^5=a^8)$
+                    \item $(3|30)\land(3|26)$
+                    \item $(3|30)\lor(3|26)$
+                    \item $(2^3=9)\lor(3^2=9)$
+                    \item $((-2)^2=4)\land\lnot(-2^2=4)$
+                \end{itemize}
+            \end{exampleblock}
         \end{frame}
 
         \begin{frame}
