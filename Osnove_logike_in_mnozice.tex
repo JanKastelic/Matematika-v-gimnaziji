@@ -15,7 +15,7 @@
 
             \begin{alertblock}{Matematična izjava}
                 \textbf{Matematična izjava} je vsaka smiselna poved, za katero 
-                lahko določimo resničnost oz. pravilnost.
+                lahko določimo resničnost oziroma pravilnost.
             \end{alertblock}
 
             \begin{alertblock}{Logična vrednost matematične izjave}
@@ -75,7 +75,7 @@
                         jih razstaviti na bolj enostavne;
                     \item \textbf{sestavljene izjave} -- sestavljene iz elementarnih izjav, 
                         ki jih med seboj povezujejo \textbf{logične operacije} (imenovane 
-                        tudi izjavne povezave oz.~ logična vezja).
+                        tudi izjavne povezave oziroma~ logična vezja).
                 \end{itemize}
             \end{alertblock}
 
@@ -323,8 +323,22 @@
         \end{frame}
 
         \begin{frame}
+            \begin{exampleblock}{Naloga}
+                Določite, ali so izjave pravilne.
+                \begin{itemize}
+                    \item Če je število deljivo s $100$, je deljivo tudi s $4$.
+                    \item Če je štirikotnik pravokotnik, se diagonali razpolavljata.
+                    \item Če je štirikotnik kvadrat, se diagonali sekata pod pravim kotom.
+                    \item Če sta števili $2$ in $3$ lihi števili, potem je produk teh dveh števil sodo število.
+                    \item Če je število $18$ deljivo z $9$, potem je deljivo s $3$.
+                    \item Če je $7$ večkratnik števila $7$, potem $7$ deli število $43$.
+                    \item Če je število deljivo s $4$, potem je deljivo z $2$.
+                \end{itemize}
+            \end{exampleblock}
+        \end{frame}
+        \begin{frame}
             \begin{alertblock}{Ekvivalenca}
-                \textbf{Ekvivalenca} izjavi $A$ in $B$ poveže s \textbf{če in samo če} oz.
+                \textbf{Ekvivalenca} izjavi $A$ in $B$ poveže s \textbf{če in samo če} oziroma
                 \textbf{natanko tedaj, ko}.
                 \begin{align*} 
                     \mathbf{A\Leftrightarrow B} \quad \quad &\textmd{Izjava A velja, \textbf{če in
@@ -367,11 +381,23 @@
             \end{columns}
         \end{frame}
 
+        \begin{frame}
+            \begin{exampleblock}{Naloga}
+                Določite, ali so naslednje izjave pravilne.
+                \begin{itemize}
+                    \item Število je deljivo z $12$ natanko takrat, ko je deljivo s $3$ in $4$ hkrati.
+                    \item Število je deljivo s $24$ natanko takrat, ko je deljivo s $4$ in $6$ hkrati.
+                    \item Število je praštevilo natanko takrat, ko ima natanko dva delitelja.
+                    \item Štirikotnik je kvadrat natanko tedaj, ko se diagonali sekata pod pravim kotom.
+                    \item Število je sodo natanko tedaj, ko je deljivo z $2$.
+                \end{itemize}
+            \end{exampleblock}
+        \end{frame}
 
         \begin{frame}
             \begin{block}{Vrstni red operacij}
                 Kadar so izjave povezane z več izjavnimi povezavami, pri določanju logične 
-                vrednosti upoštevamo oklepaje in naslednji \textbf{vrstni red} oz.~ 
+                vrednosti upoštevamo oklepaje in naslednji \textbf{vrstni red} oziroma
                 \textbf{prioriteto izjavnih povezav}:
                 \begin{enumerate}
                     \item negacija,
@@ -385,6 +411,22 @@
                 Če moramo zapored izvesti več enakih izjavnih povezav, velja pravilo združevanja 
                 od leve proti desni.
             \end{block}
+        \end{frame}
+
+        \begin{frame}
+            \begin{exampleblock}{Naloga}
+                V sestavljeni izjavi zapišite oklepaje, ki bodo predstavljali vrstni red operacij.
+                Nato tvorite pravilnostno tabelo za sestavljeno izjavo glede na različne logične 
+                vrednosti elementarnih izjav.
+                \begin{itemize}
+                    \item $A\lor B\Leftrightarrow \lnot A\Rightarrow \lnot B$
+                    \item $A\lor \lnot A\Rightarrow\lnot B\land (\lnot A\Rightarrow B) $
+                    \item $A\Rightarrow B\Leftrightarrow \lnot B\Rightarrow \lnot A $
+                    \item $A\land \lnot B\Leftrightarrow A \Rightarrow B$
+                    \item $C\Rightarrow A\lor \lnot B\Leftrightarrow \lnot A\land C $
+                    \item $\lnot A\lor \lnot B\Leftrightarrow B \land (C\Leftrightarrow \lnot A) $
+                \end{itemize}
+            \end{exampleblock}
         \end{frame}
 
         \begin{frame}
