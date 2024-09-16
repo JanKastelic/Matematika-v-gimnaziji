@@ -13,30 +13,30 @@
         \begin{frame}
             \frametitle{Izjave}
 
-            \begin{alertblock}{Matematična izjava}
-                \textbf{Matematična izjava} je vsaka smiselna poved, za katero 
-                lahko določimo resničnost oziroma pravilnost.
-            \end{alertblock}
+            \only<2->{\begin{alertblock}{Matematična izjava}
+                \only<3->{\textbf{Matematična izjava} je vsaka smiselna poved, za katero 
+                lahko določimo resničnost oziroma pravilnost.}
+            \end{alertblock}}
 
-            \begin{alertblock}{Logična vrednost matematične izjave}
-                Matematična izjava lahko zavzame dve logični vrednosti:
+            \only<4->{\begin{alertblock}{Logična vrednost matematične izjave}
+                \only<5->{Matematična izjava lahko zavzame dve logični vrednosti:
                 \begin{itemize}
-                    \item izjava je \textbf{resnična}/\textbf{pravilna}, 
+                    \item<6-> izjava je \textbf{resnična}/\textbf{pravilna}, 
                         oznaka $\mathbf{R}$/$\mathbf{P}$/$\mathbf{1}$/$\mathbf{\top}$;
-                    \item izjava je \textbf{neresnična}/\textbf{nepravilna}, 
+                    \item<7-> izjava je \textbf{neresnična}/\textbf{nepravilna}, 
                         oznaka $\mathbf{N}$/$\mathbf{0}$/$\mathbf{\bot }$.
-                \end{itemize}                
-            \end{alertblock}
+                \end{itemize}}                
+            \end{alertblock}}
 
-            \begin{alertblock}{}
+            \only<8->{\begin{alertblock}{}
                 Izjave označujemo z velikimi tiskanimi črkami ($A$, $B$, $C$ ...).
-            \end{alertblock}
+            \end{alertblock}}
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga}
+            \only<2->{\begin{exampleblock}{Naloga}
                 Ali so naslednje povedi izjave?
-                \begin{itemize}   
+                \only<3->{\begin{itemize}   
                     \item Danes sije sonce.
                     \item Koliko je ura?
                     \item Piramida je geometrijski lik.
@@ -47,14 +47,14 @@
                     \item Matematični test si pisal odlično.
                     \item Ali je $10~dl$ isto kot $1~l$?
                     \item Število $41$ je praštevilo.
-                \end{itemize}
-            \end{exampleblock}
+                \end{itemize}}
+            \end{exampleblock}}
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga}
+            \only<2->{\begin{exampleblock}{Naloga}
                 Spodnjim izjavam določite logične vrednosti.
-                \begin{itemize}   
+                \only<3->{\begin{itemize}   
                     \item $A$: Najvišja gora v Evropi je Mont Blanc.
                     \item $B$: Število je deljivo s $4$ natanko takrat, ko je vsota števk deljiva s $4$.
                     \item $C$: Ostanek pri deljenju s $4$ je lahko $1$, $2$ ali $3$.
@@ -62,8 +62,8 @@
                     \item $E$: Vsa praštevila so liha števila.
                     \item $F$: Število $1$ je naravno število.
                     \item $G$: Praštevil je neskončno mnogo.
-                \end{itemize}
-            \end{exampleblock}
+                \end{itemize}}
+            \end{exampleblock}}
             
         \end{frame}
 
@@ -276,7 +276,7 @@
                 Katere od spodnjih izjav so pravilne in katere nepravilne?
                 \begin{itemize}
                     \item $(3\cdot 4 = 12)\land(12:4=3)$
-                    \item $(a^3\cdot a^5=a^15)\lor (a^3\cdot a^5=a^8)$
+                    \item $(a^3\cdot a^5=a^{15})\lor (a^3\cdot a^5=a^8)$
                     \item $(3|30)\land(3|26)$
                     \item $(3|30)\lor(3|26)$
                     \item $(2^3=9)\lor(3^2=9)$
