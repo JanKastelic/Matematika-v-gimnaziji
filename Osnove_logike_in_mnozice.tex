@@ -58,7 +58,7 @@
                     \item $A$: Najvišja gora v Evropi je Mont Blanc.
                     \item $B$: Število je deljivo s $4$ natanko takrat, ko je vsota števk deljiva s $4$.
                     \item $C$: Ostanek pri deljenju s $4$ je lahko $1$, $2$ ali $3$.
-                    \item $D$: Mesec februar ima vedno vsaj 28 dni.
+                    \item $D$: Mesec februar ima 28 dni.
                     \item $E$: Vsa praštevila so liha števila.
                     \item $F$: Število $1$ je naravno število.
                     \item $G$: Praštevil je neskončno mnogo.
@@ -68,50 +68,50 @@
         \end{frame}
 
         \begin{frame}
-            \begin{alertblock}{Enostavne in sestavjene izjave}
-                Izjave delimo med:
+            \only<2->{\begin{alertblock}{Enostavne in sestavjene izjave}
+                \only<3->{Izjave delimo med:}
                 \begin{itemize}
-                    \item \textbf{elementarne}/\textbf{enostavne izjave} -- ne moremo 
+                    \item<4-> \textbf{elementarne}/\textbf{enostavne izjave} -- ne moremo 
                         jih razstaviti na bolj enostavne;
-                    \item \textbf{sestavljene izjave} -- sestavljene iz elementarnih izjav, 
+                    \item<5-> \textbf{sestavljene izjave} -- sestavljene iz elementarnih izjav, 
                         ki jih med seboj povezujejo \textbf{logične operacije} (imenovane 
-                        tudi izjavne povezave oziroma~ logična vezja).
+                        tudi izjavne povezave oziroma logična vezja).
                 \end{itemize}
-            \end{alertblock}
+            \end{alertblock}}
 
-            \begin{alertblock}{}
+            \only<6->{\begin{alertblock}{}
                 Vrednost sestavljene izjave izračunamo glede na vrednosti elementarnih 
                 izjav in izjavnih povezav med njimi.
-            \end{alertblock}
-            \begin{alertblock}{}
+            \end{alertblock}}
+            
+            \only<7->{\begin{alertblock}{}
                 Pravilnost sestavljenih izjav nazorno prikazujejo 
                 \textbf{resničnostne}/\textbf{pravilnostne tabele}.
-            \end{alertblock}
+            \end{alertblock}}
 
         \end{frame}
 
         \begin{frame}
             \frametitle{Logične operacije}
 
-            \begin{alertblock}{Negacija}
-                \textbf{Negacija} izjave $A$ je izjava, ki \textbf{trdi nasprotno} 
-                kot izjava $A$.
-                Oznaka: $\mathbf{\lnot A}$.
-                $$ \mathbf{\lnot A} \quad \quad \textmd{\textbf{Ni res}, da velja izjava A.}$$
-            \end{alertblock}
+            \only<2->{\begin{alertblock}{Negacija}
+                \only<3->{\textbf{Negacija} izjave $A$ je izjava, ki \textbf{trdi nasprotno} 
+                kot izjava $A$.}
+                \only<4->{$$ \mathbf{\lnot A} \quad \quad \textmd{\textbf{Ni res}, da velja izjava A.}$$}
+            \end{alertblock}}
 
             \begin{columns}
                 \column{0.65\textwidth} 
-                    \begin{alertblock}{}
+                    \only<5->{\begin{alertblock}{}
                         Če je izjava $A$ pravilna, je $\lnot A$ nepravilna in obratno: 
                         če je $\lnot A$ pravilna, je $A$ nepravilna.
-                    \end{alertblock}
-                    \begin{alertblock}{}
-                        Negacija negacije izjave je potrditev izjave. \quad $\lnot(\lnot A)=A$
-                    \end{alertblock}
+                    \end{alertblock}}
+                    \only<7->{\begin{alertblock}{}
+                        Negacija negacije izjave je potrditev izjave. $\lnot(\lnot A)=A$
+                    \end{alertblock}}
 
                 \column{0.3\textwidth} 
-                \begin{table}
+                \only<6->{\begin{table}
                     \centering
                     \begin{tabular}{||c|c||} 
                     \hhline{|t:==:t|}
@@ -122,15 +122,15 @@
                     $N$                                   & $P$                       \\
                     \hhline{|b:==:b|}
                     \end{tabular}                    
-                \end{table}                
+                \end{table}}                
 
             \end{columns}
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga}
+            \only<2->{\begin{exampleblock}{Naloga}
                 Izjavam določite logično vrednost, potem jih zanikajte in določite logično vrednost negacij.
-                \begin{itemize}
+                \only<3->{\begin{itemize}
                     \item $A$: $5 \cdot 8 = 30$
                     \item $B$: Število $3$ je praštevilo.
                     \item $C$: Največje dvomestno število je $99$.
@@ -138,25 +138,26 @@
                     \item $E$: Praštevil je neskončno mnogo.
                     \item $F$: $7 \leq 5$
                     \item $G$: Naša pisava je cirilica.
-                \end{itemize}
-            \end{exampleblock}
+                \end{itemize}}
+            \end{exampleblock}}
         \end{frame}
 
         \begin{frame}
-            \begin{alertblock}{Konjunkcija}
-                \textbf{Konjunkcija} izjav $A$ in $B$ nastane tako, da povežemo izjavi $A$ in $B$ 
-                z \textbf{in hkrati}.
-                $$ \mathbf{A\land B} \quad \quad \textmd{Velja izjava A \textbf{in (hkrati)} izjava B.}$$
-            \end{alertblock}
+            \only<2->{\begin{alertblock}{Konjunkcija}
+                \only<3->{\textbf{Konjunkcija} izjav $A$ in $B$ nastane tako, da povežemo izjavi $A$ in $B$ 
+                z \textbf{in (hkrati)}.}
+                \only<4->{$$ \mathbf{A\land B} \quad \quad \textmd{Velja izjava A \textbf{in (hkrati)} izjava B.}$$}
+            \end{alertblock}}
+
             \begin{columns}
                 \column{0.6\textwidth} 
-                    \begin{alertblock}{}
+                \only<5->{\begin{alertblock}{}
                         Če sta izjavi $A$ in $B$ pravilni, je pravilna tudi njuna konjunkcija, 
                         če je pa ena od izjav nepravilna, je nepravilna tudi njuna konjunkcija.
-                    \end{alertblock}
+                    \end{alertblock}}
 
                 \column{0.35\textwidth} 
-                    \begin{table}
+                \only<6->{\begin{table}
                         \centering
                         \begin{tabular}{||c|c|c||} 
                         \hhline{|t:===:t|}
@@ -171,7 +172,7 @@
                         $N$ & $N$ & $N$                         \\
                         \hhline{|b:===:b|}
                         \end{tabular}
-                    \end{table}
+                    \end{table}}
 
             \end{columns}
 
@@ -179,9 +180,9 @@
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga}
+            \only<2->{\begin{exampleblock}{Naloga}
                 Določite logično vrednost konjunkcijam.
-                \begin{itemize}
+                \only<3->{\begin{itemize}
                     \item Število $28$ je večratnik števila $3$ in večkratnik števila $8$.
                     \item Število $7$ je praštevilo in je deljivo s številom $1$.
                     \item Vsakemu celemu številu lahko pripišemo nasprotno število in obratno število.
@@ -189,25 +190,26 @@
                         pri deljenju s $5$ pa $0$, $1$, $2$, $3$ ali $4$.
                     \item Število je deljivo s $3$, če je vosta števk deljiva s $3$, in je 
                         deljivo z $9$, če je vsota števk deljiva z $9$.
-                \end{itemize}
-            \end{exampleblock}
+                \end{itemize}}
+            \end{exampleblock}}
         \end{frame}
 
         \begin{frame}
-            \begin{alertblock}{Disjunkcija}
-                \textbf{Disjunkcija} izjav $A$ in $B$ nastane s povezavo \textbf{ali}.
-                $$ \mathbf{A\lor B} \quad \quad \textmd{Velja izjava A \textbf{ali} izjava B 
-                (lahko tudi obe hkrati).}$$
-            \end{alertblock}
+            \only<2->{\begin{alertblock}{Disjunkcija}
+                \only<3->{\textbf{Disjunkcija} izjav $A$ in $B$ nastane s povezavo \textbf{ali}.}
+                \only<4->{$$ \mathbf{A\lor B} \quad \quad \textmd{Velja izjava A \textbf{ali} izjava B 
+                (lahko tudi obe hkrati).}$$}
+            \end{alertblock}}
+
             \begin{columns}
                 \column{0.62\textwidth} 
-                    \begin{alertblock}{}
+                    \only<5->{\begin{alertblock}{}
                         Disjunkcija je nepravilna, če sta nepravilni obe izjavi, ki jo sestavljata,
                         v preostalih treh primerih je pravilna.
-                    \end{alertblock}
+                    \end{alertblock}}
 
                 \column{0.35\textwidth} 
-                    \begin{table}
+                \only<6->{\begin{table}
                         \centering
                         \begin{tabular}{||c|c|c||} 
                         \hhline{|t:===:t|}
@@ -222,7 +224,7 @@
                         $N$ & $N$ & $N$                         \\
                         \hhline{|b:===:b|}
                         \end{tabular}
-                    \end{table}
+                    \end{table}}
 
             \end{columns}
 
@@ -230,79 +232,80 @@
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga}
+            \only<2->{\begin{exampleblock}{Naloga}
                 Določite logično vrednost disjunkcijam.
-                \begin{itemize}
+                \only<3->{\begin{itemize}
                     \item Število $24$ je večratnik števila $3$ ali $8$.
                     \item Število $35$ ni večratnik števila $7$ ali $6$.
                     \item Število $5$ deli število $16$ ali $18$.
                     \item Ploščina kvadrata s stranico $a$ je $a^2$ ali obseg kvadrata je $4a$.
                     \item Ni res, da je vsota notranjih kotov trikotnika $160^\circ$, ali ni res, 
                         da Pitagorov izrek velja v poljubnem trikotniku.
-                \end{itemize}
-            \end{exampleblock}
+                \end{itemize}}
+            \end{exampleblock}}
         \end{frame}
 
 
         \begin{frame}
-            \begin{block}{Komutativnost konjunkcije in disjunkcije}
-                $$ A\land B = B\land A  \quad \quad \quad
-                 A\lor B = B\lor A$$
-            \end{block}      
+            \only<2->{\begin{block}{Komutativnost konjunkcije in disjunkcije}
+                \only<3->{$$ A\land B = B\land A  \quad \quad \quad
+                 A\lor B = B\lor A$$}
+            \end{block}}      
             
-            \begin{block}{Asociativnost konjunkcije in disjunkcije}
-                $$(A\land B)\land C = A\land(b\land C) \quad \quad \quad
-                (A\lor B)\lor C = A\lor (B\lor C) $$
-            \end{block}
+            \only<4->{\begin{block}{Asociativnost konjunkcije in disjunkcije}
+                \only<5->{$$(A\land B)\land C = A\land(b\land C) \quad \quad \quad
+                (A\lor B)\lor C = A\lor (B\lor C) $$}
+            \end{block}}
 
-            \begin{block}{Distributivnost zakona za konjunkcijo in disjunkcijo}
-                $$(A\lor B)\land C = (A\land C)\lor(B\land C) \quad \quad \quad
-                (A\land B)\lor C = (A\lor C)\land(B\lor C) $$
-            \end{block}
+            \only<6->{\begin{block}{Distributivnost zakona za konjunkcijo in disjunkcijo}
+                \only<7->{$$(A\lor B)\land C = (A\land C)\lor(B\land C) \quad \quad \quad
+                (A\land B)\lor C = (A\lor C)\land(B\lor C) $$}
+            \end{block}}
 
-            \begin{block}{De Morganova zakona}
+            \only<8->{\begin{block}{De Morganova zakona}
                 \begin{itemize}
-                    \item negacija konjunkcije je disjunkcija negacij: 
+                    \item<9-> negacija konjunkcije je disjunkcija negacij: 
                         $\lnot(A\land B)=\lnot A\lor\lnot B$
-                    \item negacija disjunkcije je konjunkcija negacij: 
+                    \item<10-> negacija disjunkcije je konjunkcija negacij: 
                         $\lnot(A\lor B)=\lnot A\land\lnot B$
                 \end{itemize}                
-            \end{block}
+            \end{block}}
         
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga}
+            \only<2->{\begin{exampleblock}{Naloga}
                 Katere od spodnjih izjav so pravilne in katere nepravilne?
-                \begin{itemize}
+                \only<3->{\begin{itemize}
                     \item $(3\cdot 4 = 12)\land(12:4=3)$
                     \item $(a^3\cdot a^5=a^{15})\lor (a^3\cdot a^5=a^8)$
                     \item $(3|30)\land(3|26)$
                     \item $(3|30)\lor(3|26)$
                     \item $(2^3=9)\lor(3^2=9)$
                     \item $((-2)^2=4)\land\lnot(-2^2=4)$
-                \end{itemize}
-            \end{exampleblock}
+                \end{itemize}}
+            \end{exampleblock}}
         \end{frame}
 
         \begin{frame}
-            \begin{alertblock}{Implikacija}
-                \textbf{Implikacija} izjav $A$ in $B$ je sestavljena izjava, ki jo lahko beremo
-                na različne načine.
-                $$ \mathbf{A\Rightarrow B} \quad \quad \textmd{\textbf{Če} velja izjava A, 
-                \textbf{potem} velja izjava B. / \textbf{Iz} A \textbf{sledi} B.}$$
-                Izjava $A$ je \textbf{pogoj} ali \textbf{privzetek}, izjava $B$ pa 
-                \textbf{(logična) posledica} izjave $A$.
-            \end{alertblock}
+            \only<2->{\begin{alertblock}{Implikacija}
+                \only<3->{\textbf{Implikacija} izjav $A$ in $B$ je sestavljena izjava, ki jo lahko beremo
+                na različne načine.}
+                \only<4->{$$ \mathbf{A\Rightarrow B} \quad \quad \textmd{\textbf{Če} velja izjava A, 
+                \textbf{potem} velja izjava B. / \textbf{Iz} A \textbf{sledi} B.}$$}
+                \only<5->{Izjava $A$ je \textbf{pogoj} ali \textbf{privzetek}, izjava $B$ pa 
+                \textbf{(logična) posledica} izjave $A$.}
+            \end{alertblock}}
+
             \begin{columns}
                 \column{0.62\textwidth} 
-                    \begin{alertblock}{}
+                \only<6->{\begin{alertblock}{}
                         Implikacija je nepravilna, ko je izjava $A$ pravilna, izjava $B$ pa 
                         nepravilna, v preostalih treh primerih je pravilna.
-                    \end{alertblock}
+                    \end{alertblock}}
 
                 \column{0.35\textwidth} 
-                    \begin{table}
+                \only<7->{\begin{table}
                         \centering
                         \begin{tabular}{||c|c|c||} 
                         \hhline{|t:===:t|}
@@ -317,15 +320,15 @@
                         $N$ & $N$ & $P$                         \\
                         \hhline{|b:===:b|}
                         \end{tabular}
-                    \end{table}
+                    \end{table}}
 
             \end{columns}
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga}
+            \only<2->{\begin{exampleblock}{Naloga}
                 Določite, ali so izjave pravilne.
-                \begin{itemize}
+                \only<3->{\begin{itemize}
                     \item Če je število deljivo s $100$, je deljivo tudi s $4$.
                     \item Če je štirikotnik pravokotnik, se diagonali razpolavljata.
                     \item Če je štirikotnik kvadrat, se diagonali sekata pod pravim kotom.
@@ -333,35 +336,35 @@
                     \item Če je število $18$ deljivo z $9$, potem je deljivo s $3$.
                     \item Če je $7$ večkratnik števila $7$, potem $7$ deli število $43$.
                     \item Če je število deljivo s $4$, potem je deljivo z $2$.
-                \end{itemize}
-            \end{exampleblock}
+                \end{itemize}}
+            \end{exampleblock}}
         \end{frame}
         \begin{frame}
-            \begin{alertblock}{Ekvivalenca}
-                \textbf{Ekvivalenca} izjavi $A$ in $B$ poveže s \textbf{če in samo če} oziroma
-                \textbf{natanko tedaj, ko}.
-                \begin{align*} 
+            \only<2->{\begin{alertblock}{Ekvivalenca}
+                \only<3->{\textbf{Ekvivalenca} izjavi $A$ in $B$ poveže s \textbf{če in samo če} oziroma
+                \textbf{natanko tedaj, ko}.}
+                \only<4->{\begin{align*} 
                     \mathbf{A\Leftrightarrow B} \quad \quad &\textmd{Izjava A velja, \textbf{če in
                     samo če} velja izjava B.} / \\
                         &\textmd{Izjava A velja \textbf{natanko tedaj, ko} velja izjava B.}
-                \end{align*}
-            \end{alertblock}
+                \end{align*}}
+            \end{alertblock}}
 
 
             \begin{columns}
                 \column{0.62\textwidth} 
-                    \begin{alertblock}{}
+                \only<5->{\begin{alertblock}{}
                         Ekvivalenca dveh izjav je pravilna, če imata obe izjavi enako vrednost 
                         (ali sta obe pravilni ali obe nepravilni), in nepravilna, če imata izjavi
                         različno vrednost.
-                    \end{alertblock}
-                    \begin{block}{}
+                    \end{alertblock}}
+                    \only<7->{\begin{block}{}
                         Ekvivalentni/enakovredni izjavi pomenita eno in isto, lahko ju nadomestimo 
                         drugo z drugo.
-                    \end{block}
+                    \end{block}}
 
                 \column{0.35\textwidth} 
-                    \begin{table}
+                \only<6->{\begin{table}
                         \centering
                         \begin{tabular}{||c|c|c||} 
                         \hhline{|t:===:t|}
@@ -376,99 +379,102 @@
                         $N$ & $N$ & $P$                         \\
                         \hhline{|b:===:b|}
                         \end{tabular}
-                    \end{table}
+                    \end{table}}
 
             \end{columns}
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga}
+            \only<2->{\begin{exampleblock}{Naloga}
                 Določite, ali so naslednje izjave pravilne.
-                \begin{itemize}
+                \only<3->{\begin{itemize}
                     \item Število je deljivo z $12$ natanko takrat, ko je deljivo s $3$ in $4$ hkrati.
                     \item Število je deljivo s $24$ natanko takrat, ko je deljivo s $4$ in $6$ hkrati.
                     \item Število je praštevilo natanko takrat, ko ima natanko dva delitelja.
                     \item Štirikotnik je kvadrat natanko tedaj, ko se diagonali sekata pod pravim kotom.
                     \item Število je sodo natanko tedaj, ko je deljivo z $2$.
-                \end{itemize}
-            \end{exampleblock}
+                \end{itemize}}
+            \end{exampleblock}}
         \end{frame}
 
         \begin{frame}
-            \begin{block}{Vrstni red operacij}
-                Kadar so izjave povezane z več izjavnimi povezavami, pri določanju logične 
+            \only<2->{\begin{block}{Vrstni red operacij}
+                \only<3->{Kadar so izjave povezane z več izjavnimi povezavami, pri določanju logične 
                 vrednosti upoštevamo oklepaje in naslednji \textbf{vrstni red} oziroma
-                \textbf{prioriteto izjavnih povezav}:
+                \textbf{prioriteto izjavnih povezav}:}
                 \begin{enumerate}
-                    \item negacija,
-                    \item konjunkcija,
-                    \item disjunkcija,
-                    \item implikacija,
-                    \item ekvivalenca.
+                    \item<4-> negacija,
+                    \item<5-> konjunkcija,
+                    \item<6-> disjunkcija,
+                    \item<7-> implikacija,
+                    \item<8-> ekvivalenca.
                 \end{enumerate}
-            \end{block}
-            \begin{block}{}
+            \end{block}}
+
+            \only<9->{\begin{block}{}
                 Če moramo zapored izvesti več enakih izjavnih povezav, velja pravilo združevanja 
                 od leve proti desni.
-            \end{block}
+            \end{block}}
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga}
+            \only<2->{\begin{exampleblock}{Naloga}
                 V sestavljeni izjavi zapišite oklepaje, ki bodo predstavljali vrstni red operacij.
                 Nato tvorite pravilnostno tabelo za sestavljeno izjavo glede na različne logične 
                 vrednosti elementarnih izjav.
-                \begin{itemize}
+                \only<3->{\begin{itemize}
                     \item $A\lor B\Leftrightarrow \lnot A\Rightarrow \lnot B$
                     \item $A\lor \lnot A\Rightarrow\lnot B\land (\lnot A\Rightarrow B) $
                     \item $A\Rightarrow B\Leftrightarrow \lnot B\Rightarrow \lnot A $
                     \item $A\land \lnot B\Leftrightarrow A \Rightarrow B$
                     \item $C\Rightarrow A\lor \lnot B\Leftrightarrow \lnot A\land C $
                     \item $\lnot A\lor \lnot B\Leftrightarrow B \land (C\Leftrightarrow \lnot A) $
-                \end{itemize}
-            \end{exampleblock}
+                \end{itemize}}
+            \end{exampleblock}}
         \end{frame}
 
         \begin{frame}
-            \begin{alertblock}{Tavtologija}
-                \textbf{Tavtologija} ali \textbf{logično pravilna izjava} je sestavljena izjava, 
-                ki je pri vseh naborih vrednosti elementarnih izjav, iz katerih je sestavjena, pravilna.
-            \end{alertblock}
+            \only<2->{\begin{alertblock}{Tavtologija}
+                \only<3->{\textbf{Tavtologija} ali \textbf{logično pravilna izjava} je sestavljena izjava, 
+                ki je pri vseh naborih vrednosti elementarnih izjav, iz katerih je sestavjena, pravilna.}
+            \end{alertblock}}
 
-            \begin{alertblock}{Protislovje}
-                \textbf{Protislovje} je sestavljena izjava, ki ni nikoli pravilna.
-            \end{alertblock}
+            \only<4->{\begin{alertblock}{Protislovje}
+                \only<5->{\textbf{Protislovje} je sestavljena izjava, ki ni nikoli pravilna.}
+            \end{alertblock}}
 
-            \begin{block}{Kvantifikatorja}
+            \only<6->{\begin{block}{Kvantifikatorja}
                 \begin{itemize}
-                    \item $\forall$ (beri 'vsak') -- izjava velja za vsak element dane množice
-                    \item $\exists$ (beri 'obstaja' ali 'eksistira') -- izjava je pravilna za vsaj en element dane množice
+                    \item<7-> $\forall$ (beri '(za) vsak') -- izjava velja za vsak element dane množice
+                    \item<8-> $\exists$ (beri 'obstaja' ali 'eksistira') -- izjava je pravilna za vsaj en element dane množice
                 \end{itemize}
-            \end{block}
+            \end{block}}
 
         \end{frame}
 
         \begin{frame}
             \frametitle{Pomen izjav v matematiki}
-            \begin{block}{}
+            \only<2->{\begin{block}{}
                 \textbf{Aksiomi} so najpreprostejše izjave, ki so očitno pravilne in zato njihove 
                 pravilnosti ni treba dokazovati.
-            \end{block}
-            \begin{block}{}
+            \end{block}}
+
+            \only<3->{\begin{block}{}
                 \textbf{Izreki} ali \textbf{teoremi} so izjave, ki so pravilne, vendar pa njihova 
                 pravilnost ni očitna. 
                 Pravilnost izreka (teorema) moramo potrditi z dokazom, ki temelji na aksiomih in na 
                 preprostejših že prej dokazanih izrekih.
-            \end{block}
-            \begin{block}{}
+            \end{block}}
+
+            \only<4->{\begin{block}{}
                 \textbf{Definicije} so izjave, s katerimi uvajamo nove pojme. Najpreprostejših pojmov 
                 v matematiki ne opisujemo z definicijami (to so pojmi kot npr.: število, premica ipd.); 
                 vsak nadaljnji pojem pa moramo definirati, zato da se nedvoumno ve, o čem govorimo.
-            \end{block}
+            \end{block}}
 
         \end{frame}
         
-    \subsection{Teorija množic}
+    \subsection{Osnove teorije množic}
 
         \begin{frame}
             \frametitle{Množice}
@@ -477,34 +483,40 @@
 
             \end{alertblock}
             \begin{block}{}
-                Množice označujemo z velikimi črkami ($\mathcal{A}, \mathcal{B}, \mathcal{C} \dots$ ali  $A, B, C \dots$ ). 
-                
-                Njeni elementi so zapisani v zavitem oklepaju (npr. $\mathcal{A}=\left\{2, 5, 7\right\}$).
+                Množica je določena, če:
+                \begin{itemize}
+                    \item lahko naštejemo vse njene elemente ali
+                    \item poznamo pravilo, ki pove, kateri elementi so v množici (iz univerzalne množice).
+                \end{itemize}
             \end{block}
-
-            \begin{alertblock}{Element množice}
-            \textbf{Element množice} je objekt v množici. 
-            \end{alertblock}
             \begin{block}{}
-                Označujemo jih z malimi črkami ($a, b, c \dots$). 
-
-                Element množici lahko pripada ($a\in\mathcal{A}$) ali pa ne ($a\notin\mathcal{A}$).
-            \end{block} 
-        \end{frame}
-
-        \begin{frame}
-
-            \begin{alertblock}{Moč množice}
-                Število elementov v množici predstavlja \textbf{moč množice}. 
-                Oznaka: $\mathbf{m(\mathcal{A})}$ ali $\mathbf{|\mathcal{A}|}$.
-
-            \end{alertblock}
+                Označujemo jih z velikimi črkami ($\mathcal{A}, \mathcal{B}, \mathcal{C} \dots$ ali  $A, B, C \dots$ ). 
+            \end{block}
 
             \begin{alertblock}{Univerzalna množica}
                 \textbf{Univerzalna množica} ali \textbf{univerzum} ($\mathcal{U}$) je množica 
                 vseh elementov, ki v danem primeru nastopajo oziroma jih opazujemo.
 
             \end{alertblock}
+
+        \end{frame}      
+
+        \begin{frame}
+            \begin{alertblock}{Element množice}
+            \textbf{Element množice} je objekt v množici. 
+            \end{alertblock}
+            \begin{block}{}
+                Označujemo jih z malimi črkami ($a, b, c \dots$). 
+            \end{block} 
+
+            \begin{block}{}
+                Elemente množice zapisujemo v zavitem oklepaju (npr. $\mathcal{A}=\left\{a, b, c\right\}$).
+            \end{block}
+
+            \begin{block}{}
+                Element je lahko vsebovan v množici (npr. $a\in\mathcal{A}$) ali pa 
+                v množici ni vsebovan (npr. $d\notin\mathcal{A}$).
+            \end{block} 
 
             \begin{alertblock}{Prazna množica}
                 \textbf{Prazna množica} ($\mathbf{\emptyset, \left\{\right\}}$) je množica, 
@@ -513,4 +525,35 @@
             \end{alertblock}
             % Množica je lahko končna (m(𝒜)=n) ali neskončna (m(𝒜)=∞).
 
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Moč množice}
+
+            \begin{alertblock}{Moč množice}
+                Število elementov v množici predstavlja \textbf{moč množice}. 
+                Oznaka: $\mathbf{m(\mathcal{A})}$ ali $\mathbf{|\mathcal{A}|}$.
+            \end{alertblock}
+
+            \begin{alertblock}{}
+                Množica je lahko:
+                \begin{itemize}
+                    \item \textbf{končna množica} -- vsebuje končno mnogo elementov: $\mathbf{m(\mathcal{A})=n}$;
+                    \item \textbf{neskončna množica} -- vsebuje neskončno mnogo elementov: $\mathbf{m(\mathcal{A})=\infty}$.
+                \end{itemize}
+            \end{alertblock}
+
+            \begin{block}{}
+                Če ima množica toliko elementov, kot jih ima množica naravnih števil, je ta števno neskončna.
+                Njeno moč pišemo kot: $m(\mathcal{A})=\aleph_0$. 
+            \end{block}
+
+            \begin{alertblock}{}
+                Za množici, ki imata isto moč, rečemo, da sta \textbf{ekvipolentni} oziroma \textbf{ekvipotentni}.
+            \end{alertblock}
+
+        \end{frame}
+
+        \begin{frame}
+            
         \end{frame}
