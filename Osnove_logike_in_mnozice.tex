@@ -188,7 +188,7 @@
                     \item Vsakemu celemu številu lahko pripišemo nasprotno število in obratno število.
                     \item Ostanki pri deljenju števila s $3$ so lahko $0$, $1$ ali $2$, 
                         pri deljenju s $5$ pa $0$, $1$, $2$, $3$ ali $4$.
-                    \item Število je deljivo s $3$, če je vosta števk deljiva s $3$, in je 
+                    \item Število je deljivo s $3$, če je vsota števk deljiva s $3$, in je 
                         deljivo z $9$, če je vsota števk deljiva z $9$.
                 \end{itemize}}
             \end{exampleblock}}
@@ -486,11 +486,12 @@
                 Množica je določena, če:
                 \begin{itemize}
                     \item lahko naštejemo vse njene elemente ali
-                    \item poznamo pravilo, ki pove, kateri elementi so v množici (iz univerzalne množice).
+                    \item poznamo pravilo/skupno lastnost, ki pove, kateri elementi so v množici.
                 \end{itemize}
             \end{block}
             \begin{block}{}
-                Označujemo jih z velikimi črkami ($\mathcal{A}, \mathcal{B}, \mathcal{C} \dots$ ali  $A, B, C \dots$ ). 
+                Označujemo jih z velikimi črkami ($\mathcal{A}, \mathcal{B}, \mathcal{C} \dots$ ali  
+                $A, B, C \dots$ ). 
             \end{block}
 
             \begin{alertblock}{Univerzalna množica}
@@ -544,7 +545,8 @@
             \end{alertblock}
 
             \begin{block}{}
-                Če ima množica toliko elementov, kot jih ima množica naravnih števil, je ta števno neskončna.
+                Če ima množica toliko elementov, kot jih ima množica naravnih števil, je ta števno 
+                neskončna.
                 Njeno moč pišemo kot: $m(\mathcal{A})=\aleph_0$. 
             \end{block}
 
@@ -555,5 +557,70 @@
         \end{frame}
 
         \begin{frame}
-            
+            \begin{columns}
+                \column{0.55\textwidth}
+                    \begin{alertblock}{Podmnožica}
+                        Množica $\mathcal{B}$ je \textbf{podmnožica} množice $\mathcal{A}$ , če za vsak element iz
+                        $\mathcal{B}$ velja, da je tudi element množice $\mathcal{A}$.
+                        $$ \mathcal{B}\subseteq\mathcal{A}\Leftrightarrow\forall x\in\mathcal{B}\Rightarrow x\in\mathcal{A} $$
+                    \end{alertblock}
+
+
+                \column{0.4\textwidth}
+                    \begin{block}{}
+                        \begin{tikzpicture}                     
+                            \draw  (-3,-1.5)  rectangle (3,1.5);
+                        
+                            \draw[fill=blue!70,fill opacity=0.5] (0,0) ellipse (2.5cm and 1.2cm);
+                            \draw[fill=red!70,fill opacity=0.5] (-0.6,-0.3) ellipse (1.5cm and 0.6cm);
+                            
+                            \node at (-1,-0.3) {$\mathcal{B}$};
+                            \node at (1.7,0) {$\mathcal{A}$};
+                            % \node at (0,1.1) {$\mathcal{B}\subseteq\mathcal{A}$};
+                            \node at (-2.7,-1.2) {$\mathcal{U}$};
+                            
+                        \end{tikzpicture}
+                    \end{block}
+
+            \end{columns}  
+
+            \begin{block}{}
+                \begin{itemize}
+                    \item $\forall \mathcal{A}:\mathcal{A}\subseteq\mathcal{A}$ -- Vsaka množica je podmnožica
+                        same sebe.
+                    \item $\forall \mathcal{A}:\emptyset\subseteq\mathcal{A}$ -- Prazna množica je podmnožica
+                        vsake množice.
+                \end{itemize}
+            \end{block}
+
+            \begin{block}{}
+                Moč podmnožice $\mathcal{B}$ množice $\mathcal{A}$ je manjša ali enaka moči množice $\mathcal{A}$:
+                $$\mathcal{B}\subseteq\mathcal{A}\Rightarrow m(\mathcal{B})\leq m(\mathcal{A})$$
+            \end{block}
+
+        \end{frame}
+
+        \begin{frame}
+            \begin{block}{}
+                Množici $\mathcal{A}$ in $\mathcal{B}$ sta \textbf{enaki}, če imata iste elemente; 
+                sta druga drugi podmnožici.
+                $$\mathcal{A}=\mathcal{B}\Leftrightarrow(\mathcal{A}\subseteq\mathcal{B})\land(\mathcal{B}\subseteq\mathcal{A})$$
+            \end{block}
+
+            \begin{block}{}
+                Podmnožica $\mathcal{B}$ množice $\mathcal{A}$, ki ni enaka množici $\mathcal{A}$, 
+                je \textbf{prava podmnožica} množice $\mathcal{A}$.
+            \end{block}
+
+            \begin{alertblock}{Potenčna množica}
+                \textbf{Potenčna množica} množice $\mathcal{A}$ je množica vseh podmnožic množice $\mathcal{A}$.
+                
+                Oznaka: $\mathbf{\mathcal{P}\mathcal{A}}$ / $\mathbf{\mathcal{P}(\mathcal{A})}$.
+                $$ \mathcal{PA}=\left\{\mathcal{X}; \mathcal{X}\subseteq\mathcal{A} \right\}$$
+            \end{alertblock}
+
+            \begin{block}{}
+                $$ m(\mathcal{PA})=2^{m(\mathcal{A})}$$
+                Potenčna množica ni nikoli prazna -- vsebuje vsaj prazno množico.
+            \end{block}
         \end{frame}
