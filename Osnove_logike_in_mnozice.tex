@@ -908,50 +908,49 @@
 
                 \begin{block}{}
                     $$x\neq y \Rightarrow (x,y)\neq(y,x)$$
-                    $$x=y \Rightarrow (x,y)=(y,x)$$
+                    $$\mathcal{A}\neq\mathcal{B}\Rightarrow \mathcal{A}\times\mathcal{B}\neq\mathcal{B}\times\mathcal{A}$$
                 \end{block}
 
                 \begin{block}{}
-                    $$ \mathcal{A}\times\mathcal{B}\neq\mathcal{B}\times\mathcal{A}$$
+                    $$m(\mathcal{A}\times\mathcal{B})=m(\mathcal{A})\cdot m(\mathcal{B}) $$
                 \end{block}
 
 
             \column{0.4\textwidth}
                 \begin{block}{}
-                    \begin{tikzpicture}                     
-                        \draw  (-3,-1.5)  rectangle (3,1.5);
+                    \begin{tikzpicture}
+                        \draw[help lines] (0,0) grid (5,3);
+                      
+                        \fill (1,1) circle (2pt);
+                        \fill (3,2) circle (2pt);
+                        \fill (2,3) circle (2pt);
+                        \fill (4,3) circle (2pt);
+                        \fill (0,0) circle (2pt);
 
-                        \begin{scope}
-                            \clip (-1,0.3) ellipse (1.5cm and 1cm);
-                            \draw[fill=red!70,fill opacity=0.5, even odd rule] (-1,0.3) ellipse (1.5cm and 1cm)
-                                        (1,-0.3) ellipse (1.5cm and 0.8cm);
-                        \end{scope}
+                        \node at (0,-0.3) {$a$};
+                        \node at (1,-0.3) {$b$};
+                        \node at (2,-0.3) {$c$};
+                        \node at (3,-0.3) {$d$};
+                        \node at (4,-0.3) {$e$};
+                        \node at (5,-0.3) {$f$};
+                        \node at (-0.4,0) {$1$};
+                        \node at (-0.4,1) {$2$};
+                        \node at (-0.4,2) {$3$};
+                        \node at (-0.4,3) {$4$};
 
-                        \draw (-1,0.3) ellipse (1.5cm and 1cm);
-                        \draw (1,-0.3) ellipse (1.5cm and 0.8cm);
-                        
-                        \node at (-1.3,0.3) {$\mathcal{A}$};
-                        \node at (1.4,-0.2) {$\mathcal{B}$};
-                        % \node at (0,1.1) {$\mathcal{A}\setminus\mathcal{B}$};
-                        \node at (-2.7,-1.2) {$\mathcal{U}$};
-                        
-                    \end{tikzpicture}
+                        \node at (0.2,0.3) {$(a,1)$};
+                        \node at (1.2,1.3) {$(b,2)$};
+                        \node at (2.2,3.3) {$(c,4)$};
+                        \node at (3.2,2.3) {$(d,3)$};
+                        \node at (4.2,3.3) {$(e,4)$};
+
+                      \end{tikzpicture}
+                      $$\mathcal{A}\times\mathcal{B}$$
+                      $$ \mathcal{A}=\left\{a,b,c,d,e,f\right\}$$
+                      $$ \mathcal{B}=\left\{1,2,3,4\right\}$$
+
                 \end{block}
 
-                \begin{block}{}
-                    \begin{tikzpicture}                     
-                        \draw  (-3,-1.5)  rectangle (3,1.5);
-                    
-                        \draw[fill=red!70,fill opacity=0.5] (-1.1,0.3) ellipse (1.4cm and 1cm);
-                        \draw                               (1.3,-0.3) ellipse (1cm and 0.8cm);
-                        
-                        \node at (-1.3,0.3) {$\mathcal{A}$};
-                        \node at (1.4,-0.2) {$\mathcal{B}$};
-                        % \node at (0,1.1) {$\mathcal{A}\setminus\mathcal{B}$};
-                        \node at (-2.7,-1.2) {$\mathcal{U}$};
-                        
-                    \end{tikzpicture}
-                \end{block}
 
         \end{columns}
 
