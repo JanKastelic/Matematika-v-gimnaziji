@@ -523,7 +523,6 @@
             \only<7->{\begin{alertblock}{Prazna množica}
                 \only<8->{\textbf{Prazna množica} ($\mathbf{\emptyset, \left\{\right\}}$) je množica, 
                 ki ne vsebuje nobenega elementa.}
-                
             \end{alertblock}}
 
         \end{frame}
@@ -531,43 +530,88 @@
         \begin{frame}
             \frametitle{Moč množice}
 
-            \begin{alertblock}{Moč množice}
-                Število elementov v množici predstavlja \textbf{moč množice}. 
-                Oznaka: $\mathbf{m(\mathcal{A})}$ ali $\mathbf{|\mathcal{A}|}$.
-            \end{alertblock}
+            \only<2->{\begin{alertblock}{Moč množice}
+                \only<3->{Število elementov v množici predstavlja \textbf{moč množice}.} 
+                \only<4->{Oznaka: $\mathbf{m(\mathcal{A})}$ ali $\mathbf{|\mathcal{A}|}$.}
+            \end{alertblock}}
 
-            \begin{alertblock}{}
+            \only<5->{\begin{alertblock}{}
                 Množica je lahko:
                 \begin{itemize}
-                    \item \textbf{končna množica} -- vsebuje končno mnogo elementov: $\mathbf{m(\mathcal{A})=n}$;
-                    \item \textbf{neskončna množica} -- vsebuje neskončno mnogo elementov: $\mathbf{m(\mathcal{A})=\infty}$.
+                    \item<6-> \textbf{končna množica} -- vsebuje končno mnogo elementov: $\mathbf{m(\mathcal{A})=n}$;
+                    \item<7-> \textbf{neskončna množica} -- vsebuje neskončno mnogo elementov: $\mathbf{m(\mathcal{A})=\infty}$.
                 \end{itemize}
-            \end{alertblock}
+            \end{alertblock}}
 
-            \begin{block}{}
+            \only<8->{\begin{block}{}
                 Če ima množica toliko elementov, kot jih ima množica naravnih števil, je ta števno 
                 neskončna.
-                Njeno moč pišemo kot: $m(\mathcal{A})=\aleph_0$. 
-            \end{block}
+                \only<9->{Njeno moč pišemo kot: $m(\mathcal{A})=\aleph_0$.}
+            \end{block}}
 
-            \begin{alertblock}{}
+            \only<10->{\begin{alertblock}{}
                 Za množici, ki imata isto moč, rečemo, da sta \textbf{ekvipolentni} oziroma \textbf{ekvipotentni}.
-            \end{alertblock}
+            \end{alertblock}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Naštejte elemente množice in zapišite njeno moč, če je $\mathcal{U}=\mathbb{N}$.
+                \only<3->{\begin{itemize}
+                    \item $\mathcal{A}=\{x; x\mid 24\}$
+                    \item $\mathcal{B}=\{x; 3<x\leq 7\}$
+                    \item $\mathcal{C}=\{x; x=4k\land k\in\mathbb{N}\land k\leq 5\}$
+                    \item $\mathcal{D}=\{x; x=3k+2\land k\in\mathbb{N}\land (4<k\leq 8)\}$
+                \end{itemize}}
+            \end{exampleblock}}
+
+            \only<4->{\begin{exampleblock}{Naloga}
+                Naj bo $\mathcal{U}=\mathbb{N}$. Zapišite množico tako, da našteješ njene elemente.
+                Določite še njeno moč.
+                \only<5->{\begin{itemize}
+                    \item Množica vseh deliteljev števila 18.
+                    \item Množica praštevil, ki so manjša od 20.
+                    \item Množica večkratnikov števila $5$, ki so večji od $50$ in manjši ali enaki $70$.
+                \end{itemize}}
+            \end{exampleblock}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Zapišite množico s simboli.
+                \only<3->{\begin{itemize}
+                    \item Množica vseh sodih naravnih števil.
+                    \item Množica vseh naravnih števil, ki dajo pri deljenju s $7$ ostanek $5$.
+                \end{itemize}}
+            \end{exampleblock}}
+
+            \only<4->{\begin{exampleblock}{Naloga}
+                Podane so množice tako, da so našteti njihovi elementi. Množice zapišite s simboli.
+                \only<5->{\begin{itemize}
+                    \item $\mathcal{A}=\{1,2,3,6\}$
+                    \item $\mathcal{B}=\{6, 12, 18, 24, 30\}$
+                    \item $\mathcal{C}=\{10, 12, 14, 16, 18, 20\}$
+                    \item $\mathcal{D}=\{2, 4, 8, 16, 32, 64, 128, 256, 512, 1024\}$
+                    \item $\mathcal{E}=\{1,4,9,16,25,36,49\}$
+                \end{itemize}}
+            \end{exampleblock}}
 
         \end{frame}
 
         \begin{frame}
             \begin{columns}[T]
                 \column{0.55\textwidth}
-                    \begin{alertblock}{Podmnožica}
-                        Množica $\mathcal{B}$ je \textbf{podmnožica} množice $\mathcal{A}$ , če za vsak element iz
-                        $\mathcal{B}$ velja, da je tudi element množice $\mathcal{A}$.
-                        $$ \mathcal{B}\subseteq\mathcal{A}\Leftrightarrow\forall x\in\mathcal{B}\Rightarrow x\in\mathcal{A} $$
-                    \end{alertblock}
+                    \only<2->{\begin{alertblock}{Podmnožica}
+                        \only<3->{Množica $\mathcal{B}$ je \textbf{podmnožica} množice $\mathcal{A}$ , če za vsak element iz
+                        $\mathcal{B}$ velja, da je tudi element množice $\mathcal{A}$.}
+                        \only<4->{$$ \mathcal{B}\subseteq\mathcal{A}\Leftrightarrow\forall x\in\mathcal{B}\Rightarrow x\in\mathcal{A} $$}
+                    \end{alertblock}}
 
 
                 \column{0.4\textwidth}
-                    \begin{block}{}
+                    \only<5->{\begin{block}{}
                         \begin{tikzpicture}                     
                             \draw  (-3,-1.5)  rectangle (3,1.5);
                         
@@ -580,50 +624,71 @@
                             \node at (-2.7,-1.2) {$\mathcal{U}$};
                             
                         \end{tikzpicture}
-                    \end{block}
+                    \end{block}}
 
             \end{columns}  
 
-            \begin{block}{}
+            \only<6->{\begin{block}{}
                 \begin{itemize}
-                    \item $\forall \mathcal{A}:\mathcal{A}\subseteq\mathcal{A}$ -- Vsaka množica je podmnožica
+                    \item<6-> $\forall \mathcal{A}:\mathcal{A}\subseteq\mathcal{A}$ -- Vsaka množica je podmnožica
                         same sebe.
-                    \item $\forall \mathcal{A}:\emptyset\subseteq\mathcal{A}$ -- Prazna množica je podmnožica
+                    \item<7-> $\forall \mathcal{A}:\emptyset\subseteq\mathcal{A}$ -- Prazna množica je podmnožica
                         vsake množice.
                 \end{itemize}
-            \end{block}
+            \end{block}}
 
-            \begin{block}{}
+            \only<8->{\begin{block}{}
                 Moč podmnožice $\mathcal{B}$ množice $\mathcal{A}$ je manjša ali enaka moči množice $\mathcal{A}$:
-                $$\mathcal{B}\subseteq\mathcal{A}\Rightarrow m(\mathcal{B})\leq m(\mathcal{A})$$
-            \end{block}
+                \only<9->{$$\mathcal{B}\subseteq\mathcal{A}\Rightarrow m(\mathcal{B})\leq m(\mathcal{A})$$}
+            \end{block}}
 
         \end{frame}
 
         \begin{frame}
-            \begin{block}{}
+            \only<2->{\begin{block}{}
                 Množici $\mathcal{A}$ in $\mathcal{B}$ sta \textbf{enaki}, če imata iste elemente; 
                 sta druga drugi podmnožici.
-                $$\mathcal{A}=\mathcal{B}\Leftrightarrow(\mathcal{A}\subseteq\mathcal{B})\land(\mathcal{B}\subseteq\mathcal{A})$$
-            \end{block}
+                \only<3->{$$\mathcal{A}=\mathcal{B}\Leftrightarrow(\mathcal{A}\subseteq\mathcal{B})\land(\mathcal{B}\subseteq\mathcal{A})$$}
+            \end{block}}
 
-            \begin{block}{}
+            \only<4->{\begin{block}{}
                 Podmnožica $\mathcal{B}$ množice $\mathcal{A}$, ki ni enaka množici $\mathcal{A}$, 
                 je \textbf{prava podmnožica} množice $\mathcal{A}$.
-            \end{block}
+            \end{block}}
 
-            \begin{alertblock}{Potenčna množica}
-                \textbf{Potenčna množica} množice $\mathcal{A}$ je množica vseh podmnožic množice $\mathcal{A}$.
+            \only<5->{\begin{alertblock}{Potenčna množica}
+                \only<6->{\textbf{Potenčna množica} množice $\mathcal{A}$ je množica vseh podmnožic množice $\mathcal{A}$.}
                 
-                Oznaka: $\mathbf{\mathcal{P}\mathcal{A}}$ / $\mathbf{\mathcal{P}(\mathcal{A})}$.
-                $$ \mathcal{PA}=\left\{\mathcal{X}; \mathcal{X}\subseteq\mathcal{A} \right\}$$
-            \end{alertblock}
+                \only<7->{Oznaka: $\mathbf{\mathcal{P}\mathcal{A}}$ / $\mathbf{\mathcal{P}(\mathcal{A})}$.}
+                \only<8->{$$ \mathcal{PA}=\left\{\mathcal{X}; \mathcal{X}\subseteq\mathcal{A} \right\}$$}
+            \end{alertblock}}
 
-            \begin{block}{}
+            \only<9->{\begin{block}{}
                 $$ m(\mathcal{PA})=2^{m(\mathcal{A})}$$
-                Potenčna množica ni nikoli prazna -- vsebuje vsaj prazno množico.
-            \end{block}
+                \only<10->{Potenčna množica ni nikoli prazna -- vsebuje vsaj prazno množico.}
+            \end{block}}
         \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                ???
+                \only<3->{\begin{itemize}
+                    \item 
+                \end{itemize}}
+            \end{exampleblock}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                ???
+                \only<3->{\begin{itemize}
+                    \item 
+                \end{itemize}}
+            \end{exampleblock}}
+
+        \end{frame}
+
 
         \begin{frame}
             \frametitle{Operacije z množicami}
