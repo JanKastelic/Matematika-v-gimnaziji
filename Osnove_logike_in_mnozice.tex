@@ -100,7 +100,7 @@
                 \only<4->{$$ \mathbf{\lnot A} \quad \quad \textmd{\textbf{Ni res}, da velja izjava A.}$$}
             \end{alertblock}}
 
-            \begin{columns}
+            \begin{columns}[T]
                 \column{0.65\textwidth} 
                     \only<5->{\begin{alertblock}{}
                         Če je izjava $A$ pravilna, je $\lnot A$ nepravilna in obratno: 
@@ -149,7 +149,7 @@
                 \only<4->{$$ \mathbf{A\land B} \quad \quad \textmd{Velja izjava A \textbf{in (hkrati)} izjava B.}$$}
             \end{alertblock}}
 
-            \begin{columns}
+            \begin{columns}[T]
                 \column{0.6\textwidth} 
                 \only<5->{\begin{alertblock}{}
                         Če sta izjavi $A$ in $B$ pravilni, je pravilna tudi njuna konjunkcija, 
@@ -201,7 +201,7 @@
                 (lahko tudi obe hkrati).}$$}
             \end{alertblock}}
 
-            \begin{columns}
+            \begin{columns}[T]
                 \column{0.62\textwidth} 
                     \only<5->{\begin{alertblock}{}
                         Disjunkcija je nepravilna, če sta nepravilni obe izjavi, ki jo sestavljata,
@@ -297,7 +297,7 @@
                 \textbf{(logična) posledica} izjave $A$.}
             \end{alertblock}}
 
-            \begin{columns}
+            \begin{columns}[T]
                 \column{0.62\textwidth} 
                 \only<6->{\begin{alertblock}{}
                         Implikacija je nepravilna, ko je izjava $A$ pravilna, izjava $B$ pa 
@@ -351,7 +351,7 @@
             \end{alertblock}}
 
 
-            \begin{columns}
+            \begin{columns}[T]
                 \column{0.62\textwidth} 
                 \only<5->{\begin{alertblock}{}
                         Ekvivalenca dveh izjav je pravilna, če imata obe izjavi enako vrednost 
@@ -557,7 +557,7 @@
         \end{frame}
 
         \begin{frame}
-            \begin{columns}
+            \begin{columns}[T]
                 \column{0.55\textwidth}
                     \begin{alertblock}{Podmnožica}
                         Množica $\mathcal{B}$ je \textbf{podmnožica} množice $\mathcal{A}$ , če za vsak element iz
@@ -624,3 +624,158 @@
                 Potenčna množica ni nikoli prazna -- vsebuje vsaj prazno množico.
             \end{block}
         \end{frame}
+
+        \begin{frame}
+            \frametitle{Operacije z množicami}
+
+            \begin{columns}[T]
+                \column{0.55\textwidth}
+                    \begin{alertblock}{Komplement množice}
+                        \textbf{Komplement} množice $\mathcal{A}$ (glede na izbrani univerzum $\mathcal{U}$) je množica 
+                        vseh elementov, ki so v množici $\mathcal{U}$ in niso v množici $\mathcal{A}$.
+
+                        Oznaka: $\mathcal{A}^\complement$ / $\mathcal{A}'$.      
+                        $$ \mathcal{A}^\complement=\left\{ x; x\in\mathcal{U}\land x\notin\mathcal{A}\right\} $$           
+                    \end{alertblock}
+
+                \column{0.4\textwidth}
+                    \begin{block}{}
+                        \begin{tikzpicture}                     
+                            \draw[fill=red!70,fill opacity=0.5]  (-3,-1.5)  rectangle (3,1.5);
+                        
+                            % \draw[fill=blue!70,fill opacity=0.5] (0,0) ellipse (2.5cm and 1.2cm);
+                            \draw[fill=white,fill opacity=1] (-0.6,-0.3) ellipse (1.5cm and 0.8cm);
+                            
+                            \node at (-1,-0.3) {$\mathcal{A}$};
+                            \node at (1.7,0) {$\mathcal{A}^\complement$};
+                            % \node at (0,1.1) {$\mathcal{B}\subseteq\mathcal{A}$};
+                            \node at (-2.7,-1.2) {$\mathcal{U}$};
+                            
+                        \end{tikzpicture}
+                    \end{block}
+
+            \end{columns}
+
+            \begin{block}{}
+                $$\left( \mathcal{A}^\complement\right)^\complement=\mathcal{A} $$
+            \end{block}
+                
+
+
+        \end{frame}
+
+        \begin{frame}
+
+            \begin{columns}[T]
+                \column{0.55\textwidth}
+
+
+            \begin{alertblock}{Unija množic}
+                \textbf{Unija} množic $\mathcal{A}$ in $\mathcal{B}$ je množica vseh elementov, ki pripadajo 
+                množici $\mathcal{A}$ ali množici $\mathcal{B}$.
+
+                Oznaka: $\mathcal{A}\cup\mathcal{B}$.
+                $$ \mathcal{A}\cup\mathcal{B}=\left\{x; x\in\mathcal{A}\lor x\in\mathcal{B}\right\} $$
+            \end{alertblock}
+
+            \begin{block}{}
+                $$ \mathcal{A}\cup\mathcal{A}^\complement=\mathcal{U}$$
+            \end{block}
+
+            \column{0.4\textwidth}
+            \begin{block}{}
+                \begin{tikzpicture}                     
+                    \draw  (-3,-1.5)  rectangle (3,1.5);
+                
+                    \draw[fill=red!70,fill opacity=0.5] (-1,0.3) ellipse (1.5cm and 1cm)
+                                                        (1,-0.3) ellipse (1.5cm and 0.8cm);
+                    
+                    \node at (-1.3,0.3) {$\mathcal{A}$};
+                    \node at (1.4,-0.2) {$\mathcal{B}$};
+                    % \node at (0,1.1) {$\mathcal{B}\subseteq\mathcal{A}$};
+                    \node at (-2.7,-1.2) {$\mathcal{U}$};
+                    
+                \end{tikzpicture}
+            \end{block}
+
+            \begin{block}{}
+                \begin{tikzpicture}                     
+                    \draw  (-3,-1.5)  rectangle (3,1.5);
+                
+                    \draw[fill=red!70,fill opacity=0.5] (-1.1,0.3) ellipse (1.4cm and 1cm)
+                                                        (1.3,-0.3) ellipse (1cm and 0.8cm);
+                    
+                    \node at (-1.3,0.3) {$\mathcal{A}$};
+                    \node at (1.4,-0.2) {$\mathcal{B}$};
+                    % \node at (0,1.1) {$\mathcal{B}\subseteq\mathcal{A}$};
+                    \node at (-2.7,-1.2) {$\mathcal{U}$};
+                    
+                \end{tikzpicture}
+            \end{block}
+
+
+
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}
+
+        \begin{columns}[T]
+            \column{0.55\textwidth}
+
+
+                \begin{alertblock}{Presek množic}
+                    \textbf{Presek} množic $\mathcal{A}$ in $\mathcal{B}$ je množica vseh elementov, ki hkrati 
+                    pripadajo množici $\mathcal{A}$ in množici $\mathcal{B}$.
+
+                    Oznaka: $\mathcal{A}\cap\mathcal{B}$.
+                    $$ \mathcal{A}\cap\mathcal{B}=\left\{x; x\in\mathcal{A}\land x\in\mathcal{B}\right\} $$
+                \end{alertblock}
+
+                \begin{block}{}
+                    $$ \mathcal{A}\cap\mathcal{A}^\complement=\emptyset$$
+                \end{block}
+
+                \begin{block}{}
+                    Množici, katerih presek je prazna množica, sta \textbf{disjunktni} množici.
+                \end{block}
+
+            \column{0.4\textwidth}
+                \begin{block}{}
+                    \begin{tikzpicture}                     
+                        \draw  (-3,-1.5)  rectangle (3,1.5);
+
+                        \begin{scope}
+                            \clip (-1,0.3) ellipse (1.5cm and 1cm);
+                            \fill[fill=red!70,fill opacity=0.5] (1,-0.3) ellipse (1.5cm and 0.8cm);
+                        \end{scope}
+                        \draw (-1,0.3) ellipse (1.5cm and 1cm);
+                        \draw (1,-0.3) ellipse (1.5cm and 0.8cm);
+                        
+                        \node at (-1.3,0.3) {$\mathcal{A}$};
+                        \node at (1.4,-0.2) {$\mathcal{B}$};
+                        % \node at (0,1.1) {$\mathcal{B}\subseteq\mathcal{A}$};
+                        \node at (-2.7,-1.2) {$\mathcal{U}$};
+                        
+                    \end{tikzpicture}
+                \end{block}
+
+                \begin{block}{}
+                    \begin{tikzpicture}                     
+                        \draw  (-3,-1.5)  rectangle (3,1.5);
+                    
+                        \draw (-1.1,0.3) ellipse (1.4cm and 1cm)
+                            (1.3,-0.3) ellipse (1cm and 0.8cm);
+                        
+                        \node at (-1.3,0.3) {$\mathcal{A}$};
+                        \node at (1.4,-0.2) {$\mathcal{B}$};
+                        % \node at (0,1.1) {$\mathcal{B}\subseteq\mathcal{A}$};
+                        \node at (-2.7,-1.2) {$\mathcal{U}$};
+                        
+                    \end{tikzpicture}
+                \end{block}
+
+
+
+        \end{columns}
+    \end{frame}
