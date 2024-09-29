@@ -688,16 +688,16 @@
 
             \begin{columns}[T]
                 \column{0.55\textwidth}
-                    \begin{alertblock}{Komplement množice}
-                        \textbf{Komplement} množice $\mathcal{A}$ (glede na izbrani univerzum $\mathcal{U}$) je množica 
-                        vseh elementov, ki so v množici $\mathcal{U}$ in niso v množici $\mathcal{A}$.
+                    \only<2->{\begin{alertblock}{Komplement množice}
+                        \only<3->{\textbf{Komplement} množice $\mathcal{A}$ (glede na izbrani univerzum $\mathcal{U}$) je množica 
+                        vseh elementov, ki so v množici $\mathcal{U}$ in niso v množici $\mathcal{A}$.}
 
-                        Oznaka: $\mathbf{\mathcal{A}^\complement}$ / $\mathbf{\mathcal{A}'}$.      
-                        $$ \mathcal{A}^\complement=\left\{ x; x\in\mathcal{U}\land x\notin\mathcal{A}\right\} $$           
-                    \end{alertblock}
+                        \only<4->{Oznaka: $\mathbf{\mathcal{A}^\complement}$ / $\mathbf{\mathcal{A}'}$.}      
+                        \only<5->{$$ \mathcal{A}^\complement=\left\{ x; x\in\mathcal{U}\land x\notin\mathcal{A}\right\} $$}
+                    \end{alertblock}}
 
                 \column{0.4\textwidth}
-                    \begin{block}{}
+                    \only<6->{\begin{block}{}
                         \begin{tikzpicture}                     
                             \draw[fill=red!70,fill opacity=0.5]  (-3,-1.5)  rectangle (3,1.5);
                         
@@ -710,13 +710,13 @@
                             \node at (-2.7,-1.2) {$\mathcal{U}$};
                             
                         \end{tikzpicture}
-                    \end{block}
+                    \end{block}}
 
             \end{columns}
 
-            \begin{block}{}
+            \only<7->{\begin{block}{}
                 $$\left( \mathcal{A}^\complement\right)^\complement=\mathcal{A} $$
-            \end{block}
+            \end{block}}
                 
 
 
@@ -726,7 +726,7 @@
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
                 Naj bo univerzalna množica $\mathcal{U}=\{x; x\in\mathbb{N} \land x\leq 20\}$. 
-                Zapišite komplementarno množico danih množic. Kakšna je njena mmoč?
+                Zapišite komplementarno množico danih množic. Kakšna je njena moč?
                 \only<3->{\begin{itemize}
                     \item $\mathcal{A}=\{x; x=3k \land k\in\mathbb{N}\}$
                     \item $\mathcal{B}=\{x; x\in\mathbb{N} \land x\mid 20\}$
@@ -744,25 +744,25 @@
                 \column{0.55\textwidth}
 
 
-                    \begin{alertblock}{Unija množic}
-                        \textbf{Unija} množic $\mathcal{A}$ in $\mathcal{B}$ je množica vseh elementov, ki pripadajo 
-                        množici $\mathcal{A}$ ali množici $\mathcal{B}$.
+                    \only<2->{\begin{alertblock}{Unija množic}
+                        \only<3->{\textbf{Unija} množic $\mathcal{A}$ in $\mathcal{B}$ je množica vseh elementov, ki pripadajo 
+                        množici $\mathcal{A}$ ali množici $\mathcal{B}$.}
 
-                        Oznaka: $\mathbf{\mathcal{A}\cup\mathcal{B}}$.
-                        $$ \mathcal{A}\cup\mathcal{B}=\left\{x; x\in\mathcal{A}\lor x\in\mathcal{B}\right\} $$
-                    \end{alertblock}
+                        \only<4->{Oznaka: $\mathbf{\mathcal{A}\cup\mathcal{B}}$.}
+                        \only<5->{$$ \mathcal{A}\cup\mathcal{B}=\left\{x; x\in\mathcal{A}\lor x\in\mathcal{B}\right\} $$}
+                    \end{alertblock}}
 
-                    \begin{block}{}
+                    \only<8->{\begin{block}{}
                         $$ \mathcal{A}\cup\mathcal{A}^\complement=\mathcal{U}$$
-                    \end{block}
+                    \end{block}}
 
-                    \begin{block}{}
+                    \only<9->{\begin{block}{}
                         $$ \mathcal{A}\cup\emptyset=\mathcal{A}$$
                         $$ \mathcal{A}\cup\mathcal{U}=\mathcal{U}$$
-                    \end{block}
+                    \end{block}}
 
             \column{0.4\textwidth}
-                \begin{block}{}
+                \only<6->{\begin{block}{}
                     \begin{tikzpicture}                     
                         \draw  (-3,-1.5)  rectangle (3,1.5);
                     
@@ -775,9 +775,9 @@
                         \node at (-2.7,-1.2) {$\mathcal{U}$};
                         
                     \end{tikzpicture}
-                \end{block}
+                \end{block}}
 
-                \begin{block}{}
+                \only<7->{\begin{block}{}
                     \begin{tikzpicture}                     
                         \draw  (-3,-1.5)  rectangle (3,1.5);
                     
@@ -790,7 +790,7 @@
                         \node at (-2.7,-1.2) {$\mathcal{U}$};
                         
                     \end{tikzpicture}
-                \end{block}
+                \end{block}}
 
 
 
@@ -820,26 +820,26 @@
             \column{0.55\textwidth}
 
 
-                \begin{alertblock}{Presek množic}
-                    \textbf{Presek} množic $\mathcal{A}$ in $\mathcal{B}$ je množica vseh elementov, ki hkrati 
-                    pripadajo množici $\mathcal{A}$ in množici $\mathcal{B}$.
+                \only<2->{\begin{alertblock}{Presek množic}
+                    \only<3->{\textbf{Presek} množic $\mathcal{A}$ in $\mathcal{B}$ je množica vseh elementov, ki hkrati 
+                    pripadajo množici $\mathcal{A}$ in množici $\mathcal{B}$.}
 
-                    Oznaka: $\mathbf{\mathcal{A}\cap\mathcal{B}}$.
-                    $$ \mathcal{A}\cap\mathcal{B}=\left\{x; x\in\mathcal{A}\land x\in\mathcal{B}\right\} $$
-                \end{alertblock}
+                    \only<4->{Oznaka: $\mathbf{\mathcal{A}\cap\mathcal{B}}$.}
+                    \only<5->{$$ \mathcal{A}\cap\mathcal{B}=\left\{x; x\in\mathcal{A}\land x\in\mathcal{B}\right\} $$}
+                \end{alertblock}}
 
-                \begin{block}{}
+                \only<8->{\begin{block}{}
                     $$ \mathcal{A}\cap\mathcal{A}^\complement=\emptyset$$
-                \end{block}
+                \end{block}}
 
-                \begin{block}{}
+                \only<9->{\begin{block}{}
                     $$ \mathcal{A}\cap\emptyset=\emptyset$$
                     $$ \mathcal{A}\cap\mathcal{U}=\mathcal{A}$$
-                \end{block}
+                \end{block}}
 
 
             \column{0.4\textwidth}
-                \begin{block}{}
+                \only<6->{\begin{block}{}
                     \begin{tikzpicture}                     
                         \draw  (-3,-1.5)  rectangle (3,1.5);
 
@@ -856,9 +856,9 @@
                         \node at (-2.7,-1.2) {$\mathcal{U}$};
                         
                     \end{tikzpicture}
-                \end{block}
+                \end{block}}
 
-                \begin{block}{}
+                \only<7->{\begin{block}{}
                     \begin{tikzpicture}                     
                         \draw  (-3,-1.5)  rectangle (3,1.5);
                     
@@ -871,7 +871,7 @@
                         \node at (-2.7,-1.2) {$\mathcal{U}$};
                         
                     \end{tikzpicture}
-                \end{block}
+                \end{block}}
 
         \end{columns}
     \end{frame}
@@ -894,46 +894,46 @@
 
     \begin{frame}
 
-        \begin{block}{}
+        \only<2->{\begin{block}{}
             Za množici $\mathcal{A}$ in $\mathcal{B}$ velja:
             $$m(\mathcal{A}\cup\mathcal{B})=m(\mathcal{A})+m(\mathcal{B})-m(\mathcal{A}\cap\mathcal{B}) $$
-        \end{block}
+        \end{block}}
 
-        \begin{block}{}
+        \only<3->{\begin{block}{}
             Množici, katerih presek je prazna množica, sta \textbf{disjunktni} množici.
-            $$\mathcal{A}\cap\mathcal{B}=\emptyset\Rightarrow m(\mathcal{A}\cap\mathcal{B})=0 $$ 
-            $$\mathcal{A}\cap\mathcal{B}=\emptyset\Rightarrow m(\mathcal{A}\cup\mathcal{B})=m(\mathcal{A})+m(\mathcal{B}) $$
-        \end{block}
+            \only<4->{$$\mathcal{A}\cap\mathcal{B}=\emptyset\Rightarrow m(\mathcal{A}\cap\mathcal{B})=0 $$ }
+            \only<5->{$$\mathcal{A}\cap\mathcal{B}=\emptyset\Rightarrow m(\mathcal{A}\cup\mathcal{B})=m(\mathcal{A})+m(\mathcal{B}) $$}
+        \end{block}}
 
         \begin{columns}[T]
             \column{0.475\textwidth}
-                \begin{block}{Komutativnost unije in preseka}
-                    $$ \mathcal{A}\cup\mathcal{B}=\mathcal{B}\cup\mathcal{A} $$
-                    $$ \mathcal{A}\cap\mathcal{B}=\mathcal{B}\cap\mathcal{A} $$
-                \end{block}
+                \only<6->{\begin{block}{Komutativnost unije in preseka}
+                    \only<7->{$$ \mathcal{A}\cup\mathcal{B}=\mathcal{B}\cup\mathcal{A} $$}
+                    \only<8->{$$ \mathcal{A}\cap\mathcal{B}=\mathcal{B}\cap\mathcal{A} $$}
+                \end{block}}
 
             \column{0.475\textwidth}
-                \begin{block}{Asociativnost unije in preseka}
-                    $$ \left(\mathcal{A}\cup\mathcal{B}\right)\cup\mathcal{C}=\mathcal{A}\cup\left(\mathcal{B}\cup\mathcal{C}\right) $$
-                    $$ \left(\mathcal{A}\cap\mathcal{B}\right)\cap\mathcal{C}=\mathcal{A}\cap\left(\mathcal{B}\cap\mathcal{C}\right) $$
-                \end{block}
+                \only<9->{\begin{block}{Asociativnost unije in preseka}
+                    \only<10->{$$ \left(\mathcal{A}\cup\mathcal{B}\right)\cup\mathcal{C}=\mathcal{A}\cup\left(\mathcal{B}\cup\mathcal{C}\right) $$}
+                    \only<11->{$$ \left(\mathcal{A}\cap\mathcal{B}\right)\cap\mathcal{C}=\mathcal{A}\cap\left(\mathcal{B}\cap\mathcal{C}\right) $$}
+                \end{block}}
 
         \end{columns}
 
     \end{frame}
 
     \begin{frame}
-        \begin{block}{Distribustvnostna zakona za unijo in presek}
-            $$ \left(\mathcal{A}\cup\mathcal{B}\right)\cap\mathcal{C}=\left(\mathcal{A}\cap\mathcal{C}\right)\cup\left(\mathcal{B}\cap\mathcal{C}\right) $$
-            $$ \left(\mathcal{A}\cap\mathcal{B}\right)\cup\mathcal{C}=\left(\mathcal{A}\cup\mathcal{C}\right)\cap\left(\mathcal{B}\cup\mathcal{C}\right) $$
-        \end{block}
+        \only<2->{\begin{block}{Distributivnostna zakona za unijo in presek}
+            \only<3->{$$ \left(\mathcal{A}\cup\mathcal{B}\right)\cap\mathcal{C}=\left(\mathcal{A}\cap\mathcal{C}\right)\cup\left(\mathcal{B}\cap\mathcal{C}\right) $$}
+            \only<4->{$$ \left(\mathcal{A}\cap\mathcal{B}\right)\cup\mathcal{C}=\left(\mathcal{A}\cup\mathcal{C}\right)\cap\left(\mathcal{B}\cup\mathcal{C}\right) $$}
+        \end{block}}
 
-        \begin{block}{De Morganova zakona}
-            Komplement preseka dveh množic je enak uniji komplementov obeh množic:
-            $$\left(\mathcal{A}\cap\mathcal{B}\right)^\complement=\mathcal{A}^\complement\cup\mathcal{B}^\complement. $$
-            Komplement unije dveh množic je enak preseku komplementov obeh množic:
-            $$\left(\mathcal{A}\cup\mathcal{B}\right)^\complement=\mathcal{A}^\complement\cap\mathcal{B}^\complement. $$
-        \end{block}
+        \only<5->{\begin{block}{De Morganova zakona}
+            \only<6->{Komplement preseka dveh množic je enak uniji komplementov obeh množic:}
+            \only<7->{$$\left(\mathcal{A}\cap\mathcal{B}\right)^\complement=\mathcal{A}^\complement\cup\mathcal{B}^\complement. $$}
+            \only<8->{Komplement unije dveh množic je enak preseku komplementov obeh množic:}
+            \only<9->{$$\left(\mathcal{A}\cup\mathcal{B}\right)^\complement=\mathcal{A}^\complement\cap\mathcal{B}^\complement. $$}
+        \end{block}}
     \end{frame}
 
     \begin{frame}
@@ -941,26 +941,26 @@
         \begin{columns}[T]
             \column{0.55\textwidth}
 
-                \begin{alertblock}{Razlika množic}
-                    \textbf{Razlika} množic $\mathcal{A}$ in $\mathcal{B}$ je množica tistih elementov, ki  
-                    pripadajo množici $\mathcal{A}$ in hkrati ne pripadajo množici $\mathcal{B}$.
+                \only<2->{\begin{alertblock}{Razlika množic}
+                    \only<3->{\textbf{Razlika} množic $\mathcal{A}$ in $\mathcal{B}$ je množica tistih elementov, ki  
+                    pripadajo množici $\mathcal{A}$ in hkrati ne pripadajo množici $\mathcal{B}$.}
 
-                    Oznaka: $\mathbf{\mathcal{A}\setminus\mathcal{B}}$ / $\mathbf{\mathcal{A}-\mathcal{B}}$.
-                    $$ \mathcal{A}\setminus\mathcal{B}=\left\{x; x\in\mathcal{A}\land x\notin\mathcal{B}\right\} $$
-                \end{alertblock}
+                    \only<4->{Oznaka: $\mathbf{\mathcal{A}\setminus\mathcal{B}}$ / $\mathbf{\mathcal{A}-\mathcal{B}}$.}
+                    \only<5->{$$ \mathcal{A}\setminus\mathcal{B}=\left\{x; x\in\mathcal{A}\land x\notin\mathcal{B}\right\} $$}
+                \end{alertblock}}
 
-                \begin{block}{}
+                \only<8->{\begin{block}{}
                     $$ \mathcal{A}\setminus\mathcal{B}=\mathcal{A}\cap\mathcal{B}^\complement$$
-                \end{block}
+                \end{block}}
 
-                \begin{block}{}
+                \only<9->{\begin{block}{}
                     $$ \mathcal{A}\setminus\mathcal{B}\neq\mathcal{B}\setminus\mathcal{A}$$
                     $$ \mathcal{A}\setminus\mathcal{A}=\emptyset$$
-                \end{block}
+                \end{block}}
 
 
             \column{0.4\textwidth}
-                \begin{block}{}
+                \only<6->{\begin{block}{}
                     \begin{tikzpicture}                     
                         \draw  (-3,-1.5)  rectangle (3,1.5);
 
@@ -979,9 +979,9 @@
                         \node at (-2.7,-1.2) {$\mathcal{U}$};
                         
                     \end{tikzpicture}
-                \end{block}
+                \end{block}}
 
-                \begin{block}{}
+                \only<7->{\begin{block}{}
                     \begin{tikzpicture}                     
                         \draw  (-3,-1.5)  rectangle (3,1.5);
                     
@@ -994,7 +994,7 @@
                         \node at (-2.7,-1.2) {$\mathcal{U}$};
                         
                     \end{tikzpicture}
-                \end{block}
+                \end{block}}
 
         \end{columns}
 
@@ -1018,26 +1018,26 @@
         \begin{columns}[T]
             \column{0.55\textwidth}
 
-                \begin{alertblock}{Kartezični produkt množic}
-                    \textbf{Kartezični produkt} (nepraznih) množic $\mathcal{A}$ in $\mathcal{B}$ je množica 
-                    urejenih parov $(x,y)$, pri čemer je $x\in\mathcal{A}$ in $y\in\mathcal{B}$.
+                \only<2->{\begin{alertblock}{Kartezični produkt množic}
+                    \only<3->{\textbf{Kartezični produkt} (nepraznih) množic $\mathcal{A}$ in $\mathcal{B}$ je množica 
+                    urejenih parov $(x,y)$, pri čemer je $x\in\mathcal{A}$ in $y\in\mathcal{B}$.}
 
-                    Oznaka: $\mathbf{\mathcal{A}\times\mathcal{B}}$.
-                    $$ \mathcal{A}\times\mathcal{B}=\left\{(x,y); x\in\mathcal{A}\land y\in\mathcal{B}\right\} $$
-                \end{alertblock}
+                    \only<4->{Oznaka: $\mathbf{\mathcal{A}\times\mathcal{B}}$.}
+                    \only<5->{$$ \mathcal{A}\times\mathcal{B}=\left\{(x,y); x\in\mathcal{A}\land y\in\mathcal{B}\right\} $$}
+                \end{alertblock}}
 
-                \begin{block}{}
+                \only<7->{\begin{block}{}
                     $$x\neq y \Rightarrow (x,y)\neq(y,x)$$
                     $$\mathcal{A}\neq\mathcal{B}\Rightarrow \mathcal{A}\times\mathcal{B}\neq\mathcal{B}\times\mathcal{A}$$
-                \end{block}
+                \end{block}}
 
-                \begin{block}{}
+                \only<8->{\begin{block}{}
                     $$m(\mathcal{A}\times\mathcal{B})=m(\mathcal{A})\cdot m(\mathcal{B}) $$
-                \end{block}
+                \end{block}}
 
 
             \column{0.4\textwidth}
-                \begin{block}{}
+                \only<6->{\begin{block}{}
                     \begin{tikzpicture}
                         \draw[help lines] (0,0) grid (5,3);
                       
@@ -1069,7 +1069,7 @@
                       $$ \mathcal{A}=\left\{a,b,c,d,e,f\right\}$$
                       $$ \mathcal{B}=\left\{1,2,3,4\right\}$$
 
-                \end{block}
+                \end{block}}
 
 
         \end{columns}
@@ -1079,10 +1079,11 @@
     \begin{frame}
         \only<2->{\begin{exampleblock}{Naloga}
             Dani sta množici $\mathcal{A}$ in $\mathcal{B}$. Zapišite njun kartezični produkt $\mathcal{A}\times\mathcal{B}$.
+            Narišite diagram, ki predstavlja to množico.
             \only<3->{\begin{itemize}
-                \item $\mathcal{A}=\{2,4,6,8,10,12,14,16,18,20\}$ in $\mathcal{B}=\{x; x\in\mathbb{N} \land x>10\}$
-                \item $\mathcal{A}=\{x; x=3k \land k\in\mathbb{N} \land k < 7\}$ in $\mathcal{B}=\{x; x=6k \land k\in\mathbb{N}\}$
-                \item $\mathcal{A}=\{x; x=6k \land k\in\mathbb{N} \land k<4\}$ in $\mathcal{B}=\{x; x=3k \land k\in\mathbb{N}\}$
+                \item $\mathcal{A}=\{2,4,6,8,10,12\}$ in $\mathcal{B}=\{x; x\in\mathbb{N} \land x<8\}$
+                \item $\mathcal{A}=\{x; x=3k \land k\in\mathbb{N} \land k < 7\}$ in $\mathcal{B}=\{x; x=6k \land k\in\mathbb{N}\land (5\leq k<9)\}$
+                \item $\mathcal{A}=\{x; x=6k \land k\in\mathbb{N} \land k<4\}$ in $\mathcal{B}=\{x; x=3k \land k\in\mathbb{N}\land (3<k<11)\}$
             \end{itemize}}
         \end{exampleblock}}
 
