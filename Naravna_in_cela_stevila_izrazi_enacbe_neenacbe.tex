@@ -129,17 +129,92 @@
             \frametitle{Operacije v množici $\mathbb{N}$}
 
             \begin{alertblock}{Seštevanje}
-                Poljubnima naravnima številoma $a$ in $b$ priredimo \textbf{vsoto} $\mathbf{\mathbf{a+b}}$.
+                Poljubnima naravnima številoma $x$ in $y$ priredimo \textbf{vsoto} $\mathbf{x+y}$.
             \end{alertblock}
 
             \begin{block}{}
-                Število $a$ oziroma $b$ imenujemo \textbf{seštevanec}/\textbf{sumand}. 
+                Število $x$ oziroma $y$ imenujemo \textbf{seštevanec} ali \textbf{sumand} ali \textbf{člen}. 
 
-                Število $a+b$ pa imenujemo \textbf{vsota}/\textbf{summa}. 
+                Število $x+y$ pa imenujemo \textbf{vsota} ali \textbf{summa}. 
+
+            \begin{figure}
+                \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+                    
+                    % Drawing segment a b
+                    \draw [line width=0.016cm] (5.000000,0.500000) -- (5.000000,2.500000);%
+                    
+                    % Drawing segment b d
+                    \draw [line width=0.016cm] (5.000000,2.500000) -- (7.000000,2.500000);%
+                    
+                    % Drawing segment c d
+                    \draw [line width=0.016cm] (7.000000,0.500000) -- (7.000000,2.500000);%
+                    
+                    % Drawing segment c a
+                    \draw [line width=0.016cm] (7.000000,0.500000) -- (5.000000,0.500000);%
+                    
+                    % Drawing segment e f
+                    \draw [line width=0.016cm] (7.000000,1.500000) -- (9.000000,1.500000);%
+                    
+                    % Drawing arrow e f 1.00
+                    \draw [line width=0.016cm] (8.702567,1.539158) -- (9.000000,1.500000);%
+                    \draw [line width=0.016cm] (8.702567,1.539158) -- (8.900856,1.500000);%
+                    \draw [line width=0.016cm] (8.702567,1.460842) -- (9.000000,1.500000);%
+                    \draw [line width=0.016cm] (8.702567,1.460842) -- (8.900856,1.500000);%
+                    
+                    % Drawing segment g h
+                    \draw [line width=0.016cm] (2.500000,1.000000) -- (5.000000,1.000000);%
+                    
+                    % Drawing segment i j
+                    \draw [line width=0.016cm] (2.500000,2.000000) -- (5.000000,2.000000);%
+                    
+                    % Drawing arrow g h 1.00
+                    \draw [line width=0.016cm] (4.702567,1.039158) -- (5.000000,1.000000);%
+                    \draw [line width=0.016cm] (4.702567,1.039158) -- (4.900856,1.000000);%
+                    \draw [line width=0.016cm] (4.702567,0.960842) -- (5.000000,1.000000);%
+                    \draw [line width=0.016cm] (4.702567,0.960842) -- (4.900856,1.000000);%
+                    
+                    % Drawing arrow i j 1.00
+                    \draw [line width=0.016cm] (4.702567,2.039158) -- (5.000000,2.000000);%
+                    \draw [line width=0.016cm] (4.702567,2.039158) -- (4.900856,2.000000);%
+                    \draw [line width=0.016cm] (4.702567,1.960842) -- (5.000000,2.000000);%
+                    \draw [line width=0.016cm] (4.702567,1.960842) -- (4.900856,2.000000);%
+                    
+                    % Marking point {vsota}
+                    \draw (8.000000,1.500000) node [anchor=south] { ${vsota}$ };%
+                    
+                    % Marking point {summa}
+                    \draw (8.000000,1.500000) node [anchor=north] { ${summa}$ };%
+                    
+                    % Marking point {se�tevanec}
+                    \draw (3.750000,1.000000) node [anchor=south] { ${seštevanec}$ };%
+                    
+                    % Marking point {sumand}
+                    \draw (3.750000,1.000000) node [anchor=north] { ${sumand}$ };%
+                    
+                    % Marking point {se�tevanec}
+                    \draw (3.750000,2.000000) node [anchor=south] { ${seštevanec}$ };%
+                    
+                    % Marking point {sumand}
+                    \draw (3.750000,2.000000) node [anchor=north] { ${sumand}$ };%
+                    
+                    % Drawing segment x y
+                    \draw [line width=0.032cm] (6.000000,1.000000) -- (6.000000,2.000000);%
+                    
+                    % Drawing segment z w
+                    \draw [line width=0.032cm] (5.500000,1.500000) -- (6.500000,1.500000);%
+                    }
+                    \end{tikzpicture}
+                    
+            \end{figure}
+
+
             \end{block}
 
+
             \begin{block}{}
-                Vsota naravnih števil je naravno število: $a, b \in \mathbb{N} \Rightarrow a+b \in \mathbb{N}$.
+                Vsota naravnih števil je naravno število: $x, y \in \mathbb{N} \Rightarrow x+y \in \mathbb{N}$.
 
             \end{block}
 
@@ -147,16 +222,208 @@
 
         \begin{frame}
             \begin{alertblock}{Množenje}
-                Poljubnima naravnima številoma $a$ in $b$ priredimo \textbf{produkt} $\mathbf{\mathbf{a\cdot b}}$.
+                Poljubnima naravnima številoma $x$ in $y$ priredimo \textbf{produkt} $\mathbf{x\cdot y}$.
             \end{alertblock}
 
             \begin{block}{}
-                Produkt naravnih števil je naravno število: $a, b \in \mathbb{N} \Rightarrow a\cdot b \in \mathbb{N}$.
+                Število $x$ oziroma $y$ imenujemo \textbf{množenec} ali \textbf{faktor}. 
+
+                Število $x\cdot y$ pa imenujemo \textbf{zmnožek} ali \textbf{produkt}. 
+
+                \begin{figure}
+                \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+                    
+                    % Drawing segment a b
+                    \draw [line width=0.016cm] (5.000000,0.500000) -- (5.000000,2.500000);%
+                    
+                    % Drawing segment b d
+                    \draw [line width=0.016cm] (5.000000,2.500000) -- (7.000000,2.500000);%
+                    
+                    % Drawing segment c d
+                    \draw [line width=0.016cm] (7.000000,0.500000) -- (7.000000,2.500000);%
+                    
+                    % Drawing segment c a
+                    \draw [line width=0.016cm] (7.000000,0.500000) -- (5.000000,0.500000);%
+                    
+                    % Drawing segment e f
+                    \draw [line width=0.016cm] (7.000000,1.500000) -- (9.000000,1.500000);%
+                    
+                    % Drawing arrow e f 1.00
+                    \draw [line width=0.016cm] (8.702567,1.539158) -- (9.000000,1.500000);%
+                    \draw [line width=0.016cm] (8.702567,1.539158) -- (8.900856,1.500000);%
+                    \draw [line width=0.016cm] (8.702567,1.460842) -- (9.000000,1.500000);%
+                    \draw [line width=0.016cm] (8.702567,1.460842) -- (8.900856,1.500000);%
+                    
+                    % Drawing segment g h
+                    \draw [line width=0.016cm] (2.500000,1.000000) -- (5.000000,1.000000);%
+                    
+                    % Drawing segment i j
+                    \draw [line width=0.016cm] (2.500000,2.000000) -- (5.000000,2.000000);%
+                    
+                    % Drawing arrow g h 1.00
+                    \draw [line width=0.016cm] (4.702567,1.039158) -- (5.000000,1.000000);%
+                    \draw [line width=0.016cm] (4.702567,1.039158) -- (4.900856,1.000000);%
+                    \draw [line width=0.016cm] (4.702567,0.960842) -- (5.000000,1.000000);%
+                    \draw [line width=0.016cm] (4.702567,0.960842) -- (4.900856,1.000000);%
+                    
+                    % Drawing arrow i j 1.00
+                    \draw [line width=0.016cm] (4.702567,2.039158) -- (5.000000,2.000000);%
+                    \draw [line width=0.016cm] (4.702567,2.039158) -- (4.900856,2.000000);%
+                    \draw [line width=0.016cm] (4.702567,1.960842) -- (5.000000,2.000000);%
+                    \draw [line width=0.016cm] (4.702567,1.960842) -- (4.900856,2.000000);%
+                    
+                    % Marking point {zmno�ek}
+                    \draw (8.000000,1.500000) node [anchor=south] { ${zmnožek}$ };%
+                    
+                    % Marking point {produkt}
+                    \draw (8.000000,1.500000) node [anchor=north] { ${produkt}$ };%
+                    
+                    % Marking point {mno�enec}
+                    \draw (3.750000,1.000000) node [anchor=south] { ${množenec}$ };%
+                    
+                    % Marking point {faktor}
+                    \draw (3.750000,1.000000) node [anchor=north] { ${faktor}$ };%
+                    
+                    % Marking point {mno�enec}
+                    \draw (3.750000,2.000000) node [anchor=south] { ${množenec}$ };%
+                    
+                    % Marking point {faktor}
+                    \draw (3.750000,2.000000) node [anchor=north] { ${faktor}$ };%
+                    
+                    % Drawing circle k
+                    \draw [line width=0.016cm] (6.000000,1.500000) circle (0.100000);%
+                    
+                    % Filling circle k
+                    \fill (6.000000,1.500000) circle (0.100000);%
+                    }
+                    \end{tikzpicture}
+                    
+            \end{figure}
+
+            \end{block}
+
+
+            \begin{block}{}
+                Produkt naravnih števil je naravno število: $x, y \in \mathbb{N} \Rightarrow x\cdot y \in \mathbb{N}$.
 
             \end{block}
 
             \begin{block}{}
-                Seštevanje in množenje sta \textit{dvočleni notranji operaciji}.
+                Število $\mathbf{1}$ je \textbf{nevtralni element} za mmnoženje: $1\cdot x = y$.
+            \end{block}
+
+        \end{frame}
+
+        \begin{frame}
+            
+
+            \begin{alertblock}{Odštevanje}
+                Številoma $x$ in $y$, pri čemer je $y$ večje od $x$ ($x>y$), priredimo \textbf{razliko} $\mathbf{x-y}$.                
+            \end{alertblock}
+
+            \begin{block}{}
+                Število $x$ imenujemo \textbf{zmanjševanec} ali \textbf{minuend}, število $y$  pa imenujemo \textbf{odštevanec} ali \textbf{subtrahend}. 
+
+                Številu $x-y$ rečemo \textbf{razlika} ali \textbf{diferenca}. 
+
+                \begin{figure}
+                    \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+                        
+                        % Drawing segment a b
+                        \draw [line width=0.016cm] (5.000000,0.500000) -- (5.000000,2.500000);%
+                        
+                        % Drawing segment b d
+                        \draw [line width=0.016cm] (5.000000,2.500000) -- (7.000000,2.500000);%
+                        
+                        % Drawing segment c d
+                        \draw [line width=0.016cm] (7.000000,0.500000) -- (7.000000,2.500000);%
+                        
+                        % Drawing segment c a
+                        \draw [line width=0.016cm] (7.000000,0.500000) -- (5.000000,0.500000);%
+                        
+                        % Drawing segment e f
+                        \draw [line width=0.016cm] (7.000000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Drawing arrow e f 1.00
+                        \draw [line width=0.016cm] (8.702567,1.539158) -- (9.000000,1.500000);%
+                        \draw [line width=0.016cm] (8.702567,1.539158) -- (8.900856,1.500000);%
+                        \draw [line width=0.016cm] (8.702567,1.460842) -- (9.000000,1.500000);%
+                        \draw [line width=0.016cm] (8.702567,1.460842) -- (8.900856,1.500000);%
+                        
+                        % Drawing segment g h
+                        \draw [line width=0.016cm] (2.500000,1.000000) -- (5.000000,1.000000);%
+                        
+                        % Drawing segment i j
+                        \draw [line width=0.016cm] (2.500000,2.000000) -- (5.000000,2.000000);%
+                        
+                        % Drawing arrow g h 1.00
+                        \draw [line width=0.016cm] (4.702567,1.039158) -- (5.000000,1.000000);%
+                        \draw [line width=0.016cm] (4.702567,1.039158) -- (4.900856,1.000000);%
+                        \draw [line width=0.016cm] (4.702567,0.960842) -- (5.000000,1.000000);%
+                        \draw [line width=0.016cm] (4.702567,0.960842) -- (4.900856,1.000000);%
+                        
+                        % Drawing arrow i j 1.00
+                        \draw [line width=0.016cm] (4.702567,2.039158) -- (5.000000,2.000000);%
+                        \draw [line width=0.016cm] (4.702567,2.039158) -- (4.900856,2.000000);%
+                        \draw [line width=0.016cm] (4.702567,1.960842) -- (5.000000,2.000000);%
+                        \draw [line width=0.016cm] (4.702567,1.960842) -- (4.900856,2.000000);%
+                        
+                        % Marking point {razlika}
+                        \draw (8.000000,1.500000) node [anchor=south] { ${razlika}$ };%
+                        
+                        % Marking point {diferenca}
+                        \draw (8.000000,1.500000) node [anchor=north] { ${diferenca}$ };%
+                        
+                        % Marking point {od�tevanec}
+                        \draw (3.750000,1.000000) node [anchor=south] { ${odštevanec}$ };%
+                        
+                        % Marking point {subtrahend}
+                        \draw (3.750000,1.000000) node [anchor=north] { ${subtrahend}$ };%
+                        
+                        % Marking point {zmanj�evanec}
+                        \draw (3.750000,2.000000) node [anchor=south] { ${zmanjševanec}$ };%
+                        
+                        % Marking point {minuend}
+                        \draw (3.750000,2.000000) node [anchor=north] { ${minuend}$ };%
+                        
+                        % Drawing segment z w
+                        \draw [line width=0.032cm] (5.500000,1.500000) -- (6.500000,1.500000);%
+                        }
+                        \end{tikzpicture}
+                        
+            \end{figure}
+        \end{block}
+
+            \begin{block}{}
+                Razlika je število, ki ga moramo prišteti številu $y$, da dobimo število $y$.
+                $$ (x-y)+y=x $$
+            \end{block}
+
+        \end{frame}
+
+        \begin{frame}
+            \begin{block}{}
+                Seštevanje in množenje sta \textit{dvočleni notranji operaciji} v množici naravnih števil $\mathbb{N}$.
+
+                Odštevanje pa ni notranja operacija v množici naravnih števil $\mathbb{N}$.
+            \end{block}
+
+            \begin{block}{Vrstni red operacij}
+                Prednost pri računanju imajo \textbf{oklepaji} (najprej najbolj notranji), nato sledi \textbf{množenje},
+                na koncu pa imamo še \textbf{seštevanje} in \textbf{odštevanje}.
+            \end{block}
+
+            \begin{block}{}
+                Kadar v izrazu nastopajo enakovredne računske operacije, računamo od leve proti desni.
+            \end{block}
+
+            \begin{block}{}
+                Pri množenju količin, ki so označene s črkovnimi oznakami, piko, ki označuje operacijo množenja ponavadi opustimo.
+                $$ x\cdot y = xy$$
             \end{block}
 
 
@@ -165,25 +432,91 @@
         \begin{frame}
             \frametitle{Osnovni računski zakoni}
 
-            Lastnosti:
-            \begin{itemize}
-                \item \textit{\textbf{komutativnost}} členov/zakon o zamenjavi členov: $a+b = b+a$.
-                \item \textit{\textbf{asociativnost}} členov/zakon o združevanju členov: $(a+b)+c = a+(b+c)$.
-            \end{itemize}
+            \begin{block}{Komutativnost seštevanja -- zakon o zamenjavi členov}
+                $$ \mathbf{x+y=y+x}$$
+                Vsota ni odvisna od vrstnega reda seštevanja.
+            \end{block}
+
+            \begin{block}{Asociativnost seštevanja -- zakon o poljubnem združevanju členov}
+                $$ \mathbf{(x+y)+z=x+(y+z)}$$
+                Vsota več kot dveh sumandov ni odvisna od združevanja po dveh sumandov.
+            \end{block}
 
         \end{frame}
 
         \begin{frame}
 
-            Lastnosti:
-            \begin{itemize}
-                \item \textit{\textbf{komutativnost}} faktorjev/zakon o zamenjavi faktorjev: $a \cdot b = b \cdot a$.
-                \item \textit{\textbf{asociativnost}} faktorjev/zakon o združevanju faktorjev: $(a \cdot b) \cdot c = a \cdot (b \cdot c)$.
-                \item \textit{\textbf{distributivnost}}/zakon o razčlenjevanju: $a \cdot (b+c) = a \cdot b + a \cdot c$.
-                \item zakon o nevtralnem elementu: $a \cdot 1 = a$.
-            \end{itemize}
+
+            \begin{block}{Komutativnost množenja -- zakon o zamenjavi faktorjev}
+                $$ \mathbf{x\cdot y=y\cdot x}$$
+                Produkt ni odvisna od vrstnega reda faktorjev.
+            \end{block}
+
+            \begin{block}{Asociativnost množenja -- zakon o poljubnem združevanju faktorjev}
+                $$ \mathbf{(x\cdot y)\cdot z=x\cdot (y\cdot z)}$$
+                Produkt več kot dveh sumandov ni odvisen od združevanja faktorjev.
+            \end{block}
+            \begin{block}{Distributivnost -- zakon o razčlenjevanju}
+                $$ \mathbf{x\cdot z+y\cdot z = (x+y)\cdot z} $$
+                Če to beremo iz desne proti levi, rečemu tudi \textit{pravilo izpostavljanja skupnega faktorja}.
+            \end{block}
 
         \end{frame}
+
+        \begin{frame}
+            \begin{exampleblock}{Naloga}
+                Izračunajte.
+                \begin{itemize}
+                    \item $(1+2\cdot 7)+3\cdot(2\cdot 2+7)$ \\ ~
+                    \item $3\cdot(2+3\cdot 5)\cdot(2+1)$ \\ ~
+                    \item $7+(2+6\cdot 3)+(8+4\cdot 5)$ \\ ~
+                    \item $11\cdot 4+(12-6)\cdot 5$ \\ ~
+                    \item $8+2\cdot(3+7)-15$ \\ ~
+                    \item $37-5\cdot(10-3)$ \\ ~
+                \end{itemize}
+            \end{exampleblock}
+        \end{frame}
+
+        \begin{frame}
+            \begin{exampleblock}{Naloga}
+                Hitro izračunajte.
+                \begin{itemize}
+                    \item $45+37+15$ 
+                    \item $108+46-28$
+                    \item $5\cdot 13\cdot 8$
+                    \item $4\cdot 7\cdot 25$
+                    \item $(7+3)\cdot 2\cdot 5$
+                    \item $15\cdot(4+6)\cdot 2$
+                    \item $3\cdot 5+7\cdot 5$
+                    \item $8\cdot 12+6\cdot 8$
+                \end{itemize}
+            \end{exampleblock}
+        \end{frame}
+
+        \begin{frame}
+            \begin{exampleblock}{Naloga}
+                Zapišite račun glede na besedilo in izračunajte.
+                \begin{itemize}
+                    \item Produktu števil $12$ in $27$ odštejte razliko števil $19$ in $11$. \\ ~
+                    \item Vsoti produkta $4$ in $12$ ter produkta $5$ in $16$ odštejte $8$. \\ ~
+                    \item Vsoto števil $42$ in $23$ pomnožite z razliko števil $58$ in $29$. \\ ~
+                    \item Produkt števil $14$ in $17$ pomnožite z vsoto števil $5$ in $16$. \\ ~ \\ ~
+                \end{itemize}
+            \end{exampleblock}
+        \end{frame}
+
+        \begin{frame}
+            \begin{exampleblock}{Naloga}
+                Rešite besedilno nalogo.
+                \begin{itemize}
+                    \item V trgovini kupimo tri litre mleka in štiri čokoladne pudinge v prahu. Če stane liter mleka $95$ centov,
+                        čokoladni puding v prahu pa $24$ centov, koliko moramo plačati? \\ ~ \\ ~ \\ ~ \\ ~
+                    \item Manca bo kuhala rižoto za štiri otroke in šest odraslih. Za otroško porcijo rižote zadošča $45~g$ riža,
+                        za odraslo pa $75~g$. Koliko riža mora dati kuhati za rižoto? \\ ~ \\ ~ \\ ~ \\ ~
+                \end{itemize}
+            \end{exampleblock}
+        \end{frame}
+
 
         \begin{frame}
             \frametitle{Cela števila}
