@@ -13,28 +13,28 @@
         \begin{frame}
             \frametitle{Naravna števila}
 
-                \begin{alertblock}{Množica naravnih števil}
-                    \textbf{Naravna števila} so števila s katerimi štejemo.
-                    $$\mathbf{\mathbb{N}=\{1, 2, 3, 4, \ldots\}}$$
-                \end{alertblock}
+                \only<2->{\begin{alertblock}{Množica naravnih števil}
+                    \only<3->{\textbf{Naravna števila} so števila s katerimi štejemo.}
+                    \only<4->{$$\mathbf{\mathbb{N}=\{1, 2, 3, 4, \ldots\}}$$}
+                \end{alertblock}}
 
-                \begin{block}{}
+                \only<5->{\begin{block}{}
                     Množico naravnih števil definirajo \textbf{Peanovi aksiomi}:
                     \begin{enumerate}
-                        \item Vsako naravno število $n$ ima svojega \textbf{naslednika} $n+1$.
-                        \item Število $1$ je naravno število, ki ni naslednik nobenega naravnega števila.
-                        \item Različni naravni števili imata različna naslednika: $n+1 \neq m+1; n \neq m$.
-                        \item Če neka trditev velja z vsakim naravnim številom tudi za njegovega naslednika, velja za vsa naravna števila. (\textit{aksiom/princip popolne indukcije})
+                        \item<6-> Vsako naravno število $n$ ima svojega \textbf{naslednika} $n+1$.
+                        \item<7-> Število $1$ je naravno število, ki ni naslednik nobenega naravnega števila.
+                        \item<8-> Različni naravni števili imata različna naslednika: $n+1 \neq m+1; n \neq m$.
+                        \item<9-> Če neka trditev velja z vsakim naravnim številom tudi za njegovega naslednika, velja za vsa naravna števila. (\textit{aksiom/princip popolne indukcije})
                     \end{enumerate}
 
-                \end{block}
+                \end{block}}
         \end{frame}
 
         \begin{frame}
 
-            \begin{block}{}
+            \only<2->{\begin{block}{}
                 Naravna števila uredimo po velikosti in predstavimo s \textbf{točko} na \textbf{številski premici}.
-                \begin{figure}
+                \only<3->{\begin{figure}
                     \begin{tikzpicture}
                         % \clip (0,0) rectangle (14.000000,10.000000);
                         {\footnotesize
@@ -104,23 +104,23 @@
                         }
                     \end{tikzpicture}
                         
-                \end{figure}
+                \end{figure}}
 
-            \end{block}
+            \end{block}}
 
-            \begin{block}{}
+            \only<4->{\begin{block}{}
                 Vsako število zapišemo s \textbf{številko}. 
                 Za zapis številke uporabljamo \textbf{števke}. Te so $0, 1, 2, 3, 4, 5, 6, 7, 8, 9$.
-            \end{block}
+            \end{block}}
 
-            \begin{block}{}
+            \only<5->{\begin{block}{}
                 Posamezne števke večmestnega števila od desne proti levi predstavljajo: \textbf{enice}, \textbf{desetice}, \textbf{stotice}, \textbf{tisočice}, ...
-            \end{block}
+            \end{block}}
 
-            \begin{block}{}
+            \only<6->{\begin{block}{}
                 Število, ki je zapisano s črkovnimi oznakami števk označimo s črto nad zapsiom črkovne oznake.
-                $$ \overline{xy}=10x+y \quad \quad \quad \overline{xyz}=100x+10y+z$$
-            \end{block}
+                \only<7->{$$ \overline{xy}=10x+y \quad \quad \quad \overline{xyz}=100x+10y+z$$}
+            \end{block}}
 
             
         \end{frame}
@@ -128,16 +128,16 @@
         \begin{frame}
             \frametitle{Operacije v množici $\mathbb{N}$}
 
-            \begin{alertblock}{Seštevanje}
-                Poljubnima naravnima številoma $x$ in $y$ priredimo \textbf{vsoto} $\mathbf{x+y}$.
-            \end{alertblock}
+            \only<2->{\begin{alertblock}{Seštevanje}
+                \only<3->{Poljubnima naravnima številoma $x$ in $y$ priredimo \textbf{vsoto} $\mathbf{x+y}$.}
+            \end{alertblock}}
 
-            \begin{block}{}
+            \only<4->{\begin{block}{}
                 Število $x$ oziroma $y$ imenujemo \textbf{seštevanec} ali \textbf{sumand} ali \textbf{člen}. 
 
-                Število $x+y$ pa imenujemo \textbf{vsota} ali \textbf{summa}. 
+                \only<5->{Število $x+y$ pa imenujemo \textbf{vsota} ali \textbf{summa}. }
 
-            \begin{figure}
+            \only<6->{\begin{figure}
                 \begin{tikzpicture}
                     % \clip (0,0) rectangle (14.000000,10.000000);
                     {\footnotesize
@@ -207,30 +207,30 @@
                     }
                     \end{tikzpicture}
                     
-            \end{figure}
+            \end{figure}}
 
 
-            \end{block}
+            \end{block}}
 
 
-            \begin{block}{}
+            \only<7->{\begin{block}{}
                 Vsota naravnih števil je naravno število: $x, y \in \mathbb{N} \Rightarrow x+y \in \mathbb{N}$.
 
-            \end{block}
+            \end{block}}
 
         \end{frame}
 
         \begin{frame}
-            \begin{alertblock}{Množenje}
-                Poljubnima naravnima številoma $x$ in $y$ priredimo \textbf{produkt} $\mathbf{x\cdot y}$.
-            \end{alertblock}
+            \only<2->{\begin{alertblock}{Množenje}
+                \only<3->{Poljubnima naravnima številoma $x$ in $y$ priredimo \textbf{produkt} $\mathbf{x\cdot y}$.}
+            \end{alertblock}}
 
-            \begin{block}{}
+            \only<4->{\begin{block}{}
                 Število $x$ oziroma $y$ imenujemo \textbf{množenec} ali \textbf{faktor}. 
 
-                Število $x\cdot y$ pa imenujemo \textbf{zmnožek} ali \textbf{produkt}. 
+                \only<5->{Število $x\cdot y$ pa imenujemo \textbf{zmnožek} ali \textbf{produkt}. }
 
-                \begin{figure}
+                \only<6->{\begin{figure}
                 \begin{tikzpicture}
                     % \clip (0,0) rectangle (14.000000,10.000000);
                     {\footnotesize
@@ -300,35 +300,34 @@
                     }
                     \end{tikzpicture}
                     
-            \end{figure}
+            \end{figure}}
 
-            \end{block}
+            \end{block}}
 
 
-            \begin{block}{}
+            \only<7->{\begin{block}{}
                 Produkt naravnih števil je naravno število: $x, y \in \mathbb{N} \Rightarrow x\cdot y \in \mathbb{N}$.
+            \end{block}}
 
-            \end{block}
-
-            \begin{block}{}
-                Število $\mathbf{1}$ je \textbf{nevtralni element} za mmnoženje: $1\cdot x = y$.
-            \end{block}
+            \only<8->{\begin{block}{}
+                Število $\mathbf{1}$ je \textbf{nevtralni element} za mmnoženje: $1\cdot x = x$.
+            \end{block}}
 
         \end{frame}
 
         \begin{frame}
             
 
-            \begin{alertblock}{Odštevanje}
-                Številoma $x$ in $y$, pri čemer je $y$ večje od $x$ ($x>y$), priredimo \textbf{razliko} $\mathbf{x-y}$.                
-            \end{alertblock}
+            \only<2->{\begin{alertblock}{Odštevanje}
+                \only<3->{Številoma $x$ in $y$, pri čemer je $y$ večje od $x$ ($x>y$), priredimo \textbf{razliko} $\mathbf{x-y}$.}
+            \end{alertblock}}
 
-            \begin{block}{}
+            \only<4->{\begin{block}{}
                 Število $x$ imenujemo \textbf{zmanjševanec} ali \textbf{minuend}, število $y$  pa imenujemo \textbf{odštevanec} ali \textbf{subtrahend}. 
 
-                Številu $x-y$ rečemo \textbf{razlika} ali \textbf{diferenca}. 
+                \only<5->{Številu $x-y$ rečemo \textbf{razlika} ali \textbf{diferenca}. }
 
-                \begin{figure}
+                \only<6->{\begin{figure}
                     \begin{tikzpicture}
                         % \clip (0,0) rectangle (14.000000,10.000000);
                         {\footnotesize
@@ -395,36 +394,37 @@
                         }
                         \end{tikzpicture}
                         
-            \end{figure}
-        \end{block}
+            \end{figure}}
+        \end{block}}
 
-            \begin{block}{}
+            \only<7->{\begin{block}{}
                 Razlika je število, ki ga moramo prišteti številu $y$, da dobimo število $y$.
-                $$ (x-y)+y=x $$
-            \end{block}
+                \only<8->{$$ (x-y)+y=x $$}
+            \end{block}}
 
         \end{frame}
 
         \begin{frame}
-            \begin{block}{}
+            \only<2->{\begin{block}{}
                 Seštevanje in množenje sta \textit{dvočleni notranji operaciji} v množici naravnih števil $\mathbb{N}$.
 
-                Odštevanje pa ni notranja operacija v množici naravnih števil $\mathbb{N}$.
-            \end{block}
+                \only<3->{Odštevanje pa ni notranja operacija v množici naravnih števil $\mathbb{N}$.}
+            \end{block}}
 
-            \begin{block}{Vrstni red operacij}
-                Prednost pri računanju imajo \textbf{oklepaji} (najprej najbolj notranji), nato sledi \textbf{množenje},
-                na koncu pa imamo še \textbf{seštevanje} in \textbf{odštevanje}.
-            \end{block}
+            \only<4->{\begin{block}{Vrstni red operacij}
+                \only<5->{Prednost pri računanju imajo \textbf{oklepaji} (najprej najbolj notranji),} 
+                \only<6->{nato sledi \textbf{množenje},}
+                \only<7->{na koncu pa imamo še \textbf{seštevanje} in \textbf{odštevanje}.}
+            \end{block}}
 
-            \begin{block}{}
+            \only<8->{\begin{block}{}
                 Kadar v izrazu nastopajo enakovredne računske operacije, računamo od leve proti desni.
-            \end{block}
+            \end{block}}
 
-            \begin{block}{}
+            \only<9->{\begin{block}{}
                 Pri množenju količin, ki so označene s črkovnimi oznakami, piko, ki označuje operacijo množenja ponavadi opustimo.
-                $$ x\cdot y = xy$$
-            \end{block}
+                \only<10->{$$ x\cdot y = xy$$}
+            \end{block}}
 
 
         \end{frame}
@@ -432,55 +432,56 @@
         \begin{frame}
             \frametitle{Osnovni računski zakoni}
 
-            \begin{block}{Komutativnost seštevanja -- zakon o zamenjavi členov}
-                $$ \mathbf{x+y=y+x}$$
-                Vsota ni odvisna od vrstnega reda seštevanja.
-            \end{block}
+            \only<2->{\begin{block}{Komutativnost seštevanja -- zakon o zamenjavi členov}
+                \only<3->{$$ \mathbf{x+y=y+x}$$}
+                \only<4->{Vsota ni odvisna od vrstnega reda seštevanja.}
+            \end{block}}
 
-            \begin{block}{Asociativnost seštevanja -- zakon o poljubnem združevanju členov}
-                $$ \mathbf{(x+y)+z=x+(y+z)}$$
-                Vsota več kot dveh sumandov ni odvisna od združevanja po dveh sumandov.
-            \end{block}
-
-        \end{frame}
-
-        \begin{frame}
-
-
-            \begin{block}{Komutativnost množenja -- zakon o zamenjavi faktorjev}
-                $$ \mathbf{x\cdot y=y\cdot x}$$
-                Produkt ni odvisna od vrstnega reda faktorjev.
-            \end{block}
-
-            \begin{block}{Asociativnost množenja -- zakon o poljubnem združevanju faktorjev}
-                $$ \mathbf{(x\cdot y)\cdot z=x\cdot (y\cdot z)}$$
-                Produkt več kot dveh sumandov ni odvisen od združevanja faktorjev.
-            \end{block}
-            \begin{block}{Distributivnost -- zakon o razčlenjevanju}
-                $$ \mathbf{x\cdot z+y\cdot z = (x+y)\cdot z} $$
-                Če to beremo iz desne proti levi, rečemu tudi \textit{pravilo izpostavljanja skupnega faktorja}.
-            \end{block}
+            \only<5->{\begin{block}{Asociativnost seštevanja -- zakon o poljubnem združevanju členov}
+                \only<6->{$$ \mathbf{(x+y)+z=x+(y+z)}$$}
+                \only<7->{Vsota več kot dveh sumandov ni odvisna od združevanja po dveh sumandov.}
+            \end{block}}
 
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga}
+
+
+            \only<2->{\begin{block}{Komutativnost množenja -- zakon o zamenjavi faktorjev}
+                \only<3->{$$ \mathbf{x\cdot y=y\cdot x}$$}
+                \only<4->{Produkt ni odvisna od vrstnega reda faktorjev.}
+            \end{block}}
+
+            \only<5->{\begin{block}{Asociativnost množenja -- zakon o poljubnem združevanju faktorjev}
+                \only<6->{$$ \mathbf{(x\cdot y)\cdot z=x\cdot (y\cdot z)}$$}
+                \only<7->{Produkt več kot dveh sumandov ni odvisen od združevanja faktorjev.}
+            \end{block}}
+
+            \only<8->{\begin{block}{Distributivnost -- zakon o razčlenjevanju}
+                \only<9->{$$ \mathbf{x\cdot z+y\cdot z = (x+y)\cdot z} $$}
+                \only<10->{Če to beremo iz desne proti levi, rečemu tudi \textit{pravilo izpostavljanja skupnega faktorja}.}
+            \end{block}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
                 Izračunajte.
-                \begin{itemize}
+                \only<3->{\begin{itemize}
                     \item $(1+2\cdot 7)+3\cdot(2\cdot 2+7)$ \\ ~
                     \item $3\cdot(2+3\cdot 5)\cdot(2+1)$ \\ ~
                     \item $7+(2+6\cdot 3)+(8+4\cdot 5)$ \\ ~
                     \item $11\cdot 4+(12-6)\cdot 5$ \\ ~
                     \item $8+2\cdot(3+7)-15$ \\ ~
                     \item $37-5\cdot(10-3)$ \\ ~
-                \end{itemize}
-            \end{exampleblock}
+                \end{itemize}}
+            \end{exampleblock}}
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga}
+            \only<2->{\begin{exampleblock}{Naloga}
                 Hitro izračunajte.
-                \begin{itemize}
+                \only<3->{\begin{itemize}
                     \item $45+37+15$ 
                     \item $108+46-28$
                     \item $5\cdot 13\cdot 8$
@@ -489,122 +490,122 @@
                     \item $15\cdot(4+6)\cdot 2$
                     \item $3\cdot 5+7\cdot 5$
                     \item $8\cdot 12+6\cdot 8$
-                \end{itemize}
-            \end{exampleblock}
+                \end{itemize}}
+            \end{exampleblock}}
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga}
+            \only<2->{\begin{exampleblock}{Naloga}
                 Zapišite račun glede na besedilo in izračunajte.
-                \begin{itemize}
+                \only<3->{\begin{itemize}
                     \item Produktu števil $12$ in $27$ odštejte razliko števil $19$ in $11$. \\ ~
                     \item Vsoti produkta $4$ in $12$ ter produkta $5$ in $16$ odštejte $8$. \\ ~
                     \item Vsoto števil $42$ in $23$ pomnožite z razliko števil $58$ in $29$. \\ ~
                     \item Produkt števil $14$ in $17$ pomnožite z vsoto števil $5$ in $16$. \\ ~ \\ ~
-                \end{itemize}
-            \end{exampleblock}
+                \end{itemize}}
+            \end{exampleblock}}
         \end{frame}
 
         \begin{frame}
-            \begin{exampleblock}{Naloga}
+            \only<2->{\begin{exampleblock}{Naloga}
                 Rešite besedilno nalogo.
-                \begin{itemize}
+                \only<3->{\begin{itemize}
                     \item V trgovini kupimo tri litre mleka in štiri čokoladne pudinge v prahu. Če stane liter mleka $95$ centov,
                         čokoladni puding v prahu pa $24$ centov, koliko moramo plačati? \\ ~ \\ ~ \\ ~ \\ ~
                     \item Manca bo kuhala rižoto za štiri otroke in šest odraslih. Za otroško porcijo rižote zadošča $45~g$ riža,
                         za odraslo pa $75~g$. Koliko riža mora dati kuhati za rižoto? \\ ~ \\ ~ \\ ~ \\ ~
-                \end{itemize}
-            \end{exampleblock}
+                \end{itemize}}
+            \end{exampleblock}}
         \end{frame}
 
 
-        \begin{frame}
-            \frametitle{Cela števila}
+        % \begin{frame}
+        %     \frametitle{Cela števila}
 
-            \textbf{Množica celih števil}: 
-                \begin{alertblock}{}
-                    \centering\boldmath
-                    $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, 3, \ldots\}$
-                \end{alertblock}
+        %     \textbf{Množica celih števil}: 
+        %         \begin{alertblock}{}
+        %             \centering\boldmath
+        %             $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, 3, \ldots\}$
+        %         \end{alertblock}
 
-                Množica celih števil je definirana kot unija treh množic:
-                $$\mathbb{Z} = \mathbb{Z}^- \cup \{0\} \cup \mathbb{Z}^+$$
+        %         Množica celih števil je definirana kot unija treh množic:
+        %         $$\mathbb{Z} = \mathbb{Z}^- \cup \{0\} \cup \mathbb{Z}^+$$
 
-                \begin{itemize}
-                    \item množica \textbf{pozitivnih celih števil} ($\mathbb{Z}^+$) -- naravna števila;
-                    \item \textbf{število 0};
-                    \item množica \textbf{negativnih celih števil} ($\mathbb{Z}^-$) -- nasprotna števila vseh naravnih števil.
-                \end{itemize}
+        %         \begin{itemize}
+        %             \item množica \textbf{pozitivnih celih števil} ($\mathbb{Z}^+$) -- naravna števila;
+        %             \item \textbf{število 0};
+        %             \item množica \textbf{negativnih celih števil} ($\mathbb{Z}^-$) -- nasprotna števila vseh naravnih števil.
+        %         \end{itemize}
                 
-                \medskip
-                \textbf{Nasprotno število} števila $a$ je $-a$.
-        \end{frame}
+        %         \medskip
+        %         \textbf{Nasprotno število} števila $a$ je $-a$.
+        % \end{frame}
 
-        \begin{frame}
+        % \begin{frame}
 
-            Poleg seštevanja in množenja je kot notranja operacija množice celih števil
-            definirano še \textbf{odštevanje}.
+        %     Poleg seštevanja in množenja je kot notranja operacija množice celih števil
+        %     definirano še \textbf{odštevanje}.
 
-            \bigskip
-            \textbf{\large{Odštevanje}}
+        %     \bigskip
+        %     \textbf{\large{Odštevanje}}
             
-            \bigskip
-            Poljubnima naravnima številoma $a$ in $b$ priredimo \textbf{razliko} $\mathbf{a - b}$.
+        %     \bigskip
+        %     Poljubnima naravnima številoma $a$ in $b$ priredimo \textbf{razliko} $\mathbf{a - b}$.
             
-            \bigskip
-            Odštevanje definiramo kot prištevanje nasprotne vrednosti: $a-b = a+(-b)$
+        %     \bigskip
+        %     Odštevanje definiramo kot prištevanje nasprotne vrednosti: $a-b = a+(-b)$
 
-            \bigskip
-            Za odštevanje velja zakon \textit{\textbf{distributivnosti}}: $a \cdot (b-c) = a \cdot b - a
-            \cdot c$.
+        %     \bigskip
+        %     Za odštevanje velja zakon \textit{\textbf{distributivnosti}}: $a \cdot (b-c) = a \cdot b - a
+        %     \cdot c$.
 
-        \end{frame}
+        % \end{frame}
 
-        \begin{frame}
-            \textbf{\large{Računski zakoni}}
+        % \begin{frame}
+        %     \textbf{\large{Računski zakoni}}
 
-            \smallskip
-            \begin{itemize}
-                \item Komutativnostni zakon: $$a+b = b+a ~\text{in}~ a \cdot b = b \cdot a$$
-                \item Asociativnostni zakon: $$a+(b+c) = (a+b)+c ~\text{in}~ a \cdot (b \cdot c) = (a \cdot b) \cdot c$$
-                \item Zakon o nevtralnem elementu: $$a+0 = a ~\text{in}~ a \cdot 1 = a$$
-                \item Zakon o inverznem/nasprotnem elementu: $$a+(-a) = 0$$
-                \item Distributivnostni zakon: $$a \cdot (b \pm c) = a \cdot b \pm a \cdot c$$
-            \end{itemize}
-
-
-        \end{frame}
-
-        \begin{frame}
-            \textbf{\large{Pravila za računanje s celimi števili}}
-
-            \bigskip
-            \begin{itemize}
-                \item $-(-a)=a$
-                \item $0\cdot a=0$
-                \item $-1 \cdot a =-a$
-                \item $(-a)+(-b)=-(a+b)$
-                \item $(-a)\cdot b=-(a\cdot b)=a\cdot (-b)$
-                \item $(-a)\cdot(-b)=a\cdot b$
-            \end{itemize}
-        \end{frame}
-
-        \begin{frame}
-
-        \end{frame}
+        %     \smallskip
+        %     \begin{itemize}
+        %         \item Komutativnostni zakon: $$a+b = b+a ~\text{in}~ a \cdot b = b \cdot a$$
+        %         \item Asociativnostni zakon: $$a+(b+c) = (a+b)+c ~\text{in}~ a \cdot (b \cdot c) = (a \cdot b) \cdot c$$
+        %         \item Zakon o nevtralnem elementu: $$a+0 = a ~\text{in}~ a \cdot 1 = a$$
+        %         \item Zakon o inverznem/nasprotnem elementu: $$a+(-a) = 0$$
+        %         \item Distributivnostni zakon: $$a \cdot (b \pm c) = a \cdot b \pm a \cdot c$$
+        %     \end{itemize}
 
 
-    \subsection{Računanje z naravnimi in celimi števili}
+        % \end{frame}
 
-        \begin{frame}
-            \frametitle{Računanje z naravnimi in celimi števili}
-        \end{frame}
+        % \begin{frame}
+        %     \textbf{\large{Pravila za računanje s celimi števili}}
 
-    \subsection{Izraz, enačba, neenačba}
+        %     \bigskip
+        %     \begin{itemize}
+        %         \item $-(-a)=a$
+        %         \item $0\cdot a=0$
+        %         \item $-1 \cdot a =-a$
+        %         \item $(-a)+(-b)=-(a+b)$
+        %         \item $(-a)\cdot b=-(a\cdot b)=a\cdot (-b)$
+        %         \item $(-a)\cdot(-b)=a\cdot b$
+        %     \end{itemize}
+        % \end{frame}
 
-        \begin{frame}
-            \frametitle{Izraz, enačba, neenačba}
-        \end{frame}
+        % \begin{frame}
+
+        % \end{frame}
+
+
+    % \subsection{Računanje z naravnimi in celimi števili}
+
+    %     \begin{frame}
+    %         \frametitle{Računanje z naravnimi in celimi števili}
+    %     \end{frame}
+
+    % \subsection{Izraz, enačba, neenačba}
+
+    %     \begin{frame}
+    %         \frametitle{Izraz, enačba, neenačba}
+    %     \end{frame}
 
         % \begin{frame}
         %     \frametitle{Neenačba}
@@ -620,46 +621,46 @@
         %     \end{alertblock}
         % \end{frame}
 
-    \subsection{Računanje s potencami z naravnimi eksponenti}
+    % \subsection{Računanje s potencami z naravnimi eksponenti}
 
-        \begin{frame}
-            \frametitle{Računanje s potencami z naravnimi eksponenti}
+    %     \begin{frame}
+    %         \frametitle{Računanje s potencami z naravnimi eksponenti}
 
-            Potenca $\mathbf{a^n}$, pri čemer je $n \in \mathbb{N}$, je produkt $n$ faktorjev enakih $a$.
+    %         Potenca $\mathbf{a^n}$, pri čemer je $n \in \mathbb{N}$, je produkt $n$ faktorjev enakih $a$.
 
-            \begin{figure}
-                \includegraphics[scale=0.5]{Slike in skice/Potenca.jpg}
-            \end{figure}
+    %         \begin{figure}
+    %             \includegraphics[scale=0.5]{Slike in skice/Potenca.jpg}
+    %         \end{figure}
     
-            \textbf{Pravila za računanje s potencami}:
-            \begin{itemize}
-                \item $\mathbf{a^n \cdot b^n = (ab)^n}$ - potenci z enakima eksponentoma zmnožimo tako, da zmnožimo osnovi in prepišemo eksponent
-                \item $\mathbf{a^m \cdot a^n = a^{m+n}}$ - potenci z enako osnovo zmnožimo tako, da osnovo prepišemo in seštejemo eksponenta
-                \item $\mathbf{(a^n)^m = a^{nm}}$ - potenco potenciramo tako, da osnovo prepišemo in zmnožimo eksponenta
-            \end{itemize}
+    %         \textbf{Pravila za računanje s potencami}:
+    %         \begin{itemize}
+    %             \item $\mathbf{a^n \cdot b^n = (ab)^n}$ - potenci z enakima eksponentoma zmnožimo tako, da zmnožimo osnovi in prepišemo eksponent
+    %             \item $\mathbf{a^m \cdot a^n = a^{m+n}}$ - potenci z enako osnovo zmnožimo tako, da osnovo prepišemo in seštejemo eksponenta
+    %             \item $\mathbf{(a^n)^m = a^{nm}}$ - potenco potenciramo tako, da osnovo prepišemo in zmnožimo eksponenta
+    %         \end{itemize}
 
-        \end{frame}
+    %     \end{frame}
 
-    \subsection{Razčlenjevanje izrazov}
+    % \subsection{Razčlenjevanje izrazov}
 
-        \begin{frame}
-            \frametitle{Razčlenjevanje izrazov}
-        \end{frame}
+    %     \begin{frame}
+    %         \frametitle{Razčlenjevanje izrazov}
+    %     \end{frame}
 
-    \subsection{Razstavljanje izrazov v množici $\mathbb{Z}$}
+    % \subsection{Razstavljanje izrazov v množici $\mathbb{Z}$}
 
-        \begin{frame}
-            \frametitle{Razstavljanje izrazov v množici $\mathbb{Z}$}
-        \end{frame}
+    %     \begin{frame}
+    %         \frametitle{Razstavljanje izrazov v množici $\mathbb{Z}$}
+    %     \end{frame}
 
-    \subsection{Reševanje linearnih in razcepnih enačb v množici $\mathbb{Z}$}
+    % \subsection{Reševanje linearnih in razcepnih enačb v množici $\mathbb{Z}$}
 
-        \begin{frame}
-            \frametitle{Reševanje linearnih in razcepnih enačb v množici $\mathbb{Z}$}
-        \end{frame}
+    %     \begin{frame}
+    %         \frametitle{Reševanje linearnih in razcepnih enačb v množici $\mathbb{Z}$}
+    %     \end{frame}
 
-    \subsection{Reševanje linearnih neenačb v množici $\mathbb{Z}$}
+    % \subsection{Reševanje linearnih neenačb v množici $\mathbb{Z}$}
 
-        \begin{frame}
-            \frametitle{Reševanje linearnih neenačb v množici $\mathbb{Z}$}
-        \end{frame}
+    %     \begin{frame}
+    %         \frametitle{Reševanje linearnih neenačb v množici $\mathbb{Z}$}
+    %     \end{frame}
