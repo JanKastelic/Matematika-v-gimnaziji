@@ -319,7 +319,7 @@
             
 
             \only<2->{\begin{alertblock}{Odštevanje}
-                \only<3->{Številoma $x$ in $y$, pri čemer je $y$ večje od $x$ ($x>y$), priredimo \textbf{razliko} $\mathbf{x-y}$.}
+                \only<3->{Številoma $x$ in $y$, pri čemer je $x$ večje od $y$ ($x>y$), priredimo \textbf{razliko} $\mathbf{x-y}$.}
             \end{alertblock}}
 
             \only<4->{\begin{block}{}
@@ -398,7 +398,7 @@
         \end{block}}
 
             \only<7->{\begin{block}{}
-                Razlika je število, ki ga moramo prišteti številu $y$, da dobimo število $y$.
+                Razlika je število, ki ga moramo prišteti številu $y$, da dobimo število $x$.
                 \only<8->{$$ (x-y)+y=x $$}
             \end{block}}
 
@@ -430,7 +430,7 @@
         \end{frame}
 
         \begin{frame}
-            \frametitle{Osnovni računski zakoni}
+            \frametitle{Osnovni računski zakoni v $\mathbb{N}$}
 
             \only<2->{\begin{block}{Komutativnost seštevanja -- zakon o zamenjavi členov}
                 \only<3->{$$ \mathbf{x+y=y+x}$$}
@@ -449,7 +449,7 @@
 
             \only<2->{\begin{block}{Komutativnost množenja -- zakon o zamenjavi faktorjev}
                 \only<3->{$$ \mathbf{x\cdot y=y\cdot x}$$}
-                \only<4->{Produkt ni odvisna od vrstnega reda faktorjev.}
+                \only<4->{Produkt ni odvisen od vrstnega reda faktorjev.}
             \end{block}}
 
             \only<5->{\begin{block}{Asociativnost množenja -- zakon o poljubnem združevanju faktorjev}
@@ -519,80 +519,195 @@
         \end{frame}
 
 
-        % \begin{frame}
-        %     \frametitle{Cela števila}
+        \begin{frame}
+            \frametitle{Cela števila}
 
-        %     \textbf{Množica celih števil}: 
-        %         \begin{alertblock}{}
-        %             \centering\boldmath
-        %             $\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, 3, \ldots\}$
-        %         \end{alertblock}
+                \begin{alertblock}{Množica celih števil}
+                    $$\mathbf{\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, 3, \ldots\}}$$
+                \end{alertblock}
 
-        %         Množica celih števil je definirana kot unija treh množic:
-        %         $$\mathbb{Z} = \mathbb{Z}^- \cup \{0\} \cup \mathbb{Z}^+$$
+                \begin{block}{}
+                    Množica celih števil $\mathbb{Z}$ je definirana kot unija treh množic:
+                        \begin{itemize}
+                            \item množica \textbf{pozitivnih celih števil} ($\mathbb{Z}^+$) -- naravna števila $\mathbb{N}$;
+                            \item \textbf{število 0};
+                            \item množica \textbf{negativnih celih števil} ($\mathbb{Z}^-$) -- nasprotna števila vseh naravnih števil.
+                        \end{itemize}
+                      $$\mathbb{Z} = \mathbb{Z}^- \cup \{0\} \cup \mathbb{Z}^+$$
 
-        %         \begin{itemize}
-        %             \item množica \textbf{pozitivnih celih števil} ($\mathbb{Z}^+$) -- naravna števila;
-        %             \item \textbf{število 0};
-        %             \item množica \textbf{negativnih celih števil} ($\mathbb{Z}^-$) -- nasprotna števila vseh naravnih števil.
-        %         \end{itemize}
-                
-        %         \medskip
-        %         \textbf{Nasprotno število} števila $a$ je $-a$.
-        % \end{frame}
+                \end{block}
 
-        % \begin{frame}
+                \begin{block}{}
+                    \textbf{Nasprotna vrednost} števila $n$ je število $-n$.
+                \end{block}
+        \end{frame}
 
-        %     Poleg seštevanja in množenja je kot notranja operacija množice celih števil
-        %     definirano še \textbf{odštevanje}.
+        \begin{frame}
+            \frametitle{Operacije v množici $\mathbb{Z}$}
 
-        %     \bigskip
-        %     \textbf{\large{Odštevanje}}
-            
-        %     \bigskip
-        %     Poljubnima naravnima številoma $a$ in $b$ priredimo \textbf{razliko} $\mathbf{a - b}$.
-            
-        %     \bigskip
-        %     Odštevanje definiramo kot prištevanje nasprotne vrednosti: $a-b = a+(-b)$
+            \textbf{\large{Seštevanje}}
 
-        %     \bigskip
-        %     Za odštevanje velja zakon \textit{\textbf{distributivnosti}}: $a \cdot (b-c) = a \cdot b - a
-        %     \cdot c$.
+            \begin{block}{}
+                $$\mathbf{x+0=x}; ~\forall x\in\mathbb{Z}$$
+                Število $0$ je \textbf{nevtralni element} pri seštevanju.
+            \end{block}
 
-        % \end{frame}
+            \begin{block}{}
+                $$\mathbf{x+(-x)=0}; ~\forall x\in\mathbb{Z} $$
+                Vsota celega števila in njemu nasprotnega števila je enaka $0$.
+            \end{block}
 
-        % \begin{frame}
-        %     \textbf{\large{Računski zakoni}}
-
-        %     \smallskip
-        %     \begin{itemize}
-        %         \item Komutativnostni zakon: $$a+b = b+a ~\text{in}~ a \cdot b = b \cdot a$$
-        %         \item Asociativnostni zakon: $$a+(b+c) = (a+b)+c ~\text{in}~ a \cdot (b \cdot c) = (a \cdot b) \cdot c$$
-        %         \item Zakon o nevtralnem elementu: $$a+0 = a ~\text{in}~ a \cdot 1 = a$$
-        %         \item Zakon o inverznem/nasprotnem elementu: $$a+(-a) = 0$$
-        %         \item Distributivnostni zakon: $$a \cdot (b \pm c) = a \cdot b \pm a \cdot c$$
-        %     \end{itemize}
+            \begin{block}{}
+                $$\mathbf{-(-x)=x}; ~\forall x\in\mathbb{Z}$$
+                Nasprotna vrednost nasprotne vrednosti je enaka prvotni vrednosti.
+            \end{block}
+        \end{frame}
 
 
-        % \end{frame}
+        \begin{frame}
 
-        % \begin{frame}
-        %     \textbf{\large{Pravila za računanje s celimi števili}}
+            \begin{block}{}
+                Vsota dveh pozitivnih števil je pozitivno število, vsota dveh negativnih števil pa je negativno število.
+            \end{block}
 
-        %     \bigskip
-        %     \begin{itemize}
-        %         \item $-(-a)=a$
-        %         \item $0\cdot a=0$
-        %         \item $-1 \cdot a =-a$
-        %         \item $(-a)+(-b)=-(a+b)$
-        %         \item $(-a)\cdot b=-(a\cdot b)=a\cdot (-b)$
-        %         \item $(-a)\cdot(-b)=a\cdot b$
-        %     \end{itemize}
-        % \end{frame}
+            \begin{block}{}
+                $$\mathbf{-x+(-y)=-(x+y)}$$
+                Vsota nasprotnih vrednosti je enaka nasprotni vrednosti vsote.
+            \end{block}
 
-        % \begin{frame}
+            \begin{block}{}
+                Naj bosta $x$ in $y$ naravni števili. Vsota pozitivnega števila $x$ in negativnega števila $-y$ je:
+                \begin{itemize}
+                    \item pozitivno število, če je $x>y$ in
+                    \item negativno število, če je $x<y$.
+                \end{itemize}
+            \end{block}
+        \end{frame}
 
-        % \end{frame}
+
+        \begin{frame}
+            \textbf{\large{Odštevanje}}
+
+            \begin{block}{}
+                Razlika $x-y$ dveh pozitivnih števil $x$ in $y$ je:
+                \begin{itemize}
+                    \item pozitivno število, če je $x>y$ in 
+                    \item negativno število, če je $x<y$.
+                \end{itemize}
+            \end{block}
+
+            \begin{block}{}
+                Razlika dveh negativnih števil $(-x)-(-y)$ je:
+                \begin{itemize}
+                    \item pozitvno število, če je $x<y$ in 
+                    \item negativno število, če je $x>y$.
+                \end{itemize}
+            \end{block}
+
+            \begin{block}{}
+                Razlika pozitivnega števila $x$ in negativnega števila $-y$ je pozitvno število.
+            \end{block}
+
+
+            \begin{alertblock}{}
+                \textit{Odštevanje v množici $\mathbb{Z}$ je prištevanje nasprotne vrednosti.}
+                $$\mathbf{x-y=x+(-y)} $$
+            \end{alertblock}
+        \end{frame}
+
+        \begin{frame}
+            \textbf{\large{Množenje}}
+
+            \begin{block}{}
+                $$\mathbf{1\cdot x=x}; ~\forall x\in\mathbb{Z}$$
+                Število $1$ je \textbf{nevtralni element} za množenje.
+            \end{block}
+
+            \begin{block}{}
+                $$\mathbf{(-1)\cdot x=-x}; ~\forall x\in\mathbb{Z}$$
+                Pri množenju celega števila $x$ z $-1$ dobimo nasprotno število $-x$.
+            \end{block}
+
+            \begin{block}{}
+                $$\mathbf{0\cdot x=0}; ~\forall x\in\mathbb{Z}$$
+                Rezultat množenja števila s številom $0$ je enak $0$.
+            \end{block}
+
+        \end{frame}
+
+        \begin{frame}
+
+
+            \begin{block}{}
+                $$\mathbf{(-x)(-y)=xy}$$
+                Produkt sodo mnogo negativnih števil je pozitivno število.
+            \end{block}
+
+            \begin{block}{}
+                $$\mathbf{-x\cdot y=-(xy)}$$
+                $$\mathbf{x(-y)=-(xy)}$$
+                Produkt pozitivnega in negativnega števila je negativno število.
+            \end{block}
+
+            \begin{block}{}
+                $$\mathbf{(-x)(-y)=xy}$$
+                Produkt liho mnogo negativnih faktorjev je negativno število.
+            \end{block}
+
+            \begin{block}{}
+                Seštevanje, odštevanje in množenje so v množici $\mathbb{Z}$ dvočlene notranje operacije.
+            \end{block}
+        \end{frame}
+
+
+        \begin{frame}
+            \frametitle{Osnovni računski zakoni v $\mathbb{Z}$}
+
+
+        \end{frame}
+
+    %     \begin{frame}
+
+    %         Poleg seštevanja in množenja je kot notranja operacija množice celih števil
+    %         definirano še \textbf{odštevanje}.
+
+    %         Za odštevanje velja zakon \textit{\textbf{distributivnosti}}: $a \cdot (b-c) = a \cdot b - a
+    %         \cdot c$.
+
+    %     \end{frame}
+
+    %     \begin{frame}
+    %         \textbf{\large{Računski zakoni}}
+
+    %         \smallskip
+    %         \begin{itemize}
+    %             \item Komutativnostni zakon: $$a+b = b+a ~\text{in}~ a \cdot b = b \cdot a$$
+    %             \item Asociativnostni zakon: $$a+(b+c) = (a+b)+c ~\text{in}~ a \cdot (b \cdot c) = (a \cdot b) \cdot c$$
+    %             \item Zakon o nevtralnem elementu: $$a+0 = a ~\text{in}~ a \cdot 1 = a$$
+    %             \item Zakon o inverznem/nasprotnem elementu: $$a+(-a) = 0$$
+    %             \item Distributivnostni zakon: $$a \cdot (b \pm c) = a \cdot b \pm a \cdot c$$
+    %         \end{itemize}
+
+
+    %     \end{frame}
+
+    %     \begin{frame}
+    %         \textbf{\large{Pravila za računanje s celimi števili}}
+
+    %         \bigskip
+    %         \begin{itemize}
+    %             \item $-(-a)=a$
+    %             \item $0\cdot a=0$
+    %             \item $-1 \cdot a =-a$
+    %             \item $(-a)+(-b)=-(a+b)$
+    %             \item $(-a)\cdot b=-(a\cdot b)=a\cdot (-b)$
+    %             \item $(-a)\cdot(-b)=a\cdot b$
+    %         \end{itemize}
+    %     \end{frame}
+
+    %     \begin{frame}
+
+    %     \end{frame}
 
 
     % \subsection{Računanje z naravnimi in celimi števili}
