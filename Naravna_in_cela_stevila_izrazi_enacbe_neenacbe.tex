@@ -518,7 +518,7 @@
             \end{exampleblock}}
         \end{frame}
 
-\subsection{Cela Števila}
+\subsection{Cela števila}
         \begin{frame}
             \frametitle{Cela števila}
 
@@ -663,58 +663,242 @@
         \begin{frame}
             \frametitle{Osnovni računski zakoni v $\mathbb{Z}$}
 
+            \begin{columns}[T]
+                \column{0.48\textwidth}
+                \only<2->{\begin{block}{Komutativnost seštevanja}
+                    \only<3->{$$ \mathbf{x+ y=y+ x}$$}
+                \end{block}}
+    
+                \only<4->{\begin{block}{Asociativnost seštevanja}
+                    \only<5->{$$ \mathbf{(x+ y)+ z=x+ (y+ z)}$$}
+                \end{block}}
+
+                \column{0.48\textwidth}
+
+                \only<6->{\begin{block}{Komutativnost množenja}
+                    \only<7->{$$ \mathbf{x\cdot y=y\cdot x}$$}
+                \end{block}}
+    
+                \only<8->{\begin{block}{Asociativnost množenja}
+                    \only<9->{$$ \mathbf{(x\cdot y)\cdot z=x\cdot (y\cdot z)}$$}
+                \end{block}}
+            \end{columns}
+
+    
+                \only<10->{\begin{block}{Distributivnost seštevanja in množenja ter odštevanja in množenja}
+                    \only<11->{$$ \mathbf{x\cdot z+y\cdot z = (x+y)\cdot z} $$}
+                    \only<12->{$$ \mathbf{x\cdot z-y\cdot z = (x-y)\cdot z} $$}
+
+                \end{block}}
+    
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Izračunajte.
+                \only<3->{\begin{itemize}
+                    \item $17-13-2+10$ \\ ~
+                    \item $50+11-32-14$ \\ ~
+                    \item $3+((5+2(7-9))\cdot 2-1)$ \\ ~
+                    \item $(2-5(6-10))\cdot(5-2(7-5))$ \\ ~
+                    \item $9(11-3)+7(10-15)$ \\ ~
+                    \item $8+9(11-18)-2\cdot 5$ \\ ~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Spretno izračunajte.
+                \only<3->{\begin{itemize}
+                    \item $7\cdot 8-12\cdot 8$ \\ ~
+                    \item $5\cdot 18+9\cdot 5-5\cdot 2$ \\ ~
+                    \item $8\cdot(4-9)\cdot 2$ \\ ~
+                    \item $5\cdot 3\cdot (12-8)$ \\ ~
+                    \item $(15-6)(12-3\cdot 4)$ \\ ~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Rešite besedilne naloge.
+                \only<3->{\begin{itemize}
+                    \item V hotelu imajo na voljo osemnajst enoposteljnih, štiriintrideset dvoposteljnih in petindevetdeset triposteljnih sob.
+                        Koliko ljudi lahko še prespi v hotelu, če je v njem že sto triinštirideset gostov? \\ ~ \\ ~ \\ ~
+                    \item Pohod na bližnji hrib traja tri ure. Koliko minut moramo še hoditi, če smo na poti že $145$ minut? \\ ~ \\ ~ \\ ~ \\
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+
+            \only<2->{\begin{exampleblock}{Naloga}
+                \only\begin{itemize}
+                    \item S Ptuja in iz Postojne (razdalja med njima je približno $190~km$) sočasno odpeljeta dva motorista drug proti drugemu.
+                        En vozi povprečno $40~km/h$, drugi pa $5~km/h$ manj. Kolikšna bo razdalja med njima po dveh urah vožnje? \\ ~ \\ ~ \\ ~
+                \end{itemize}
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Zapišite enačbe in jih poenostavite.
+                \only<4->{\begin{itemize}
+                    \item Razlika petkratnka $a$ in $b$ je enaka trikratniku vsote štirikratnika $a$ in petkratnika $b$. \\ ~ \\
+                    \item Vsota $x$ in dvakratnika $y$ je enaka razliki petkratnika $x$ in dvanajstkratnika $y$. \\ ~ \\ ~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+
+
+
+
+\subsection{Urejenost naravnih in celih števil}
+
+        \begin{frame}
+            \frametitle{Urejenost naravnih in celih števil}
+
+            \begin{alertblock}{}
+                Številska množica je \textbf{urejena}, kadar lahko po velikosti primerjamo njena poljubna elementa.
+            \end{alertblock}
+
+            \begin{block}{}
+                Pri urejanju števil uporabljamo naslednje znake:
+                \begin{table}
+                    \centering
+                    \addtolength{\tabcolsep}{6pt}
+                    \renewcommand{\arraystretch}{1.4}                
+                    \begin{tabular}{||c|c||} 
+                        \hhline{|t:==:t|}
+                                $\mathbf{<}$ & manjše / manj  \\ 
+                        \hline
+                                $\mathbf{>}$ & večje / več   \\ 
+                        \hline
+                                $\mathbf{\leq}$ & manjše ali enako / največ   \\ 
+                        \hline
+                                $\mathbf{\geq}$ & večje ali enako / vsaj, najmanj \\  
+                        \hline
+                                $\mathbf{=}$ & enako \\
+                        \hhline{|b:==:b|}
+                    \end{tabular}
+                \end{table}
+            \end{block}
+        \end{frame}
+
+        \begin{frame}
+            \begin{block}{}
+                Za poljubni števili $x,y\in\mathbb{Z}$ velja natanko ena izmed naslednjih možnosti: $x>y$, $x<y$ ali $x=y$.
+            \end{block}
+
+            \begin{block}{}
+                $$\mathbf{x>y \Leftrightarrow x-y>0}$$
+                Slika števila $x$ leži na številski premici desno od slike števila $y$.
+            \end{block}
+
+            \begin{block}{}
+                $$\mathbf{x<y \Leftrightarrow x-y<0}$$
+                Slika števila $x$ leži na številski premici levo od slike števila $y$.
+            \end{block}
+
+            \begin{block}{}
+                $$\mathbf{x=y \Leftrightarrow x-y=0}$$
+                Slika števila $x$ sovpada s sliko števila $y$.
+            \end{block}
 
         \end{frame}
 
-    %     \begin{frame}
+        \begin{frame}
+            \begin{block}{Pozitivna števila}
+                V množici $\mathbb{Z}$ so pozitivna tista števila, ki so večja od števila $0$ 
+                in njihove slike ležijo desno od izhodišča.
+            \end{block}
+            
+            \begin{block}{Negativna števila}
+                V množici $\mathbb{Z}$ so negativna tista števila, ki so manjša od števila $0$ 
+                in njihove slike ležijo levo od izhodišča.
+            \end{block}
 
-    %         Poleg seštevanja in množenja je kot notranja operacija množice celih števil
-    %         definirano še \textbf{odštevanje}.
+            \begin{block}{}
+                Vsako pozitivno celo število (vsako naravno število) je večje od katerega koli negativnega celega števila.
+            \end{block}
 
-    %         Za odštevanje velja zakon \textit{\textbf{distributivnosti}}: $a \cdot (b-c) = a \cdot b - a
-    %         \cdot c$.
-
-    %     \end{frame}
-
-    %     \begin{frame}
-    %         \textbf{\large{Računski zakoni}}
-
-    %         \smallskip
-    %         \begin{itemize}
-    %             \item Komutativnostni zakon: $$a+b = b+a ~\text{in}~ a \cdot b = b \cdot a$$
-    %             \item Asociativnostni zakon: $$a+(b+c) = (a+b)+c ~\text{in}~ a \cdot (b \cdot c) = (a \cdot b) \cdot c$$
-    %             \item Zakon o nevtralnem elementu: $$a+0 = a ~\text{in}~ a \cdot 1 = a$$
-    %             \item Zakon o inverznem/nasprotnem elementu: $$a+(-a) = 0$$
-    %             \item Distributivnostni zakon: $$a \cdot (b \pm c) = a \cdot b \pm a \cdot c$$
-    %         \end{itemize}
-
-
-    %     \end{frame}
-
-    %     \begin{frame}
-    %         \textbf{\large{Pravila za računanje s celimi števili}}
-
-    %         \bigskip
-    %         \begin{itemize}
-    %             \item $-(-a)=a$
-    %             \item $0\cdot a=0$
-    %             \item $-1 \cdot a =-a$
-    %             \item $(-a)+(-b)=-(a+b)$
-    %             \item $(-a)\cdot b=-(a\cdot b)=a\cdot (-b)$
-    %             \item $(-a)\cdot(-b)=a\cdot b$
-    %         \end{itemize}
-    %     \end{frame}
-
-    %     \begin{frame}
-
-    %     \end{frame}
+            \begin{block}{}
+                Velja pa tudi:
+                $$x\leq y \Leftrightarrow x-y\leq 0 $$
+                $$x\geq y \Leftrightarrow x-y\geq 0 $$
+            \end{block}
+        \end{frame}
 
 
-    % \subsection{Računanje z naravnimi in celimi števili}
+        \begin{frame}
+            \begin{alertblock}{}
+                Z relacijo \textit{biti manjši ali enak} je množica $\mathbb{Z}$ \textbf{linearno urejena}, 
+                to pomeni, da veljajo:
+            \end{alertblock}
+            
+            \begin{block}{Refleksivnost}
+                $$\forall x\in\mathbb{Z}: x\leq x$$
+            \end{block}
 
-    %     \begin{frame}
-    %         \frametitle{Računanje z naravnimi in celimi števili}
-    %     \end{frame}
+            \begin{block}{Antisimetričnost}
+                $$\forall x,y\in\mathbb{Z}: x\leq y \land y\leq x \Rightarrow x=y$$
+            \end{block}
+
+            \begin{block}{Tranzitivnost}
+                $$\forall x,y,z\in\mathbb{Z}: x\leq y \land y\leq z \Rightarrow x\leq z$$
+            \end{block}
+
+            \begin{block}{Stroga sovisnost}
+                $$\forall x,y\in\mathbb{Z}; x\neq y: x\leq y \lor y\leq x$$
+
+            \end{block}
+
+        \end{frame}
+
+        \begin{frame}
+            \begin{block}{Monotonost vsote}
+                $$x<y \Rightarrow x+z<y+z \quad \quad x\leq y \Rightarrow x+z\leq y+z$$
+                Če na obeh straneh neenakosti prištejemo isto število, se neenakost ohrani.
+            \end{block}
+
+            \begin{block}{}
+                $$x<y \land z>0 \Rightarrow x\cdot z<y\cdot z \quad \quad x\leq y \land z>0 \Rightarrow x\cdot z\leq y\cdot z$$
+                Pri množenju neenakosti z negativnim številom se znak neenakosti ohrani.
+            \end{block}
+
+            \begin{block}{}
+                $$x<y \land z<0 \Rightarrow x\cdot z>y\cdot z \quad \quad x\leq y \land z<0 \Rightarrow x\cdot z\geq y\cdot z$$
+                Pri množenju neenakosti z negativnim številom se znak neenakosti obrne.
+            \end{block}
+
+            \begin{block}{}
+                Obravnavane lastnosti veljajo tudi za relaciji $\geq$ in $>$.
+            \end{block}
+
+        \end{frame}
+
+        \begin{frame}
+
+                \only<2->{\begin{exampleblock}{Naloga}
+                    Uredite števila $3, -2, 5, -1, 0, -7, 6, -6$ po velikosti in jih predstavite na številski premici.
+                \end{exampleblock}}
+
+                \only<3->{\begin{exampleblock}{Naloga}
+                    Uredite števila $104, -27, 35, -107, 36, -26, 25, -28, 81$ po velikosti.
+                \end{exampleblock}}
+
+                \only<4->{\begin{exampleblock}{Naloga}
+                    Gladina Mrtvega morja leži v depresiji na $-423~m$ nadmorske višine, njegova največja globina pa je $378~m$.
+                    Kolikšna je najmanjša nadmorska višina dna Mrtvega morja?
+                \end{exampleblock}}
+
+                \only<5->{\begin{exampleblock}{Naloga}
+                    Za katera cela števila $x$ ima izraz $3x-5(x+2)$ večjo ali enako vrednost od izraza $4-(12+x)$?
+                \end{exampleblock}}
+    
+        \end{frame}
 
     % \subsection{Izraz, enačba, neenačba}
 
