@@ -760,13 +760,13 @@
         \begin{frame}
             \frametitle{Urejenost naravnih in celih števil}
 
-            \begin{alertblock}{}
+            \only<2->{\begin{alertblock}{}
                 Številska množica je \textbf{urejena}, kadar lahko po velikosti primerjamo njena poljubna elementa.
-            \end{alertblock}
+            \end{alertblock}}
 
-            \begin{block}{}
+            \only<3->{\begin{block}{}
                 Pri urejanju števil uporabljamo naslednje znake:
-                \begin{table}
+                \only<4->{\begin{table}
                     \centering
                     \addtolength{\tabcolsep}{6pt}
                     \renewcommand{\arraystretch}{1.4}                
@@ -783,99 +783,98 @@
                                 $\mathbf{=}$ & enako \\
                         \hhline{|b:==:b|}
                     \end{tabular}
-                \end{table}
-            \end{block}
+                \end{table}}
+            \end{block}}
         \end{frame}
 
         \begin{frame}
-            \begin{block}{}
+            \only<2->{\begin{block}{}
                 Za poljubni števili $x,y\in\mathbb{Z}$ velja natanko ena izmed naslednjih možnosti: $x>y$, $x<y$ ali $x=y$.
-            \end{block}
+            \end{block}}
 
-            \begin{block}{}
+            \only<3->{\begin{block}{}
                 $$\mathbf{x>y \Leftrightarrow x-y>0}$$
-                Slika števila $x$ leži na številski premici desno od slike števila $y$.
-            \end{block}
+                \only<4->{Slika števila $x$ leži na številski premici desno od slike števila $y$.}
+            \end{block}}
 
-            \begin{block}{}
+            \only<5->{\begin{block}{}
                 $$\mathbf{x<y \Leftrightarrow x-y<0}$$
-                Slika števila $x$ leži na številski premici levo od slike števila $y$.
-            \end{block}
+                \only<6->{Slika števila $x$ leži na številski premici levo od slike števila $y$.}
+            \end{block}}
 
-            \begin{block}{}
+            \only<7->{\begin{block}{}
                 $$\mathbf{x=y \Leftrightarrow x-y=0}$$
-                Slika števila $x$ sovpada s sliko števila $y$.
-            \end{block}
+                \only<8->{Slika števila $x$ sovpada s sliko števila $y$.}
+            \end{block}}
 
         \end{frame}
 
         \begin{frame}
-            \begin{block}{Pozitivna števila}
-                V množici $\mathbb{Z}$ so pozitivna tista števila, ki so večja od števila $0$ 
-                in njihove slike ležijo desno od izhodišča.
-            \end{block}
+            \only<2->{\begin{block}{Pozitivna števila}
+                \only<3->{V množici $\mathbb{Z}$ so pozitivna tista števila, ki so večja od števila $0$ 
+                in njihove slike ležijo desno od izhodišča.}
+            \end{block}}
             
-            \begin{block}{Negativna števila}
-                V množici $\mathbb{Z}$ so negativna tista števila, ki so manjša od števila $0$ 
-                in njihove slike ležijo levo od izhodišča.
-            \end{block}
+            \only<4->{\begin{block}{Negativna števila}
+                \only<5->{V množici $\mathbb{Z}$ so negativna tista števila, ki so manjša od števila $0$ 
+                in njihove slike ležijo levo od izhodišča.}
+            \end{block}}
 
-            \begin{block}{}
+            \only<6->{\begin{block}{}
                 Vsako pozitivno celo število (vsako naravno število) je večje od katerega koli negativnega celega števila.
-            \end{block}
+            \end{block}}
 
-            \begin{block}{}
+            \only<7->{\begin{block}{}
                 Velja pa tudi:
                 $$x\leq y \Leftrightarrow x-y\leq 0 $$
-                $$x\geq y \Leftrightarrow x-y\geq 0 $$
-            \end{block}
+                \only<8->{$$x\geq y \Leftrightarrow x-y\geq 0 $$}
+            \end{block}}
         \end{frame}
 
 
         \begin{frame}
-            \begin{alertblock}{}
+            \only<2->{\begin{alertblock}{}
                 Z relacijo \textit{biti manjši ali enak} je množica $\mathbb{Z}$ \textbf{linearno urejena}, 
                 to pomeni, da veljajo:
-            \end{alertblock}
+            \end{alertblock}}
             
-            \begin{block}{Refleksivnost}
-                $$\forall x\in\mathbb{Z}: x\leq x$$
-            \end{block}
+            \only<3->{\begin{block}{Refleksivnost}
+                \only<4->{$$\forall x\in\mathbb{Z}: x\leq x$$}
+            \end{block}}
 
-            \begin{block}{Antisimetričnost}
-                $$\forall x,y\in\mathbb{Z}: x\leq y \land y\leq x \Rightarrow x=y$$
-            \end{block}
+            \only<5->{\begin{block}{Antisimetričnost}
+                \only<6->{$$\forall x,y\in\mathbb{Z}: x\leq y \land y\leq x \Rightarrow x=y$$}
+            \end{block}}
 
-            \begin{block}{Tranzitivnost}
-                $$\forall x,y,z\in\mathbb{Z}: x\leq y \land y\leq z \Rightarrow x\leq z$$
-            \end{block}
+            \only<7->{\begin{block}{Tranzitivnost}
+                \only<8->{$$\forall x,y,z\in\mathbb{Z}: x\leq y \land y\leq z \Rightarrow x\leq z$$}
+            \end{block}}
 
-            \begin{block}{Stroga sovisnost}
-                $$\forall x,y\in\mathbb{Z}; x\neq y: x\leq y \lor y\leq x$$
-
-            \end{block}
+            \only<9->{\begin{block}{Stroga sovisnost}
+                \only<10->{$$\forall x,y\in\mathbb{Z}; x\neq y: x\leq y \lor y\leq x$$}
+            \end{block}}
 
         \end{frame}
 
         \begin{frame}
-            \begin{block}{Monotonost vsote}
-                $$x<y \Rightarrow x+z<y+z \quad \quad x\leq y \Rightarrow x+z\leq y+z$$
-                Če na obeh straneh neenakosti prištejemo isto število, se neenakost ohrani.
-            \end{block}
+            \only<2->{\begin{block}{Monotonost vsote}
+                \only<3->{$$x<y \Rightarrow x+z<y+z \quad \quad x\leq y \Rightarrow x+z\leq y+z$$}
+                \only<4->{Če na obeh straneh neenakosti prištejemo isto število, se neenakost ohrani.}
+            \end{block}}
 
-            \begin{block}{}
+            \only<5->{\begin{block}{}
                 $$x<y \land z>0 \Rightarrow x\cdot z<y\cdot z \quad \quad x\leq y \land z>0 \Rightarrow x\cdot z\leq y\cdot z$$
-                Pri množenju neenakosti z negativnim številom se znak neenakosti ohrani.
-            \end{block}
+                \only<6->{Pri množenju neenakosti z negativnim številom se znak neenakosti ohrani.}
+            \end{block}}
 
-            \begin{block}{}
+            \only<7->{\begin{block}{}
                 $$x<y \land z<0 \Rightarrow x\cdot z>y\cdot z \quad \quad x\leq y \land z<0 \Rightarrow x\cdot z\geq y\cdot z$$
-                Pri množenju neenakosti z negativnim številom se znak neenakosti obrne.
-            \end{block}
+                \only<8->{Pri množenju neenakosti z negativnim številom se znak neenakosti obrne.}
+            \end{block}}
 
-            \begin{block}{}
+            \only<9->{\begin{block}{}
                 Obravnavane lastnosti veljajo tudi za relaciji $\geq$ in $>$.
-            \end{block}
+            \end{block}}
 
         \end{frame}
 
