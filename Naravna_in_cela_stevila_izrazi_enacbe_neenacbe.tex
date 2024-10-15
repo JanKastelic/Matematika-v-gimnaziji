@@ -899,6 +899,143 @@
     
         \end{frame}
 
+
+        \section{Potence in izrazi}
+    \subsection{Potence z naravnim eksponentom}
+
+
+        \begin{frame}
+            \frametitle{Potence z naravnim eksponentom}
+
+            \only<2->{\begin{alertblock}{Potenca z naravnim eksponentom}
+                Potenca $\mathbf{x^n}$ z \textbf{osnovo}/\textbf{bazo} $x$ in \textbf{eksponentom}/\textbf{stopnjo} $n \in \mathbb{N}$, je produkt $n$ faktorjev enakih $x$.
+
+                \only<3->{$$ \mathbf{x^n=\underbrace{x\cdot x\cdot \ldots \cdot x}_\text{n faktorjev}}  $$}
+            \end{alertblock}}
+            
+            \only<4->{\begin{block}{}
+                \begin{figure}
+                    \begin{tikzpicture}
+
+                        \draw[thick] (0,0)--(2,0); 
+                        \node at (1,0.15) {$x$};
+
+                        \only<5->{\fill[red!40] (3,0) rectangle (5,2);
+                        \draw[black,thick] (3,0) rectangle (5,2); 
+                        \node at (4,1) {$x^2$};}
+
+                        \only<6->{\fill[red!40] (6,0) rectangle (8,2);
+                        \fill[red!40] (7,2.5)--(6,2)--(8,2)--(9,2.5)--cycle;
+                        \fill[red!40] (8,0)--(9,0.5)--(9,2.5)--(8,2)--cycle;
+                        \draw[black,thick] (6,0) rectangle (8,2);
+                        \draw[black,thick] (7,2.5)--(6,2)--(8,2)--(9,2.5)--cycle;
+                        \draw[black,thick] (8,0)--(9,0.5)--(9,2.5)--(8,2)--cycle;
+                        \node at (7,1) {$x^3$};}
+                    
+                    \end{tikzpicture}
+                \end{figure}
+            \end{block}}
+
+        \end{frame}
+
+        
+        \begin{frame}
+            \frametitle{Pravila za računanje s potencami}
+            
+            \only<2->{\begin{block}{}
+                \only<2>{$$ x^n \cdot x^m=$$}
+                \only<3>{$$ x^n \cdot x^m=\underbrace{(x\cdot x\cdot\ldots\cdot x)}_\text{n faktorjev}\cdot\underbrace{(x\cdot x\cdot\ldots\cdot x)}_\text{m faktorjev}=$$}
+                \only<4->{$$ x^n \cdot x^m=\underbrace{(x\cdot x\cdot\ldots\cdot x)}_\text{n faktorjev}\cdot\underbrace{(x\cdot x\cdot\ldots\cdot x)}_\text{m faktorjev}=x^{n+m}$$}
+
+                
+
+                \only<5->{Dve potenci z isto osnovo zmnožimo tako, da osnovo ohranimo, eksponenta pa seštejemo.}
+            \end{block}}
+
+            \only<6->{\begin{block}{}
+                \only<6>{$$ (x^n)^m=$$}
+                \only<7>{$$ (x^n)^m=\underbrace{\underbrace{(x\cdot x\cdot\ldots\cdot x)}_\text{n faktorjev}\cdot\underbrace{(x\cdot x\cdot\ldots\cdot x)}_\text{n faktorjev}\cdot\ldots\cdot\underbrace{(x\cdot x\cdot\ldots\cdot x)}_\text{n faktorjev}}_\text{m faktorjev}=$$}
+                \only<8->{$$ (x^n)^m=\underbrace{\underbrace{(x\cdot x\cdot\ldots\cdot x)}_\text{n faktorjev}\cdot\underbrace{(x\cdot x\cdot\ldots\cdot x)}_\text{n faktorjev}\cdot\ldots\cdot\underbrace{(x\cdot x\cdot\ldots\cdot x)}_\text{n faktorjev}}_\text{m faktorjev}=x^{n\cdot m}$$}
+                
+                \only<9->{Potenco potenciramo tako, da osnovo ohranimo, ekponenta pa zmnožimo.}
+            \end{block}}
+
+        \end{frame}
+
+        \begin{frame}
+
+            \only<2->{\begin{block}{}
+                \only<2>{$$ (xy)^n =$$}
+                \only<3>{$$ (xy)^n =\underbrace{(xy\cdot xy\cdot\ldots\cdot xy)}_\text{n faktorjev}=\underbrace{(x\cdot x\cdot\ldots\cdot x)}_\text{n faktorjev}\cdot\underbrace{(y\cdot y\cdot\ldots\cdot y)}_\text{n faktorjev}=$$}
+                \only<4->{$$ (xy)^n =\underbrace{(xy\cdot xy\cdot\ldots\cdot xy)}_\text{n faktorjev}=\underbrace{(x\cdot x\cdot\ldots\cdot x)}_\text{n faktorjev}\cdot\underbrace{(y\cdot y\cdot\ldots\cdot y)}_\text{n faktorjev}=x^n y^n$$}
+
+
+
+                \only<5->{Produkt dveh ali več števil potenciramo tako, da potenciramo posamezne faktorje in jih potem zmnožimo.}
+            \end{block}}
+
+            \only<6->{\begin{block}{}
+                Za naravne eksponente velja še:
+                \only<7->{$$(-x)^{2n}=x^{2n}$$}
+                \only<8->{$$(-x)^{2n+1}=-x^{2n+1}$$}
+            \end{block}}
+
+            \only<9->{\begin{block}{}
+                $$(-1)^n=\begin{cases}
+                    1; &n=2k \\
+                    -1; &n=2k-1
+                \end{cases}; k\in\mathbb{N}$$
+            \end{block}}
+        \end{frame}
+
+        \begin{frame}
+
+            \only<2->{\begin{exampleblock}{Naloga}
+                Števila $-3^2$, $(-4)^2$, $-2^4$, $(-1)^{2024}$, $(-2)^3$ in $(-3)^2$ uredite po velikosti od najmanjšega do največjega. \\ ~ \\ ~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Poiščite podatke in jih zapišite na dva načina: s potenco in številom brez potence.
+                \begin{itemize}
+                    \item Razdalja med Zemljo in Soncem
+                    \item Zemljina masa
+                    \item Masa Sonca
+                    \item Število zvezd v naši Galaksiji
+                \end{itemize}
+            \end{exampleblock}}
+
+        \end{frame}
+
+        \begin{frame}
+
+            \only<2->{\begin{exampleblock}{Naloga}
+                Izračunajte.
+                \only<3->{\begin{itemize}
+                    \item $(-3)^2+2^4$ \\ ~
+                    \item $(5-3)^3+(-3)^2$ \\ ~
+                    \item $(2^2+1)^2+(-3)^3+(-2)^4$ \\ ~
+                    \item $(-1)^{2024}+((-2)^5+5^2-(7-3^2)^3)^2$ \\ ~
+                    \item $-1^{2n-1}+(-1)^{2n-1}$ \\ ~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Poenostavite izraz.
+                \only<3->{\begin{itemize}
+                    \item $2^7\cdot 2^3$ \\~
+                    \item $a^3\cdot a^{12}\cdot a^5$ \\~
+                    \item $(2z)^3$ \\~
+                    \item $(m^2\cdot m^4)^3$ \\~
+                    \item $a^3+2a^3-6a^3$ \\~
+                    \item $x^2\cdot x^4+(-2x^3)^2-2(-x)^6$ \\~
+                \end{itemize}}
+            \end{exampleblock}}
+
+    \end{frame}
+
+
     % \subsection{Izraz, enačba, neenačba}
 
     %     \begin{frame}
@@ -919,25 +1056,7 @@
         %     \end{alertblock}
         % \end{frame}
 
-    % \subsection{Računanje s potencami z naravnimi eksponenti}
 
-    %     \begin{frame}
-    %         \frametitle{Računanje s potencami z naravnimi eksponenti}
-
-    %         Potenca $\mathbf{a^n}$, pri čemer je $n \in \mathbb{N}$, je produkt $n$ faktorjev enakih $a$.
-
-    %         \begin{figure}
-    %             \includegraphics[scale=0.5]{Slike in skice/Potenca.jpg}
-    %         \end{figure}
-    
-    %         \textbf{Pravila za računanje s potencami}:
-    %         \begin{itemize}
-    %             \item $\mathbf{a^n \cdot b^n = (ab)^n}$ - potenci z enakima eksponentoma zmnožimo tako, da zmnožimo osnovi in prepišemo eksponent
-    %             \item $\mathbf{a^m \cdot a^n = a^{m+n}}$ - potenci z enako osnovo zmnožimo tako, da osnovo prepišemo in seštejemo eksponenta
-    %             \item $\mathbf{(a^n)^m = a^{nm}}$ - potenco potenciramo tako, da osnovo prepišemo in zmnožimo eksponenta
-    %         \end{itemize}
-
-    %     \end{frame}
 
     % \subsection{Razčlenjevanje izrazov}
 
