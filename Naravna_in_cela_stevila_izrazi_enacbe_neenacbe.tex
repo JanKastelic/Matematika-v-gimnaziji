@@ -650,11 +650,10 @@
             \end{block}}
 
             \only<7->{\begin{block}{}
-                $$\mathbf{(-x)(-y)=xy}$$
-                \only<8->{Produkt liho mnogo negativnih faktorjev je negativno število.}
+                Produkt liho mnogo negativnih faktorjev je negativno število.
             \end{block}}
 
-            \only<9->{\begin{block}{}
+            \only<8->{\begin{block}{}
                 Seštevanje, odštevanje in množenje so v množici $\mathbb{Z}$ dvočlene notranje operacije.
             \end{block}}
         \end{frame}
@@ -744,7 +743,7 @@
             \only<3->{\begin{exampleblock}{Naloga}
                 Zapišite enačbe in jih poenostavite.
                 \only<4->{\begin{itemize}
-                    \item Razlika petkratnka $a$ in $b$ je enaka trikratniku vsote štirikratnika $a$ in petkratnika $b$. \\ ~ \\
+                    \item Razlika petkratnika $a$ in $b$ je enaka trikratniku vsote štirikratnika $a$ in petkratnika $b$. \\ ~ \\
                     \item Vsota $x$ in dvakratnika $y$ je enaka razliki petkratnika $x$ in dvanajstkratnika $y$. \\ ~ \\ ~
                 \end{itemize}}
             \end{exampleblock}}
@@ -1138,6 +1137,317 @@
             \end{itemize}}
         \end{exampleblock}}
     \end{frame}
+
+
+    \subsection{Večkratniki}
+
+    \begin{frame}
+        \frametitle{Večkratniki}
+        
+        \only<2->{\begin{alertblock}{}
+            \textbf{Večkratnik} ali tudi \textbf{$k$-kratnik} števila $x$ je vsota $k$ enakih sumandov $x$:
+                \only<3->{$${k\cdot x=\underbrace{x+x+\ldots+x}_\text{$k$ sumandov}}.$$}
+        \end{alertblock}}
+
+        \only<4->{\begin{block}{}
+            Vse večkratnike števila $x$ dobimo tako, da število $x$ zapored pomnožimo z vsemi celimi števili:
+            \only<5->{$$\left\{\ldots,-5x, -4x, -3x, -2x, -x, 0, x, 2x, 3x, 4x, 5x, \ldots\right\}=\left\{kx;\ k,x\in\mathbb{Z}\right\}. $$}
+        \end{block}}
+
+        \only<6->{\begin{alertblock}{}
+            Število $\mathbf{k}$ je \textbf{koeficient} števila oziroma spremenljivke $x$.
+        \end{alertblock}}
+    \end{frame}
+
+    \subsection{Algebrski izrazi}
+
+    \begin{frame}
+        \frametitle{Algebrski izrazi}
+
+        \only<2->{\begin{alertblock}{}
+            \textbf{Algebrski izraz} ali \textbf{izraz} je smiseln zapis sestavljen iz:
+            \begin{itemize}
+                \item<3-> števil,
+                \item<4-> spremenljivk/parametrov, ki predstavljajo števila in jih označujemo s črkami,
+                \item<5-> oznak računskih operacij in funkcij, ki jih povezujejo,
+                \item<6-> oklepajev, ki določajo vrstni red računanja. 
+            \end{itemize}
+        \end{alertblock}}
+
+        \only<7->{\begin{block}{}
+            Če v izraz namesto spremenljivk vstavimo konkretna števila in izračunamo rezultat, dobimo \textbf{vrednost izraza} (pri dani izbiri spremenljivk).
+        \end{block}}
+
+        \only<8->{\begin{block}{}
+            Dva matematična izraza sta \textbf{enakovredna}, če imata pri katerikoli izbiri spremenljivk vedno enako vrednost.
+        \end{block}}
+
+    \end{frame}
+
+    
+    \subsection{Računanje z algebrskimi izrazi}
+
+
+
+    \begin{frame}
+        \frametitle{Računanje z algebrskimi izrazi}
+        \only<2->{\begin{block}{}
+            Pri poenostavljanju izrazov veljajo vsi računski zakoni, ki veljajo za računanje s števili.
+        \end{block}}
+
+        \begin{columns}[T]
+            \column{0.48\textwidth}
+            \only<3->{\begin{block}{Komutativnost seštevanja}
+                \only<4->{$$ \mathbf{x+ y=y+ x}$$}
+            \end{block}}
+
+            \only<5->{\begin{block}{Asociativnost seštevanja}
+                \only<6->{$$ \mathbf{(x+ y)+ z=x+ (y+ z)}$$}
+            \end{block}}
+
+            \column{0.48\textwidth}
+
+            \only<7->{\begin{block}{Komutativnost množenja}
+                \only<8->{$$ \mathbf{x\cdot y=y\cdot x}$$}
+            \end{block}}
+
+            \only<9->{\begin{block}{Asociativnost množenja}
+                \only<10->{$$ \mathbf{(x\cdot y)\cdot z=x\cdot (y\cdot z)}$$}
+            \end{block}}
+        \end{columns}
+
+
+            \only<11->{\begin{block}{Distributivnost seštevanja in množenja}
+                \only<12->{$$ (x+y)\cdot z=\mathbf{x\cdot z+y\cdot z} $$}
+            \end{block}}
+    \end{frame}
+
+    \begin{frame}
+        \only<2->{\begin{block}{}
+            Če v distributivnostnem zakonu zamenjamo levo in desno stran, dobimo pravilo o \textbf{izpostavljanju skupnega faktorja}: $xz+yz=(x+y)z$.
+        \end{block}}
+
+        \only<3->{\begin{block}{Seštevanje in izpostavljanje izrazov}
+            \only<4->{Med seboj lahko seštevamo samo člene, ki se razlikujejo kvečjemu v koeficientu. To naredimo tako, da seštejemo koeficienta.}
+            \only<5->{$$mx^2+ny+kx^2+ly=mx^2+kx^2+ny+ly=(m+k)x^2+(n+l)y $$}
+        \end{block}}
+
+        \only<6->{\begin{block}{Množenje izrazov}
+            \only<7->{Dva izraza zmnožimo tako, da vsak člen prvega izraza zmnožimo z vsakim členom drugega izraza. Potem pa seštejemo podobne člene.}
+            \only<8->{$$(x+y)(z+w)=xz+xw+yz+yw $$}
+        \end{block}}
+    \end{frame}
+
+    \begin{frame}
+        \only<2->{\begin{exampleblock}{Naloga}
+            Poenostavite.
+            \only<3->{\begin{itemize}
+                \item $3a+2b-a+7b$ \\~
+                \item $2a^2b-ab^2+3a^2b$ \\~
+                \item $5a^4-(2a)^4+(-3a^2)^2-3(a^2)^2$ \\~
+                \item $3(a-2(a+b))-2(b-a(-2)^2)$ \\~\\~
+            \end{itemize}}
+        \end{exampleblock}}
+    \end{frame}
+
+    \begin{frame}
+        \only<2->{\begin{exampleblock}{Naloga}
+            Zapišite izraz.
+            \only<3->{\begin{itemize}
+                \item Kvadrat razlike števil $x$ in $y$. \\~
+                \item Razlika kvadratov števil $x$ in $y$. \\~
+                \item Razlika petkratnika $m$ in kvadrata števila $3$. \\~
+                \item Kub razlike sedemkratnika števila $x$ in trikratnika števila $y$. \\~\\~
+            \end{itemize}}
+        \end{exampleblock}}
+    \end{frame}
+
+    \begin{frame}
+        \only<2->{\begin{exampleblock}{Naloga}
+            Izpostavite skupni faktor.
+            \only<3->{\begin{itemize}
+                \item $3x+12y^2$ \\~
+                \item $m^3+8mp$ \\~
+                \item $22a^3-33ab$ \\~
+                \item $kr^2-rk^2$ \\~
+                \item $4u^2v^3-6uv^2$ \\~
+                \item $12a^2b-8(ab)^2-(2ab)^4$ \\~
+            \end{itemize}}
+        \end{exampleblock}}
+    \end{frame}
+
+    \begin{frame}
+        \only<2->{\begin{exampleblock}{Naloga}
+            Izpostavite skupni faktor.
+            \only<3->{\begin{itemize}
+                \item $3x(x+1)+5(x+1)$ \\~
+                \item $(a-1)(a+1)+(a-1)$ \\~
+                \item $4(m-1)-(1-m)(a+b)$ \\~
+                \item $3(c-2)+5c(2-x)$ \\~
+                \item $(-y+x)3a-(y-x)b$ \\~\\~
+            \end{itemize}}
+        \end{exampleblock}}
+    \end{frame}
+
+    \begin{frame}
+        \only<2->{\begin{exampleblock}{Naloga}
+            Izpostavite skupni faktor.
+            \only<3->{\begin{itemize}
+                \item $5^{11}-5^{10}+5^9$ \\~
+                \item $2\cdot 3^8+5\cdot 3^6$ \\~
+                \item $4\cdot 5^{10}-10\cdot 5^8-8\cdot 5^9$ \\~
+                \item $7^5-7^6+7\cdot 7^4$ \\~\\~
+            \end{itemize}}
+        \end{exampleblock}}
+    \end{frame}
+
+    \begin{frame}
+        \only<2->{\begin{exampleblock}{Naloga}
+            Izpostavite skupni faktor.
+            \only<3->{\begin{itemize}
+                \item $3^n-2\cdot 3^{n+1}+3^{n+2}$ \\~
+                \item $2^{k+2}-2^k$ \\~
+                \item $5\cdot 3^m+2\cdot 3^{m+1}$ \\~
+                \item $2^{n-3}+3\cdot 2^{n-2}-2^{n-1}$ \\~
+                \item $3\cdot 5^{n+1}-5^{n+2}+4\cdot 5^{n+3}$ \\~
+                \item $7^n+2\cdot 7^{n-1}-3\cdot 7^{n+1}$ \\~
+            \end{itemize}}
+        \end{exampleblock}}
+    \end{frame}
+
+    \begin{frame}
+        \only<2->{\begin{exampleblock}{Naloga}
+            Izpostavite skupni faktor in izračunajte.
+            \only<3->{\begin{itemize}
+                \item $2^{2n}+4^n+(2^n)^2$ \\~
+                \item $5^{2n+1}-25^n+3\cdot 5^{2n-1}$ \\~
+                \item $5\cdot 2^{3n}-3\cdot 8^{n-1}$ \\~
+                \item $49^n-2\cdot 7^{2n-1}$ \\~\\~
+            \end{itemize}}
+        \end{exampleblock}}
+    \end{frame}
+
+    \begin{frame}
+        \only<2->{\begin{exampleblock}{Naloga}
+            Izpostavite skupni faktor.
+            \only<3->{\begin{itemize}
+                \item $4a^n+6a^{n+1}$ \\~
+                \item $b^n+b^{n+1}-2b^{n-1}$ \\~
+                \item $a^{n-3}+5a^n$ \\~
+                \item $3x^{n+1}-15x^n+18x^{n-1}$ \\~\\~
+            \end{itemize}}
+        \end{exampleblock}}
+    \end{frame}
+
+    \begin{frame}
+        \only<2->{\begin{exampleblock}{Naloga}
+            Zmnožite.
+            \only<3->{\begin{itemize}
+                \item $(x-3)(x+2)$ \\~
+                \item $(2m+3)(5m-1)$ \\~
+                \item $(1-a)(1+a)$ \\~
+                \item $(x-3y)(2x+y)$ \\~
+                \item $(m-2k)(3m-k)$ \\~\\~
+            \end{itemize}}
+        \end{exampleblock}}
+    \end{frame}
+
+    \begin{frame}
+        \only<2->{\begin{exampleblock}{Naloga}
+            Zmnožite.
+            \only<3->{\begin{itemize}
+                \item $(a+b-1)(a-b)$ \\~
+                \item $(2x+y)(3x-4y+5)$ \\~
+                \item $(m+2n-k)(m+2n+k)$ \\~\\~
+            \end{itemize}}
+        \end{exampleblock}}
+    \end{frame}
+
+    \begin{frame}
+        \only<2->{\begin{exampleblock}{Naloga}
+            Zmnožite.
+            \only<3->{\begin{itemize}
+                \item $(x^2-3)(x^3+2)$ \\~
+                \item $(3x^2-y)(5y^4-7x^3)$ \\~
+                \item $(u^3-1)(u^3+1)$ \\~
+                \item $(a^5b^2-4b)(3a^7+2a^2b)$ \\~
+                \item $(a-b)(a^2+ab+b^2)$ \\~
+                \item $(z+w)(z^2-zw+w^2)$ \\~
+            \end{itemize}}
+        \end{exampleblock}}
+    \end{frame}
+
+    \begin{frame}
+        \only<2->{\begin{exampleblock}{Naloga}
+            Poenostavite.
+            \only<3->{\begin{itemize}
+                \item $(2x-y)(3+y)+(y-4)(y+4)-2xy+3(y-2x+5)$ \\~\\~
+                \item $(x-y)(x+y)-(x^2+xy+y^2)(x-y)-(1-x)x^2+(-y)y^2$ \\~\\~
+                \item $2ab+(a-3b^2)(a+3b^2)+2^3(-b^2)^2-(a-b)(b-a)-2a^3$ \\~\\~ \\~
+            \end{itemize}}
+        \end{exampleblock}}
+    \end{frame}
+
+
+    \subsection{Potenciranje izrazov}
+
+
+    % \begin{frame}
+    %     \only<2->{\begin{exampleblock}{Naloga}
+    %         Poenostavite.
+    %         \only<3->{\begin{itemize}
+    %             \item a \\~
+    %         \end{itemize}}
+    %     \end{exampleblock}}
+    % \end{frame}
+
+    % \begin{frame}
+    %     \only<2->{\begin{exampleblock}{Naloga}
+    %         Poenostavite.
+    %         \only<3->{\begin{itemize}
+    %             \item a \\~
+    %         \end{itemize}}
+    %     \end{exampleblock}}
+    % \end{frame}
+
+    % \begin{frame}
+    %     \only<2->{\begin{exampleblock}{Naloga}
+    %         Poenostavite.
+    %         \only<3->{\begin{itemize}
+    %             \item a \\~
+    %         \end{itemize}}
+    %     \end{exampleblock}}
+    % \end{frame}
+
+    % \begin{frame}
+    %     \only<2->{\begin{exampleblock}{Naloga}
+    %         Poenostavite.
+    %         \only<3->{\begin{itemize}
+    %             \item a \\~
+    %         \end{itemize}}
+    %     \end{exampleblock}}
+    % \end{frame}
+
+    % \begin{frame}
+    %     \only<2->{\begin{exampleblock}{Naloga}
+    %         Poenostavite.
+    %         \only<3->{\begin{itemize}
+    %             \item a \\~
+    %         \end{itemize}}
+    %     \end{exampleblock}}
+    % \end{frame}
+
+    % \begin{frame}
+    %     \only<2->{\begin{exampleblock}{Naloga}
+    %         Poenostavite.
+    %         \only<3->{\begin{itemize}
+    %             \item a \\~
+    %         \end{itemize}}
+    %     \end{exampleblock}}
+    % \end{frame}
+
+
+
 
     % \subsection{Izraz, enačba, neenačba}
 
