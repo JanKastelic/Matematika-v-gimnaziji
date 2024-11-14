@@ -1480,18 +1480,18 @@
     \begin{frame}
         \frametitle{Razstavljanje izrazov}
 
-        \begin{alertblock}{}
+        \only<2->{\begin{alertblock}{}
             \textbf{Razstavljanje}/\textbf{razcepljanje}/\textbf{faktorizacija} izraza je zapis izraza kot dveh ali več faktorjev.
-        \end{alertblock}
+        \end{alertblock}}
         
-        \begin{block}{Izpostavljanje skupnega faktorja}
-            $$xy+ xz=x(y+ z)$$            
-            $$xy- xz=x(y- z)$$            
-        \end{block}
+        \only<3->{\begin{block}{Izpostavljanje skupnega faktorja}
+            \only<4->{$$xy+ xz=x(y+ z)$$}            
+            \only<5->{$$xy- xz=x(y- z)$$}            
+        \end{block}}
 
-        \begin{block}{}
+        \only<6->{\begin{block}{}
             Pri razstavljanju smo vedno pozorni na to, da razstavimo vse, kar je mogoče.
-        \end{block}
+        \end{block}}
 
     \end{frame}
 
@@ -1499,72 +1499,73 @@
         % \frametitle{Razstavljanje izrazov}
         % \framesubtitle{Razlika potenc}
         
-        \begin{block}{Razlika kvadratov}
-            $$x^2-y^2=(x-y)(x+y)$$
-        \end{block}
+        \only<2->{\begin{block}{Razlika kvadratov}
+            $$x^2-y^2=\only<3->{(x-y)(x+y)}$$
+        \end{block}}
 
-        \begin{block}{Razlika kubov}
-            $$ x^3-y^3=(x-y)(x^2+xy+y^2) $$
-        \end{block}
+        \only<4->{\begin{block}{Razlika kubov}
+            $$ x^3-y^3=\only<5->{(x-y)(x^2+xy+y^2)} $$
+        \end{block}}
 
-        \begin{block}{Razlika četrtih potenc}
-            $$x^4-y^4=(x-y)(x+y)(x^2+y^2)$$
-        \end{block}
+        \only<6->{\begin{block}{Razlika četrtih potenc}
+            $$x^4-y^4=\only<7->{(x-y)(x+y)(x^2+y^2)}$$
+        \end{block}}
 
-        \begin{block}{Razlika $n$-tih potenc}
-            $$x^n-y^n=(x-y)(x^{n-1}+x^{n-2}y+x^{n-3}y^2+\ldots+xy^{n-2}+y^{n-1})$$
-        \end{block}
+        \only<8->{\begin{block}{Razlika $n$-tih potenc}
+            $$x^n-y^n=\only<9->{(x-y)(x^{n-1}+x^{n-2}y+x^{n-3}y^2+\ldots+xy^{n-2}+y^{n-1})}$$
+        \end{block}}
 
     \end{frame}
 
     \begin{frame}
-        \begin{block}{Vsota kvadratov}
-            Vsote kvadratov $x^2+y^2$ ne moremo razstaviti v množici $\mathbb{Z}$ (oziroma $\mathbb{R}$).
-        \end{block}
+        \only<2->{\begin{block}{Vsota kvadratov}
+            \only<3->{Vsote kvadratov $x^2+y^2$ ne moremo razstaviti v množici $\mathbb{Z}$ (oziroma $\mathbb{R}$).}
+        \end{block}}
         
-        \begin{block}{Vsota kubov}
-            $$ x^3+y^3=(x+y)(x^2-xy+y^2) $$
-        \end{block} 
+        \only<4->{\begin{block}{Vsota kubov}
+            $$ x^3+y^3=\only<5->{(x+y)(x^2-xy+y^2)} $$
+        \end{block}} 
 
-        \begin{block}{Vsota četrtih potenc}
-            Vsote četrtih potenc $x^4+y^4$ ne moremo razstaviti v množici $\mathbb{Z}$ (oziroma $\mathbb{R}$).
-        \end{block}
+        \only<6->{\begin{block}{Vsota četrtih potenc}
+            \only<7->{Vsote četrtih potenc $x^4+y^4$ ne moremo razstaviti v množici $\mathbb{Z}$ (oziroma $\mathbb{R}$).}
+        \end{block}}
 
-        \begin{block}{Vsota $n$-tih potenc}
-            $$x^n+y^n=(x-y)(x^{n-1}+x^{n-2}y+x^{n-3}y^2+\ldots+xy^{n-2}+y^{n-1})$$
-        \end{block}
+        \only<8->{\begin{block}{Vsota $n$-tih potenc}
+            $$x^n+y^n=\only<9->{(x-y)(x^{n-1}+x^{n-2}y+x^{n-3}y^2+\ldots+xy^{n-2}+y^{n-1})}$$
+        \end{block}}
 
     \end{frame}
 
     \begin{frame}
 
-        \begin{block}{}
+        \only<2->{\begin{block}{}
             Trinome, ki sledijo naslednjim oblikam lahko razstavimo. \\
-            Za nekatere trinome pa se lahko zgodi, da jih ne moremo razstaviti v množici $\mathbb{Z}$ (oziroma $\mathbb{R}$).
-        \end{block}
-        \begin{block}{Tričlenik, ki je kvadrat}
-            $$x^2+2xy+y^2=(x+y)^2$$
-        \end{block}
+            \only<3->{Za nekatere trinome pa se lahko zgodi, da jih ne moremo razstaviti v množici $\mathbb{Z}$ (oziroma $\mathbb{R}$).}
+        \end{block}}
+        
+        \only<4->{\begin{block}{Tričlenik, ki je kvadrat}
+            $$x^2+2xy+y^2=\only<5->{(x+y)^2}$$
+        \end{block}}
 
-        \begin{block}{Vi\'etovo pravilo}
-            $$x^2+(a+b)x+ab=(x+a)(x+b)$$
-        \end{block}
+        \only<6->{\begin{block}{Vi\'etovo pravilo}
+            $$x^2+(a+b)x+ab=\only<7->{(x+a)(x+b)}$$
+        \end{block}}
 
-        \begin{block}{Ugibanje}
-            $$ax^2+bx+c=(dx+e)(fx+g) $$
-        \end{block}
+        \only<8->{\begin{block}{Ugibanje}
+            $$ax^2+bx+c=\only<9->{(dx+e)(fx+g)}$$
+        \end{block}}
 
     \end{frame}
 
     \begin{frame}
 
-        \begin{block}{Razstavljanje štiričlenika -- združitev $2$ člena + $2$ člena}
-            $$xa+xb+ya+yb=x(a+b)+y(a+b)=(a+b)(x+y)$$
-        \end{block}
+        \only<2->{\begin{block}{Razstavljanje štiričlenika -- združitev $2$ člena + $2$ člena}
+            $$xa+xb+ya+yb=\only<3->{x(a+b)+y(a+b)=(a+b)(x+y)}$$
+        \end{block}}
 
-        \begin{block}{Razstavljanje štiričlenika -- združitev $3$ členi + $1$ člen}
-            $$a+2ax+x^2-b^2=(a+x)^2-b^2=(a+x-b)(a+x+b)$$
-        \end{block}
+        \only<4->{\begin{block}{Razstavljanje štiričlenika -- združitev $3$ členi + $1$ člen}
+            $$a+2ax+x^2-b^2=\only<5->{(a+x)^2-b^2=(a+x-b)(a+x+b)}$$
+        \end{block}}
 
     \end{frame}
 
