@@ -200,18 +200,23 @@
             \end{alertblock}}
 
             \only<4->{\begin{alertblock}{Deljivost s $7$}
-                \only<5->{Algoritem za preverjanje deljivosti s $7$:
                 \begin{enumerate}
-                    \item<6-> vzamemo enice danega števila in jih pomnožimo s $5$,
-                    \item<7-> prvotnemu številu brez enic prištejemo dobljeni produkt,
-                    \item<8-> vzamemo enice dobljene vsote in jih pomnožimo s $5$,
-                    \item<9-> produkt prištejemo prej dobljenemu številu ...     
+                    \item<5-> Vzamemo enice danega števila in jih pomnožimo s $5$,
+                    \item<6-> prvotnemu številu brez enic prištejemo dobljeni produkt,
+                    \item<7-> vzamemo enice dobljene vsote in jih pomnožimo s $5$ ...
+                    % \item<9-> produkt prištejemo prej dobljenemu številu ...     
                 \end{enumerate}
-                \only<10->{Postopek ponavljamo, dokler ne dobimo dvomestnega števila -- 
+                \only<8->{Postopek ponavljamo, dokler ne dobimo dvomestnega števila -- 
                 če je to deljivo s $7$, je prvotno število deljivo s $7$. 
-                }}
+                }
             \end{alertblock}}
+
+            \only<9->{\begin{block}{Deljivost s sestavljenim številom}
+                    \only<10->{Število zapišemo kot produkt dveh (ali več) tujih števil in
+                    preverimo deljivost z vsakim faktorjem posebej.}
+            \end{block}}
         \end{frame}
+
 
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
@@ -312,8 +317,108 @@
     \subsection{Osnovni izrek o deljenju}
 
         \begin{frame}
-            \frametitle{Osnovni izrek o deljenju}
+            \frametitle{Osnovni izrek o deljenju naravnih števil}
+
+            \begin{alertblock}{Osnovni izrek o deljenju}
+                Za poljubni naravni števili $\mathbf{m}$ (\textbf{deljenec}) in $\mathbf{n}$ (\textbf{delitelj}), $m\geq n$, 
+                obstajata natanko določeni nenegativni števili $\mathbf{k}$ (\textbf{količnik}/\textbf{kvocient}) in $\mathbf{r}$ (\textbf{ostanek}), 
+                da velja: $$m=k\cdot n+r; \quad  0\leq r<n; \quad m,n\in\mathbb{N}; k,r\in\mathbb{N}_0.$$
+            \end{alertblock}
+
+            \begin{block}{}
+                Če je ostanek pri deljenju enak $0$, je število $m$ \textbf{večkratnik} števila $n$. 
+                \\ Tedaj je število $m$ deljivo s številom $n$. Pravimo, da $n$ deli število $m$: $n\mid m$.
+            \end{block}
         \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Določite, katera števila so lahko ostanki pri deljenju naravnega števila $n$ s:
+                \only<3->{\begin{itemize}
+                    \item številom $3$; 
+                    \item številom $7$; 
+                    \item številom $365$. \\~
+                \end{itemize}}
+            \end{exampleblock}}
+
+            \only<4->{\begin{exampleblock}{Naloga}
+                Zapišite prvih nekaj naravnih števil, ki dajo:
+                \only<5->{\begin{itemize}
+                    \item pri deljenju s $4$ ostanek $3$; 
+                    \item pri deljenju s $7$ ostanek $4$; 
+                    \item pri deljenju z $9$ ostanek $4$. \\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Zapišite naravno število, ki da:
+                \only<3->{\begin{itemize}
+                    \item pri deljenju s $7$ količnik $5$ in ostanek $3$; 
+                    \item pri deljenju z $10$ količnik $9$ in ostanek $1$; 
+                    \item pri deljenju s $23$ količnik $2$ in ostanek $22$. \\~
+                \end{itemize}}
+            \end{exampleblock}}
+
+            \only<4->{\begin{exampleblock}{Naloga}
+                Zapišite množico vseh naravnih števil $n$, ki dajo:
+                \only<5->{\begin{itemize}
+                    \item pri deljenju z $2$ ostanek $1$; 
+                    \item pri deljenju z $2$ ostanek $0$; 
+                    \item pri deljenju s $5$ ostanek $2$. \\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Katero število smo delili s $7$, če smo dobili kvocient $3$ in ostanek $5$? \\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                S katerim številom smo delili število $73$, če smo dobili kvocient $12$ in ostanek $1$? \\~\\~
+            \end{exampleblock}}
+
+            \only<4->{\begin{exampleblock}{Naloga}
+                Marjeta ima čebulice tulipana, ki jih želi posaditi v več vrst. 
+                V vsaki od $3$ vrst je izkopala po $8$ jamic, potem pa ugotovila, da ji bosta $2$ čebulici ostali.
+                Koliko čebulic ima Marjeta?  \\~\\~
+            \end{exampleblock}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Če neko število delimo z $8$, dobimo ostanek $7$. Kolikšen je ostanek, če to isto število delimo s $4$? \\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Če neko število delimo s $24$ dobimo ostanek $21$. Kolikšen je ostanek, če to isto število delimo s $3$? \\~\\~
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
 
     \subsection{Praštevila in sestavljena števila}
 
