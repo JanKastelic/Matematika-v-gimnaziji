@@ -319,16 +319,17 @@
         \begin{frame}
             \frametitle{Osnovni izrek o deljenju naravnih števil}
 
-            \begin{alertblock}{Osnovni izrek o deljenju}
-                Za poljubni naravni števili $\mathbf{m}$ (\textbf{deljenec}) in $\mathbf{n}$ (\textbf{delitelj}), $m\geq n$, 
+            \only<2->{\begin{alertblock}{Osnovni izrek o deljenju}
+                \only<3->{Za poljubni naravni števili $\mathbf{m}$ (\textbf{deljenec}) in $\mathbf{n}$ (\textbf{delitelj}), $m\geq n$, 
                 obstajata natanko določeni nenegativni števili $\mathbf{k}$ (\textbf{količnik}/\textbf{kvocient}) in $\mathbf{r}$ (\textbf{ostanek}), 
-                da velja: $$m=k\cdot n+r; \quad  0\leq r<n; \quad m,n\in\mathbb{N}; k,r\in\mathbb{N}_0.$$
-            \end{alertblock}
+                da velja:}
+                \only<4->{$$m=k\cdot n+r; \quad  0\leq r<n; \quad m,n\in\mathbb{N}; k,r\in\mathbb{N}_0.$$}
+            \end{alertblock}}
 
-            \begin{block}{}
+            \only<5->{\begin{block}{}
                 Če je ostanek pri deljenju enak $0$, je število $m$ \textbf{večkratnik} števila $n$. 
                 \\ Tedaj je število $m$ deljivo s številom $n$. Pravimo, da $n$ deli število $m$: $n\mid m$.
-            \end{block}
+            \end{block}}
         \end{frame}
 
         \begin{frame}
@@ -424,6 +425,50 @@
 
         \begin{frame}
             \frametitle{Praštevila in sestavljena števila}
+
+            \only<2->{\begin{block}{}
+                Glede na število deliteljev, lahko naravna števila razdelimo na tri skupine:
+                \begin{itemize}
+                    \item<3-> \textbf{število $1$} -- število, ki ima samo enega delitelja;
+                    \item<4-> \textbf{praštevila} -- števila, ki imajo natanko dva delitelja ($1$ in samega sebe);
+                    \item<5-> \textbf{sestavljena števila} -- števila, ki imajo več kot dva delitelja.
+                \end{itemize}
+                \only<6->{$$ \mathbb{N}=\{1\}\cup \mathbb{P}\cup \{sestavljena~števil\} $$}
+            \end{block}}
+
+            \only<7->{\begin{block}{}
+                Praštevil je neskončno mnogo.
+            \end{block}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{block}{Eratostenovo sito}
+                \only<3->{\begin{longtable}{|c|c|c|c|c|c|c|c|c|c|}
+                    \hline
+                    1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+                    \hline
+                    11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 & 19 & 20 \\
+                    \hline
+                    21 & 22 & 23 & 24 & 25 & 26 & 27 & 28 & 29 & 30 \\
+                    \hline
+                    31 & 32 & 33 & 34 & 35 & 36 & 37 & 38 & 39 & 40 \\
+                    \hline
+                    41 & 42 & 43 & 44 & 45 & 46 & 47 & 48 & 49 & 50 \\
+                    \hline
+                    51 & 52 & 53 & 54 & 55 & 56 & 57 & 58 & 59 & 60 \\
+                    \hline
+                    61 & 62 & 63 & 64 & 65 & 66 & 67 & 68 & 69 & 70 \\
+                    \hline
+                    71 & 72 & 73 & 74 & 75 & 76 & 77 & 78 & 79 & 80 \\
+                    \hline
+                    81 & 82 & 83 & 84 & 85 & 86 & 87 & 88 & 89 & 90 \\
+                    \hline
+                    91 & 92 & 93 & 94 & 95 & 96 & 97 & 98 & 99 & 100 \\
+                    \hline
+                    \end{longtable}
+                    ~\\~\\}
+            \end{block}}
         \end{frame}
 
     \subsection{Osnovni izrek aritmetike}
