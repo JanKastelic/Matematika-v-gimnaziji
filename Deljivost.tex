@@ -429,15 +429,19 @@
             \only<2->{\begin{block}{}
                 Glede na število deliteljev, lahko naravna števila razdelimo na tri skupine:
                 \begin{itemize}
-                    \item<3-> \textbf{število $1$} -- število, ki ima samo enega delitelja;
+                    \item<3-> \textbf{število $1$} -- število, ki ima samo enega delitelja (samega sebe);
                     \item<4-> \textbf{praštevila} -- števila, ki imajo natanko dva delitelja ($1$ in samega sebe);
                     \item<5-> \textbf{sestavljena števila} -- števila, ki imajo več kot dva delitelja.
                 \end{itemize}
-                \only<6->{$$ \mathbb{N}=\{1\}\cup \mathbb{P}\cup \{sestavljena~števil\} $$}
+                \only<6->{$$ \mathbb{N}=\{1\}\cup \mathbb{P}\cup \{sestavljena~števila\} $$}
             \end{block}}
 
             \only<7->{\begin{block}{}
                 Praštevil je neskončno mnogo.
+            \end{block}}
+
+            \only<8->{\begin{block}{}
+                Število $n$ je praštevilo, če ni deljivo z nobenim praštevilom, manjšim ali enakim $\sqrt{n}$.
             \end{block}}
 
         \end{frame}
@@ -471,11 +475,111 @@
             \end{block}}
         \end{frame}
 
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Preverite, ali so dana števila praštevila.
+                \only<3->{\begin{itemize}
+                    \item $103$ \\~
+                    \item $163$ \\~
+                    \item $137$ \\~
+                    \item $197$ \\~
+                    \item $147$ \\~
+                    \item $559$ \\~
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+
     \subsection{Osnovni izrek aritmetike}
 
         \begin{frame}
             \frametitle{Osnovni izrek aritmetike}
+
+            \only<2->{\begin{alertblock}{Osnovni izrek aritmetike}
+                \only<3->{Vsako naravno število lahko enolično/na en sam način (do vrstnega reda faktorjev natančno) zapišemo kot produkt potenc s praštevilskimi osnovami:}
+                \only<4->{$$ n=p_1^{k_1}\cdot p_2^{k_2}\cdot\ldots\cdot p_l^{k_l}.$$}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{}
+                Zapis naravnega števila kot produkt potenc s praštevilskimi osnovami imenujemo tudi \textbf{praštevilski razcep}.
+            \end{block}}
+
         \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Zapišite število $8755$ kot produkt sami praštevil in njihovih potenc. \\~\\~\\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Razcepite število $3520$ na prafaktorje. \\~\\~\\~\\~
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Zapišite praštevilski razcep števila $38250$. \\~\\~\\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Zapišite praštevilski razcep števila $3150$. \\~\\~\\~\\~
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Razcepite število $66$ na prafaktorje in zapišite vse njegove delitelje. \\~\\~\\~\\~
+            \end{exampleblock}}
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Razcepite število $204$ na prafaktorje in zapišite vse njegove delitelje. \\~\\~\\~\\~
+            \end{exampleblock}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Zapišite vse izraze, ki delijo dani izraz.
+                \only<3->{\begin{itemize}
+                    \item $x^2+x-1$ \\~\\~\\~
+                    \item $x^3-x^2-4x+4$ \\~\\~\\~
+                    \item $x^3-27$ \\~\\~\\~
+                \end{itemize}}
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
+
+% \begin{frame}
+%     \only<2->{\begin{exampleblock}{Naloga}
+%         Poenostavite.
+%         \only<3->{\begin{itemize}
+%             \item a \\~
+%         \end{itemize}}
+%     \end{exampleblock}}
+% \end{frame}
 
     \subsection{Največji skupni delitelj in najmanjši skupni večkratnik}
 
