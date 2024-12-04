@@ -586,40 +586,41 @@
         \begin{frame}
             \frametitle{Največji skupni delitelj in najmanjši skupni večkratnik}
 
-            \begin{alertblock}{Največji skupni delitelj}
-                \textbf{Največji skupni delitelj} števil $m$ in $n$ je največje število od tistih, ki delijo števili $m$ in $n$. \\
-                Oznaka: $D(m,n)$.                
-            \end{alertblock}
+            \only<2->{\begin{alertblock}{Največji skupni delitelj}
+                \only<3->{\textbf{Največji skupni delitelj} števil $m$ in $n$ je največje število od tistih, ki delijo števili $m$ in $n$. \\
+                Oznaka: $D(m,n)$.}                
+            \end{alertblock}}
 
-            \begin{alertblock}{Najmanjši skupni večkratnik}
-                \textbf{Najmanjši skupni večkratnik} števil $m$ in $n$ je najmanjše število od tistih, ki so deljiva s številoma $m$ in $n$. \\
-                Oznaka: $v(m,n)$.
-            \end{alertblock}
+            \only<4->{\begin{alertblock}{Najmanjši skupni večkratnik}
+                \only<5->{\textbf{Najmanjši skupni večkratnik} števil $m$ in $n$ je najmanjše število od tistih, ki so deljiva s številoma $m$ in $n$. \\
+                Oznaka: $v(m,n)$.}
+            \end{alertblock}}
 
-            \begin{block}{}
+            \only<6->{\begin{block}{}
                 Števili $m$ in $n$, katerih največji skupni delitelj je $1$, sta \textbf{tuji števili}.
-            \end{block}
+            \end{block}}
         \end{frame}
 
         \begin{frame}
-            \begin{block}{Računanje $D$ in $v$ s prafaktorizacijo števil}
+            \only<2->{\begin{block}{Računanje $D$ in $v$ s prafaktorizacijo števil}
                 \begin{itemize}
-                    \item Števili $m$ in $n$ prafaktoriziramo.
-                    \item Za $D(m,n)$ vzamemo potence, ki so skupne obema številom v prafaktorizaciji.
-                    \item Za $v(m,n)$ vzamemo vse potence, ki se pojavijo v prafaktorizaciji števil, z največjim eksponentom.
+                    \item<3-> Števili $m$ in $n$ prafaktoriziramo.
+                    \item<4-> Za $D(m,n)$ vzamemo potence, ki so skupne obema številom v prafaktorizaciji.
+                    \item<5-> Za $v(m,n)$ vzamemo vse potence, ki se pojavijo v prafaktorizaciji števil, z največjim eksponentom.
                 \end{itemize}                
-            \end{block}
+            \end{block}}
 
-            \begin{block}{}
+            \only<6->{\begin{block}{}
                 Za poljubni naravni števili $m$ in $n$ velja zveza $\mathbf{D(m,n)\cdot v(m,n)=m\cdot n}$.
-            \end{block}
+            \end{block}}
 
-            \begin{block}{Evklidov algoritem}
-                V tem algoritmu zapored uporabljamo osnovni izrek o deljenju. Najprej ga uporabimo na danih dveh številih.
-                V naslednjem koraku deljenec postane prejšnji delitelj, delitelj pa prejšnji ostanek. 
-                V vsakem koraku immamo manjša števila, zato se algoritem konča v končno mnogo korakih.
-                Največji skupni delitelj danih števil $m$ in $n$ je zadnji od $0$ različen ostanek pri deljenju v Evklidovem algoritmu.
-            \end{block}
+            \only<7->{\begin{block}{Evklidov algoritem}
+                \only<8->{V tem algoritmu zapored uporabljamo osnovni izrek o deljenju. Najprej ga uporabimo na danih dveh številih.}
+                \only<9->{V naslednjem koraku deljenec postane prejšnji delitelj, delitelj pa prejšnji ostanek. }
+                \only<10->{V vsakem koraku immamo manjša števila, zato se algoritem konča v končno mnogo korakih.}
+                \only<11->{ Največji skupni delitelj danih števil $m$ in $n$ je zadnji od $0$ različen ostanek pri deljenju v Evklidovem algoritmu.}
+            \end{block}}
+
         \end{frame}
 
         \begin{frame}
