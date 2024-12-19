@@ -9,11 +9,132 @@
     \tableofcontents[currentsection, hideothersubsections]
 \end{frame}
 
-    \subsection{Številski ulomki}
+    \subsection{Ulomki in racionalna števila}
 
         \begin{frame}
-            \frametitle{Številski ulomki}
+            \frametitle{Ulomki}
+
+            \begin{alertblock}{}
+                \textbf{Ulomek} $\frac{x}{y}$ je zapis, ki predstavlja zapis deljenja $$x:y=\frac{x}{y};\quad y\neq 0\land x,y\in\mathbb{Z}.$$
+                Število/izraz $x$ imenujemo \textbf{števec}, $y$ pa \textbf{imenovalec}, med njima je \textbf{ulomkova črta}.
+            \end{alertblock}
+
+            \begin{block}{}
+                Ulomek $\frac{x}{0}$ ni definiran (nima pomena), saj z $0$ ne moremo deliti.
+            \end{block}
+
+            \begin{alertblock}{}
+                \textbf{Algebrski ulomek} je ulomek, v katerem v števcu in/ali imenovalcu nastopajo algebrski izrazi.
+            \end{alertblock}
+
         \end{frame}
+
+        \begin{frame}
+
+            \begin{block}{}
+                Vsako celo število $x\in\mathbb{Z}$ lahko zapišemo z ulomkom: $x=\frac{x}{1}$.
+            \end{block}
+
+            \begin{block}{}
+                \textbf{Ničelni ulomek} je ulomek oblike $\frac{0}{y}=0; y\neq 0$.
+            \end{block}
+
+            \begin{block}{}
+                V ulomku, kjer v števcu ali imenovalcu nastopa negativno število, upoštevamo enakost $$-\frac{x}{y}=\frac{-x}{y}=\frac{x}{-y}.$$
+            \end{block}
+
+            \begin{alertblock}{}
+                Vsakemu neničelnemu ulomku $\frac{x}{y}$ lahko priredimo njegovo \textbf{obratno vrednost}: $$\left(\frac{x}{y}\right)^{-1}=\frac{y}{x}; \quad x,y\in\mathbb{Z}\setminus\{0\}.$$
+            \end{alertblock}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \frametitle{Racionalna števila}
+
+            \begin{block}{}
+                Množica racionalnih števil $\mathbb{Q}$ je sestavljena iz vseh ulomkov (kar pomeni, da vsebuje tudi vsa naravna in cela števila).
+            \end{block}
+
+            \only<2->{\begin{block}{}
+                \centering
+                \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+                    
+                    % Drawing segment A B
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (4.460000,1.500000);%
+                    \draw [line width=0.016cm] (4.540000,1.500000) -- (8.000000,1.500000);%
+                    
+                    % Marking point 0 by circle
+                    \draw [line width=0.016cm] (4.500000,1.500000) circle (0.040000);%
+                    \draw (4.500000,1.500000) node [anchor=south] { $0$ };%
+                    
+                    \only<6->{
+                    % Changing color 255 0 0
+                    \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                    \color{r255g0b0}% 
+                    
+                    % Marking point \mathbb{Q}^+
+                    \draw (6.250000,1.500000) node [anchor=south] { $\mathbb{Q}^+$ };%
+                    
+                    % Drawing segment B 0
+                    \draw [line width=0.016cm] (8.000000,1.500000) -- (4.540000,1.500000);%
+                    }
+
+                    \only<4->{
+                    % Changing color 0 255 0
+                    \definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+                    \color{r0g255b0}% 
+                    
+                    % Marking point \mathbb{Q}^-
+                    \draw (2.750000,1.500000) node [anchor=south] { $\mathbb{Q}^-$ };%
+                    
+                    % Drawing segment A 0
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (4.460000,1.500000);%
+                    }
+
+                    % Changing color 0 0 0
+                    \definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+                    \color{r0g0b0}% 
+                    
+                    % Marking point \mathbb{Q}
+                    \draw (1.500000,2.000000) node  { $\mathbb{Q}$ };%
+                    \color{black}
+                    }
+                    \end{tikzpicture}
+                    
+            \end{block}}
+
+            \only<3->{\begin{block}{}
+                Glede na predznak razdelimo racionalna števila v tri množice:
+                \begin{itemize}
+                    \item<4-> \textcolor{green}{množico negativnih racionalnih števil $\mathbf{\mathbb{Q}^-}$},
+                    \item<5-> množico z elementom nič: $\mathbf{\{0\}}$ in
+                    \item<6-> \textcolor{red}{množico pozitivnih racionalnih števil: $\mathbf{\mathbb{Q}^+}$}.
+                \end{itemize}
+                $$ \mathbb{Q}=\only<4->{\textcolor{green}{\mathbb{Q}^-}}\only<5->{\cup\{0\}}\only<6->{\cup\textcolor{red}{\mathbb{Q}^+}} $$
+            \end{block}}
+            
+
+            % \only<7->{\begin{block}{}
+            %     Množica racionalnih števil je povsod gosta, saj lahko med poljubnima racionalnima številoma vedno najdemo racionalno število (posledično je med dvema racionalnima številoma neskončno mnogo racionalnih števil).
+            % \end{block}}
+
+        \end{frame}
+
+        \begin{frame}
+            \begin{block}{}
+                Ulomka $\frac{x}{y}$ in $\frac{z}{w}$ sta enaka/enakovredna natanko takrat, ko je $xz=wy$; $y,z\neq 0$.
+                $$\frac{x}{y}=\frac{w}{z}\Leftrightarrow xz=wy; \quad y,z\neq 0$$
+            \end{block}
+
+            \begin{block}{}
+                Enaka/enakovredna ulomka sta različna zapisa za isto racionalno število.
+            \end{block}
+        \end{frame}
+
 
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
@@ -119,81 +240,7 @@
         % \end{frame}
 
 
-    \subsection{Racionalna števila}
 
-        \begin{frame}
-            \frametitle{Racionalna števila}
-        \end{frame}
-
-        \begin{frame}
-            \frametitle{Racionalna števila}
-
-            \only<2->{\begin{block}{}
-                \centering
-                \begin{tikzpicture}
-                    % \clip (0,0) rectangle (14.000000,10.000000);
-                    {\footnotesize
-                    
-                    % Drawing segment A B
-                    \draw [line width=0.016cm] (1.000000,1.500000) -- (4.460000,1.500000);%
-                    \draw [line width=0.016cm] (4.540000,1.500000) -- (8.000000,1.500000);%
-                    
-                    % Marking point 0 by circle
-                    \draw [line width=0.016cm] (4.500000,1.500000) circle (0.040000);%
-                    \draw (4.500000,1.500000) node [anchor=south] { $0$ };%
-                    
-                    \only<6->{
-                    % Changing color 255 0 0
-                    \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
-                    \color{r255g0b0}% 
-                    
-                    % Marking point \mathbb{Q}^+
-                    \draw (6.250000,1.500000) node [anchor=south] { $\mathbb{Q}^+$ };%
-                    
-                    % Drawing segment B 0
-                    \draw [line width=0.016cm] (8.000000,1.500000) -- (4.540000,1.500000);%
-                    }
-
-                    \only<4->{
-                    % Changing color 0 255 0
-                    \definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
-                    \color{r0g255b0}% 
-                    
-                    % Marking point \mathbb{Q}^-
-                    \draw (2.750000,1.500000) node [anchor=south] { $\mathbb{Q}^-$ };%
-                    
-                    % Drawing segment A 0
-                    \draw [line width=0.016cm] (1.000000,1.500000) -- (4.460000,1.500000);%
-                    }
-
-                    % Changing color 0 0 0
-                    \definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
-                    \color{r0g0b0}% 
-                    
-                    % Marking point \mathbb{Q}
-                    \draw (1.500000,2.000000) node  { $\mathbb{Q}$ };%
-                    \color{black}
-                    }
-                    \end{tikzpicture}
-                    
-            \end{block}}
-
-            \only<3->{\begin{block}{}
-                Glede na predznak razdelimo racionalna števila v tri množice:
-                \begin{itemize}
-                    \item<4-> \textcolor{green}{množico negativnih racionalnih števil $\mathbf{\mathbb{Q}^-}$},
-                    \item<5-> množico z elementom nič: $\mathbf{\{0\}}$ in
-                    \item<6-> \textcolor{red}{množico pozitivnih racionalnih števil: $\mathbf{\mathbb{Q}^+}$}.
-                \end{itemize}
-                $$ \mathbb{Q}=\only<4->{\textcolor{green}{\mathbb{Q}^-}}\only<5->{\cup\{0\}}\only<6->{\cup\textcolor{red}{\mathbb{Q}^+}} $$
-            \end{block}}
-            
-
-            % \only<7->{\begin{block}{}
-            %     Množica racionalnih števil je povsod gosta, saj lahko med poljubnima racionalnima številoma vedno najdemo racionalno število (posledično je med dvema racionalnima številoma neskončno mnogo racionalnih števil).
-            % \end{block}}
-
-        \end{frame}
 
         \subsection{Urejenost racionalnih števil}
         \begin{frame}
