@@ -9,6 +9,8 @@
     \tableofcontents[currentsection, hideothersubsections]
 \end{frame}
 
+%%% Ulomki in racionalna števila
+
     \subsection{Ulomki in racionalna števila}
 
         \begin{frame}
@@ -139,6 +141,9 @@
         \end{frame}
 
 
+
+%%% naloge
+
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
                 Za katere vrednosti $x$ ulomek ni definiran?
@@ -248,11 +253,42 @@
         %     \end{exampleblock}}
         % \end{frame}
 
-        \subsection{Razširjanje in krajšanje ulomkov}
+        %%% Razširjanje in krajšanje ulomkov
+
+    \subsection{Razširjanje in krajšanje ulomkov}
 
         \begin{frame}
             \frametitle{Razširjanje in krajšanje ulomkov}
+
+            \only<2->{\begin{alertblock}{Razširjanje ulomka}
+                \only<3->{Ulomek ohrani svojo vrednost, če števec in imenovalec pomnožimo z istim neničelnim številom oziroma izrazom.
+                Temu postopku pravimo \textbf{razširjanje ulomka}.}
+
+                \only<4->{$$\dfrac{x}{y}=\dfrac{x\cdot z}{y\cdot z}; \quad x\in\mathbb{Z} \land y,z\in\mathbb{Z}\setminus\{0\}$$}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{}
+                Ko ulomke seštevamo ali odštevamo, jih razširimo na \textbf{najmanjši skupni imenovalec}, 
+                ki je najmanjši skupni večkratnik vseh imenovalcev.
+            \end{block}}
+
         \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{alertblock}{Krajšanje ulomka}
+                \only<3->{Vrednost ulomka se ne spremeni, če števec in imenovalec delimo z istim neničelnim številom oziroma izrazom.
+                Temu postopku rečemo \textbf{krajšanje ulomka}.}
+
+                \only<4->{$$\dfrac{x\cdot z}{y\cdot z}=\dfrac{x}{y}; \quad x\in\mathbb{Z}\land y,z\in\mathbb{Z}\setminus\{0\} $$}
+            \end{alertblock}}
+
+            \only<5->{\begin{alertblock}{Okrajšan ulomek}
+                \only<6->{Ulomek $\dfrac{x}{y}$ je \textbf{okrajšan}, če je $(x,y)=1$, torej če sta števec in imenovalec tuji števili.}
+            \end{alertblock}}
+        \end{frame}
+
+
+        %%% naloge
 
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
@@ -347,12 +383,28 @@
         % \end{frame}
 
 
+%%% Seštevanje in odštevanje ulomkov
+
         \subsection{Seštevanje in odštevanje ulomkov}
 
         \begin{frame}
             \frametitle{Seštevanje in odštevanje ulomkov}
+
+            \only<2->{\begin{alertblock}{Seštevanje ulomkov}
+                \only<3->{Ulomke \textbf{seštevamo} tako, da jih razširimo na skupni imenovalec, nato seštejemo števce, imenovalce pa prepišemo.}
+                \only<4->{$$\dfrac{x}{y}+\dfrac{z}{w}=\dfrac{xw}{yw}+\dfrac{yz}{yw}=\dfrac{xw+yz}{yw}; \quad x,z\in\mathbb{Z}\land y,w\in\mathbb{Z}\setminus\{0\} $$}
+            \end{alertblock}}
+
+            \only<5->{\begin{alertblock}{Odštevanje ulomkov}
+                \only<6->{Ulomke \textbf{odštevamo} tako, da prištejemo nasprotni ulomek.}
+                \only<7->{$$\dfrac{x}{y}-\dfrac{z}{w}=\dfrac{x}{y}+\left(-\dfrac{z}{w}\right)=\dfrac{xw}{yw}+\dfrac{-yz}{yw}=\dfrac{xw-yz}{yw}; \quad x,z\in\mathbb{Z}\land y,w\in\mathbb{Z}\setminus\{0\} $$}
+            \end{alertblock}}
+
+    
         \end{frame}
 
+
+%%% naloge
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
                 Izračunajte.
@@ -404,13 +456,26 @@
         \end{frame}
 
 
+        %%% Množenje ulomkov
         
         \subsection{Množenje ulomkov}
 
         \begin{frame}
             \frametitle{Množenje ulomkov}
+
+            \only<2->{\begin{alertblock}{Množenje ulomkov}
+                \only<3->{Ulomka \textbf{množimo} tako, da števce množimo s števci, imenovalce pa množimo z imenovalci.}
+                \only<4->{$$\dfrac{x}{y}\cdot \dfrac{z}{w}=\dfrac{xz}{yw}; \quad x,z\in\mathbb{Z}\land y,w\in\mathbb{Z}\setminus\{0\}$$}
+                
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{}
+                Produkt danega in njemu obratnega ulomka je enak $1$.
+                \only<6->{$$\dfrac{x}{y}\cdot\left(\dfrac{x}{y}\right)^{-1}=\dfrac{x}{y}\cdot\dfrac{y}{x}=1$$}
+            \end{block}}
         \end{frame}
 
+        %%% naloge
 
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
@@ -461,12 +526,27 @@
 
 
 
+        %%% Deljenje ulomkov
+
         \subsection{Deljenje ulomkov}
 
         \begin{frame}
             \frametitle{Deljenje ulomkov}
+
+            \only<2->{\begin{alertblock}{Deljenje ulomkov}
+                \only<3->{Ulomek \textbf{delimo} z neničelnim ulomkom tako, da prvi ulomek množimo z obratno vrednostjo drugega ulomka.}
+                \only<4->{$$\dfrac{x}{y}:\dfrac{z}{w}=\dfrac{x}{y}\cdot\left(\dfrac{z}{w}\right)^{-1}=\dfrac{x}{y}\cdot\dfrac{w}{z}=\dfrac{xw}{yz}; \quad x\in\mathbb{Z}\land y,z,w\in\mathbb{Z}\setminus\{0\} $$}
+            \end{alertblock}}
+
+            \only<5->{\begin{alertblock}{}
+                Deljenju ulomkov lahko zapišemo kot \textbf{dvojni ulomek}.
+                \only<6->{$$\dfrac{x}{y}:\dfrac{z}{w}=\dfrac{\frac{x}{y}}{\frac{z}{w}}; \quad x\in\mathbb{Z}\land y,z,w\in\mathbb{Z}\setminus\{0\} $$}
+            \end{alertblock}}
+
         \end{frame}
 
+
+        %%% naloge
 
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
@@ -543,17 +623,21 @@
         % \end{frame}
 
 
+%%%% Urejenost racionalnih števil
 
         \subsection{Urejenost racionalnih števil}
         \begin{frame}
             \frametitle{Urejenost racionalnih števil}
 
             \only<2->{\begin{alertblock}{}
-                Množica racionalnih števil je \textbf{linearno urejena} z relacijo \textit{biti manjši} ($<$) oziroma \textit{biti večji} ($>$). Za ulomka $\frac{a}{b}$ in $\frac{c}{d}$ ($b,d\in\mathbb{N}$) velja natanko ena izmed treh možnosti:
+                Množica racionalnih števil je \textbf{linearno urejena} z relacijo \textit{biti manjši ali enak} ($\leq$) oziroma \textit{biti večji ali enak} ($\geq$). 
+                
+                Za ulomka $\dfrac{x}{y}$ in $\dfrac{z}{w}$ ($y,w\in\mathbb{Z}\setminus\{0\}$) velja natanko ena izmed treh možnosti:
+                
                 \begin{enumerate}
-                    \item<3-> prvi ulomek je večji od drugega $\frac{a}{b}>\frac{c}{d}$ natanko tedaj, ko je $ad>bc$;
-                    \item<4-> drugi ulomek je večji od prvega $\frac{a}{b}<\frac{c}{d}$ natanko tedaj, ko je $ad<bc$;
-                    \item<5-> ulomka sta enaka $\frac{a}{b}=\frac{c}{d}$ natanko tedaj, ko je $ad=bc$.
+                    \item<3-> prvi ulomek je večji od drugega $\dfrac{x}{y}>\dfrac{z}{w}$ natanko tedaj, ko je $xw>yz$;
+                    \item<4-> drugi ulomek je večji od prvega $\dfrac{x}{y}<\dfrac{z}{w}$ natanko tedaj, ko je $xw<yz$;
+                    \item<5-> ulomka sta enaka $\dfrac{x}{y}=\dfrac{z}{w}$ natanko tedaj, ko je $xw=yz$.
                 \end{enumerate}
             \end{alertblock}}
 
@@ -568,7 +652,7 @@
 
         \begin{frame}
             \only<2->{\begin{block}{}
-                Slika večjega racionalnega števila \textcolor{red}{$\frac{a}{b}$} je na številski premici desno od slike manjšega racionalnega števila \textcolor{green}{$\frac{c}{d}$}. \\
+                Slika večjega racionalnega števila \textcolor{red}{$\dfrac{x}{y}$} je na številski premici desno od slike manjšega racionalnega števila \textcolor{green}{$\dfrac{z}{w}$}. \\
                 \only<3->{\centering
                 \begin{tikzpicture}
                     % \clip (0,0) rectangle (14.000000,10.000000);
@@ -588,17 +672,17 @@
                     \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
                     \color{r255g0b0}% 
                     
-                    % Marking point \frac{a}{b} by circle
+                    % Marking point \frac{x}{y} by circle
                     \draw [line width=0.016cm] (4.000000,1.500000) circle (0.040000);%
-                    \draw (4.000000,1.500000) node [anchor=north] { $\frac{a}{b}$ };%
+                    \draw (4.000000,1.500000) node [anchor=north] { $\frac{x}{y}$ };%
                     
                     % Changing color 0 255 0
                     \definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
                     \color{r0g255b0}% 
                     
-                    % Marking point \frac{c}{d} by circle
+                    % Marking point \frac{z}{w} by circle
                     \draw [line width=0.016cm] (2.500000,1.500000) circle (0.040000);%
-                    \draw (2.500000,1.500000) node [anchor=north] { $\frac{c}{d}$ };%
+                    \draw (2.500000,1.500000) node [anchor=north] { $\frac{z}{w}$ };%
                     \color{black}
                     }
                 \end{tikzpicture}}    
@@ -657,16 +741,16 @@
         \end{frame}
 
         \begin{frame}
-            \frametitle{Lastnosti relacije urejenosti}
+            \textbf{\large{Lastnosti relacije urejenosti}}
             
             \only<2->{\begin{alertblock}{Monotonost vsote}
                 \only<3->{Če na obeh straneh neenakosti prištejemo isto število, se neenakost ohrani.}
-                \only<4->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \Rightarrow \quad \frac{a}{b}+\frac{e}{f}<\frac{c}{d}+\frac{e}{f}} $$}
+                \only<4->{$$ \dfrac{x}{y}<\dfrac{z}{w} \quad \Rightarrow \quad \dfrac{x}{y}+\dfrac{r}{q}<\dfrac{z}{w}+\dfrac{r}{q} $$}
                 % \only<5->{$$ \mathbf{p<q \quad \Rightarrow \quad p+r<q+r} $$}
             \end{alertblock}}
 
             \only<6->{\begin{alertblock}{Tranzitivnost}
-                \only<7->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \wedge \quad \frac{c}{d}<\frac{e}{f} \quad \Rightarrow \quad \frac{a}{b}<\frac{e}{f}} $$}
+                \only<7->{$$ \dfrac{x}{y}<\dfrac{z}{w} \quad \wedge \quad \dfrac{z}{w}<\dfrac{r}{q} \quad \Rightarrow \quad \dfrac{x}{y}<\dfrac{r}{q} $$}
                 % \only<8->{$$ \mathbf{p<q \quad \wedge \quad q<r \quad \Rightarrow \quad p<r} $$}
             \end{alertblock}}
 
@@ -676,19 +760,19 @@
 
             \only<2->{\begin{alertblock}{}
                 Pri množenju neenakosti s pozitivnim številom se znak neenakosti ohrani.
-                \only<3->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \wedge \quad \frac{e}{f}>0 \quad \Rightarrow \quad \frac{a}{b}\cdot\frac{e}{f}<\frac{c}{d}\cdot\frac{e}{f}} $$}
+                \only<3->{$$ \dfrac{x}{y}<\dfrac{z}{w} \quad \wedge \quad \dfrac{r}{q}>0 \quad \Rightarrow \quad \dfrac{x}{y}\cdot\dfrac{r}{q}<\dfrac{z}{w}\cdot\dfrac{r}{q} $$}
                 % \only<4->{$$ \mathbf{p<q \quad \wedge \quad r>0 \quad \Rightarrow \quad p\cdot r<q\cdot r} $$}
             \end{alertblock}}
 
             \only<5->{\begin{alertblock}{}
                 Pri množenju neenakosti s negativnim številom se znak neenakosti obrne.
-                \only<6->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \wedge \quad \frac{e}{f}<0 \quad \Rightarrow \quad \frac{a}{b}\cdot\frac{e}{f}>\frac{c}{d}\cdot\frac{e}{f}} $$}
+                \only<6->{$$ \dfrac{x}{y}<\dfrac{z}{w} \quad \wedge \quad \dfrac{r}{q}<0 \quad \Rightarrow \quad \dfrac{x}{y}\cdot\dfrac{r}{q}>\dfrac{z}{w}\cdot\dfrac{r}{q} $$}
                 % \only<7->{$$ \mathbf{p<q \quad \wedge \quad r>0 \quad \Rightarrow \quad p\cdot r>q\cdot r} $$}
             \end{alertblock}}
 
             \only<8->{\begin{block}{}
                 Pri prehodu na nasprotno vrednost se neenačaj obrne:
-                \only<9->{$$ \mathbf{\frac{a}{b}<\frac{c}{d} \quad \Rightarrow \quad -\frac{a}{b}>-\frac{c}{d}} $$}
+                \only<9->{$$ \dfrac{x}{y}<\dfrac{z}{w} \quad \Rightarrow \quad -\dfrac{x}{y}>-\dfrac{z}{w} $$}
             \end{block}}
 
 
@@ -698,19 +782,19 @@
         \begin{frame}
             
             \only<2->{\begin{alertblock}{}
-                Množica racionalnih števil pa je tudi \textbf{delno urejena}, in sicer z relacijo \textit{biti manjši ali enak} ($\leq$) oziroma \textit{biti večji ali enak} ($\geq$). Za ulomka $\frac{a}{b}$ in $\frac{c}{d}$ ($b,d\in\mathbb{N}$) velja vsaj ena izmed možnosti:
+                Množica racionalnih števil pa je tudi \textbf{delno urejena}, in sicer z relacijo \textit{biti manjši ali enak} ($\leq$) oziroma \textit{biti večji ali enak} ($\geq$). Za ulomka $\dfrac{x}{y}$ in $\dfrac{z}{w}$ ($b,d\in\mathbb{N}$) velja vsaj ena izmed možnosti:
                 \begin{enumerate}
-                    \item<3-> prvi ulomek je večji ali enak od drugega $\frac{a}{b}\geq\frac{c}{d}$ natanko tedaj, ko je $ad\geq bc$;
-                    \item<4-> drugi ulomek je večji ali enak od prvega $\frac{a}{b}\geq\frac{c}{d}$ natanko tedaj, ko je $ad\leq bc$;
+                    \item<3-> prvi ulomek je večji ali enak od drugega $\dfrac{x}{y}\geq\dfrac{z}{w}$ natanko tedaj, ko je $ad\geq bc$;
+                    \item<4-> drugi ulomek je večji ali enak od prvega $\dfrac{x}{y}\geq\dfrac{z}{w}$ natanko tedaj, ko je $ad\leq bc$;
                 \end{enumerate}
             \end{alertblock}}
 
             \only<5->{\begin{block}{}
                 Za (zgornjo) relacijo delne urejenosti veljajo naslednje lastnosti:
                 \begin{itemize}
-                    \item<6-> $\frac{a}{b}\leq\frac{a}{b}$ -- \textbf{refleksivnost};
-                    \item<7-> $\frac{a}{b}\leq\frac{c}{d}  \wedge \frac{c}{d}\leq\frac{a}{b} \Rightarrow \frac{a}{b}=\frac{c}{d}$ -- \textbf{antisimetričnost} in
-                    \item<8-> $\frac{a}{b}\leq\frac{c}{d}  \wedge \frac{c}{d}\leq\frac{e}{f} \Rightarrow \frac{a}{b}\leq\frac{e}{f}$ -- \textbf{tranzitivnost}.
+                    \item<6-> $\dfrac{x}{y}\leq\dfrac{x}{y}$ -- \textbf{refleksivnost};
+                    \item<7-> $\dfrac{x}{y}\leq\dfrac{z}{w}  \wedge \dfrac{z}{w}\leq\dfrac{x}{y} \Rightarrow \dfrac{x}{y}=\dfrac{z}{w}$ -- \textbf{antisimetričnost} in
+                    \item<8-> $\dfrac{x}{y}\leq\dfrac{z}{w}  \wedge \dfrac{z}{w}\leq\dfrac{r}{q} \Rightarrow \dfrac{x}{y}\leq\dfrac{r}{q}$ -- \textbf{tranzitivnost}.
                 \end{itemize}
             \end{block}}
 
