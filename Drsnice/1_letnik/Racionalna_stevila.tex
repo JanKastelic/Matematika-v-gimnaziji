@@ -630,14 +630,12 @@
             \frametitle{Urejenost racionalnih števil}
 
             \only<2->{\begin{alertblock}{}
-                Množica racionalnih števil je \textbf{linearno urejena} z relacijo \textit{biti manjši ali enak} ($\leq$) oziroma \textit{biti večji ali enak} ($\geq$). 
-                
-                Za ulomka $\dfrac{x}{y}$ in $\dfrac{z}{w}$ ($y,w\in\mathbb{Z}\setminus\{0\}$) velja natanko ena izmed treh možnosti:
+                Za ulomka $\dfrac{x}{y}$ in $\dfrac{z}{w}$ ($y,w\notin\{0\}$) velja natanko ena izmed treh možnosti:
                 
                 \begin{enumerate}
-                    \item<3-> prvi ulomek je večji od drugega $\dfrac{x}{y}>\dfrac{z}{w}$ natanko tedaj, ko je $xw>yz$;
-                    \item<4-> drugi ulomek je večji od prvega $\dfrac{x}{y}<\dfrac{z}{w}$ natanko tedaj, ko je $xw<yz$;
-                    \item<5-> ulomka sta enaka $\dfrac{x}{y}=\dfrac{z}{w}$ natanko tedaj, ko je $xw=yz$.
+                    \item<3-> prvi ulomek je večji od drugega $\dfrac{x}{y}\geq\dfrac{z}{w}$ natanko tedaj, ko je $xw\geq yz$;
+                    \item<4-> drugi ulomek je večji od prvega $\dfrac{x}{y}\leq\dfrac{z}{w}$ natanko tedaj, ko je $xw\leq yz$;
+                    \item<5-> ulomka sta enaka $\dfrac{x}{y}=\dfrac{z}{w}$ natanko tedaj, ko je $xw=yz$ oziroma $\dfrac{x}{y}\leq\dfrac{z}{w} \land \dfrac{x}{y}\geq\dfrac{z}{w}$.
                 \end{enumerate}
             \end{alertblock}}
 
@@ -647,7 +645,6 @@
             \end{block}}
 
         \end{frame}
-
 
 
         \begin{frame}
@@ -740,67 +737,56 @@
 
         \end{frame}
 
+
+        
         \begin{frame}
-            \textbf{\large{Lastnosti relacije urejenosti}}
-            
+            \only<2->{\begin{block}{}
+                Množica racionalnih števil je \textbf{linearno urejena} z relacijo \textit{biti manjši ali enak} ($\leq$) oziroma \textit{biti večji ali enak} ($\geq$). 
+                
+                \only<3->{Za to relacijo linearne urejenosti veljajo naslednje lastnosti:}
+                \begin{itemize}
+                    \item<4-> \textbf{refleksivnost}: $\forall \dfrac{x}{y}\in\mathbb{Q}: \dfrac{x}{y}\leq\dfrac{x}{y}$;
+                    \item<5-> \textbf{antisimetričnost}: $\forall \dfrac{x}{y},\dfrac{z}{w}\in\mathbb{Q}: \dfrac{x}{y}\leq\dfrac{z}{w}  \land \dfrac{z}{w}\leq\dfrac{x}{y} \Rightarrow \dfrac{x}{y}=\dfrac{z}{w}$;
+                    \item<6-> \textbf{tranzitivnost}: $\forall \dfrac{x}{y},\dfrac{z}{w},\dfrac{r}{q}\in\mathbb{Q}: \dfrac{x}{y}\leq\dfrac{z}{w}  \land \dfrac{z}{w}\leq\dfrac{r}{q} \Rightarrow \dfrac{x}{y}\leq\dfrac{r}{q}$ in 
+                    \item<7-> \textbf{stroga sovisnost}: $\forall \dfrac{x}{y},\dfrac{z}{w}\in\mathbb{Q}: \dfrac{x}{y}\leq\dfrac{z}{w}  \lor \dfrac{z}{w}\leq\dfrac{x}{y}$.
+                \end{itemize}
+
+            \end{block}}
+
+            \only<8->{\begin{alertblock}{}
+                Množica racionalnih števil pa je tudi \textbf{delno urejena}, in sicer z relacijo \textit{biti manjši} ($<$) oziroma \textit{biti večji} ($>$). 
+                
+                \only<9->{Tedaj veljajo le lastnosti: \textbf{refleksivnost}, \textbf{antisimetričnost} in \textbf{tranzitivnost}.}
+            \end{alertblock}}
+
+
+        \end{frame}
+
+
+        \begin{frame}
+           
             \only<2->{\begin{alertblock}{Monotonost vsote}
                 \only<3->{Če na obeh straneh neenakosti prištejemo isto število, se neenakost ohrani.}
                 \only<4->{$$ \dfrac{x}{y}<\dfrac{z}{w} \quad \Rightarrow \quad \dfrac{x}{y}+\dfrac{r}{q}<\dfrac{z}{w}+\dfrac{r}{q} $$}
                 % \only<5->{$$ \mathbf{p<q \quad \Rightarrow \quad p+r<q+r} $$}
             \end{alertblock}}
 
-            \only<6->{\begin{alertblock}{Tranzitivnost}
-                \only<7->{$$ \dfrac{x}{y}<\dfrac{z}{w} \quad \wedge \quad \dfrac{z}{w}<\dfrac{r}{q} \quad \Rightarrow \quad \dfrac{x}{y}<\dfrac{r}{q} $$}
-                % \only<8->{$$ \mathbf{p<q \quad \wedge \quad q<r \quad \Rightarrow \quad p<r} $$}
-            \end{alertblock}}
-
-        \end{frame}
-
-        \begin{frame}
-
-            \only<2->{\begin{alertblock}{}
+            \only<5->{\begin{alertblock}{}
                 Pri množenju neenakosti s pozitivnim številom se znak neenakosti ohrani.
-                \only<3->{$$ \dfrac{x}{y}<\dfrac{z}{w} \quad \wedge \quad \dfrac{r}{q}>0 \quad \Rightarrow \quad \dfrac{x}{y}\cdot\dfrac{r}{q}<\dfrac{z}{w}\cdot\dfrac{r}{q} $$}
+                \only<6->{$$ \dfrac{x}{y}<\dfrac{z}{w} \quad \wedge \quad \dfrac{r}{q}>0 \quad \Rightarrow \quad \dfrac{x}{y}\cdot\dfrac{r}{q}<\dfrac{z}{w}\cdot\dfrac{r}{q} $$}
                 % \only<4->{$$ \mathbf{p<q \quad \wedge \quad r>0 \quad \Rightarrow \quad p\cdot r<q\cdot r} $$}
             \end{alertblock}}
 
-            \only<5->{\begin{alertblock}{}
+            \only<7->{\begin{alertblock}{}
                 Pri množenju neenakosti s negativnim številom se znak neenakosti obrne.
-                \only<6->{$$ \dfrac{x}{y}<\dfrac{z}{w} \quad \wedge \quad \dfrac{r}{q}<0 \quad \Rightarrow \quad \dfrac{x}{y}\cdot\dfrac{r}{q}>\dfrac{z}{w}\cdot\dfrac{r}{q} $$}
+                \only<8->{$$ \dfrac{x}{y}<\dfrac{z}{w} \quad \wedge \quad \dfrac{r}{q}<0 \quad \Rightarrow \quad \dfrac{x}{y}\cdot\dfrac{r}{q}>\dfrac{z}{w}\cdot\dfrac{r}{q} $$}
                 % \only<7->{$$ \mathbf{p<q \quad \wedge \quad r>0 \quad \Rightarrow \quad p\cdot r>q\cdot r} $$}
             \end{alertblock}}
 
-            \only<8->{\begin{block}{}
-                Pri prehodu na nasprotno vrednost se neenačaj obrne:
-                \only<9->{$$ \dfrac{x}{y}<\dfrac{z}{w} \quad \Rightarrow \quad -\dfrac{x}{y}>-\dfrac{z}{w} $$}
-            \end{block}}
-
-
 
         \end{frame}
 
-        \begin{frame}
-            
-            \only<2->{\begin{alertblock}{}
-                Množica racionalnih števil pa je tudi \textbf{delno urejena}, in sicer z relacijo \textit{biti manjši ali enak} ($\leq$) oziroma \textit{biti večji ali enak} ($\geq$). Za ulomka $\dfrac{x}{y}$ in $\dfrac{z}{w}$ ($b,d\in\mathbb{N}$) velja vsaj ena izmed možnosti:
-                \begin{enumerate}
-                    \item<3-> prvi ulomek je večji ali enak od drugega $\dfrac{x}{y}\geq\dfrac{z}{w}$ natanko tedaj, ko je $ad\geq bc$;
-                    \item<4-> drugi ulomek je večji ali enak od prvega $\dfrac{x}{y}\geq\dfrac{z}{w}$ natanko tedaj, ko je $ad\leq bc$;
-                \end{enumerate}
-            \end{alertblock}}
-
-            \only<5->{\begin{block}{}
-                Za (zgornjo) relacijo delne urejenosti veljajo naslednje lastnosti:
-                \begin{itemize}
-                    \item<6-> $\dfrac{x}{y}\leq\dfrac{x}{y}$ -- \textbf{refleksivnost};
-                    \item<7-> $\dfrac{x}{y}\leq\dfrac{z}{w}  \wedge \dfrac{z}{w}\leq\dfrac{x}{y} \Rightarrow \dfrac{x}{y}=\dfrac{z}{w}$ -- \textbf{antisimetričnost} in
-                    \item<8-> $\dfrac{x}{y}\leq\dfrac{z}{w}  \wedge \dfrac{z}{w}\leq\dfrac{r}{q} \Rightarrow \dfrac{x}{y}\leq\dfrac{r}{q}$ -- \textbf{tranzitivnost}.
-                \end{itemize}
-            \end{block}}
-
-
-        \end{frame}
-
+%%% naloge
 
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
@@ -859,11 +845,45 @@
         % \end{frame}
 
 
+
+        %%% Potence s celimi eksponenti
     \subsection{Potence s celimi eksponenti}
 
         \begin{frame}
             \frametitle{Potence s celimi eksponenti}
+
+            \begin{block}{}
+                Naravna števila so enaka pozitivnim celim številom, torej so potence s pozitivnimi celimi eksponenti enake potencam z naravnimi eksponenti.
+            \end{block}
+
+            \begin{alertblock}{}
+                Potenca z eksponentom enakim $0$ je definirana kot: 
+                $$x^0=\begin{cases}
+                    1; &x\neq 0; \\
+                    0; &x=0.
+                \end{cases}$$
+            \end{alertblock}
+
+            \begin{alertblock}{}
+                Potenca z negativnim celim eksponentom pa je definirana kot:
+                $$x^{-n}=\dfrac{1}{x^n}; \quad x\neq 0.$$
+            \end{alertblock}
         \end{frame}
+
+
+        \begin{frame}
+            \begin{block}{Pravila za računanje s potencami s celimi eksponenti}
+                \begin{itemize}
+                    \item $x^n\cdot x^m=x^{n+m}$
+                    \item $x^n\cdot y^n=(xy)^n$
+                    \item $\left(x^n\right)^m=x^nm$
+                    \item $x^n:x^m=\dfrac{x^n}{x^m}=x^{n-m}$
+                    \item $x^n:y^n=\dfrac{x^n}{y^n}=\left(\dfrac{x}{y}\right)^n$
+                \end{itemize}
+            \end{block}
+        \end{frame}
+
+        %%% naloge
 
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
