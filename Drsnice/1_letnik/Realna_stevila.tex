@@ -12,7 +12,152 @@
 
         \begin{frame}
             \frametitle{Realna števila}
+
+            \only<2->{\begin{block}{}
+                Med poljubnima dvema racionalnima številoma $\frac{x}{y}, \frac{z}{w}\in\mathbb{Q}$ je vsaj še eno racionalno število
+                 \only<3->{-- aritmetična sredina teh dveh števil $\frac{1}{2}\left(\frac{x}{y}+\frac{z}{w}\right)$.}
+            \end{block}}
+
+            \only<4->{\begin{block}{}
+                $$\dfrac{x}{y}<\dfrac{z}{w},\ y,w\neq 0 \quad \Rightarrow \quad \dfrac{x}{y}<\frac{1}{2}\left(\dfrac{x}{y}+\dfrac{z}{w}\right)<\dfrac{z}{w}$$
+            \end{block}}
+
+            \only<5->{\begin{alertblock}{}
+                Med poljubnima racionalnima številoma je neskončno mnogo racionalnih števil in pravimo, da je množica $\mathbb{Q}$ je \textbf{povsod gosta}. 
+            \end{alertblock}}
+
+            \only<6->{\begin{block}{}
+                Množici $\mathbb{Q}$ in $\mathbb{Z}$ imata enako moč -- sta števno neskončni ($m(\mathbb{Q})=m(\mathbb{Z})=\aleph_0$).
+            \end{block}}
         \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{alertblock}{Iracionalna števila}
+                \only<3->{\textbf{Iracionalna števila} $\mathbb{I}$ so vsi kvadratni koreni števil, ki niso popolni kvadrati, tretji koreni, ki niso popolni kubi, ..., 
+                število $\pi$, Eulerjevo število $e$ ... }
+            \end{alertblock}}
+
+            \only<4->{\begin{block}{}
+                Množici racionalnih in iracionalnih števil sta disjunktni: $\mathbb{Q}\cap\mathbb{I}=\emptyset$.
+            \end{block}}
+
+            \only<5->{\begin{alertblock}{Realna števila}
+                \only<6->{\textbf{Realna števila} so množica števil, ki jo dobimo kot unijo racionalnih in iracionalnih števil: $\mathbb{R}=\mathbb{Q}\cup\mathbb{I}$.}
+            \end{alertblock}}
+
+            \only<7->{\begin{block}{}
+                Množica realnih števil je močnejša od množice racionalnih števil. Pravimo, da je (neštevno) neskončna.
+            \end{block}}
+
+        \end{frame}
+
+
+        \begin{frame}
+
+            \only<2->{\begin{block}{}
+                Množico racionalnih števil lahko, glede na predznak števil, razdelimo na tri množice:
+                \begin{itemize}
+                    \item<3-> \textcolor{green}{množico negativnih realnih števil $\mathbf{\mathbb{R}^-}$},
+                    \item<4-> množico z elementom nič: $\mathbf{\{0\}}$ in
+                    \item<5-> \textcolor{red}{množico pozitivnih realnih števil: $\mathbf{\mathbb{R}^+}$}.
+                \end{itemize}
+                $$ \mathbb{R}=\only<3->{\textcolor{green}{\mathbb{R}^-}}\only<4->{\cup\{0\}}\only<5->{\cup\textcolor{red}{\mathbb{R}^+}} $$
+            \end{block}}
+
+            \only<2->{\begin{block}{}
+                \centering
+                \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+                    
+                    % Drawing segment A B
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (4.460000,1.500000);%
+                    \draw [line width=0.016cm] (4.540000,1.500000) -- (8.000000,1.500000);%
+                    
+                    % Marking point 0 by circle
+                    \draw [line width=0.016cm] (4.500000,1.500000) circle (0.040000);%
+                    \draw (4.500000,1.500000) node [anchor=south] { $0$ };%
+                    
+                    \only<5->{
+                    % Changing color 255 0 0
+                    \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                    \color{r255g0b0}% 
+                    
+                    % Marking point \mathbb{Q}^+
+                    \draw (6.250000,1.500000) node [anchor=south] { $\mathbb{R}^+$ };%
+                    
+                    % Drawing segment B 0
+                    \draw [line width=0.016cm] (8.000000,1.500000) -- (4.540000,1.500000);%
+                    }
+
+                    \only<3->{
+                    % Changing color 0 255 0
+                    \definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+                    \color{r0g255b0}% 
+                    
+                    % Marking point \mathbb{Q}^-
+                    \draw (2.750000,1.500000) node [anchor=south] { $\mathbb{R}^-$ };%
+                    
+                    % Drawing segment A 0
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (4.460000,1.500000);%
+                    }
+
+                    % Changing color 0 0 0
+                    \definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+                    \color{r0g0b0}% 
+                    
+                    % Marking point \mathbb{Q}
+                    \draw (1.500000,2.000000) node  { $\mathbb{R}$ };%
+                    \color{black}
+                    }
+                    \end{tikzpicture}
+                    
+            \end{block}}
+
+            
+            \only<6->{\begin{block}{}
+                Vsaki točki na številski premici ustreza natanko eno realno število in obratno, 
+                vsakemu realnemu številu ustreza natanko ena točka na številski premici.
+            \end{block}}
+
+            \only<7->{\begin{block}{}
+                Številsko premico, ki upodablja realna števila, imenujemo tudi \textbf{realna os}.
+            \end{block}}
+
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{alertblock}{}
+                Z relacijo \textit{biti manjši ali enak} je množica $\mathbb{R}$ \textbf{linearno urejena}, 
+                to pomeni, da veljajo:
+
+                \begin{itemize}
+                    \item<3-> \textbf{refleksivnost}: \only<4->{$\forall x\in\mathbb{R}: x\leq x$;}
+                    \item<5-> \textbf{antisimetričnost}: \only<6->{$\forall x,y\in\mathbb{R}: x\leq y \land y\leq x \Rightarrow x=y$;}
+                    \item<7-> \textbf{tranzitivnost}: \only<8->{$\forall x,y,z\in\mathbb{R}: x\leq y \land y\leq z \Rightarrow x\leq z$;}
+                    \item<9-> \textbf{stroga sovisnost}: \only<10->{$\forall x,y\in\mathbb{R}: x\leq y \lor y\leq x$.}
+                \end{itemize}
+            \end{alertblock}}
+
+
+            \only<11->{\begin{block}{}
+                Za realcijo urejenosti na množici $\mathbb{R}$ veljajo še naslednje lastnosti:
+
+                \begin{itemize}
+                    \item<12-> \textbf{monotonost vsote}: \only<13->{$x<y \Rightarrow x+z<y+z$ oziroma $x\leq y \Rightarrow x+z\leq y+z$;}
+                    \item<14-> $x<y \land z>0 \Rightarrow x\cdot z<yz$ in $x\leq y \land z>0 \Rightarrow x z\leq y z$;
+                    \item<15-> $x<y \land z<0 \Rightarrow x\cdot z>yz$ in $x\leq y \land z<0 \Rightarrow x z\geq y z$.
+                \end{itemize}
+
+            \end{block}}
+
+        \end{frame}
+
+
+        %%%% kvadratni koren 
 
     \subsection{Kvadratni koren}
 
@@ -309,7 +454,7 @@
         \end{frame}
 
         \begin{frame}
-            \frametitle{Vrste intervalov}
+            \frametitle{\large Vrste intervalov}
 
             \only<2->{\begin{alertblock}{Zaprti interval}
                 \only<3->{$$ \mathbf{[a,b]=\left\{x\in\mathbb{R}; a\leq x\leq b\right\} }$$
@@ -1123,7 +1268,7 @@
             \end{exampleblock}}
 
             \only<3->{\begin{exampleblock}{Naloga}
-                Babica iam dvakrat doliko vnukinj kot vnukov. Vnukinjam je podarila po tri bombone, vnukam pa po štiri bombone.
+                Babica ima dvakrat doliko vnukinj kot vnukov. Vnukinjam je podarila po tri bombone, vnukom pa po štiri bombone.
                 Koliko vnukinj in vnukov ima, če je podarila $70$ bombonov?
                 \\~\\~\\~
             \end{exampleblock}}
@@ -1199,7 +1344,7 @@
         \end{frame}
 
 
-    \subsection{Odstotnii račun}
+    \subsection{Odstotni račun}
 
         \begin{frame}
             \frametitle{Odstotni račun}
