@@ -163,6 +163,52 @@
 
         \begin{frame}
             \frametitle{Kvadratni koren}
+
+            \only<2->{\begin{alertblock}{}
+                \textbf{Kvadratni koren} $\sqrt{a}$ realnega števila $a\geq 0$ je tisto nenegativno realno število $x$,
+                katerega kvadrat je enak $a$.
+                \only<3->{$$\sqrt{a}=x \Leftrightarrow a=x^2; \quad a,x\in\mathbb{R}^+ $$}
+
+                \only<4->{Število $a$ imenujemo \textbf{korenjenec}, simbol $\sqrt{~}$ pa \textbf{korenski znak}.}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{Pravila za računanje s kvadratnimi koreni}
+                    \begin{columns}
+                    \column{0.45\textwidth}
+                        \only<6->{\begin{itemize}
+                            \item<6-> $\left(\sqrt{a}\right)^2=a; ~a\geq 0$
+                            \item<7-> $\sqrt{a^2}=\begin{cases}
+                                a, & a\geq 0 \\
+                                -a, & a<0
+                            \end{cases}$
+                        \end{itemize}}
+                    \column{0.45\textwidth}
+                        \only<8->{\begin{itemize}
+                            \item<8-> $\sqrt{a\cdot b}=\sqrt{a}\cdot\sqrt{b}; ~a,b\geq 0$
+                            \item<9-> $\sqrt{\dfrac{a}{b}}=\dfrac{\sqrt{a}}{\sqrt{b}}; ~a\geq 0, b>0$
+                        \end{itemize}}
+                    \end{columns}
+            \end{block}}
+
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{block}{Delno korenjenje}
+                \only<3->{\textbf{Delno korenjenje} poteka tako, da korenjenec zapišemo kot produkt dveh ali več faktorjev,
+                od katerih je vsaj en popoln kvadrat (ga lahko korenimo).
+                
+                Nato koren zapišemo kot produkt korenov in korenimo kar lahko.}
+                \only<4->{$$\sqrt{a^2b}=\sqrt{a^2}\sqrt{b}=a\sqrt{b}$$}
+            \end{block}}
+
+            \only<5->{\begin{block}{Racionalizacija imenovalca}
+                \only<6->{\textbf{Racionalizacija imenovalca} pomeni, da ulomek zapišemo z enakovrednim ulomkom, ki v imenovalcu nima korena.
+                To naredimo z razširjanjem ulomka.}
+            \end{block}}
+
+            \only<7->{\begin{block}{}
+                Izraze s kvadratnimi koreni poenostavimo tako, da uporabimo že znane obrazce, delno korenimo in racionaliziramo imenovalce.
+            \end{block}}
         \end{frame}
 
         %%% naloge
@@ -368,6 +414,30 @@
 
         \begin{frame}
             \frametitle{Kubični koren}
+
+            \only<2->{\begin{alertblock}{}
+                \textbf{Kubični koren} $\sqrt[3]{a}$ realnega števila $a$ je tisto realno število $x$,
+                katerega kub je enak $a$.
+                \only<3->{$$\sqrt[3]{a}=x \Leftrightarrow a=x^3; \quad a,x\in\mathbb{R}$$}
+
+                \only<4->{Število $a$ imenujemo \textbf{korenjenec}, simbol $\sqrt{~}$ \textbf{korenski znak}, število $3$ pa \textbf{korenski eksponent}.}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{Pravila za računanje s kubičnimi koreni}
+                \begin{columns}
+                \column{0.44\textwidth}
+                    \only<5->{\begin{itemize}
+                        \item<6-> $\left(\sqrt[3]{a}\right)^3=a$
+                        \item<7-> $\sqrt[3]{a^3}=a$
+                    \end{itemize}}
+                \column{0.44\textwidth}
+                    \only<8->{\begin{itemize}
+                        \item<8-> $\sqrt[3]{a\cdot b}=\sqrt[3]{a}\cdot\sqrt[3]{b}$
+                        \item<9-> $\sqrt[3]{\dfrac{a}{b}}=\dfrac{\sqrt[3]{a}}{\sqrt[3]{b}}; ~b\neq 0$
+                    \end{itemize}}
+                \end{columns}
+            \end{block}}
+
         \end{frame}
 
 
@@ -396,7 +466,7 @@
                 Izračunajte.
                 \only<3->{\begin{itemize}
                         \item $\sqrt{\sqrt{256}}-\dfrac{3-\sqrt{2}}{\sqrt{2}-1}+\sqrt[3]{-8}+\left(2-\sqrt{2}\right)^2$ \\~\\~
-                        \item $\dfrac{\sqrt{3}+1}{\sqrt{3}1}-\dfrac{\sqrt{3}-1}{\sqrt{3}+1}+\sqrt{0.16}+\sqrt{0.64}-\sqrt[3]{-27}+\sqrt{48}-\sqrt{27}$ \\~\\~
+                        \item $\dfrac{\sqrt{3}+1}{\sqrt{3}}-\dfrac{\sqrt{3}-1}{\sqrt{3}+1}+\sqrt{0.16}+\sqrt{0.64}-\sqrt[3]{-27}+\sqrt{48}-\sqrt{27}$ \\~\\~
                         \item $\left(1-\sqrt{5}\right)^2-\left(1+\sqrt{5}\right)^2+\dfrac{\sqrt{5}-2}{\sqrt{5}+2}-\sqrt{125}+\sqrt{245}$ \\~\\~
                 \end{itemize}}
             \end{exampleblock}}
@@ -905,6 +975,43 @@
 
         \begin{frame}
             \frametitle{Reševanje enačb}
+
+            \only<2->{\begin{alertblock}{Enačba}
+                \only<3->{\textbf{Enačba} je enakost dveh izrazov, pri čemer vsaj v enem nastopa \textbf{neznanka}, ki je ponavadi označena s črko $x$.}
+
+                \only<4->{\textbf{Rešitev enačbe} je vsaka vrednost neznanke, za katero sta vrednosti leve in desne strani enačbe enaki.}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{Reševanje enačbe}
+                \only<6->{Enačbo rešujemo tako, da jo preoblikujemo v ekvivalentno enačbo, iz katere preberemo rešitve.}
+
+                \only<7->{Ekvivalentno enačbo dobimo, če:}
+                \only<8->{\begin{itemize}
+                    \item<8-> na obeh straneh enačbe prištejemo isto število ali izraz;
+                    \item<9-> obe strani enačbe množimo z istim neničelnim številom ali izrazom.
+                \end{itemize}}
+            \end{block}}
+        \end{frame}
+
+        \begin{frame}
+            \only<2->{\begin{alertblock}{Linearna enačba}
+                \only<3->{\textbf{Linearna enačba} je enačba oblike $ax+b=0;~a,b\in\mathbb{R}$.}
+
+                \only<4->{Rešujemo jo tako, da jo preoblikujemo v ekvivalentno enačbo, ki ima na eni strani samo neznanko.}
+            \end{alertblock}}
+
+            \only<5->{\begin{alertblock}{Razcepna enačba}
+                \only<6->{\textbf{Razcepna enačba} je enačba, v kateri nastopajo potence neznanke (na primer $x^2$, $x^3$) in jo je mogoče zapisati kot produkt (linearnih) faktorjev.}
+
+                \only<7->{Preoblikujemo jo v ekvivalentno enačbo, ki ima vse člene na eni strani neenačaja, na drugi pa $0$. 
+                Izraz (neničelna stran) razstavimo, kolikor je mogoče, in preberemo rešitve.}
+            \end{alertblock}}
+
+            \only<8->{\begin{alertblock}{Enačba z ulomki}
+                \only<9->{Pri enačbu, v katerih nastopajo neznake v imenovalcu, smo pozorni na definiranost ulomkov. 
+                Nato enačbo preoblikujemo v linearno ali razcepno obliko.}
+            \end{alertblock}}
+
         \end{frame}
 
 
@@ -1018,33 +1125,24 @@
 
         \begin{frame}
             \frametitle{Reševanje neenačb}
-        \end{frame}
 
+            \only<2->{\begin{alertblock}{Neenačba}
+                \only<3->{\textbf{Neenačba} je neenakost dveh izrazov, pri čemer vsaj v enem nastopa neznanka.
+                Med levo in desno stranjo je postavljen eden od neenačajev: $<$, $>$, $\leq$ ali $\geq$.}
+            \end{alertblock}}
 
+            \only<4->{\begin{block}{Reševanje neenačbe}
+                \only<5->{Neenačbo rešujemo tako, da jo preoblikujemo v ekvivalentno neenačbo. To dobimo, če:}
+                \only<6->{\begin{itemize}
+                    \item<6-> prištejemo isto število ali izraz na obeh straneh neenačbe;
+                    \item<7-> množimo obe strani neenačbe z istim pozitivnim številom ali izrazom;
+                    \item<8-> množimo obe strani neenačbe z istim negativnim številom ali izrazom in se pri tem neenačaj obrne.
+                \end{itemize}}
+            \end{block}}
 
-        \begin{frame}
-            \frametitle{Linearna neenačba}
-
-            \only<2->{\begin{alertblock}{}
-                \textbf{Linearna neenačba} ima v splošnem obliko: $\mathbf{ax+b<cx+d};~ a,b,c,d\in\mathbb{R}$.
-            \end{alertblock}
-            }
-
-            \only<3->{\begin{block}{Reševanje linearne neenačbe}
-                Neenačbo rešimo tako, da ji po korakih prirejamo enostavnejšo ekvivalentno neenačbo, dokler ne pridemo do rešitve.
-                Množica rešitev linearne neenačbe je interval, množica intervalov, točka, množica točk ali pa nima rešitve.
-            \end{block}
-            }
-
-            \only<4->{\begin{block}{Pravila preoblikovanja}
-                \begin{itemize}
-                    \item<5-> na levi in desni strani neenačbe lahko prištejemo (ali odštejemo) isto število;
-                    \item<6-> levo in desno stran neenačbe lahko pomnožimo z istim (pozitivnim) številom;
-                    \item<7-> če levo in desno stran neenačbe pomnožimo z negativnim številom, se znak neenakosti obrne.
-                \end{itemize}
-            \end{block}
-            }
-
+            \only<9->{\begin{alertblock}{}
+                \textbf{Linearna neenačba} je oblike $ax+b<0$, ali pa nastopa drug neenačaj: $>$, $\leq$, $\geq$.
+            \end{alertblock}}
         \end{frame}
 
 
@@ -1163,8 +1261,45 @@
 
         \begin{frame}
             \frametitle{Reševanje sistemov enačb}
+
+            \only<2->{\begin{alertblock}{Sistem dveh linearnih enačb z dvema neznankama}
+                \only<3->{\textbf{Sistem dveh linearnih enačb z dvema neznankama} ali \textbf{sistem $\mathbf{2\times 2}$} je v splošnem oblike:
+                    $$\begin{aligned}
+                            a_1x+b_1y&=c_1 \\ a_2x+b_2y&=c_2
+                        \end{aligned}$$}
+                \only<4->{$x$ in $y$ sta \textbf{neznanki}, $a_i,b_i,c_i\in\mathbb{R}$ so \textbf{koeficienti}.}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{}
+                \textbf{Rešitev sistema} je \textbf{urejen par} števil $(x,y)$, ki zadoščajo obema enačbama.
+            \end{block}}
+
+            \only<6->{\begin{block}{}
+                    Sistem $2\times 2$ ima lahko eno rešitev, nima rešitve ali ima neskončno rešitev.
+            \end{block}}
+
         \end{frame}
 
+        \begin{frame}
+            \only<2->{\begin{block}{}
+                Sistem lahko rešujemo s primerjalnim načinom, zamenjalnim načinom ali z metodo nasprotnih koeficientov.
+            \end{block}}
+        
+            \only<3->{\begin{block}{Primerjalni način}
+                Iz obeh enačb izrazimo isto neznanko, nato njuni vrednosti enačimo.
+            \end{block}}
+
+            \only<4->{\begin{block}{Zamenjalni način}
+                Iz ene enačbe izrazimo eno izmed neznank (preverimo, če je kateri od koeficientov pri neznankah enak $1$ -- takšno neznanko hitro izrazimo) in izraženo vrednost vstavimo v drugo enačbo.
+            \end{block}}
+
+            \only<5->{\begin{block}{Metoda nasprotnih koeficientov}
+                Eno ali obe enačbi pomnožimo s takimi števili, da bosta pri eni izmed neznank koeficienta nasprotni števili, nato enačbi seštejemo.
+                Ostane ena enačba z eno neznanko.
+            \end{block}}
+
+
+        \end{frame}
 
         %%% naloge
 
@@ -1276,6 +1411,32 @@
         \end{frame}
 
 
+
+
+
+
+        \begin{frame}
+            
+            \only<2->{\begin{alertblock}{Sistem treh linearnih enačb s tremi neznankami}
+                \only<3->{\textbf{Sistem treh linearnih enačb z tremi neznankami} ali \textbf{sistem $\mathbf{3\times 3}$} je v splošnem oblike:
+                    $$\begin{aligned}
+                            a_1x+b_1y+c_1z&=d_1 \\ a_2x+b_2y+c_2z&=d_2 \\ a_3x+b_3y+c_3z&=d_3
+                        \end{aligned}$$}
+                \only<4->{$x$, $y$ in $z$ so \textbf{neznanke}, $a_i,b_i,c_i\in\mathbb{R}$ so \textbf{koeficienti}.}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{}
+                \textbf{Rešitev sistema} je \textbf{urejena trojka} števil $(x,y,z)$, ki zadoščajo vsem trem enačbam.
+            \end{block}}
+
+            \only<6->{\begin{block}{}
+                    Sistem $3\times 3$ rečujemo z istimi postopki kot sisteme $2\times 2$, le da postopek ponovimo večkrat.
+            \end{block}}
+
+        \end{frame}
+
+
+
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
                 Z metodo nasprotnih koeficientov rešite sisteme enačb.
@@ -1306,6 +1467,16 @@
 
         \begin{frame}
             \frametitle{Obravnava enačb in neenačb}
+
+            \begin{block}{}
+                Kadar v enačbi poleg neznake $x$ nastopajo tudi druge črke, na primer $a, b, c, k, l ...$, 
+                le-te označujejo števila, ki imajo poljubno realno vrednost. Imenujemo jih \textbf{parametri}.
+            \end{block}
+
+            \begin{block}{}
+                Vrednost parametrov vpliva na rešitev enačbe, zato moramo enačbo reševati glede na vrednosti parametrov.
+                Temu postopku rečemo \textbf{obravnava enačbe}.
+            \end{block}
         \end{frame}
 
 
