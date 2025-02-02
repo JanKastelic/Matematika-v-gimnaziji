@@ -1518,6 +1518,20 @@
 
         \begin{frame}
             \frametitle{Sklepni račun}
+
+            \only<2->{\begin{block}{}
+                Pri sklepnem računu obravnavamo situacije, v katerih nastopata dve količini,
+                ki sta premo sorazmerni ali obratno sorazmerni.
+            \end{block}}
+
+            \only<3->{\begin{alertblock}{Premo sorazmerje}
+                \only<4->{Količini $x$ in $y$ sta \textbf{premo sorazmerni}, če obstaja takšno število $k$, da je $x=k\cdot y$.}
+            \end{alertblock}}
+
+            \only<5->{\begin{alertblock}{Obratno sorazmerje}
+                \only<6->{Količini $x$ in $y$ sta \textbf{obratno sorazmerni}, če obstaja takšno število $k$, da je $x=\dfrac{y}{k}$.}
+            \end{alertblock}}
+
         \end{frame}
 
 
@@ -1525,13 +1539,70 @@
 
         \begin{frame}
             \frametitle{Odstotni račun}
+
+            \begin{block}{}
+                Količine pri odstotnem računu so povezane s sklepnim računim, in sicer so v premem sorazmerju.
+            \end{block}
+
+            \begin{alertblock}{}
+                \textbf{Odstotek} (ali procent) $\%$ celote definiramo kot stotino celote,
+                \textbf{odtisoček} (ali promil) $\permil$ kot tisočino celote.
+
+                $$ 1~\%=\dfrac{1}{100} \quad \quad 1~\permil=\dfrac{1}{1000}$$
+            \end{alertblock}
+
+            \begin{alertblock}{}
+                \textbf{Relativni delež} je kvocient med deležem in osnovo: $r=\dfrac{d}{o}$.
+            \end{alertblock}
+
         \end{frame}
 
+    
 
     \subsection{Absolutna vrednost}
 
         \begin{frame}
             \frametitle{Absolutna vrednost}
+
+            \begin{columns}
+                \column{0.62\textwidth}
+            
+            \begin{alertblock}{}
+                \textbf{Absolutna vrednost} $|x|$ števila $x$ geometrijsko predstavlja oddaljenost točke, 
+                ki predstavlja število $x$, od izhodišča na številski premici.
+            \end{alertblock}
+
+            \column{0.35\textwidth}
+            \begin{alertblock}{}
+                $$|x|=\begin{cases} x &x\geq 0; \\ -x & x<0. \end{cases}$$
+            \end{alertblock}
+
+        \end{columns}
+
+            % \begin{block}{}
+            %     $$|x|=\sqrt{x^2}$$
+            % \end{block}
+
+            \begin{block}{Lastnosti absolutne vrednosti}
+                \begin{columns}
+                    \column{0.44\textwidth}
+                        \only<5->{\begin{itemize}
+                            \item<6-> $|x|\geq 0$
+                            \item<7-> $|x|=0 \Leftrightarrow x=0$
+                            \item<8-> $|-x|=|x|$
+                        \end{itemize}}
+                    \column{0.44\textwidth}
+                        \only<8->{\begin{itemize}
+                            \item<8-> $|x\cdot y|=|x|\cdot|y|$
+                            \item<9-> $|x+y|\leq |x|+|y|$ -- \textbf{trikotniška neenakost}
+                        \end{itemize}}
+                    \end{columns}
+    
+            \end{block}
+
+            \begin{block}{}
+                Z absolutno vrednostjo izračunamo tudi razdaljo med $x$ in $y$ kot $|x-y|$ ali $|y-x|$.
+            \end{block}
         \end{frame}
 
     \subsection{Zaokroževanje, približki, napake}
