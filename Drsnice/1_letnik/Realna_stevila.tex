@@ -1468,15 +1468,15 @@
         \begin{frame}
             \frametitle{Obravnava enačb in neenačb}
 
-            \begin{block}{}
+            \only<2->{\begin{block}{}
                 Kadar v enačbi poleg neznake $x$ nastopajo tudi druge črke, na primer $a, b, c, k, l ...$, 
                 le-te označujejo števila, ki imajo poljubno realno vrednost. Imenujemo jih \textbf{parametri}.
-            \end{block}
+            \end{block}}
 
-            \begin{block}{}
+            \only<3->{\begin{block}{}
                 Vrednost parametrov vpliva na rešitev enačbe, zato moramo enačbo reševati glede na vrednosti parametrov.
                 Temu postopku rečemo \textbf{obravnava enačbe}.
-            \end{block}
+            \end{block}}
         \end{frame}
 
 
@@ -1584,21 +1584,61 @@
         \begin{frame}
             \frametitle{Odstotni račun}
 
-            \begin{block}{}
+            \only<2->{\begin{block}{}
                 Količine pri odstotnem računu so povezane s sklepnim računim, in sicer so v premem sorazmerju.
-            \end{block}
+            \end{block}}
 
-            \begin{alertblock}{}
+            \only<3->{\begin{alertblock}{}
                 \textbf{Odstotek} (ali procent) $\text{\%}$ celote definiramo kot stotino celote,
-                \textbf{odtisoček} (ali promil) $\permil$ kot tisočino celote.
+                \only<4->{\textbf{odtisoček} (ali promil) $\permil$ kot tisočino celote.}
 
-                $$ 1~\text{\%}=\dfrac{1}{100} \quad \quad 1~\permil=\dfrac{1}{1000}$$
-            \end{alertblock}
+                $$ 1~\text{\%}=\dfrac{1}{100} \quad \quad \only<4->{1~\permil=\dfrac{1}{1000}}$$
+            \end{alertblock}}
 
-            \begin{alertblock}{}
+            \only<5->{\begin{alertblock}{}
                 \textbf{Relativni delež} je kvocient med deležem in osnovo: $r=\dfrac{d}{o}$.
-            \end{alertblock}
+            \end{alertblock}}
 
+        \end{frame}
+
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Zapišite z okrajšanim ulomkom oziroma odstotkom.
+                \only<3->{\begin{itemize}
+                    \begin{columns}
+                        \column{0.4\textwidth}
+                        \item $12~\%$ \\~
+                        \item $20~\%~a$ \\~
+                        \item $250~\%$ \\~
+                        \item $0.5~\%~b$ \\~
+                        \item $12~\permil$ \\~
+                        \column{0.4\textwidth}
+                        \item $\dfrac{3}{4}a$ \\~
+                        \item $\dfrac{7}{20}x$ \\~
+                        \item $\dfrac{31}{10}y$ \\~
+                        \item $0.8 z$ \\~
+                        \item $\dfrac{25}{8}m$
+                    \end{columns}
+
+                \end{itemize}}
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Izračunajte.
+                \only<3->{\begin{itemize}
+                        \item Koliko je $20~\%$ od $10~kg$? \\~
+                        \item Koliko je $25~\%$ od $20~€$? \\~
+                        \item Koliko je $10~\%$ od $1~l$? \\~
+                        \item Koliko je $250~\%$ od $12~g$? \\~
+                        \item Koliko je $1~\permil$ od $2350~kg$? \\~
+                        \item Koliko je $17~\permil$ od $100~m$? 
+                \end{itemize}}
+            \end{exampleblock}}
         \end{frame}
 
     
@@ -1611,15 +1651,15 @@
             \begin{columns}
                 \column{0.62\textwidth}
             
-            \begin{alertblock}{}
+            \only<2->{\begin{alertblock}{}
                 \textbf{Absolutna vrednost} $|x|$ števila $x$ geometrijsko predstavlja oddaljenost točke, 
                 ki predstavlja število $x$, od izhodišča na številski premici.
-            \end{alertblock}
+            \end{alertblock}}
 
             \column{0.35\textwidth}
-            \begin{alertblock}{}
+            \only<3->{\begin{alertblock}{}
                 $$|x|=\begin{cases} x &x\geq 0; \\ -x & x<0. \end{cases}$$
-            \end{alertblock}
+            \end{alertblock}}
 
         \end{columns}
 
@@ -1627,13 +1667,13 @@
             %     $$|x|=\sqrt{x^2}$$
             % \end{block}
 
-            \begin{block}{Lastnosti absolutne vrednosti}
+            \only<4->{\begin{block}{Lastnosti absolutne vrednosti}
                 \begin{columns}
                     \column{0.44\textwidth}
-                        \only<5->{\begin{itemize}
-                            \item<6-> $|x|\geq 0$
-                            \item<7-> $|x|=0 \Leftrightarrow x=0$
-                            \item<8-> $|-x|=|x|$
+                        \only<4->{\begin{itemize}
+                            \item<5-> $|x|\geq 0$
+                            \item<6-> $|x|=0 \Leftrightarrow x=0$
+                            \item<7-> $|-x|=|x|$
                         \end{itemize}}
                     \column{0.44\textwidth}
                         \only<8->{\begin{itemize}
@@ -1642,11 +1682,11 @@
                         \end{itemize}}
                     \end{columns}
     
-            \end{block}
+            \end{block}}
 
-            \begin{block}{}
+            \only<10->{\begin{block}{}
                 Z absolutno vrednostjo izračunamo tudi razdaljo med $x$ in $y$ kot $|x-y|$ ali $|y-x|$.
-            \end{block}
+            \end{block}}
         \end{frame}
 
     \subsection{Zaokroževanje, približki, napake}
