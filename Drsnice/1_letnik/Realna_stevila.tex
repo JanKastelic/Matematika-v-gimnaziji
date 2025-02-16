@@ -1469,13 +1469,13 @@
             \frametitle{Obravnava enačb in neenačb}
 
             \only<2->{\begin{block}{}
-                Kadar v enačbi poleg neznake $x$ nastopajo tudi druge črke, na primer $a, b, c, k, l ...$, 
+                Kadar v enačbi oziroma neenačbi poleg neznake $x$ nastopajo tudi druge črke, na primer $a, b, c, k, l ...$, 
                 le-te označujejo števila, ki imajo poljubno realno vrednost. Imenujemo jih \textbf{parametri}.
             \end{block}}
 
             \only<3->{\begin{block}{}
-                Vrednost parametrov vpliva na rešitev enačbe, zato moramo enačbo reševati glede na vrednosti parametrov.
-                Temu postopku rečemo \textbf{obravnava enačbe}.
+                Vrednost parametrov vpliva na rešitev enačbe oziroma neenačbe, zato moramo enačbo reševati glede na vrednosti parametrov.
+                Temu postopku rečemo \textbf{obravnava enačbe} oziroma \textbf{obravnava neenačbe}.
             \end{block}}
         \end{frame}
 
@@ -1505,11 +1505,6 @@
                 \end{itemize}}
             \end{exampleblock}}
         \end{frame}
-
-
-
-
-
 
         
 
@@ -1601,8 +1596,7 @@
 
         \end{frame}
 
-
-
+        %%%%%%% naloge
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
                 Zapišite z okrajšanim ulomkom oziroma odstotkom.
@@ -1640,6 +1634,11 @@
                 \end{itemize}}
             \end{exampleblock}}
         \end{frame}
+
+
+        %%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%%%%%%%
 
     
 
@@ -1689,10 +1688,81 @@
             \end{block}}
         \end{frame}
 
+        %%%% naloge
+
+
+        %%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%
+        %%%%%%%%%%%%%%%%%%
+
     \subsection{Zaokroževanje, približki, napake}
 
         \begin{frame}
             \frametitle{Zaokroževanje, približki, napake}
+
+            \only<2->{\begin{block}{Pravila zaokroževanja}
+                \begin{itemize}
+                    \item<3-> Zadnjo števko pustimo enako, če je prva izbrisana števka manjša od $5$;
+                    \item<4-> zadnjo števko povečamo za $1$, če je prva izbrisana števka $5$ ali več.
+                \end{itemize}
+            \end{block}}
+
+            \only<5->{\begin{block}{}
+                Zaokroževanje na \textbf{$n$ decimalnih mest} pomeni: 
+                \only<6->{opustiti vse decimalke od $n$-tega mesta dalje in zaokrožiti.}
+                \only<7->{Primer: $\sqrt{2}\doteq 1.41$ (na $2$ decimalni mesti).}
+            \end{block}}
+
+            \only<8->{\begin{block}{}
+                Zaokroževanje na \textbf{$n$ mest} pomeni, 
+                \only<9->{da ima število v svojem zapisu $n$ števk, 
+                pri pogoju, da ne štejemo ničel na začetku in na koncu.}
+                \only<10->{Primer: $\sqrt{2}\doteq 1.41$ (na $3$ mesta).}
+            \end{block}}
+
+            \only<11->{\begin{block}{}
+                Pri zapisu uporabimo $\doteq$, kar označuje, da smo rezultat zapisali približno in ne natančno.
+            \end{block}}
+
         \end{frame}
 
-   
+        \begin{frame}
+            \only<2->{\begin{alertblock}{Absolutna in relativna napaka}
+                Naj bo $x$ točna vrednost in $X$ njen \textbf{približek}.
+
+                \only<3->{\textbf{Absolutna napaka} približka je $$\left\lvert X-x\right\rvert;$$ }
+                \only<4->{\textbf{relativna napaka} je $$\dfrac{\left\lvert X-x\right\rvert}{x}.$$}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{}
+                Absolutno napako zapišemo tudi $X=x\pm\epsilon$, kar pomeni, da se absolutna napaka približka $X$ razlikuje od točne vrednosti $x$ kvečjemu za $\epsilon$.
+            \end{block}}
+        \end{frame}
+
+
+        %%%%%% naloge
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Na kartonski škatli je oznaka velikosti $50 \pm 3 ~cm$.
+                Koliko je največja in koliko najmanjša velikost škatle, ki ustreza tej oznaki? 
+                Ali je lahko relativna napaka velikosti $8~\%$?
+                \\~
+            \end{exampleblock}}
+            
+            \only<3->{\begin{exampleblock}{Naloga}
+                Pri $200~m$ vrvi smemo narediti $7~\%$ napako.
+                Ali je lahko takšna vrv dolga $230~m$?
+                Kako dolgi bosta najkrajša in najdaljša vrv, ki še ustrezata?
+                \\~
+            \end{exampleblock}}
+            
+            \only<4->{\begin{exampleblock}{Naloga}
+                V EU morajo biti banane za prodajo dolge najmanj $14~cm$. 
+                V trgovino dobijo novo pošiljko banan, ki jih izmerijo, da so dolžine $13.7~cm$. 
+                Njihov meter ima $5~\%$ odstopanje. 
+                Ali lahko prodajajo takšne banane?
+                \\~
+            \end{exampleblock}}
+
+        \end{frame}
