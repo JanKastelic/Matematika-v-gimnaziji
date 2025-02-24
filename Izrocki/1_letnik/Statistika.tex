@@ -1,27 +1,20 @@
-\section{Statistika}
-
-\begin{frame}
-    \sectionpage
-\end{frame}
-
-\begin{frame}
-    \tableofcontents[currentsection, hideothersubsections]
-\end{frame}
+\chapter{Statistika}
 
 
-    \subsection{Osnovni pojmi statistike}
 
-        \begin{frame}
-            \frametitle{Osnovni pojmi statistike}
 
-            \begin{alertblock}{}
+    \section{Osnovni pojmi statistike}
+
+        
+
+            
                 \textbf{Populacija} je množica, ki jo statistično proučujemo. 
                 Element populacije imenujemo \textbf{statistična enota}. 
-            \end{alertblock}
             
-            \begin{alertblock}{}
+                ~
+            
                 \textbf{Vzorec} je podmnožica populacije, katere elementi predstavljajo največjo možno mero značilnosti celotne množice. 
-                Vzorec izberemo, kadar je celotna populacija prevelika množica, da bi analizirali vse njene elemente. \\
+                Vzorec izberemo, kadar je celotna populacija prevelika množica, da bi analizirali vse njene elemente. 
                 
                 \begin{itemize}
                     \item \textbf{Reprezentativen vzorec} je vzorec, ki je izbran tako, da predstavlja značilnosti celotne populacije.
@@ -29,69 +22,58 @@
                 \end{itemize}
 
                 \textbf{Numerus} je število elementov vzorca. Oznaka $N$. 
-            \end{alertblock}
-
-        \end{frame}    
-
-
-        \begin{frame}
-            \begin{alertblock}{}
+            
+                ~
+            
                 \textbf{Statistična spremenljivka/podatek/znak} je vrednost ali lastnost, ki jo proučujemo.
-            \end{alertblock}
+            
 
-            \begin{alertblock}{Vrste statističnih spremenljivk}
+                Vrste statističnih spremenljivk:
                 \begin{itemize}
                     \item \textbf{opisne/kvalitativne} statistične spremenljivke
                     \item \textbf{vrstne/ordinalne} statistične spremenljivke
                     \item \textbf{številske/kvantitivne} statistične spremenljivke
                 \end{itemize}
                 
-            \end{alertblock}
+            
 
-            \begin{block}{Številske statistične spremenljivke}
+                Številske statistične spremenljivke:
                 \begin{itemize}
                     \item \textbf{diskretne} številske spremenljivke -- zavzamejo lahko posamezne vrednosti
                     \item \textbf{zvezne} številske spremenljivke -- zavzamejo lahko vsako vrednost z nekega intervala
                 \end{itemize}
 
-            \end{block}
+            
 
 
-        \end{frame}
+                ~\\~\\
 
 
         %%%% naloge
 
-        \begin{frame}
-            \only<2->{\begin{exampleblock}{Naloga}
+        
+            \begin{naloga}
                 Zapišite, kaj je v danem primeru populacija, vzorec, statistična enota, spremenljivka in 
                 ugotovite ali je spremenljivka opisna ali numerična in, če je numerična, ugotovite, ali je zvezna ali diskretna.
-                \only<3->{\begin{itemize}
+                \begin{itemize}
                         \item Na spletni strani je anketa z vprašanjem ``Ali imate doma pomivalni stroj?''. Nanjo je odgovorilo $254$ ljudi. 
                         \item V televizijski oddaji gledalci glasujejo za dva kandidata. 
                         \item Razrednik svojih $28$ dijakov vpraša, kolikšna je oddaljenost njihovega doma do šole.
                         \item Maturant piše seminarsko nalogo z naslovom ``Uporaba TikTok-a med srednješolci''. Pridobil je odgovore $369$ srednješolcev, ki so odgovarjali na vprašanje ``Ali~uporabljaš~TikTok?'' 
                         \item Znanstveniki pri raziskavi spremljajo, koliko jajc znesejo kokoši na slovenskih farmah na mesec.
-                \end{itemize}}
-            \end{exampleblock}}
-        \end{frame}
+                \end{itemize}
+            \end{naloga}
+        
 
-        \begin{frame}
-
-                \begin{columns}
-                    \column{0.45\textwidth}
+        
 
 
-            \only<2->{\begin{exampleblock}{Naloga}
+
+            \begin{naloga}
                     Slovenija ima več kot $6000$ naselij. Statistični urad Republike Slovenije je januarja 2024 naredil analizo naselij glede na število prebivalcev. 
-                    Rezultati so prikazani v tabeli. \\~
-                    
-                    \only<4->{Zapišite, kaj je v danem primeru populacija, statistična enota, spremenljivka in ugotovite ali je spremenljivka opisna ali numerična in, 
-                    če je numerična, ugotovite ali je zvezna ali diskretna.}
-            \end{exampleblock}}
+                    Rezultati so prikazani v tabeli. 
 
-                    \column{0.5\textwidth}
-                    \only<3->{\begin{table}
+                    \begin{table}[H]
                         \centering
                         \begin{tabular}{||c|c||} 
                         \hhline{|t:==:t|}
@@ -121,60 +103,62 @@
                         $50000+$ & $2$     \\
                         \hhline{|b:==:b|}
                         \end{tabular}
-                    \end{table}}
-                \end{columns}
+                    \end{table}
                 
-        \end{frame}
+                    Zapišite, kaj je v danem primeru populacija, statistična enota, spremenljivka in ugotovite ali je spremenljivka opisna ali numerična in, 
+                    če je numerična, ugotovite ali je zvezna ali diskretna.
+            \end{naloga}
 
 
 
-    \subsection{Urejanje in grupiranje podatkov}
 
-        \begin{frame}
-            \frametitle{Urejanje in grupiranje podatkov}
+            \newpage
+    \section{Urejanje in grupiranje podatkov}
 
-            \begin{block}{}
+        
+
+            
                 Podatke, pridobljene v posamezni raziskavi, moramo najprej urediti. \\
                 Če podatkov ni veliko, jih uredimo po velikosti v \textbf{ranžirno vrsto}, sicer jih združujemo v skupine, \textbf{frekvenčne razrede}.
-            \end{block}
+            
 
-            \begin{block}{}
+            
                 Podatek z največjo vrednostjo označimo z $x_{max}$, podatek z najnižjo vrednostjo pa $x_{min}$.
-            \end{block}
-
-            \begin{alertblock}{}
+            
+                ~
+            
                 \textbf{Frekvenca} $f$ statističnega znaka je posamezno število diskretnih statističnih enot iste vrednosti.
-            \end{alertblock}
-
-            \begin{alertblock}{}
+            
+                ~
+            
                 \textbf{Frekvenčni razred} je skupina podatkov iz vzorca. Frekvenčni razredi so navadno enako široki,
                 in skupaj zajamejo celoten razpon podatkov. Za zvezen nabor podatkov za frekvenčne razrede izberemo intervale (navadno oblike $[a,b)$).
-            \end{alertblock}
+            
 
-        \end{frame}
+        
 
-        \begin{frame}
-            \begin{alertblock}{}
+        
+            
                 \textbf{Širina frekvenčnega razreda} $d_k$ je razlika med zgornjo ($z_k$) in spodnjo ($s_k$) mejo frekvenčnega razreda:
                 $$d_k=z_k-s_k.$$
-            \end{alertblock}
+            
 
-            \begin{block}{}
+            
                 Če so razredi enako široki, določimo njihovo širino kot kvocient med celotnim razponom podatkov $x_{max}-x_{min}$ in številom razredov.
-            \end{block}
+            
 
-            \begin{alertblock}{}
+            
                 \textbf{Sredina frekvenčnega razred} $x_k$ je aritmetična sredina zogrnje in spodnje meje razreda: 
                 $$x_k=\dfrac{z_k+s_k}{2}.$$
-            \end{alertblock}
-        \end{frame}
+            
+        
 
-        \begin{frame}
-            \begin{alertblock}{}
+        
+            
                 Grupirane podatke predstavimo s \textbf{frekvenčno preglednico/porazdelitvijo}.
-            \end{alertblock}
+            
 
-            \begin{alertblock}{}
+            
                 Za podatke v frekvenčnih preglednicah računamo:
                 \begin{itemize}
                     \item \textbf{(absolutno) frekvenco} $f_k$ -- število podatkov z vrednostmi v danem frekvenčnem razredu;
@@ -182,28 +166,18 @@
                     \item \textbf{(absolutno) kumulativno frekvenco} $F_k$ -- število podatkov, katerih vrednosti zavzemajo manjšo vrednost od zgornje meje danega frekvenčnega razreda;
                     \item \textbf{relativno kumulativno frekvenco} $F_k'$ -- delež celote, ki ga predstavlja število podatkov v danem in vseh manjših frekvenčnih razredih.
                 \end{itemize}
-            \end{alertblock}
-        \end{frame}
-
+            
+        
+                ~\\~
 
 
                 %%%% naloge
-
-        
-                \begin{frame}
-        
-                        \begin{columns}
-                            \column{0.5\textwidth}
         
         
-                    \only<2->{\begin{exampleblock}{Naloga}
-                        Na šoli analizirajo količino prevzetih obrokov v jedilnici. Rezultati so zbrani v tabeli. \\
-                        \only<4->{Analizirajte podatke s frekvenčno preglednico.
-                        Podatke razdelite v razrede $5-9$, $10-14$, $15-19$, $20$ in več.}
-                    \end{exampleblock}}
+                    \begin{naloga}
+                        Na šoli analizirajo količino prevzetih obrokov v jedilnici. Rezultati so zbrani v tabeli. 
         
-                            \column{0.45\textwidth}
-                            \only<3->{\begin{table}
+                            \begin{table}[H]
                                 \centering
                                 \begin{tabular}{||c|c||} 
                                 \hhline{|t:==:t|}
@@ -235,34 +209,37 @@
                                 4.c  & $12$     \\
                                 \hhline{|b:==:b|}
                                 \end{tabular}
-                            \end{table}}
-                        \end{columns}
+                            \end{table}
                         
-                \end{frame}
+                        Analizirajte podatke s frekvenčno preglednico.
+                        Podatke razdelite v razrede $5-9$, $10-14$, $15-19$, $20$ in več.
+                    \end{naloga}
 
                 
-                \begin{frame}
-                    \only<2->{\begin{exampleblock}{Naloga}
-                        Dijaki 3. a oddelka so zapisovali svoje pribljubljene barve. \\
-                        Zapisali so jih: modra, rdeča, rdeča, zelena, rumena, rdeča, modra, zelena, modra, modra, rumena, rdeča, zelena, modra, rumena, rumena, zelena, rdeča. \\
-                        Analizirajte rezultate s frekvenčno preglednico. \\~\\~
-                    \end{exampleblock}}
 
-                    \only<3->{\begin{exampleblock}{Naloga}
+                
+                
+                    \begin{naloga}
+                        Dijaki 3.~a oddelka so zapisovali svoje pribljubljene barve. \\
+                        Zapisali so jih: modra, rdeča, rdeča, zelena, rumena, rdeča, modra, zelena, modra, modra, rumena, rdeča, zelena, modra, rumena, rumena, zelena, rdeča. \\
+                        Analizirajte rezultate s frekvenčno preglednico. 
+                    \end{naloga}
+
+                    \begin{naloga}
                         Lokostrelec si beleži rezultate treningov. \\
                         Vrednosti so bile: $10.3$, $10.4$, $9.9$, $9.7$, $10.2$, $8.9$, $9.4$, $10.1$, $9.0$, $10.3$, $9.5$, $10.6$. \\
-                        Analizirajte rezultate s frekvenčno preglednico. \\~\\~
-                    \end{exampleblock}}
-                \end{frame}
+                        Analizirajte rezultate s frekvenčno preglednico. 
+                    \end{naloga}
+                
 
-                \begin{frame}
+                
         
-                   \only<2->{\begin{exampleblock}{Naloga}
+                   \begin{naloga}
                     
                     V frekvenčni preglednici so zbrani podatki o številu sorojencev dijakov 2.~b oddelka.
                     Dopolnite preglednico.
     
-                        \begin{table}
+                        \begin{table}[H]
                             \centering
                             \begin{tabular}{||c|c|c|c|c||} 
                             \hhline{|t:=====:t|}
@@ -281,76 +258,78 @@
                             \hhline{|b:=====:b|}
                             \end{tabular}
                         \end{table}
-                    \end{exampleblock}}
+                    \end{naloga}
     
-            \end{frame}
+            
 
+                    \newpage
 
-    \subsection{Mere osredinjenosti}
+    \section{Mere osredinjenosti}
 
-        \begin{frame}
-            \frametitle{Mere osredinjenosti}
+        
 
-            \begin{alertblock}{Aritmetična sredina}
+            \subsubsection{Aritmetična sredina}
                 \textbf{Aritmetična sredina} ali \textbf{povprečje} je količnik vsote vseh vrednosti 
                 statistične spremenljivke in števila teh vrednosti. \\
 
                 $$\overline{x}=\dfrac{x_1+x_2+\cdots+x_n}{N}=\dfrac{1}{N}\sum_{i=1}^n x_i.$$
-            % \end{alertblock}                
-            % \begin{block}{}
+            %                 
+            % 
                 Če se vrednosti statistične spremenljivke ponavljajo ($k_i$ vrednosti $x_i$), je formula sledeča:
                 $$\overline{x}=\dfrac{k_1x_1+k_2x_2+\cdots+k_mx_m}{k_1+k_2+\cdots+k_m}=\dfrac{\sum_{i=1}^mk_ix_i}{\sum_{i=1}^mk_i}; \quad \sum_{i=1}^mk_i=N$$
   
-            \end{alertblock}   
+               
 
-            \begin{block}{}
+            
                 Pri grupiranih podatkih za vrednosti vzamemo sredine frekvenčnih razredov.
-            \end{block}
+            
 
-        \end{frame}
+        
 
-        \begin{frame}
-            \begin{alertblock}{Modus}
+        
+            \subsubsection{Modus}
                 \textbf{Modus} ali \textbf{gostiščnica $Mo$} je vrednost statistične spremenljivke, ki se v množici vseh vrednosti najpogosteje ponavlja.                 
-            \end{alertblock}
-
-            \begin{block}{}
+            
+                    ~
+            
                 Če se v neki množici dve vrednosti pojavita enako mnogokrat najpogosteje, rečemo, da je porazdelitev vrednosti \textbf{bimodalna}.
-            \end{block}
+            
 
-            \begin{block}{}
+            
                 Za grupirane podatke določamo \textbf{modalni razred}, to je tisti razred, ki ima največjo frekvenčno gostoto.
-            \end{block}
-        \end{frame}
+            
+        
 
-        \begin{frame}
-            \begin{alertblock}{Mediana}
+        
+            \subsubsection{Mediana}
                 \textbf{Mediana} ali \textbf{središčnica $Me$} je tista vrednost statistične spremenljivke, pri kateri je polovica vrednosti večjih ali enakih,
                 druga polovica vrednosti pa manjših ali enakih od te vrednosti.                 
-            \end{alertblock}
-
-            \begin{block}{}
+            
+                    ~
+            
                 Če imamo liho število vrednosti statistične spremenljivke, za mediano vzamemo vrednost, ki stoji na mestu $\frac{n+1}{2}$ po velikosti urejenih podatkov. \\
                 Če je število vrednosti sodo, za vrednost mediane vzamemo aritmetično sredino srednjih dveh podatkov.
-            \end{block}
+            
 
-            \begin{block}{}
+
+            \subsubsection{Kvartili}
+
+            
                 Mediana razdeli podatke na dve polovici. Ti dve polovici lahko spet razdelimo na dve polovici in dobimo štiri enako močne množice podatkov. 
                 Meje teh skupin imenujemo \textbf{kvartili}.
-            \end{block}
-        \end{frame}
+            
+                    ~
 
-        \begin{frame}
-            \begin{block}{Kvartili}
+        
                 \textbf{Prvi kvartil $Q_1$} je mediana prve (spodnje) polovice podatkov, \textbf{drugi kvartil $Q_2$} je mediana $Me$ vseh podatkov,
                 \textbf{tretji kvartil $Q_3$} pa je mediana druge (zgornje) polovice podatkov.
-            \end{block}
-
-            \begin{block}{}
+            
+                    ~
+            
                 Vrednosti kvartilov, minimalno vrednost in maksimalno vrednost množice podatkov grafično predstavimo
                  z \textbf{diagramom kvartilov} oziroma \textbf{šktalo z brki}. \\~
 
-                \begin{figure}
+                \begin{figure}[H]
                 \centering
                  \begin{tikzpicture}
                     % \clip (0,0) rectangle (14.000000,10.000000);
@@ -419,33 +398,34 @@
                     }
                     \end{tikzpicture}
                 \end{figure}
-            \end{block}
-        \end{frame}
+            
+        
+                
 
 
         %%%% naloge
 
-        \begin{frame}
-            \only<2->{\begin{exampleblock}{Naloga}
+        
+            \begin{naloga}
                 Izračunajte aritmetično sredino količin.
                 \begin{itemize}
                     \item $1.5~s$, $3.5~s$, $1~s$
                     \item $4~km$, $2000~m$, $3~km$
                     \item $4~€$, $2~€$, $3~€$, $1~€$, $5~€$
                 \end{itemize}
-            \end{exampleblock}}
+            \end{naloga}
 
-            \only<3->{\begin{exampleblock}{Naloga}
+            \begin{naloga}
                 Izračunajte aritmetično sredino danim podatkom.
                 \begin{itemize}
                     \item $2, 3, 1, 8, 19, 2, 7$
                     \item $13, 39, 12$
                     \item $0.3, 0.4, 0.5, 0.7, 0.6$
-                \end{itemize}            \end{exampleblock}}
-        \end{frame}
+                \end{itemize}            \end{naloga}
+        
 
-        \begin{frame}
-            \only<2->{\begin{exampleblock}{Naloga}
+        
+            \begin{naloga}
                 Določite modus danim številskim podatkom.
                 \begin{itemize}
                     \item $1, 4, 2, 4, 1, 6, 3, 4, 1, 4, 6, 4, 4, 8$
@@ -453,23 +433,23 @@
                     \item $\dfrac{1}{3}, \dfrac{3}{4}, \dfrac{1}{2}, \dfrac{6}{8}, \dfrac{2}{9}$
                     \item $\dfrac{1}{2}, \dfrac{2}{4}, \dfrac{1}{4}, \dfrac{5}{10}, \dfrac{8}{9}$
                 \end{itemize}
-            \end{exampleblock}}
+            \end{naloga}
 
-            \only<3->{\begin{exampleblock}{Naloga}
+            \begin{naloga}
                 V porodnišnici so izmerili dolžine dojenčkov, ki so se rodili v enem dnevu.  \\
                 $50, 51, 51, 44, 47, 48, 53, 49, 52, 55, 46, 50, 50, 49, 47, 47$ \\
                 Določite mediano podatkov.
-            \end{exampleblock}}
+            \end{naloga}
 
-        \end{frame}
-
-        \begin{frame}
         
-            \only<2->{\begin{exampleblock}{Naloga}
-             
-             Otroci v vrtcu so metali žogo na koš in si zapisovali dosežke. Podatki so prikazani v preglednici. \\
 
-                 \begin{table}
+        
+        
+            \begin{naloga}
+             
+             Otroci v vrtcu so metali žogo na koš in si zapisovali dosežke. Podatki so prikazani v preglednici. 
+
+                 \begin{table}[H]
                      \centering
                      \begin{tabular}{||c|c|c|c|c|c|c|c|c|c||} 
                      \hhline{|t:==========:t|}
@@ -483,80 +463,78 @@
 
                 Izračunajte, koliko košev je otrok zadel v povprečju. Podatke uredite po vrsti in določite $Mo$, $Me$ ter narišite škatlo z brki.
 
-            \end{exampleblock}}
+            \end{naloga}
 
-     \end{frame}
-
-
+     
 
 
-    \subsection{Mere razpršenosti}
+\newpage
 
-        \begin{frame}
-            \frametitle{Mere razpršenosti}
+    \section{Mere razpršenosti}
 
-            \begin{block}{}
+        
+
+            
                 Informacijo o \textbf{porazdelitvi} oziroma \textbf{razpršenosti} podatkov lahko izračunamo s pomočjo: 
                 variacijskega razmika, interkvartilnega ranga, variance in standarnega odklona.
-            \end{block}
-            \begin{alertblock}{Variacijski razmik}
+            
+            \subsubsection{Variacijski razmik}
                 \textbf{Variacijski razmik} $R$ je razlika med maksimalno in minimalno vrednostjo statistične spremenljivke:
                 $$R=x_{max}-x_{min}.$$
-            \end{alertblock}
+            
 
-            \begin{block}{}
+            
                 Variacijski razmik je zelo odvisen od ekstremnih vrednosti, posebno osamelcev, 
                 zato ga uporabljamo le v kombinaciji z drugimi merami razpršenosti.
-            \end{block}
+            
 
-        \end{frame}
+        
 
-        \begin{frame}
-            \begin{alertblock}{Interkvartilni rang}
+        
+            \subsubsection{Interkvartilni rang}
                 \textbf{Interkvartilni rang} oziroma \textbf{medčetrtinski razmik} $IR$ je razlika med vrednostjo prvega in tretjega kvartila:
                 $$IR=Q_3-Q_1.$$
-            \end{alertblock}
-
-            \begin{alertblock}{}
+            
+            ~
+            
                 \textbf{Osamelec} je podatek, katerega vrednost je za več kot $3$-kratnik interkvartilnega ranga~$IR$ nad tretjim kvartilom $Q_3$ ali pod prvim kvartilom $Q_1$. \\
                 Podatek je ``pogojno osamelec'', če je njegova vrednosz za več kot $1.5$-kratnik interkvartilnega ranga~$IR$ nad tretjim kvartilom $Q_3$ ali pod prvim kvartilom $Q_1$.
 
-            \end{alertblock}
-
-            \begin{block}{}
+            
+            ~   
+            
                 Interkvartilni rang je mera razpršenosti, ki ni občutljiva na osamelce.
-            \end{block}
-        \end{frame}
+            
+        
 
-        \begin{frame}
+        
 
-            \begin{alertblock}{Varianca}
+            \subsubsection{Varianca}
                 \textbf{Varianca} $\sigma^2$ predstavlja aritmetično sredino kvadratov odmikov vrednosti statistične spremenljivke od aritmetične sredine:
                 $$\sigma^2=\dfrac{(x_1-\overline{x})^2+(x_2-\overline{x})^2+\cdots+(x_n-\overline{x})^2}{N}=\dfrac{1}{N}\sum_{i=1}^n(x_i-\overline{x})^2.$$
-            \end{alertblock}
+            
 
-            % \begin{block}{}
+            % 
             %     Večja kot je varianca, bolj so podatki razpršeni.
-            % \end{block}
+            % 
 
-            \begin{alertblock}{Standardni odklon}
+            \subsubsection{Standardni odklon}
                 \textbf{Standardni odklon} $\sigma$ izračunamo kot koren variance:
                 $$\sigma=\sqrt{\dfrac{(x_1-\overline{x})^2+(x_2-\overline{x})^2+\cdots+(x_n-\overline{x})^2}{N}}=\sqrt{\dfrac{1}{N}\sum_{i=1}^n(x_i-\overline{x})^2}.$$
                 Predstavlja povprečje odmikov vrednosti statistične spremenljivke od aritmetične sredine.
-            \end{alertblock}
-        \end{frame}
-
+            
+        
+            ~\\~
 
         %%% naloge
 
-        \begin{frame}
         
-            \only<2->{\begin{exampleblock}{Naloga}
+        
+            \begin{naloga}
              
-                V preglednici so predstavljene cene treh izdelkov v trgovini po posameznih mesecih leta 2019. \\
-                Izračunajte povprečno ceno in standardni odklon cene vsakega izdelka.
+                V preglednici so predstavljene cene treh izdelkov v trgovini po posameznih mesecih leta 2019. 
 
-                 \begin{table}
+                 \begin{table}[H]
                      \centering
                      \begin{tabular}{||c|c|c|c|c|c|c|c|c|c|c|c||} 
                      \hhline{|t:============:t|}
@@ -571,19 +549,21 @@
                      \hhline{|b:============:b|}
                      \end{tabular}
                  \end{table}
+
+                 Izračunajte povprečno ceno in standardni odklon cene vsakega izdelka.
+
              
-                \end{exampleblock}}
- \end{frame}
+                \end{naloga}
+ 
 
 
-     \begin{frame}
+     
         
-        \only<2->{\begin{exampleblock}{Naloga}
+        \begin{naloga}
          
-            V preglednici je prikazano število rojstev v Sloveniji po letih. \\
-            Izračunajte povprečno število rojstev in standardni odklon.
+            V preglednici je prikazano število rojstev v Sloveniji po letih. 
 
-             \begin{table}
+             \begin{table}[H]
                  \centering
                  \begin{tabular}{||c|c|c|c|c|c|c|c|c|c||} 
                  \hhline{|t:==========:t|}
@@ -594,10 +574,13 @@
                  \hhline{|b:==========:b|}
                  \end{tabular}
              \end{table}
-        \end{exampleblock}}
+
+             Izračunajte povprečno število rojstev in standardni odklon.
+
+        \end{naloga}
 
 
-             \only<3->{\begin{exampleblock}{Naloga}
+             \begin{naloga}
          
                 Pridobili smo podatke (urejene po velikosti): $1, 13, 14, 15, 15, 15, 17, 18, 18, 19, 19, 19$, $19, 20$ in $40$.
                 \begin{itemize}
@@ -605,169 +588,109 @@
                     \item Največjo in najmanjšo vrednost (v tem primeru sta to osamelca) odstranimo. Kako se spremeni razpršenost podatkov? 
                 \end{itemize}
                 
-            \end{exampleblock}}
+            \end{naloga}
     
          
- \end{frame}
+ 
 
+\newpage
 
+    \section{Grafično prikazovanje podatkov}
+                
 
-    \subsection{Grafično prikazovanje podatkov}
-        
-        \begin{frame}
-            \frametitle{Grafično prikazovanje podatkov}
+            \subsection*{Strukturni krog}
+            
+                \textbf{Strukturni krog} ali \textbf{krožni diagram} uporabljamo, kadar so podatki razvrščeni v malo frekvenčnih razredov 
+                ali ne dosežejo veliko različnih diskretnih vrednosti.
+            
+                \begin{figure}[H]
+                    \includegraphics[scale=0.3]{../Slike_in_skice/10921.jpg}
+                    \includegraphics[scale=0.3]{../Slike_in_skice/1092.jpg}
+                \end{figure}
 
-            \vskip-1.3em
-            \begin{columns}
-                \column{0.45\textwidth}
-                    \begin{alertblock}{Strukturni krog}
-                        \textbf{Strukturni krog} ali \textbf{krožni diagram} uporabljamo, kadar so podatki razvrščeni v malo frekvenčnih razredov 
-                        ali ne dosežejo veliko različnih diskretnih vrednosti.
-                    \end{alertblock}
+            
+                Celoto predstavlja $360^\circ$, za ostale deleže središčne kote izračunamo s sklepnim računom.
+            
+                ~
 
-                    \begin{block}{}
-                        Celoto predstavlja $360^\circ$, za ostale deleže središčne kote izračunamo s sklepnim računom.
-                    \end{block}
-                \column{0.5\textwidth}            
-                \begin{block}{}
-                    \begin{figure}[H]
-                        \includegraphics[scale=0.25]{../../Slike_in_skice/10921.jpg}
-                        \includegraphics[scale=0.25]{../../Slike_in_skice/1092.jpg}
-                    \end{figure}
-                \end{block}
-            \end{columns}
+            \subsection*{Stolpčni diagram}
 
-        \end{frame}
-
-        \begin{frame}
-
-            \begin{alertblock}{Stolpčni diagram}
                 \textbf{Stolpčni diagram} uporabljamo, ko so podatki razvrščeni v veliko frekvenčnih razredov
                 ali lahko dosežejo veliko diskretnih vrednosti.
-            \end{alertblock}
+                
+                ~
+                    
+                Stolpčni diagrami so lahko \textbf{pokončni} ali \textbf{ležeči}. 
+                Če želimo prikazati več podatkov naenkrat, uporabimo \textbf{sestavljeni} ali \textbf{strukturni} stolpčni diagram.
+            
+                
+                \begin{figure}[H]
+                    \includegraphics[scale=0.3]{../Slike_in_skice/1093.jpg}
+                    \includegraphics[scale=0.22]{../Slike_in_skice/1095.jpg}
+                    \includegraphics[scale=0.22]{../Slike_in_skice/1097.jpg} 
+                    \includegraphics[scale=0.21]{../Slike_in_skice/1096.jpg}
+                \end{figure}
+            
 
-            \vskip-1.3em
 
-            \begin{columns}
-                \column{0.43\textwidth}
+        
 
-                    \begin{block}{}
-                        Stolpčni diagrami so lahko \textbf{pokončni} ali \textbf{ležeči}. 
-                        Če želimo prikazati več podatkov naenkrat, uporabimo \textbf{sestavljeni} ali \textbf{strukturni} stolpčni diagram.
-                    \end{block}
-                \column{0.55\textwidth}            
-                \begin{block}{}
+        \newpage
+
+        \subsection*{Histogram}
+
+            \textbf{Histogram} uporabljamo za prikaz grupiranih podatkov. 
+        
+                \begin{figure}[H]
+                    \includegraphics[scale=0.33]{../Slike_in_skice/1098.jpg}
+                \end{figure}
+
+        
+            Širine frekvenčnih razredov niso nujno enake.
+            Meje razredov narišemo na vodoravni osi, frekvence posameznih razredov pa na navpični osi.
+        
+        
+
+                    
+
+
+        
+
+        ~
+
+        \subsection*{Linijski diagram}
+
+            \textbf{Linijski diagram/poligon} uporabljamo, ko želimo prikazati postopno spreminjanje vrednosti nekega podatka skozi daljše časovno obdobje.
+            Frekvenčne porazdelitve ponazorimo s \textbf{frekvenčnim poligonom}, podatki so lahko zvezni ali grupirani.
+                
                     \begin{figure}[H]
-                        \includegraphics[scale=0.28]{../../Slike_in_skice/1093.jpg}
+                        \includegraphics[scale=0.23]{../Slike_in_skice/1166.jpg}
+                        \includegraphics[scale=0.3]{../Slike_in_skice/1099.jpg}
                     \end{figure}
-                \end{block}
-            \end{columns}
-    
-        \end{frame}
+                    
 
-        \begin{frame}
-            \vskip-1.3em
-
-            \begin{columns}
-                \column{0.49\textwidth}
-
-            \begin{block}{}
-                \begin{figure}[H]
-                    \includegraphics[scale=0.19]{../../Slike_in_skice/1095.jpg}
-                \end{figure}
-            \end{block}
-
-            \column{0.49\textwidth}            
-            \begin{block}{}
-                \begin{figure}[H]
-                    \includegraphics[scale=0.19]{../../Slike_in_skice/1097.jpg} 
-                % \end{figure}
-            % \end{block}
-
-            % \begin{block}{}
-                % \begin{figure}[H]
-                    \includegraphics[scale=0.19]{../../Slike_in_skice/1096.jpg}
-                \end{figure}
-            \end{block}
-
-        \end{columns}
-
-        \end{frame}
-
-        \begin{frame}
-
-                    \begin{alertblock}{Histogram}
-                        \textbf{Histogram} uporabljamo za prikaz grupiranih podatkov. 
-                    \end{alertblock}
-
-                    \vskip-1.5em
-            \begin{columns}
-                \column{0.32\textwidth}
-
-
-                    \begin{block}{}
-                        Širine frekvenčnih razredov niso nujno enake.
-                        Meje razredov narišemo na vodoravni osi, frekvence posameznih razredov pa na navpični osi.
-                    \end{block}
-                \column{0.65\textwidth}
-                    \begin{block}{}
-                        \begin{figure}
-                            \includegraphics[scale=0.33]{../../Slike_in_skice/1098.jpg}
-                        \end{figure}
-                    \end{block}
-            \end{columns}
-
-
-        \end{frame}
-
-        \begin{frame}
-
-            \begin{alertblock}{Linijski diagram}
-                \textbf{Linijski diagram/poligon} uporabljamo, ko želimo prikazati postopno spreminjanje vrednosti nekega podatka skozi daljše časovno obdobje.
-                Frekvenčne porazdelitve ponazorimo s \textbf{frekvenčnim poligonom}, podatki so lahko zvezni ali grupirani.
-            \end{alertblock}
-
-            \vskip-1.3em
-            \begin{columns}
-                \column{0.58\textwidth}
-
-                    \begin{block}{}
-                        \begin{figure}[H]
-                            \includegraphics[scale=0.23]{../../Slike_in_skice/1166.jpg}
-                        \end{figure}
-                    \end{block}
-
-                \column{0.4\textwidth}
-                    \begin{block}{}
-                        \begin{figure}[H]
-                            \includegraphics[scale=0.23]{../../Slike_in_skice/1099.jpg}
-                        \end{figure}
-                    \end{block}
-            \end{columns}
-
-        \end{frame}
+        ~\\~
 
 
         %%%% naloge
 
-        \begin{frame}
+        
 
 
-            \only<2->{\begin{exampleblock}{Naloga}
+            \begin{naloga}
          
                 Na matematičnem testu je bilo mogoče doseči $50$ točk. Dosežki so bili: 
-                $35, 22, 41, 47, 36, 30, 27, 19, 31, 43, 48, 44, 23, 26, 36, 10, 33, 14, 9$. \\
+                $35, 22, 41, 47$, $36, 30, 27, 19, 31, 43, 48, 44, 23, 26, 36, 10, 33, 14, 9$. \\
                 Razdelite jih v pet enako velikih razredov ter predstavite s histogramom.
                 
-            \end{exampleblock}}
+            \end{naloga}
 
         
-            \only<3->{\begin{exampleblock}{Naloga}
+            \begin{naloga}
              
-             Otroci v vrtcu so metali žogo na koš in si zapisovali dosežke. Podatki so prikazani v preglednici. \\
-             Izračunajte, koliko košev je otrok zadel v povprečju. Podatke uredite po vrsti in določite $Mo$, $Me$ ter narišite škatlo z brki.
+             Otroci v vrtcu so metali žogo na koš in si zapisovali dosežke. Podatki so prikazani v preglednici. 
 
-                 \begin{table}
+                 \begin{table}[H]
                      \centering
                      \begin{tabular}{||c|c|c|c|c|c|c|c|c|c||} 
                      \hhline{|t:==========:t|}
@@ -778,20 +701,20 @@
                      \hhline{|b:==========:b|}
                      \end{tabular}
                  \end{table}
-            \end{exampleblock}}
 
-     \end{frame}
+                 Izračunajte, koliko košev je otrok zadel v povprečju. Podatke uredite po vrsti in določite $Mo$, $Me$ ter narišite škatlo z brki.
 
-     \begin{frame}
+            \end{naloga}
+
+
 
 
    
-        \only<2->{\begin{exampleblock}{Naloga}
+        \begin{naloga}
          
-            Bojana beleži, koliko časa potrebuje za pot do šole. Podatke je zapisala v preglednico. \\ 
-            S stolpčnim diagramom predstavite, kako pogosto v šolo potuje $8$ minut, $9$ minut ... 
+            Bojana beleži, koliko časa potrebuje za pot do šole. Podatke je zapisala v preglednico. 
 
-             \begin{table}
+             \begin{table}[H]
                  \centering
                  \begin{tabular}{||c|c|c|c|c|c|c|c|c|c|c||} 
                  \hhline{|t:===========:t|}
@@ -802,9 +725,12 @@
                  \hhline{|b:===========:b|}
                  \end{tabular}
              \end{table}
-        \end{exampleblock}}
 
-        \only<3->{\begin{exampleblock}{Naloga}
+             S stolpčnim diagramom predstavite, kako pogosto v šolo potuje $8$ minut, $9$ minut ... 
+
+        \end{naloga}
+
+        \begin{naloga}
          
             V domu ostarelih občanov je $500$ oskrbovancev. Od $50$ do $60$ let jih je $15~\%$, med $60$ in $70$ leti je $160$ oskrbovancev,
             med $70$ in $80$ leti pa $200$ starostnikov. Drugi so stari med $80$ in $90$ let.
@@ -813,7 +739,7 @@
                 \item Grafično ponazorite starost oskrbovancev.
             \end{itemize}
             
-        \end{exampleblock}}
+        \end{naloga}
 
 
- \end{frame}
+ 
