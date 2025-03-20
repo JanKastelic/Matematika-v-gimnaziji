@@ -8,7 +8,235 @@
     \tableofcontents[currentsection, hideothersubsections]
 \end{frame}
 
+
     \subsection{Množice v pravokotnem koordinatnem sistemu}
+
+        \begin{frame}
+            \frametitle{Pravokotni koordinatni sistem}
+            \vskip-1.8em
+            \begin{columns}
+                \column{0.45\textwidth}
+                
+                \only<2->{\begin{alertblock}{}
+                    \textbf{Pravokotni koordinatni sistem v ravnini} oziroma  \textbf{kartezični ravninski koordinatni sistem} določa par pravokotnih številskih premic (koordinatne osi), ki se sekata v \textcolor{blue}{koordinatnem izhodišču} (\textcolor{blue}{$O$}). \\
+                \end{alertblock} }
+
+                \only<3->{\begin{alertblock}{}
+                    Koordinatni osi imenujemo:
+                    \begin{itemize}
+                        \item<4-> \textcolor{green}{os $x$} ali \textcolor{green}{abscisna os},
+                        \item<5-> \textcolor{darkred}{os $y$} ali \textcolor{darkred}{ordinatna os}.
+                    \end{itemize}
+                \end{alertblock}} ~\\
+
+                \column{0.5\textwidth}
+
+                \begin{alertblock}{}
+                    \begin{figure}[H]
+                        \begin{tikzpicture}
+                            % \clip (0,0) rectangle (14.000000,10.000000);
+                            {\footnotesize
+                            
+                            % Drawing 2D Cartesian system
+
+                            \color{black}
+                            \only<4->{\color{green}}
+                            \draw (4.900000,4.000000) node [anchor=north] { $1$ };%
+                            \draw [line width=0.032cm] (4.900000,3.925000) -- (4.900000,4.075000);%
+                            \draw (5.800000,4.000000) node [anchor=north] { $2$ };%
+                            \draw [line width=0.032cm] (5.800000,3.925000) -- (5.800000,4.075000);%
+                            \draw (6.700000,4.000000) node [anchor=north] { $3$ };%
+                            \draw [line width=0.032cm] (6.700000,3.925000) -- (6.700000,4.075000);%
+                            \draw (3.100000,4.000000) node [anchor=north] { $-1$ };%
+                            \draw [line width=0.032cm] (3.100000,3.925000) -- (3.100000,4.075000);%
+                            \draw (2.200000,4.000000) node [anchor=north] { $-2$ };%
+                            \draw [line width=0.032cm] (2.200000,3.925000) -- (2.200000,4.075000);%
+                            \draw (1.300000,4.000000) node [anchor=north] { $-3$ };%
+                            \draw [line width=0.032cm] (1.300000,3.925000) -- (1.300000,4.075000);%
+                            \draw (7.400000,4.000000) node [anchor=north] { $x$ };%
+                            \draw [line width=0.032cm] (0.600000,4.000000) -- (3.960000,4.000000);%
+                            \draw [line width=0.032cm] (4.040000,4.000000) -- (7.400000,4.000000);%
+                            \draw [line width=0.032cm] (7.102567,4.039158) -- (7.400000,4.000000);%
+                            \draw [line width=0.032cm] (7.102567,3.960842) -- (7.300000,4.000000);%
+
+                            \color{black}
+                            \only<5->{\color{darkred}}
+                            \draw (4.000000,4.900000) node [anchor=east] { $1$ };%
+                            \draw [line width=0.032cm] (3.925000,4.900000) -- (4.075000,4.900000);%
+                            \draw (4.000000,5.800000) node [anchor=east] { $2$ };%
+                            \draw [line width=0.032cm] (3.925000,5.800000) -- (4.075000,5.800000);%
+                            \draw (4.000000,6.700000) node [anchor=east] { $3$ };%
+                            \draw [line width=0.032cm] (3.925000,6.700000) -- (4.075000,6.700000);%
+                            \draw (4.000000,3.100000) node [anchor=east] { $-1$ };%
+                            \draw [line width=0.032cm] (3.925000,3.100000) -- (4.075000,3.100000);%
+                            \draw (4.000000,2.200000) node [anchor=east] { $-2$ };%
+                            \draw [line width=0.032cm] (3.925000,2.200000) -- (4.075000,2.200000);%
+                            \draw (4.000000,7.400000) node [anchor=east] { $y$ };%
+                            \draw [line width=0.032cm] (4.000000,1.600000) -- (4.000000,3.960000);%
+                            \draw [line width=0.032cm] (4.000000,4.040000) -- (4.000000,7.400000);%
+                            \draw [line width=0.032cm] (3.960842,7.102567) -- (4.000000,7.400000);%
+                            \draw [line width=0.032cm] (4.039158,7.102567) -- (4.000000,7.300000);%
+                            
+                            \only<3->{\color{blue}}
+                            \draw (4.000000,4.000000) node [anchor=north east] { $0$ };%
+                            \draw [line width=0.032cm] (4.000000,4.000000) circle (0.040000);%
+                            }
+
+                        \end{tikzpicture}                        
+
+                    \end{figure}
+                \end{alertblock}
+
+
+            \end{columns}
+        \end{frame}
+
+
+        \begin{frame}[t]
+            \frametitle{Lega točke v ravnini}
+            
+            \vskip-1.5em
+            \begin{columns}
+                \column{0.52\textwidth}
+                \only<2->{
+                    \begin{alertblock}{}
+                        Poljubni točki \textcolor{blue}{$T$} v ravnini s pravokotnim koordinatnim sistemom lahko določimo \textbf{koordinate točke}: \only<2-4>{\textcolor{blue}{$T(x_0,y_0)$}} \only<5>{\textcolor{blue}{$T(\textcolor{green}{x_0},y_0)$}} \only<6>{\textcolor{blue}{$T(\textcolor{green}{x_0},\textcolor{darkred}{y_0})$}}. \\
+                        \only<3->{To so števila, ki nam povedo, kje ležijo projekcije točke $T$ na koordinatnih oseh.}
+                    \end{alertblock} 
+                }
+
+                \only<4->{
+                    \begin{alertblock}{}
+                    Koordinate točke imenujemo:
+                    \begin{itemize}
+                        \item<5-> prva koordinata \textcolor{green}{$x_0$} je \textcolor{green}{abscisa} točke $T$ in
+                        \item<6-> druga koordinata \textcolor{darkred}{$y_0$} je \textcolor{darkred}{ordinata} točke $T$.
+                    \end{itemize}
+                \end{alertblock}
+                } ~\\
+
+
+                \column{0.45\textwidth}  
+
+                \only<2->{
+                    \begin{alertblock}{}
+                        \begin{tikzpicture}
+                            % \clip (0,0) rectangle (14.000000,10.000000);
+                            {\footnotesize
+                            
+                            % Drawing 2D Cartesian system
+                            \draw (4.000000,4.000000) node [anchor=north east] { $0$ };%
+                            \draw [line width=0.016cm] (4.000000,3.925000) -- (4.000000,4.075000);%
+                            \draw (5.000000,4.000000) node [anchor=north] { $1$ };%
+                            \draw [line width=0.016cm] (5.000000,3.925000) -- (5.000000,4.075000);%
+                            \draw (6.000000,4.000000) node [anchor=north] { $2$ };%
+                            \draw [line width=0.016cm] (6.000000,3.925000) -- (6.000000,4.075000);%
+                            \draw (7.000000,4.000000) node [anchor=north] { $3$ };%
+                            \draw [line width=0.016cm] (7.000000,3.925000) -- (7.000000,4.075000);%
+                            \draw (3.000000,4.000000) node [anchor=north] { $-1$ };%
+                            \draw [line width=0.016cm] (3.000000,3.925000) -- (3.000000,4.075000);%
+                            \draw (2.000000,4.000000) node [anchor=north] { $-2$ };%
+                            \draw [line width=0.016cm] (2.000000,3.925000) -- (2.000000,4.075000);%
+                            \draw (4.000000,5.000000) node [anchor=east] { $1$ };%
+                            \draw [line width=0.016cm] (3.925000,5.000000) -- (4.075000,5.000000);%
+                            \draw (4.000000,6.000000) node [anchor=east] { $2$ };%
+                            \draw [line width=0.016cm] (3.925000,6.000000) -- (4.075000,6.000000);%
+                            \draw (4.000000,7.000000) node [anchor=east] { $3$ };%
+                            \draw [line width=0.016cm] (3.925000,7.000000) -- (4.075000,7.000000);%
+                            \draw (4.000000,3.000000) node [anchor=east] { $-1$ };%
+                            \draw [line width=0.016cm] (3.925000,3.000000) -- (4.075000,3.000000);%
+                            \draw (4.000000,2.000000) node [anchor=east] { $-2$ };%
+                            \draw [line width=0.016cm] (3.925000,2.000000) -- (4.075000,2.000000);%
+                            \draw (7.500000,4.000000) node [anchor=north] { $x$ };%
+                            \draw (4.000000,7.700000) node [anchor=east] { $y$ };%
+                            \draw [line width=0.016cm] (1.300000,4.000000) -- (5.760000,4.000000);%
+                            \draw [line width=0.016cm] (5.840000,4.000000) -- (7.500000,4.000000);%
+                            \draw [line width=0.016cm] (7.202567,4.039158) -- (7.500000,4.000000);%
+                            \draw [line width=0.016cm] (7.202567,4.039158) -- (7.400000,4.000000);%
+                            \draw [line width=0.016cm] (7.202567,3.960842) -- (7.500000,4.000000);%
+                            \draw [line width=0.016cm] (7.202567,3.960842) -- (7.400000,4.000000);%
+                            \draw [line width=0.016cm] (4.000000,1.800000) -- (4.000000,6.460000);%
+                            \draw [line width=0.016cm] (4.000000,6.540000) -- (4.000000,7.700000);%
+                            \draw [line width=0.016cm] (3.960842,7.402567) -- (4.000000,7.700000);%
+                            \draw [line width=0.016cm] (3.960842,7.402567) -- (4.000000,7.600000);%
+                            \draw [line width=0.016cm] (4.039158,7.402567) -- (4.000000,7.700000);%
+                            \draw [line width=0.016cm] (4.039158,7.402567) -- (4.000000,7.600000);%
+                            
+                            \only<3->{
+                            % Changing color 220 220 220
+                            \definecolor{r220g220b220}{rgb}{0.862745,0.862745,0.862745}%
+                            \color{r220g220b220}% 
+                            
+                            % Drawing segment xy x
+                            \draw [line width=0.016cm] (5.800000,6.460000) -- (5.800000,6.350000);%
+                            \draw [line width=0.016cm] (5.800000,6.275000) -- (5.800000,6.125000);%
+                            \draw [line width=0.016cm] (5.800000,6.050000) -- (5.800000,5.900000);%
+                            \draw [line width=0.016cm] (5.800000,5.825000) -- (5.800000,5.675000);%
+                            \draw [line width=0.016cm] (5.800000,5.600000) -- (5.800000,5.450000);%
+                            \draw [line width=0.016cm] (5.800000,5.375000) -- (5.800000,5.225000);%
+                            \draw [line width=0.016cm] (5.800000,5.150000) -- (5.800000,5.000000);%
+                            \draw [line width=0.016cm] (5.800000,4.925000) -- (5.800000,4.775000);%
+                            \draw [line width=0.016cm] (5.800000,4.700000) -- (5.800000,4.550000);%
+                            \draw [line width=0.016cm] (5.800000,4.475000) -- (5.800000,4.325000);%
+                            \draw [line width=0.016cm] (5.800000,4.250000) -- (5.800000,4.100000);%
+                            
+                            % Drawing segment xy y
+                            \draw [line width=0.016cm] (5.760000,6.500000) -- (5.650000,6.500000);%
+                            \draw [line width=0.016cm] (5.575000,6.500000) -- (5.425000,6.500000);%
+                            \draw [line width=0.016cm] (5.350000,6.500000) -- (5.200000,6.500000);%
+                            \draw [line width=0.016cm] (5.125000,6.500000) -- (4.975000,6.500000);%
+                            \draw [line width=0.016cm] (4.900000,6.500000) -- (4.750000,6.500000);%
+                            \draw [line width=0.016cm] (4.675000,6.500000) -- (4.525000,6.500000);%
+                            \draw [line width=0.016cm] (4.450000,6.500000) -- (4.300000,6.500000);%
+                            \draw [line width=0.016cm] (4.225000,6.500000) -- (4.075000,6.500000);%
+                            
+                            % Changing color 0 255 0
+                            % \definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+                            % \color{r0g255b0}% 
+                            
+                            \color{black}
+                            \only<5->{\color{green}}
+                            % Marking point x by circle
+                            \draw [line width=0.016cm] (5.800000,4.000000) circle (0.040000);%
+                            
+                            % Marking point x_0
+                            \draw (5.800000,4.000000) node [anchor=south west] { $x_0$ };%
+                            
+                            % Changing color 204 0 0
+                            % \definecolor{r204g0b0}{rgb}{0.800000,0.000000,0.000000}%
+                            % \color{r204g0b0}% 
+                            
+                            \color{black}
+                            \only<6->{\color{darkred}}
+                            % Marking point y by circle
+                            \draw [line width=0.016cm] (4.000000,6.500000) circle (0.040000);%
+                            
+                            % Marking point y_0
+                            \draw (4.000000,6.500000) node [anchor=south west] { $y_0$ };%
+                            }
+
+                            % Changing color 0 0 255
+                            \definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+                            \color{r0g0b255}% 
+                            
+                            % Marking point T by circle
+                            \draw [line width=0.032cm] (5.800000,6.500000) circle (0.040000);%
+                            \only<1-4>{\draw (5.830000,6.470000) node [anchor=south west] { $T(x_0,y_0)$ }};%
+                            \only<5>{\draw (5.830000,6.470000) node [anchor=south west] { $T(\textcolor{green}{x_0},y_0)$ }};%
+                            \only<6>{\draw (5.830000,6.470000) node [anchor=south west] { $T(\textcolor{green}{x_0},\textcolor{darkred}{y_0})$ }};%
+                            \color{black}
+                            }
+                            
+                        \end{tikzpicture}
+
+                \end{alertblock}}
+                    
+
+            \end{columns}
+
+        \end{frame}
+
+
 
         \begin{frame}
             \frametitle{Množice v pravokotnem koordinatnem sistemu}
