@@ -31,7 +31,7 @@
 
                 \column{0.5\textwidth}
 
-                \begin{alertblock}{}
+                \only<2->{\begin{alertblock}{}
                     \begin{figure}[H]
                         \begin{tikzpicture}
                             % \clip (0,0) rectangle (14.000000,10.000000);
@@ -77,7 +77,7 @@
                             \draw [line width=0.032cm] (3.960842,7.102567) -- (4.000000,7.400000);%
                             \draw [line width=0.032cm] (4.039158,7.102567) -- (4.000000,7.300000);%
                             
-                            \only<3->{\color{blue}}
+                            \only<2->{\color{blue}}
                             \draw (4.000000,4.000000) node [anchor=north east] { $0$ };%
                             \draw [line width=0.032cm] (4.000000,4.000000) circle (0.040000);%
                             }
@@ -85,7 +85,7 @@
                         \end{tikzpicture}                        
 
                     \end{figure}
-                \end{alertblock}
+                \end{alertblock}}
 
 
             \end{columns}
@@ -100,7 +100,7 @@
                 \column{0.52\textwidth}
                 \only<2->{
                     \begin{alertblock}{}
-                        Poljubni točki \textcolor{blue}{$T$} v ravnini s pravokotnim koordinatnim sistemom lahko določimo \textbf{koordinate točke}: \only<2-4>{\textcolor{blue}{$T(x_0,y_0)$}} \only<5>{\textcolor{blue}{$T(\textcolor{green}{x_0},y_0)$}} \only<6>{\textcolor{blue}{$T(\textcolor{green}{x_0},\textcolor{darkred}{y_0})$}}. \\
+                        Poljubni točki \textcolor{blue}{$T$} v ravnini s pravokotnim koordinatnim sistemom lahko določimo \textbf{koordinate točke}: \only<2-4>{\textcolor{blue}{$T(x_0,y_0)$}}\only<5>{\textcolor{blue}{$T(\textcolor{green}{x_0},y_0)$}}\only<6>{\textcolor{blue}{$T(\textcolor{green}{x_0},\textcolor{darkred}{y_0})$}}. \\
                         \only<3->{To so števila, ki nam povedo, kje ležijo projekcije točke $T$ na koordinatnih oseh.}
                     \end{alertblock} 
                 }
