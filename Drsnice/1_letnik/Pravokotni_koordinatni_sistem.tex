@@ -2143,13 +2143,15 @@
 
             \vskip-1.7em
             \begin{columns}
-                \column{0.52\textwidth}
+                \column{0.57\textwidth}
 
-                \only<2->{\begin{alertblock}{Razpolovišče daljice}
+                \only<2->{\begin{alertblock}{Ploščina trikotnika}
                     \only<3->{Ploščina trikotnika $\triangle ABC$ z oglišči $A(x_a,y_a)$, $B(x_b,y_b)$ in $C(x_c,y_c)$ je}
-                    \only<4->{$$ S = \dfrac{1}{2}\cdot orient \cdot \begin{vmatrix} x_b-x_a & y_b-y_a \\ x_c-x_a & y_c-y_a \end{vmatrix} $$}
+                    \only<4->{$$ \begin{aligned} S &= \dfrac{1}{2}\cdot orient \cdot \begin{vmatrix} x_b-x_a & y_b-y_a \\ x_c-x_a & y_c-y_a \end{vmatrix} \only<5->{\\ &= \dfrac{1}{2}\cdot o \cdot \left[(x_b-x_a)(y_c-y_a)-(y_b-y_a)(x_c-x_a)\right]}, \end{aligned} $$}
+                    \only<6->{kjer je $orient=\begin{cases} 1; & \triangle ABC ~pozitvno~orientiran \\ -1; & \triangle ABC ~negativno~orientiran \end{cases}. $}
                 \end{alertblock}}
-                \column{0.43\textwidth}
+    
+                \column{0.4\textwidth}
 
                 \only<3->{\begin{block}{}
                     \begin{tikzpicture}
@@ -2159,21 +2161,21 @@
                         % Drawing 2D Cartesian system
                         \draw (2.000000,2.000000) node [anchor=north east] { $0$ };%
                         \draw [line width=0.016cm] (2.000000,1.925000) -- (2.000000,2.075000);%
-                        \draw (3.000000,2.000000) node [anchor=north] { $1$ };%
+                        \draw (3.000000,1.900000) node [anchor=north] { $1$ };%
                         \draw [line width=0.016cm] (3.000000,1.925000) -- (3.000000,2.075000);%
-                        \draw (4.000000,2.000000) node [anchor=north] { $2$ };%
+                        % \draw (4.000000,2.000000) node [anchor=north] { $2$ };%
                         \draw [line width=0.016cm] (4.000000,1.925000) -- (4.000000,2.075000);%
-                        \draw (5.000000,2.000000) node [anchor=north] { $3$ };%
+                        % \draw (5.000000,2.000000) node [anchor=north] { $3$ };%
                         \draw [line width=0.016cm] (5.000000,1.925000) -- (5.000000,2.075000);%
-                        \draw (6.000000,2.000000) node [anchor=north] { $4$ };%
+                        % \draw (6.000000,2.000000) node [anchor=north] { $4$ };%
                         \draw [line width=0.016cm] (6.000000,1.925000) -- (6.000000,2.075000);%
-                        \draw (7.000000,2.000000) node [anchor=north] { $5$ };%
+                        % \draw (7.000000,2.000000) node [anchor=north] { $5$ };%
                         \draw [line width=0.016cm] (7.000000,1.925000) -- (7.000000,2.075000);%
                         \draw (2.000000,3.000000) node [anchor=east] { $1$ };%
                         \draw [line width=0.016cm] (1.925000,3.000000) -- (2.075000,3.000000);%
-                        \draw (2.000000,4.000000) node [anchor=east] { $2$ };%
+                        % \draw (2.000000,4.000000) node [anchor=east] { $2$ };%
                         \draw [line width=0.016cm] (1.925000,4.000000) -- (2.075000,4.000000);%
-                        \draw (2.000000,5.000000) node [anchor=east] { $3$ };%
+                        % \draw (2.000000,5.000000) node [anchor=east] { $3$ };%
                         \draw [line width=0.016cm] (1.925000,5.000000) -- (2.075000,5.000000);%
                         \draw (7.500000,2.000000) node [anchor=north] { $x$ };%
                         \draw (2.000000,5.900000) node [anchor=east] { $y$ };%
