@@ -9,8 +9,107 @@
 \end{frame}
         
         \begin{frame}
-            \frametitle{Funkcija}
+            \frametitle{Preslikava}
+
+            \vskip-2em
+            \begin{columns}
+                \column{0.73\textwidth}
+                    \begin{alertblock}{Preslikava}
+                        Naj bosta $\mathcal{X}$ in $\mathcal{Y}$ neprazni množici. \\
+                        \textbf{Preslikava} $f$ sestoji iz:
+                        \begin{itemize}
+                            \item množice $\mathcal{X}$, ki ji pravimo \textbf{domena},
+                            \item množice $\mathcal{Y}$, ki ji pravimo \textbf{kodomena} in 
+                            \item \textbf{prirejanja}, ki vsakemu elementu $x$ domene priredi natanko en element $y$ kodomene.
+                        \end{itemize}
+                    \end{alertblock}
+
+                \column{0.24\textwidth}
+
+                    \begin{alertblock}{}
+                        $$\begin{aligned}
+                            f&: \mathcal{X}\to\mathcal{Y} \\ f&: x\mapsto y
+                        \end{aligned}  $$
+                    \end{alertblock}
+            
+        \end{columns}
+
+        \vskip-0.4em
+        \begin{alertblock}{}
+            Elemente $x$ kodomene $\mathcal{X}$ imenujemo \textbf{originali} preslikave.
+            \\ Če elementu $x$ priredimo element $y$ iz kodomene, potem imenujemo $y$ \textbf{slika} elemeta $x$.
+        \end{alertblock}
+
+        \vskip-0.4em
+        \begin{block}{}
+            Preslikavo lahko podamo s predpisom, puščičnim diagramom, besednim opisom ...
+        \end{block}
+
         \end{frame}
+
+
+        \begin{frame}
+            \frametitle{Funkcija}
+
+            \begin{alertblock}{Funkcija}
+                Naj bosta $\mathcal{X}$ in $\mathcal{Y}$ neprazni številski množici. \\
+                \textbf{Funkcija} $f$ je preslikava med številskima množicama $\mathcal{X}$ in $\mathcal{Y}$:
+                \vskip-0.5em
+                $$f: \mathcal{X}\to\mathcal{Y}.$$
+            \end{alertblock}
+
+
+            \begin{alertblock}{}
+                Število $y$ je \textbf{funkcijska vrednost} števila $x$, če se število $x$ preslika v število $y$. 
+                \vskip-0.5em
+                $$ f(x)=y $$
+            \end{alertblock}
+
+            \begin{block}{}
+                $x$ je neodvisna spremenjlivka, $f(x)$ je od $x$ odvisna spremenljivka.
+            \end{block}
+
+        \end{frame}
+
+        
+        \begin{frame}
+            
+            \begin{block}{}
+                V nekaterih primerih za opis funkcije uporabimo poseben izraz:
+                \begin{itemize}
+                    \item $f:\mathcal{X}\to\mathbb{R}; \mathcal{X}\subseteq\mathbb{R}$ -- realna funkcija realne spremenljivke;
+                    \item $f:\mathcal{X}\to\mathbb{R}; \mathcal{X}\subseteq\mathbb{N}$ -- realna funkcija naravne spremenljivke;
+                    \item $f:\mathcal{X}\to\mathbb{N}; \mathcal{X}\subseteq\mathbb{R}$ -- naravna funkcija realne spremenljivke;
+                    \item $f:\mathcal{X}\to\mathbb{N}; \mathcal{X}\subseteq\mathbb{N}$ -- naravna funkcija naravne spremenljivke.
+                \end{itemize}
+            \end{block}
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Definicijsko območje in zaloga vrednosti}
+
+            \begin{alertblock}{Definicijsko območje}
+                \textbf{Definicijsko območje} preslikave ali funkcije $f:\mathcal{X}\to\mathcal{Y}$ je množica vseh originalov, ki jih v danem primeru opazujemo. 
+                Oznaka: $D_f$.                
+            \end{alertblock}
+
+            \vskip-0.5em
+            \begin{block}{}
+                Za definicijsko območje navadno vzamemo največjo možno množico, za katero je predpis funkcije veljaven/definiran.
+            \end{block}
+
+            \begin{alertblock}{Zaloga vrednosti}
+                \textbf{Zaloga vrednosti} preslikave ali funkcije $f:\mathcal{X}\to\mathcal{Y}$ je množica vseh slik oziroma funkcijskih vrednosti.
+                Oznaka: $Z_f$.
+            \end{alertblock}
+
+            \vskip-0.5em
+            \begin{block}{}
+                Zaloga vrednosti $Z_f$ je podmnožica kodomene $\mathcal{Y}$: $Z_f\subseteq \mathcal{Y}$.
+            \end{block}
+
+        \end{frame}
+
 
 
         %%%% naloge
@@ -58,6 +157,37 @@
 
             \end{exampleblock}}
         \end{frame}
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+        \begin{frame}
+            \frametitle{Ničla in začetna vrednost funkcije}
+
+            \begin{alertblock}{Ničla funkcije}
+                \textbf{Ničla} funkcije $f:\mathcal{X}\to\mathcal{Y}$ je tista vrednost $x_0\in\mathcal{X}$ neodvisne spremenljivke, 
+                pri kateri je vrednost funkcije $f$ enaka $0$: $f(x_0)=0$.
+            \end{alertblock}
+
+            \vskip-0.5em
+            \begin{block}{}
+                Ničle funkcije $f$ poiščemo tako, da rešimo enačbo $f(x)=0$. \\
+                Ničle so le tiste izmed vrednosti, ki ležijo v definicijskem območju $D_f$ funkcije $f$.
+            \end{block}
+
+            \begin{alertblock}{Začetna vrednost}
+                \textbf{Začetna vrednost} funkcije $f:\mathcal{X}\to\mathcal{Y}$ je funkcijska vrednost pri $x=0$, to je $f(0)$.
+            \end{alertblock}
+
+            \vskip-0.5em
+            \begin{block}{}
+                Začetna vrednost obstaja le, če je $0$ v definicijskem območju funkcije $f$: $0\in D_f$.
+            \end{block}
+        \end{frame}
+
+
+
+        %%%% naloge
 
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
@@ -110,6 +240,17 @@
             \end{exampleblock}}
         \end{frame}
 
+
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+        \begin{frame}
+            \frametitle{Graf funkcije}
+
+
+        \end{frame}
+
+        %%%% naloge
 
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
