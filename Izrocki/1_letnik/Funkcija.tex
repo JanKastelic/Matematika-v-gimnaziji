@@ -1,0 +1,162 @@
+\chapter{Funkcija}
+
+
+\section{Funkcija}
+
+    \subsection*{Preslikava}
+
+        Naj bosta $\mathcal{X}$ in $\mathcal{Y}$ neprazni množici. \\
+        \textbf{Preslikava} $f$ sestoji iz:
+        \begin{itemize}
+            \item množice $\mathcal{X}$, ki ji pravimo \textbf{domena},
+            \item množice $\mathcal{Y}$, ki ji pravimo \textbf{kodomena} in 
+            \item \textbf{prirejanja}, ki vsakemu elementu $x$ domene priredi natanko en element $y$ kodomene.
+        \end{itemize}
+
+        $$\begin{aligned}
+            f&: \mathcal{X}\to\mathcal{Y} \\ f&: x\mapsto y
+        \end{aligned}  $$
+    
+
+        Elemente $x$ kodomene $\mathcal{X}$ imenujemo \textbf{originali} preslikave.
+        \\ Če elementu $x$ priredimo element $y$ iz kodomene, potem imenujemo $y$ \textbf{slika} elemeta $x$.
+
+        Preslikavo lahko podamo s predpisom, puščičnim diagramom, besednim opisom ...
+
+
+
+
+
+    \subsection*{Funkcija}
+
+        Naj bosta $\mathcal{X}$ in $\mathcal{Y}$ neprazni številski množici. \\
+        \textbf{Funkcija} $f$ je preslikava med številskima množicama $\mathcal{X}$ in $\mathcal{Y}$:
+        $$f: \mathcal{X}\to\mathcal{Y}.$$
+
+
+        Število $y$ je \textbf{funkcijska vrednost} števila $x$, če se število $x$ preslika v število $y$. 
+        $$ f(x)=y $$
+
+        $x$ je neodvisna spremenjlivka, $f(x)$ je od $x$ odvisna spremenljivka.
+
+
+
+        V nekaterih primerih za opis funkcije uporabimo poseben izraz:
+        \begin{itemize}
+            \item $f:\mathcal{X}\to\mathbb{R}; \mathcal{X}\subseteq\mathbb{R}$ -- realna funkcija realne spremenljivke;
+            \item $f:\mathcal{X}\to\mathbb{R}; \mathcal{X}\subseteq\mathbb{N}$ -- realna funkcija naravne spremenljivke;
+            \item $f:\mathcal{X}\to\mathbb{N}; \mathcal{X}\subseteq\mathbb{R}$ -- naravna funkcija realne spremenljivke;
+            \item $f:\mathcal{X}\to\mathbb{N}; \mathcal{X}\subseteq\mathbb{N}$ -- naravna funkcija naravne spremenljivke.
+        \end{itemize}
+
+
+
+    \subsection*{Definicijsko območje in zaloga vrednosti}
+
+    \subsubsection*{Definicijsko območje}
+        \textbf{Definicijsko območje} preslikave ali funkcije $f:\mathcal{X}\to\mathcal{Y}$ je množica vseh originalov, ki jih v danem primeru opazujemo. 
+        Oznaka: $D_f$.                
+
+        Za definicijsko območje navadno vzamemo največjo možno množico, za katero je predpis funkcije veljaven/definiran.
+
+        
+    \subsubsection*{Zaloga vrednosti}
+        \textbf{Zaloga vrednosti} preslikave ali funkcije $f:\mathcal{X}\to\mathcal{Y}$ je množica vseh slik oziroma funkcijskih vrednosti.
+        Oznaka: $Z_f$.
+
+        Zaloga vrednosti $Z_f$ je podmnožica kodomene $\mathcal{Y}$: $Z_f\subseteq \mathcal{Y}$.
+
+
+
+
+
+%%%% naloge
+
+    \begin{naloga}
+        Funkcijo $f: A\to B$ predstavite s tabelo. Izračunajte, kam posamezna funkcija preslika $x=1$.
+        \begin{itemize}
+            \item $A=\left\{-2, -1, 0, 1, 2, 3\right\}$, $B=\left\{0, 1, 2, 3, 4, 5\right\}$, $f(x)=|x|+1$ 
+            \item $A=\left\{1, 2, 3, 4, 5\right\}$, $B=\mathbb{N}$, $f(x)=2x+1$ 
+            \item $A=B=\left\{\frac{1}{3}, \frac{1}{2}, 1, 2, 3\right\}$, $f(x)=\dfrac{1}{x}$ 
+        \end{itemize} 
+    \end{naloga}
+   
+    \begin{naloga}
+        Tabelirajte funkcijo $g(x)=2x+|x|$ od $-3$ do $3$ s korakom $1$. 
+    \end{naloga}
+
+
+    \begin{naloga}
+        Zapišite definicijska območja funkcij.
+            \begin{itemize}
+                \item $f(x)=\dfrac{-7}{x+1}$ 
+                \item $g(x)=\dfrac{1}{(x+2)(x+6)}$ 
+                \item $h(x)=\dfrac{3x^2+1}{5}$ 
+                \item $i(x)=\sqrt{x-2}$ 
+                \item $j(x)=x^3-\frac{2}{3}$ 
+                \item $k(x)=\sqrt{x^2+7}$ 
+                \item $l(x)=\dfrac{3}{x}$ 
+                \item $m(x)=\dfrac{x^2+1}{x^2-5x-6}$ 
+            \end{itemize}
+
+    \end{naloga}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+    \subsection*{Ničla in začetna vrednost funkcije}
+
+    \subsubsection*{Ničla funkcije}
+        \textbf{Ničla} funkcije $f:\mathcal{X}\to\mathcal{Y}$ je tista vrednost $x_0\in\mathcal{X}$ neodvisne spremenljivke, 
+        pri kateri je vrednost funkcije $f$ enaka $0$: $f(x_0)=0$.
+
+        Ničle funkcije $f$ poiščemo tako, da rešimo enačbo $f(x)=0$. \\
+        Ničle so le tiste izmed vrednosti, ki ležijo v definicijskem območju $D_f$ funkcije $f$.
+
+        
+    \subsubsection*{Začetna vrednost}
+        \textbf{Začetna vrednost} funkcije $f:\mathcal{X}\to\mathcal{Y}$ je funkcijska vrednost pri $x=0$, to je $f(0)$.
+
+        Začetna vrednost obstaja le, če je $0$ v definicijskem območju funkcije $f$: $0\in D_f$.
+
+        
+
+
+
+%%%% naloge
+
+
+    \begin{naloga}
+        Izračunajte ničle funkcij.
+            \begin{itemize}
+                \item $f(x)=\frac{4}{5}-6x$ 
+                \item $g(x)=x^2-7x+12$ 
+                \item $h(x)=\dfrac{3x+6}{5}$ 
+                \item $i(x)=x^2-9$ 
+                \item $j(x)=x^2+1$ 
+                \item $k(x)=x^2-3x^2-4x+12$ 
+                \item $l(x)=\sqrt{x+7}$ 
+                \item $m(x)=\dfrac{3}{x}$ 
+            \end{itemize}
+
+    \end{naloga}
+
+
+    \begin{naloga}
+        Izračunajte začetne vrednosti funkcij.
+            \begin{itemize}
+                \item $f(x)=\frac{4}{5}-6x$ 
+                \item $g(x)=x^2-7x+12$ 
+                \item $h(x)=\dfrac{3x+6}{5}$ 
+                \item $i(x)=x^2-9$ 
+                \item $j(x)=x^2-3x^2-4x+12$ 
+                \item $k(x)=\sqrt{x+7}$ 
+                \item $l(x)=\dfrac{3}{x}$ 
+                \item $m(x)=\dfrac{x^3-2x^2-4}{x^4+2x^3+3}$ 
+            \end{itemize}
+
+    \end{naloga}
+
+
