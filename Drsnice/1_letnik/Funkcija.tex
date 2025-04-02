@@ -248,14 +248,24 @@
         \begin{frame}
             \frametitle{Graf funkcije}
 
+            \begin{alertblock}{Graf funkcije}
+                \textbf{Graf} $\Gamma_f$ funkcije $f:\mathcal{X}\to\mathcal{Y}$ je množica urejenih parov $(x,y)\in\mathcal{X}\times\mathcal{Y}$, 
+                kjer element $x$ preteče celotno definicijsko območje $D_f$ funkcije, element $y$ pa je slika pripadajočega $x$, torej $y=f(x)$.
+                $$ \Gamma_f=\left\{(x,y)\in\mathcal{X}\times\mathcal{Y}; x\in D_f \land y=f(x)\right\} $$
+            \end{alertblock}
 
+            \begin{block}{}
+                Urejene pare iz množice $\Gamma_f$ lahko upodobimo v koordinatnem sistemu. \\
+                Vsakemu elementu $(x,f(x))$ iz zgornje množice priprada natanko ena točka v koordinatnem sistemu, 
+                katere abscisa je enaka $x$, ordinata pa je njegova slika $f(x)$.
+            \end{block}
         \end{frame}
 
         %%%% naloge
 
         \begin{frame}
             \only<2->{\begin{exampleblock}{Naloga}
-                Narišite grafe funkcij in zapišite začetne vrednosti in ničle, če jih funkcija ima.
+                Zapišite in narišite grafe funkcij ter zapišite začetne vrednosti in ničle, če jih funkcija ima.
                     \begin{itemize}
                         \item $f(x)=x \quad \quad D_f=\mathbb{R}$ \\~
                         \item $g(x)=-2x+1 \quad \quad D_g=\mathbb{R}$ \\~
@@ -266,9 +276,36 @@
             \end{exampleblock}}
         \end{frame}
 
+        %%%%%%%%%%%%%%%%%%%
+
+        \begin{frame}
+            \frametitle{Naraščanje in padanje}
+
+            \begin{alertblock}{Naraščajoča funkcija}
+                Funkcija $f$ je na intervalu $(a,b)$ \textbf{naraščajoča}, če za poljubna $x_1,x_2\in(a,b); ~x_1<x_2$, velja $f(x_1)\leq f(x_2)$.
+                
+                Funkcija $f$ je na intervalu $(a,b)$ \textbf{strogo naraščajoča}, če za vsaka $x_1,x_2\in(a,b); ~x_1<x_2$, velja $f(x_1)<f(x_2)$.
+            \end{alertblock}
+
+            \begin{alertblock}{Padajoča funkcija}
+                Funkcija $f$ je na intervalu $(a,b)$ \textbf{padajoča}, če za poljubna $x_1,x_2\in(a,b); ~x_1<x_2$, velja $f(x_1)\geq f(x_2)$.
+                
+                Funkcija $f$ je na intervalu $(a,b)$ \textbf{strogo padajoča}, če za vsaka $x_1,x_2\in(a,b); ~x_1<x_2$, velja $f(x_1)>f(x_2)$.
+            \end{alertblock}
+
+        \end{frame}
+
+
+        %%%%%%%%%%%%
+
+        \begin{frame}
+            \frametitle{Injektivnost in surjektivnost}
+
+        \end{frame}
 
 
 
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \subsection{Linearna funkcija}
 
