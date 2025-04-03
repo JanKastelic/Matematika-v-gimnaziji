@@ -259,6 +259,10 @@
                 Vsakemu elementu $(x,f(x))$ iz zgornje množice priprada natanko ena točka v koordinatnem sistemu, 
                 katere abscisa je enaka $x$, ordinata pa je njegova slika $f(x)$.
             \end{block}
+
+            \begin{block}{}
+                V ničli graf funkcije seka abscisno os, v začetni vrednosti pa ordinatno os.
+            \end{block}
         \end{frame}
 
         %%%% naloge
@@ -301,6 +305,24 @@
         \begin{frame}
             \frametitle{Injektivnost in surjektivnost}
 
+            \vskip-1em
+            \begin{alertblock}{Surjektivnost}
+                Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{surjektivna}, če je zaloga vrednosti $Z_f$ funkcije enaka njeni kodomeni $\mathcal{Y}$ -- vsak element kodomene $\mathcal{Y}$ je slika vsaj enega elementa iz domene $\mathcal{X}$.
+                \vskip-1em
+                $$\forall y\in\mathcal{Y}. \exists x\in\mathcal{X}\ni:f(x)=y$$
+            \end{alertblock}
+
+            \vskip-0.3em
+            \begin{alertblock}{Injektivnost}
+                Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{injektivna}, če se dva poljubna različna originala iz domene $\mathcal{X}$ preslikata v različni sliki v kodomeni $\mathcal{Y}$ -- vsak element kodomene $\mathcal{Y}$ je slika kvečjemu enega elementa iz domene $\mathcal{X}$.
+                \vskip-1em
+                $$\forall x,y\in\mathcal{X}: f(x)=f(y)\Rightarrow x=y$$
+            \end{alertblock}
+
+            \vskip-0.5em
+            \begin{alertblock}{}
+                Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{bijektivna}, če je injektivna in surjektivna hkrati -- če je vsak element iz kodomene $\mathcal{Y}$ slika natanko enega elementa domene $\mathcal{X}$.
+            \end{alertblock}
         \end{frame}
 
 
