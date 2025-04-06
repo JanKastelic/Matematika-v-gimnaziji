@@ -1,0 +1,447 @@
+\begin{priprava}{6., 7., 8}{}{Interval}{Realna števila}{frontalna}{drsnice, projekcija, tabla}
+    
+    \section{Interval}
+
+        
+
+            
+                \textbf{Interval} je množica vseh realnih števil, ki ležijo med dvema danima številoma $a$ in $b$, kjer je $a<b$. \\
+                Števili $a$ in $b$ imenujemo \textbf{krajišči intervala}.                
+            
+            
+
+            \subsubsection*{Vključenost krajišč}
+                \begin{itemize}
+                    \item Simbola $"["$ in $"]"$ označujeta krajišče, ki spada k intervalu.
+                    \item Simbola $"("$ in $")"$ označujeta krajišče, ki ne spada k intervalu.
+                \end{itemize}
+            
+            
+                ~
+            
+                Pri zapisu intervalov moramo biti pozorni na zapis vrstnega reda števil, ki določata krajišči.
+                $$[a,b]\neq[b,a]$$
+            
+            
+
+
+        
+
+        
+            \subsection{Vrste intervalov}
+
+            \subsubsection*{Zaprti interval}
+            Vsebuje vsa realna števila med $a$ in $b$, vključno s krajiščema $a$ in $b$.
+            $$ \mathbf{[a,b]=\left\{x\in\mathbb{R}; a\leq x\leq b\right\} }$$
+
+                \begin{figure}[H]
+                \centering
+                    \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+                    
+                    % Drawing line a b
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (1.960000,1.500000);%
+                    \draw [line width=0.016cm] (2.040000,1.500000) -- (7.960000,1.500000);%
+                    \draw [line width=0.016cm] (8.040000,1.500000) -- (9.000000,1.500000);%
+                    
+                    % Changing color 255 0 0
+                    \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                    \color{r255g0b0}% 
+                    
+                    % Drawing segment a b
+                    \draw [line width=0.032cm] (2.040000,1.500000) -- (7.960000,1.500000);%
+                    
+                    % Marking point a by circle
+                    \draw [line width=0.032cm] (2.000000,1.500000) circle (0.040000);%
+                    \draw (2.000000,1.500000) node [anchor=north] { $a$ };%
+                    
+                    % Marking point b by circle
+                    \draw [line width=0.032cm] (8.000000,1.500000) circle (0.040000);%
+                    \draw (8.000000,1.500000) node [anchor=north] { $b$ };%
+                    \color{black}
+                    }
+                    \end{tikzpicture}
+                \end{figure}
+                    
+                
+            
+
+
+            \subsubsection*{Odprti interval}
+            Vsebuje vsa realna števila med $a$ in $b$, vendar ne vsebuje krajišč $a$ in $b$.
+
+                $$ \mathbf{(a,b)=\left\{x\in\mathbb{R}; a<x<b\right\} }$$
+
+
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+                    
+                    % Drawing line a b
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (9.000000,1.500000);%
+                    
+                    % Changing color 255 0 0
+                    \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                    \color{r255g0b0}% 
+                    
+                    % Drawing segment a b
+                    \draw [line width=0.032cm] (2.000000,1.500000) -- (8.000000,1.500000);%
+                    
+                    % Drawing arrow a b 1.00
+                    \draw [line width=0.032cm] (7.702567,1.539158) -- (8.000000,1.500000);%
+                    \draw [line width=0.032cm] (7.702567,1.539158) -- (7.900856,1.500000);%
+                    \draw [line width=0.032cm] (7.702567,1.460842) -- (8.000000,1.500000);%
+                    \draw [line width=0.032cm] (7.702567,1.460842) -- (7.900856,1.500000);%
+                    
+                    % Drawing arrow b a 1.00
+                    \draw [line width=0.032cm] (2.297433,1.460842) -- (2.000000,1.500000);%
+                    \draw [line width=0.032cm] (2.297433,1.460842) -- (2.099144,1.500000);%
+                    \draw [line width=0.032cm] (2.297433,1.539158) -- (2.000000,1.500000);%
+                    \draw [line width=0.032cm] (2.297433,1.539158) -- (2.099144,1.500000);%
+                    \color{black}
+                        
+                    % Marking point a
+                    \draw (2.000000,1.500000) node [anchor=north] { $a$ };%
+                    
+                    % Marking point b
+                    \draw (8.000000,1.500000) node [anchor=north] { $b$ };%
+                    }
+                    \end{tikzpicture}
+                \end{figure}
+
+                
+            
+            
+
+        
+
+        
+            
+            \subsubsection*{Polodprti/polzaprti interval}
+                \begin{itemize}
+                    \item Vsebuje vsa realna števila med $a$ in $b$, vključno s krajiščem $a$, vendar ne vsebuje krajišča $b$.
+                    $$ \mathbf{[a,b)=\left\{x\in\mathbb{R}; a\leq x<b\right\} }$$
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+                        
+                        % Drawing line a b
+                        \draw [line width=0.016cm] (1.000000,1.500000) -- (1.960000,1.500000);%
+                        \draw [line width=0.016cm] (2.040000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Changing color 255 0 0
+                        \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                        \color{r255g0b0}% 
+                        
+                        % Drawing segment a b
+                        \draw [line width=0.032cm] (2.040000,1.500000) -- (8.000000,1.500000);%
+                        
+                        % Marking point a by circle
+                        \draw [line width=0.032cm] (2.000000,1.500000) circle (0.040000);%
+                        \draw (2.000000,1.500000) node [anchor=north] { $a$ };%
+                        
+                        % Drawing arrow a b 1.00
+                        \draw [line width=0.032cm] (7.702567,1.539158) -- (8.000000,1.500000);%
+                        \draw [line width=0.032cm] (7.702567,1.539158) -- (7.900856,1.500000);%
+                        \draw [line width=0.032cm] (7.702567,1.460842) -- (8.000000,1.500000);%
+                        \draw [line width=0.032cm] (7.702567,1.460842) -- (7.900856,1.500000);%
+                        \color{black}
+                        
+                        % Marking point b
+                        \draw (8.000000,1.500000) node [anchor=north] { $b$ };%
+                        }
+                        \end{tikzpicture}
+                    \end{figure}
+
+                        
+                    
+                    
+
+                    \item Vsebuje vsa realna števila med $a$ in $b$, vključno s krajiščem $b$, vendar ne vsebuje krajišča $a$.
+                    $$ \mathbf{(a,b]=\left\{x\in\mathbb{R}; a<x\leq b\right\} }$$
+
+
+                    \begin{figure}[H]
+                        \centering
+                        \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+                        
+                        % Drawing line a b
+                        \draw [line width=0.016cm] (1.000000,1.500000) -- (7.960000,1.500000);%
+                        \draw [line width=0.016cm] (8.040000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Changing color 255 0 0
+                        \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                        \color{r255g0b0}% 
+                        
+                        % Drawing segment a b
+                        \draw [line width=0.032cm] (2.000000,1.500000) -- (7.960000,1.500000);%
+                        
+                        % Marking point b by circle
+                        \draw [line width=0.032cm] (8.000000,1.500000) circle (0.040000);%
+                        \draw (8.000000,1.500000) node [anchor=north] { $b$ };%
+                        
+                        % Drawing arrow b a 1.00
+                        \draw [line width=0.032cm] (2.297433,1.460842) -- (2.000000,1.500000);%
+                        \draw [line width=0.032cm] (2.297433,1.460842) -- (2.099144,1.500000);%
+                        \draw [line width=0.032cm] (2.297433,1.539158) -- (2.000000,1.500000);%
+                        \draw [line width=0.032cm] (2.297433,1.539158) -- (2.099144,1.500000);%
+                        \color{black}
+
+                        % Marking point a
+                        \draw (2.000000,1.500000) node [anchor=north] { $a$ };%
+                        }
+                        \end{tikzpicture}
+                    \end{figure}
+
+                        
+                    
+
+                \end{itemize}
+
+
+            
+            
+        
+
+        
+            \subsubsection*{Neomejeni/neskončni intervali}
+                
+                \begin{itemize}
+                    \item $ \mathbf{[a,\infty)=\left\{x\in\mathbb{R}; x\geq a\right\} }$ \\
+
+                    \begin{figure}[H]
+                    \centering
+                        \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+                        
+                        % Drawing line a b
+                        \draw [line width=0.016cm] (1.000000,1.500000) -- (1.960000,1.500000);%
+                        \draw [line width=0.016cm] (2.040000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Changing color 255 0 0
+                        \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                        \color{r255g0b0}% 
+                        
+                        % Drawing segment a y
+                        \draw [line width=0.032cm] (2.040000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Marking point a by circle
+                        \draw [line width=0.032cm] (2.000000,1.500000) circle (0.040000);%
+                        \draw (2.000000,1.500000) node [anchor=north] { $a$ };%
+                        \color{black}
+                        }
+                        \end{tikzpicture}
+                    \end{figure}
+                        
+                    \item $ \mathbf{(a,\infty)=\left\{x\in\mathbb{R}; x>a\right\} }$ \\
+                    
+                    \begin{figure}[H]
+                        \centering
+                        \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+                        
+                        % Drawing line a b
+                        \draw [line width=0.016cm] (1.000000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Marking point a
+                        \draw (2.000000,1.500000) node [anchor=north] { $a$ };%
+                        
+                        % Changing color 255 0 0
+                        \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                        \color{r255g0b0}% 
+                        
+                        % Drawing segment a y
+                        \draw [line width=0.032cm] (2.000000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Drawing arrow b a 1.00
+                        \draw [line width=0.032cm] (2.297433,1.460842) -- (2.000000,1.500000);%
+                        \draw [line width=0.032cm] (2.297433,1.460842) -- (2.099144,1.500000);%
+                        \draw [line width=0.032cm] (2.297433,1.539158) -- (2.000000,1.500000);%
+                        \draw [line width=0.032cm] (2.297433,1.539158) -- (2.099144,1.500000);%
+                        \color{black}
+                        }
+                        \end{tikzpicture}
+                    \end{figure}
+
+                        
+                    \item $\mathbf{(-\infty,b]=\left\{x\in\mathbb{R}; x\leq b\right\} }$ \\
+                    
+                    \begin{figure}[H]
+                        \centering
+                        \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+                        
+                        % Drawing line a b
+                        \draw [line width=0.016cm] (1.000000,1.500000) -- (7.960000,1.500000);%
+                        \draw [line width=0.016cm] (8.040000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Changing color 255 0 0
+                        \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                        \color{r255g0b0}% 
+                        
+                        % Marking point b by circle
+                        \draw [line width=0.032cm] (8.000000,1.500000) circle (0.040000);%
+                        \draw (8.000000,1.500000) node [anchor=north] { $b$ };%
+                        
+                        % Drawing segment x b
+                        \draw [line width=0.032cm] (1.000000,1.500000) -- (7.960000,1.500000);%
+                        \color{black}
+                        }
+                        \end{tikzpicture}
+                    \end{figure}
+
+                        
+                    \item $ \mathbf{(-\infty,b)=\left\{x\in\mathbb{R}; x<b\right\} }$ \\
+                    
+                    \begin{figure}[H]
+                        \centering
+                        \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+                        
+                        % Drawing line a b
+                        \draw [line width=0.016cm] (1.000000,1.500000) -- (9.000000,1.500000);%
+                        
+                        % Marking point b
+                        \draw (8.000000,1.500000) node [anchor=north] { $b$ };%
+                        
+                        % Changing color 255 0 0
+                        \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                        \color{r255g0b0}% 
+                        
+                        % Drawing segment x b
+                        \draw [line width=0.032cm] (1.000000,1.500000) -- (8.000000,1.500000);%
+                        
+                        % Drawing arrow a b 1.00
+                        \draw [line width=0.032cm] (7.702567,1.539158) -- (8.000000,1.500000);%
+                        \draw [line width=0.032cm] (7.702567,1.539158) -- (7.900856,1.500000);%
+                        \draw [line width=0.032cm] (7.702567,1.460842) -- (8.000000,1.500000);%
+                        \draw [line width=0.032cm] (7.702567,1.460842) -- (7.900856,1.500000);%
+                        \color{black}
+                        }
+                        \end{tikzpicture}
+                    \end{figure}
+
+                    \item $ \mathbf{(-\infty,\infty)=\left\{x;x\in\mathbb{R}\right\} =\mathbb{R}}$ \\
+                    
+                    \begin{figure}[H]
+                        \centering
+                        \begin{tikzpicture}
+                            % \clip (0,0) rectangle (14.000000,10.000000);
+                            {\footnotesize
+                            
+                            % Drawing line a b
+                            \draw [line width=0.016cm] (1.000000,1.500000) -- (9.000000,1.500000);%
+                            
+                            % Changing color 255 0 0
+                            \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                            \color{r255g0b0}% 
+                            
+                            % Drawing segment x y
+                            \draw [line width=0.032cm] (1.000000,1.500000) -- (9.000000,1.500000);%
+                            \color{black}
+                            }
+                        \end{tikzpicture}
+                    \end{figure}
+
+                \end{itemize}
+
+            
+            
+                ~~~
+
+        
+            \begin{naloga}
+                Zapišite kot interval.
+                \begin{itemize}
+                        \item $\{x\in\mathbb{R}; -2<x<2\}$ 
+                        \item $\{x\in\mathbb{R}; 4\leq x\leq 2\}$ 
+                        \item $\{x\in\mathbb{R}; -14<x\leq -9\}$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Zapišite interval, ki je narisan na sliki.
+                \begin{itemize}
+                        \item $ $ 
+                        \item $ $ 
+                        \item $ $ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Zapišite presek intervalov.
+                \begin{itemize}
+                    
+                        \item $ [0,2)\cap(-1,1]$ 
+                        \item $ [-3,5]\cap(-3,5)$ 
+                        \item $ [2,5)\cap[5,7)$ 
+                        \item $ [-1,3)\cap(-4,-1]$ 
+                        \item $ [4,6]\cap[-1,4]$ 
+                        \item $ (-1,3)\cap[1,2)$ 
+                    
+
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Zapišite unijo intervalov.
+                \begin{itemize}
+                        \item $ [0,2)\cup(-1,1]$ 
+                        \item $ [-3,5]\cup(-3,5)$ 
+                        \item $ [2,5)\cup[5,7)$ 
+                        \item $ [-1,3)\cup(-4,1]$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+        
+            \begin{naloga}
+                Zapišite razliko intervalov.
+                \begin{itemize}
+                        \item $ [2,3]\setminus[3,4)$ 
+                        \item $ (1,3)\setminus(3,4)$ 
+                        \item $ [2,5)\setminus(-1,2]$ 
+                        \item $ (2,8)\setminus[5,6)$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+        
+            \begin{naloga}
+                Izračunajte.
+                \begin{itemize}
+                        \item $\left([1,3)\setminus(1,4]\right)\cup(1,2)$ 
+                        \item $[-2,4]\setminus\left((-1,2]\cap[0,3)\right)$ 
+                        \item $\left((-2,3]\setminus[-3,2)\right)\cap[3,5)$ 
+                \end{itemize}
+            \end{naloga}
+        
+
+
+    
+\end{priprava}

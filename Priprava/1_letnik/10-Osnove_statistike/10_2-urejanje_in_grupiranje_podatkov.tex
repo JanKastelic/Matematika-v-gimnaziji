@@ -1,0 +1,154 @@
+\begin{priprava}{2., 3}{}{Urejanje in grupiranje podatkov}{Osnove statistike}{frontalna, delo v dvojicah/individualno}{drsnice, projekcija, računalniki}
+
+    \section{Urejanje in grupiranje podatkov}
+
+        
+
+            
+                Podatke, pridobljene v posamezni raziskavi, moramo najprej urediti. \\
+                Če podatkov ni veliko, jih uredimo po velikosti v \textbf{ranžirno vrsto}, sicer jih združujemo v skupine, \textbf{frekvenčne razrede}.
+            
+
+            
+                Podatek z največjo vrednostjo označimo z $x_{max}$, podatek z najnižjo vrednostjo pa $x_{min}$.
+            
+                ~
+            
+                \textbf{Frekvenca} $f$ statističnega znaka je posamezno število diskretnih statističnih enot iste vrednosti.
+            
+                ~
+            
+                \textbf{Frekvenčni razred} je skupina podatkov iz vzorca. Frekvenčni razredi so navadno enako široki,
+                in skupaj zajamejo celoten razpon podatkov. Za zvezen nabor podatkov za frekvenčne razrede izberemo intervale (navadno oblike $[a,b)$).
+            
+
+        
+
+        
+            
+                \textbf{Širina frekvenčnega razreda} $d_k$ je razlika med zgornjo ($z_k$) in spodnjo ($s_k$) mejo frekvenčnega razreda:
+                $$d_k=z_k-s_k.$$
+            
+
+            
+                Če so razredi enako široki, določimo njihovo širino kot kvocient med celotnim razponom podatkov $x_{max}-x_{min}$ in številom razredov.
+            
+
+            
+                \textbf{Sredina frekvenčnega razred} $x_k$ je aritmetična sredina zogrnje in spodnje meje razreda: 
+                $$x_k=\dfrac{z_k+s_k}{2}.$$
+            
+        
+
+        
+            
+                Grupirane podatke predstavimo s \textbf{frekvenčno preglednico/porazdelitvijo}.
+            
+
+            
+                Za podatke v frekvenčnih preglednicah računamo:
+                \begin{itemize}
+                    \item \textbf{(absolutno) frekvenco} $f_k$ -- število podatkov z vrednostmi v danem frekvenčnem razredu;
+                    \item \textbf{relativno frekvenco} $f_k'$ -- delež celote, ki ga predstavlja število podatkov v danem frekvenčnem razredu;
+                    \item \textbf{(absolutno) kumulativno frekvenco} $F_k$ -- število podatkov, katerih vrednosti zavzemajo manjšo vrednost od zgornje meje danega frekvenčnega razreda;
+                    \item \textbf{relativno kumulativno frekvenco} $F_k'$ -- delež celote, ki ga predstavlja število podatkov v danem in vseh manjših frekvenčnih razredih.
+                \end{itemize}
+            
+        
+                ~\\~
+
+
+                %%%% naloge
+        
+        
+                    \begin{naloga}
+                        Na šoli analizirajo količino prevzetih obrokov v jedilnici. Rezultati so zbrani v tabeli. 
+        
+                            \begin{table}[H]
+                                \centering
+                                \begin{tabular}{||c|c||} 
+                                \hhline{|t:==:t|}
+                                \rowcolor[rgb]{0.843,0.718,0.718} 
+                                Oddelek  & Število prevzetih obrokov   \\ 
+                                \hhline{|:==:|}
+                                1.a & $12$    \\ 
+                                \hline
+                                1.b & $14$    \\ 
+                                \hline
+                                1.c & $20$    \\ 
+                                \hline
+                                2.a & $17$     \\
+                                \hline
+                                2.b & $16$     \\
+                                \hline
+                                2.c & $9$     \\
+                                \hline
+                                3.a & $13$     \\
+                                \hline
+                                3.b & $16$     \\
+                                \hline
+                                3.c & $14$     \\
+                                \hline
+                                4.a & $21$     \\                    
+                                \hline
+                                4.b  & $8$     \\
+                                \hline
+                                4.c  & $12$     \\
+                                \hhline{|b:==:b|}
+                                \end{tabular}
+                            \end{table}
+                        
+                        Analizirajte podatke s frekvenčno preglednico.
+                        Podatke razdelite v razrede $5-9$, $10-14$, $15-19$, $20$ in več.
+                    \end{naloga}
+
+                
+
+                
+                
+                    \begin{naloga}
+                        Dijaki 3.~a oddelka so zapisovali svoje pribljubljene barve. \\
+                        Zapisali so jih: modra, rdeča, rdeča, zelena, rumena, rdeča, modra, zelena, modra, modra, rumena, rdeča, zelena, modra, rumena, rumena, zelena, rdeča. \\
+                        Analizirajte rezultate s frekvenčno preglednico. 
+                    \end{naloga}
+
+                    \begin{naloga}
+                        Lokostrelec si beleži rezultate treningov. \\
+                        Vrednosti so bile: $10.3$, $10.4$, $9.9$, $9.7$, $10.2$, $8.9$, $9.4$, $10.1$, $9.0$, $10.3$, $9.5$, $10.6$. \\
+                        Analizirajte rezultate s frekvenčno preglednico. 
+                    \end{naloga}
+                
+
+                
+        
+                   \begin{naloga}
+                    
+                    V frekvenčni preglednici so zbrani podatki o številu sorojencev dijakov 2.~b oddelka.
+                    Dopolnite preglednico.
+    
+                        \begin{table}[H]
+                            \centering
+                            \begin{tabular}{||c|c|c|c|c||} 
+                            \hhline{|t:=====:t|}
+                            \rowcolor[rgb]{0.843,0.718,0.718} 
+                            Število sorojencev  & $f_k$ & $f_k'$ & $F_k$ & $F_k'$   \\ 
+                            \hhline{|:=====:|}
+                            0 & $5$  & & &  \\ 
+                            \hline
+                            1 & & $25~\%$ & &    \\ 
+                            \hline
+                            2 & & & &    \\ 
+                            \hline
+                            3 & & $10~\%$ & &   \\
+                            \hline
+                            skupaj & $20$ & $100~\%$ & / & /    \\
+                            \hhline{|b:=====:b|}
+                            \end{tabular}
+                        \end{table}
+                    \end{naloga}
+    
+            
+
+
+
+\end{priprava}

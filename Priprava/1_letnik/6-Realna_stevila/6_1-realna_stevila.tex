@@ -1,0 +1,144 @@
+\begin{priprava}{1}{}{Realna števila}{Realna števila}{frontalna}{drsnice, projekcija, tabla}
+    
+    \section{Realna števila}
+
+        
+
+                Med poljubnima dvema racionalnima številoma $\frac{x}{y}, \frac{z}{w}\in\mathbb{Q}$ je vsaj še eno racionalno število
+                 -- aritmetična sredina teh dveh števil $\frac{1}{2}\left(\frac{x}{y}+\frac{z}{w}\right)$.
+
+            
+                % $$\frac{x}{y}<\frac{z}{w},\ y,w\neq 0 \quad \Rightarrow \quad \frac{x}{y}<\frac{1}{2}\left(\frac{x}{y}+\frac{z}{w}\right)<\frac{z}{w}$$
+            
+                
+            
+                Med poljubnima racionalnima številoma je neskončno mnogo racionalnih števil in pravimo, da je množica $\mathbb{Q}$ \textbf{povsod gosta}. 
+            
+                ~
+            
+                Množici $\mathbb{Q}$ in $\mathbb{Z}$ imata enako moč -- sta števno neskončni ($m(\mathbb{Q})=m(\mathbb{Z})=\aleph_0$).
+            
+        
+
+                ~
+        
+                \textbf{Iracionalna števila} $\mathbb{I}$ so vsi kvadratni koreni števil, ki niso popolni kvadrati, tretji koreni, ki niso popolni kubi, ..., 
+                število $\pi$, Eulerjevo število $e$ ... 
+            
+                ~
+            
+                Množici racionalnih in iracionalnih števil sta disjunktni: $\mathbb{Q}\cap\mathbb{I}=\emptyset$.
+            
+                
+                ~
+
+                \textbf{Realna števila} so množica števil, ki jo dobimo kot unijo racionalnih in iracionalnih števil: $\mathbb{R}=\mathbb{Q}\cup\mathbb{I}$.
+            
+
+            
+                Množica realnih števil je močnejša od množice racionalnih števil. Pravimo, da je (neštevno) neskončna.
+            
+
+             ~
+
+                Množico realnih števil lahko, glede na predznak števil, razdelimo na tri množice:
+                \begin{itemize}
+                    \item \textcolor{green}{množico negativnih realnih števil $\mathbf{\mathbb{R}^-}$},
+                    \item množico z elementom nič: $\mathbf{\{0\}}$ in
+                    \item \textcolor{red}{množico pozitivnih realnih števil: $\mathbf{\mathbb{R}^+}$}.
+                \end{itemize}
+                $$ \mathbb{R}=\textcolor{green}{\mathbb{R}^-}\cup\{0\}\cup\textcolor{red}{\mathbb{R}^+} $$
+            
+                \vskip-1em
+                \begin{figure}[H]
+                \centering
+                \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+                    
+                    % Drawing segment A B
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (4.460000,1.500000);%
+                    \draw [line width=0.016cm] (4.540000,1.500000) -- (8.000000,1.500000);%
+                    
+                    % Marking point 0 by circle
+                    \draw [line width=0.016cm] (4.500000,1.500000) circle (0.040000);%
+                    \draw (4.500000,1.500000) node [anchor=south] { $0$ };%
+                    
+                    
+                    % Changing color 255 0 0
+                    \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                    \color{r255g0b0}% 
+                    
+                    % Marking point \mathbb{Q}^+
+                    \draw (6.250000,1.500000) node [anchor=south] { $\mathbb{R}^+$ };%
+                    
+                    % Drawing segment B 0
+                    \draw [line width=0.016cm] (8.000000,1.500000) -- (4.540000,1.500000);%
+                    }
+
+                    
+                    % Changing color 0 255 0
+                    \definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+                    \color{r0g255b0}% 
+                    
+                    % Marking point \mathbb{Q}^-
+                    \draw (2.750000,1.500000) node [anchor=south] { $\mathbb{R}^-$ };%
+                    
+                    % Drawing segment A 0
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (4.460000,1.500000);%
+                    
+
+                    % Changing color 0 0 0
+                    \definecolor{r0g0b0}{rgb}{0.000000,0.000000,0.000000}%
+                    \color{r0g0b0}% 
+                    
+                    % Marking point \mathbb{Q}
+                    \draw (1.500000,2.000000) node  { $\mathbb{R}$ };%
+                    \color{black}
+                    
+                    \end{tikzpicture}
+                    
+                \end{figure}
+            
+
+            
+            
+                Vsaki točki na številski premici ustreza natanko eno realno število in obratno, 
+                vsakemu realnemu številu ustreza natanko ena točka na številski premici.
+            
+
+            
+                Številsko premico, ki upodablja realna števila, imenujemo tudi \textbf{realna os}.
+            
+
+
+        
+                ~~        
+            
+                Z relacijo \textit{biti manjši ali enak} je množica $\mathbb{R}$ \textbf{linearno urejena}, 
+                to pomeni, da veljajo:
+
+                \begin{itemize}
+                    \item \textbf{refleksivnost}: $\forall x\in\mathbb{R}: x\leq x$;
+                    \item \textbf{antisimetričnost}: $\forall x,y\in\mathbb{R}: x\leq y \land y\leq x \Rightarrow x=y$;
+                    \item \textbf{tranzitivnost}: $\forall x,y,z\in\mathbb{R}: x\leq y \land y\leq z \Rightarrow x\leq z$;
+                    \item \textbf{stroga sovisnost}: $\forall x,y\in\mathbb{R}: x\leq y \lor y\leq x$.
+                \end{itemize}
+            
+                ~
+
+            
+                Za realcijo urejenosti na množici $\mathbb{R}$ veljajo še naslednje lastnosti:
+
+                \begin{itemize}
+                    \item \textbf{monotonost vsote}: $x<y \Rightarrow x+z<y+z$ oziroma $x\leq y \Rightarrow x+z\leq y+z$;
+                    \item $x<y \land z>0 \Rightarrow xz<yz$ in $x\leq y \land z>0 \Rightarrow x z\leq y z$;
+                    \item $x<y \land z<0 \Rightarrow xz>yz$ in $x\leq y \land z<0 \Rightarrow x z\geq y z$.
+                \end{itemize}
+
+            
+
+        
+
+    
+\end{priprava}

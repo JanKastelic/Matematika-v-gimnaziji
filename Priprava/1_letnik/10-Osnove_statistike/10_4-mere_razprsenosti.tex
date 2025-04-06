@@ -1,0 +1,127 @@
+\begin{priprava}{6., 7}{}{Mere razpršenosti}{Osnove statistike}{frontalna, delo v dvojicah/individualno}{drsnice, projekcija, računalniki}
+
+    \section{Mere razpršenosti}
+
+        
+
+            
+    Informacijo o \textbf{porazdelitvi} oziroma \textbf{razpršenosti} podatkov lahko izračunamo s pomočjo: 
+    variacijskega razmika, interkvartilnega ranga, variance in standarnega odklona.
+
+\subsubsection{Variacijski razmik}
+    \textbf{Variacijski razmik} $R$ je razlika med maksimalno in minimalno vrednostjo statistične spremenljivke:
+    $$R=x_{max}-x_{min}.$$
+
+
+
+    Variacijski razmik je zelo odvisen od ekstremnih vrednosti, posebno osamelcev, 
+    zato ga uporabljamo le v kombinaciji z drugimi merami razpršenosti.
+
+
+
+
+
+\subsubsection{Interkvartilni rang}
+    \textbf{Interkvartilni rang} oziroma \textbf{medčetrtinski razmik} $IR$ je razlika med vrednostjo prvega in tretjega kvartila:
+    $$IR=Q_3-Q_1.$$
+
+~
+
+    \textbf{Osamelec} je podatek, katerega vrednost je za več kot $3$-kratnik interkvartilnega ranga~$IR$ nad tretjim kvartilom $Q_3$ ali pod prvim kvartilom $Q_1$. \\
+    Podatek je ``pogojno osamelec'', če je njegova vrednosz za več kot $1.5$-kratnik interkvartilnega ranga~$IR$ nad tretjim kvartilom $Q_3$ ali pod prvim kvartilom $Q_1$.
+
+
+~   
+
+    Interkvartilni rang je mera razpršenosti, ki ni občutljiva na osamelce.
+
+
+
+
+
+\subsubsection{Varianca}
+    \textbf{Varianca} $\sigma^2$ predstavlja aritmetično sredino kvadratov odmikov vrednosti statistične spremenljivke od aritmetične sredine:
+    $$\sigma^2=\dfrac{(x_1-\overline{x})^2+(x_2-\overline{x})^2+\cdots+(x_n-\overline{x})^2}{N}=\dfrac{1}{N}\sum_{i=1}^n(x_i-\overline{x})^2.$$
+
+
+% 
+%     Večja kot je varianca, bolj so podatki razpršeni.
+% 
+
+\subsubsection{Standardni odklon}
+    \textbf{Standardni odklon} $\sigma$ izračunamo kot koren variance:
+    $$\sigma=\sqrt{\dfrac{(x_1-\overline{x})^2+(x_2-\overline{x})^2+\cdots+(x_n-\overline{x})^2}{N}}=\sqrt{\dfrac{1}{N}\sum_{i=1}^n(x_i-\overline{x})^2}.$$
+    Predstavlja povprečje odmikov vrednosti statistične spremenljivke od aritmetične sredine.
+
+
+~\\~
+
+%%% naloge
+
+
+
+\begin{naloga}
+ 
+    V preglednici so predstavljene cene treh izdelkov v trgovini po posameznih mesecih leta 2019. 
+
+     \begin{table}[H]
+         \centering
+         \begin{tabular}{||c|c|c|c|c|c|c|c|c|c|c|c||} 
+         \hhline{|t:============:t|}
+         \rowcolor[rgb]{0.843,0.718,0.718} 
+         Izdelek  & Jan & Feb & Mar & Apr & Maj & Jun & Jul & Avg & Sep & Okt & Nov    \\ 
+         \hhline{|:============:|}
+         Kruh  & $3.35$ & $3.29$ & $3.34$ & $3.38$ & $3.38$ & $3.37$ & $3.38$ & $3.55$ & $3.53$ & $3.54$ & $3.49$ \\ 
+         \hhline{|:============:|}
+         Jagode & $8.73$ & $7.18$ & $5.52$ & $4.48$ & $5.72$ & $5.64$ & $6.49$ & $6.58$ & $7.15$ & $7.58$ & $8.34$ \\ 
+         \hhline{|:============:|}
+         Cvetača & $2.04$ & $2.17$ & $1.58$ & $1.75$ & $2.13$ & $1.85$ & $1.93$ & $1.87$ & $1.81$ & $1.99$ & $1.80$ \\ 
+         \hhline{|b:============:b|}
+         \end{tabular}
+     \end{table}
+
+     Izračunajte povprečno ceno in standardni odklon cene vsakega izdelka.
+
+ 
+    \end{naloga}
+
+
+
+
+
+\begin{naloga}
+
+V preglednici je prikazano število rojstev v Sloveniji po letih. 
+
+ \begin{table}[H]
+     \centering
+     \begin{tabular}{||c|c|c|c|c|c|c|c|c|c||} 
+     \hhline{|t:==========:t|}
+     \rowcolor[rgb]{0.843,0.718,0.718} 
+     Leto   & $2013$ & $2014$ & $2015$ & $2016$ & $2017$ & $2018$ & $2019$ & $2020$ & $2021$    \\ 
+     \hhline{|:==========:|}
+     Število  & $21111$ & $21165$ & $20641$ & $20345$ & $20241$ & $19585$ & $19328$ & $18767$ & $18989$ \\ 
+     \hhline{|b:==========:b|}
+     \end{tabular}
+ \end{table}
+
+ Izračunajte povprečno število rojstev in standardni odklon.
+
+\end{naloga}
+
+
+ \begin{naloga}
+
+    Pridobili smo podatke (urejene po velikosti): $1, 13, 14, 15, 15, 15, 17, 18, 18, 19, 19, 19$, $19, 20$ in $40$.
+    \begin{itemize}
+        \item Opišite razpršenost podatkov $R$, $IR$, $Q_1$, $Q_3$, $\sigma$, $\overline{x}$.
+        \item Največjo in najmanjšo vrednost (v tem primeru sta to osamelca) odstranimo. Kako se spremeni razpršenost podatkov? 
+    \end{itemize}
+    
+\end{naloga}
+
+
+
+
+
+\end{priprava}
