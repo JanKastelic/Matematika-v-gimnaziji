@@ -248,21 +248,21 @@
         \begin{frame}
             \frametitle{Graf funkcije}
 
-            \begin{alertblock}{Graf funkcije}
-                \textbf{Graf} $\Gamma_f$ funkcije $f:\mathcal{X}\to\mathcal{Y}$ je množica urejenih parov $(x,y)\in\mathcal{X}\times\mathcal{Y}$, 
-                kjer element $x$ preteče celotno definicijsko območje $D_f$ funkcije, element $y$ pa je slika pripadajočega $x$, torej $y=f(x)$.
-                $$ \Gamma_f=\left\{(x,y)\in\mathcal{X}\times\mathcal{Y}; x\in D_f \land y=f(x)\right\} $$
-            \end{alertblock}
+            \only<2->{\begin{alertblock}{Graf funkcije}
+                \only<3->{\textbf{Graf} $\Gamma_f$ funkcije $f:\mathcal{X}\to\mathcal{Y}$ je množica urejenih parov $(x,y)\in\mathcal{X}\times\mathcal{Y}$, 
+                kjer element $x$ preteče celotno definicijsko območje $D_f$ funkcije, element $y$ pa je slika pripadajočega $x$, torej $y=f(x)$.}
+                \only<4->{$$ \Gamma_f=\left\{(x,y)\in\mathcal{X}\times\mathcal{Y}; x\in D_f \land y=f(x)\right\} $$}
+            \end{alertblock}}
 
-            \begin{block}{}
+            \only<5->{\begin{block}{}
                 Urejene pare iz množice $\Gamma_f$ lahko upodobimo v koordinatnem sistemu. \\
-                Vsakemu elementu $(x,f(x))$ iz zgornje množice pripada natanko ena točka v koordinatnem sistemu, 
-                katere abscisa je enaka $x$, ordinata pa je njegova slika $f(x)$.
-            \end{block}
+                \only<6->{Vsakemu elementu $(x,f(x))$ iz zgornje množice pripada natanko ena točka v koordinatnem sistemu, 
+                katere abscisa je enaka $x$, ordinata pa je njegova slika $f(x)$.}
+            \end{block}}
 
-            \begin{block}{}
+            \only<7->{\begin{block}{}
                 V ničli graf funkcije seka abscisno os, v začetni vrednosti pa ordinatno os.
-            \end{block}
+            \end{block}}
         \end{frame}
 
 
@@ -271,17 +271,17 @@
         \begin{frame}
             \frametitle{Naraščanje in padanje}
 
-            \begin{alertblock}{Naraščajoča funkcija}
-                Funkcija $f$ je na intervalu $(a,b)$ \textbf{naraščajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)\leq f(x_2)$.
+            \only<2->{\begin{alertblock}{Naraščajoča funkcija}
+                \only<3->{Funkcija $f$ je na intervalu $(a,b)$ \textbf{naraščajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)\leq f(x_2)$.}
                 
-                Funkcija $f$ je na intervalu $(a,b)$ \textbf{strogo naraščajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)<f(x_2)$.
-            \end{alertblock}
+                \only<4->{Funkcija $f$ je na intervalu $(a,b)$ \textbf{strogo naraščajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)<f(x_2)$.}
+            \end{alertblock}}
 
-            \begin{alertblock}{Padajoča funkcija}
-                Funkcija $f$ je na intervalu $(a,b)$ \textbf{padajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)\geq f(x_2)$.
+            \only<5->{\begin{alertblock}{Padajoča funkcija}
+                \only<6->{Funkcija $f$ je na intervalu $(a,b)$ \textbf{padajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)\geq f(x_2)$.}
                 
-                Funkcija $f$ je na intervalu $(a,b)$ \textbf{strogo padajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)>f(x_2)$.
-            \end{alertblock}
+                \only<7->{Funkcija $f$ je na intervalu $(a,b)$ \textbf{strogo padajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)>f(x_2)$.}
+            \end{alertblock}}
 
         \end{frame}
 
@@ -292,23 +292,23 @@
             \frametitle{Injektivnost in surjektivnost}
 
             \vskip-1em
-            \begin{alertblock}{Surjektivnost}
-                Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{surjektivna}, če je zaloga vrednosti $Z_f$ funkcije enaka njeni kodomeni $\mathcal{Y}$ -- vsak element kodomene $\mathcal{Y}$ je slika vsaj enega elementa iz domene $\mathcal{X}$.
+            \only<2->{\begin{alertblock}{Surjektivnost}
+                \only<3->{Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{surjektivna}, če je zaloga vrednosti $Z_f$ funkcije enaka njeni kodomeni $\mathcal{Y}$ -- vsak element kodomene $\mathcal{Y}$ je slika vsaj enega elementa iz domene $\mathcal{X}$.}
                 \vskip-1em
-                $$\forall y\in\mathcal{Y}. \exists x\in\mathcal{X}\ni:f(x)=y$$
-            \end{alertblock}
+                \only<4->{$$\forall y\in\mathcal{Y}. \exists x\in\mathcal{X}\ni:f(x)=y$$}
+            \end{alertblock}}
 
             \vskip-0.3em
-            \begin{alertblock}{Injektivnost}
-                Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{injektivna}, če se dva poljubna različna originala iz domene $\mathcal{X}$ preslikata v različni sliki v kodomeni $\mathcal{Y}$ -- vsak element kodomene $\mathcal{Y}$ je slika kvečjemu enega elementa iz domene $\mathcal{X}$.
+            \only<5->{\begin{alertblock}{Injektivnost}
+                \only<6->{Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{injektivna}, če se dva poljubna različna originala iz domene $\mathcal{X}$ preslikata v različni sliki v kodomeni $\mathcal{Y}$ -- vsak element kodomene $\mathcal{Y}$ je slika kvečjemu enega elementa iz domene $\mathcal{X}$.}
                 \vskip-1em
-                $$\forall x,y\in\mathcal{X}: f(x)=f(y)\Rightarrow x=y$$
-            \end{alertblock}
+                \only<7->{$$\forall x,y\in\mathcal{X}: f(x)=f(y)\Rightarrow x=y$$}
+            \end{alertblock}}
 
             \vskip-0.5em
-            \begin{alertblock}{}
+            \only<8->{\begin{alertblock}{}
                 Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{bijektivna}, če je injektivna in surjektivna hkrati -- vsak element iz kodomene $\mathcal{Y}$ je slika natanko enega elementa domene $\mathcal{X}$.
-            \end{alertblock}
+            \end{alertblock}}
         \end{frame}
 
 
