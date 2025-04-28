@@ -1,0 +1,114 @@
+\begin{priprava}{7., 8}{}{Največji skupni delitelj in najmanjši skupni večkratnik}{Deljivost}{frontalna}{drsnice, projekcija, tabla}
+
+
+    \section{Največji skupni delitelj in najmanjši skupni večkratnik}
+
+        
+
+    \textbf{Največji skupni delitelj} števil $m$ in $n$ je največje število od tistih, ki delijo števili $m$ in $n$. 
+    Oznaka: $D(m,n)$.           
+    \\
+
+    \textbf{Najmanjši skupni večkratnik} števil $m$ in $n$ je najmanjše število od tistih, ki so deljiva s številoma $m$ in $n$. 
+    Oznaka: $v(m,n)$.
+    \\
+
+
+    Števili $m$ in $n$, katerih največji skupni delitelj je $1$, sta \textbf{tuji števili}.
+    \\
+
+
+
+\textbf{Računanje $D$ in $v$ s prafaktorizacijo števil}
+    \begin{itemize}
+        \item Števili $m$ in $n$ prafaktoriziramo.
+        \item Za $D(m,n)$ vzamemo potence, ki so skupne obema številom v prafaktorizaciji.
+        \item Za $v(m,n)$ vzamemo vse potence, ki se pojavijo v prafaktorizaciji števil, z največjim eksponentom.
+    \end{itemize}                
+~
+
+
+    Za poljubni naravni števili $m$ in $n$ velja zveza $\mathbf{D(m,n)\cdot v(m,n)=m\cdot n}$.
+\\
+
+\textbf{Evklidov algoritem}
+
+    V tem algoritmu zapored uporabljamo osnovni izrek o deljenju. 
+    \\ Najprej ga uporabimo na danih dveh številih.
+    \\ V naslednjem koraku deljenec postane prejšnji delitelj, delitelj pa prejšnji ostanek. 
+    \\ V vsakem koraku imamo manjša števila, zato se algoritem konča v končno mnogo korakih.
+    \\ ~\\ Največji skupni delitelj danih števil $m$ in $n$ je zadnji od $0$ različen ostanek pri deljenju v Evklidovem algoritmu.
+
+
+
+
+~\\
+\begin{naloga}
+    Izračunajte največji skupni delitelj in najmanjši skupni večkratnik danih parov števil.
+    \begin{itemize}
+        \item $6$ in $8$ 
+        \item $36$ in $48$ 
+        \item $550$ in $286$ 
+        \item $6120$ in $4158$ 
+    \end{itemize}
+\end{naloga}
+
+\begin{naloga}
+    Preverite, ali sta števili $522$ in $4025$ tuji števili. 
+\end{naloga}
+
+\begin{naloga}
+    Izračunajte največji skupni delitelj in najmanjši skupni večkratnik treh števil.
+    \begin{itemize}
+        \item $1320$, $6732$ in $297$ 
+        \item $372$, $190$ in $11264$ 
+    \end{itemize}
+\end{naloga}
+
+\begin{naloga}
+    Z Evklidovim algoritmom izračunajte največji skupni delitelj parov števil.
+    \begin{itemize}
+        \item $754$ in $3146$ 
+        \item $4446$ in $6325$ 
+    \end{itemize}
+\end{naloga}
+
+\begin{naloga}
+    Izračuanjte število $b$, če velja: $D(78 166, b)=418$ in $v(78 166, b)=1 485 154$. 
+\end{naloga}
+
+\begin{naloga}
+    Določite največji skupni delitelj izrazov.
+    \begin{itemize}
+        \item $x^3-5x^2-24x$ in $x^2-64$ 
+        \item $x^2+3x+10$, $x^3-4x$ in $x^3-8$ 
+        \item $x^2-25$ in $x^3-27$ 
+    \end{itemize}
+\end{naloga}
+
+\begin{naloga}
+    Določite najmanjši skupni večkratnik izrazov.
+    \begin{itemize}
+        \item $x^2-64$ in $x+8$ 
+        \item $x$, $8-x$ in $x^2-64$ 
+        \item $x^2+3x-10$, $2x$ in $x^2+5x$ 
+    \end{itemize}
+\end{naloga}
+
+\begin{naloga}
+    Velika Janezova terasa je dolga $1035~cm$ in široka $330~cm$. Janez bi jo rad sam tlakoval s kvadratnimi vinilnimi ploščami.
+    Ker ni najbolj vešč tega dela, bo kupil tako velike plošče, da mu jih ne bo treba rezati.
+    Koliko so največ lahko velik kvadratne plošče? Koliko plošč bo potreboval za tlakovanje? 
+\end{naloga}
+
+\begin{naloga}
+    Neca gre v knjižnico vsake $14$ dni, Nace pa vsakih $10$ dni. V knjižnici se srečata v ponedeljek 1. marca.
+    Čez koliko dni se bosta naslednjič srečala? Na kateri dan in datum?                     
+\end{naloga}
+
+        
+            
+ 
+
+
+\end{priprava}
