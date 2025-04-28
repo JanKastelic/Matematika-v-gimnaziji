@@ -78,6 +78,8 @@
 \usepackage{color}
 \definecolor{rdeca}{rgb}{1,0,0} % values Red, Green, Blue
 \definecolor{modra}{rgb}{0,0,1} % values Red, Green, Blue
+\definecolor{darkred}{rgb}{0.8,0,0}
+
 
 % naslov poglavja
 \makeatletter
