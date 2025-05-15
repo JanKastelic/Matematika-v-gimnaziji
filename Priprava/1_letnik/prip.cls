@@ -154,8 +154,8 @@
 
 \clearpage
   \begin{tabularx}{\textwidth}{X X}
-  {\bfseries Poglavje:} {#4} & {\bfseries Oblika:} {#5} \\
-  {\bfseries Tema:} {#3} & {\bfseries Pripomočki:} {#6}
+  {\bfseries Tema:} {#4} & {\bfseries Oblika:} {#5} \\
+  {\bfseries Enota:} {#3} & {\bfseries Pripomočki:} {#6}
   \end{tabularx}
   \vspace{6pt}
 \hrule
