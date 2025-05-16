@@ -1,7 +1,7 @@
 \chapter{Funkcija}
 
 
-\section{Funkcija}
+\section{Preslikava in funkcija}
 
     \subsection*{Preslikava}
 
@@ -20,6 +20,8 @@
 
         Elemente $x$ kodomene $\mathcal{X}$ imenujemo \textbf{originali} preslikave.
         \\ Če elementu $x$ priredimo element $y$ iz kodomene, potem imenujemo $y$ \textbf{slika} elemeta $x$.
+
+        ~
 
         Preslikavo lahko podamo s predpisom, puščičnim diagramom, besednim opisom ...
 
@@ -40,6 +42,7 @@
         $x$ je neodvisna spremenjlivka, $f(x)$ je od $x$ odvisna spremenljivka.
 
 
+~
 
         V nekaterih primerih za opis funkcije uporabimo poseben izraz:
         \begin{itemize}
@@ -50,12 +53,15 @@
         \end{itemize}
 
 
-
-    \subsection*{Definicijsko območje in zaloga vrednosti}
+%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+    \section{Definicijsko območje in zaloga vrednosti}
 
     \subsubsection*{Definicijsko območje}
         \textbf{Definicijsko območje} preslikave ali funkcije $f:\mathcal{X}\to\mathcal{Y}$ je množica vseh originalov, ki jih v danem primeru opazujemo. 
         Oznaka: $D_f$.                
+
+~
 
         Za definicijsko območje navadno vzamemo največjo možno množico, za katero je predpis funkcije veljaven/definiran.
 
@@ -64,10 +70,12 @@
         \textbf{Zaloga vrednosti} preslikave ali funkcije $f:\mathcal{X}\to\mathcal{Y}$ je množica vseh slik oziroma funkcijskih vrednosti.
         Oznaka: $Z_f$.
 
+~
+
         Zaloga vrednosti $Z_f$ je podmnožica kodomene $\mathcal{Y}$: $Z_f\subseteq \mathcal{Y}$.
 
 
-
+~\\~\\
 
 
 %%%% naloge
@@ -88,6 +96,7 @@
 
     \begin{naloga}
         Zapišite definicijska območja funkcij.
+        \begin{multicols}{2}
             \begin{itemize}
                 \item $f(x)=\dfrac{-7}{x+1}$ 
                 \item $g(x)=\dfrac{1}{(x+2)(x+6)}$ 
@@ -98,19 +107,23 @@
                 \item $l(x)=\dfrac{3}{x}$ 
                 \item $m(x)=\dfrac{x^2+1}{x^2-5x-6}$ 
             \end{itemize}
-
+        \end{multicols}
     \end{naloga}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 
 
-    \subsection*{Ničla in začetna vrednost funkcije}
+    \section{Ničla in začetna vrednost funkcije}
 
     \subsubsection*{Ničla funkcije}
         \textbf{Ničla} funkcije $f:\mathcal{X}\to\mathcal{Y}$ je tista vrednost $x_0\in\mathcal{X}$ neodvisne spremenljivke, 
         pri kateri je vrednost funkcije $f$ enaka $0$: $f(x_0)=0$.
+
+        ~
 
         Ničle funkcije $f$ poiščemo tako, da rešimo enačbo $f(x)=0$. \\
         Ničle so le tiste izmed vrednosti, ki ležijo v definicijskem območju $D_f$ funkcije $f$.
@@ -119,10 +132,12 @@
     \subsubsection*{Začetna vrednost}
         \textbf{Začetna vrednost} funkcije $f:\mathcal{X}\to\mathcal{Y}$ je funkcijska vrednost pri $x=0$, to je $f(0)$.
 
+        ~
+
         Začetna vrednost obstaja le, če je $0$ v definicijskem območju funkcije $f$: $0\in D_f$.
 
         
-
+~\\~\\
 
 
 %%%% naloge
@@ -162,13 +177,91 @@
         \end{multicols}
     \end{naloga}
 
+%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+
+
+        \section{Graf funkcije}
+
+            \textbf{Graf} $\Gamma_f$ funkcije $f:\mathcal{X}\to\mathcal{Y}$ je množica urejenih parov $(x,y)\in\mathcal{X}\times\mathcal{Y}$, 
+                kjer element $x$ preteče celotno definicijsko območje $D_f$ funkcije, element $y$ pa je slika pripadajočega $x$, torej $y=f(x)$.
+            $$ \Gamma_f=\left\{(x,y)\in\mathcal{X}\times\mathcal{Y}; x\in D_f \land y=f(x)\right\} $$
+        
+~
+
+                Urejene pare iz množice $\Gamma_f$ lahko upodobimo v koordinatnem sistemu. 
+               
+               ~
+
+                Vsakemu elementu $(x,f(x))$ iz zgornje množice pripada natanko ena točka v koordinatnem sistemu, 
+                katere abscisa je enaka $x$, ordinata pa je njegova slika $f(x)$.
+
+                ~
+
+                V ničli graf funkcije seka abscisno os, v začetni vrednosti pa ordinatno os.
+
+
+
+        \section{Naraščanje in padanje}
+
+            \subsection*{Naraščajoča funkcija}
+
+                Funkcija $f$ je na intervalu $(a,b)$ \textbf{naraščajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)\leq f(x_2)$.
+
+                ~
+
+                Funkcija $f$ je na intervalu $(a,b)$ \textbf{strogo naraščajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)<f(x_2)$.
+            
+
+            \subsection*{Padajoča funkcija}
+                Funkcija $f$ je na intervalu $(a,b)$ \textbf{padajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)\geq f(x_2)$.
+                
+                ~
+
+                Funkcija $f$ je na intervalu $(a,b)$ \textbf{strogo padajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)>f(x_2)$.
+
+
+
+        \section{Injektivnost in surjektivnost}
+
+            \subsection*{Surjektivnost}
+                Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{surjektivna}, če je zaloga vrednosti $Z_f$ funkcije enaka njeni kodomeni $\mathcal{Y}$ -- vsak element kodomene $\mathcal{Y}$ je slika vsaj enega elementa iz domene $\mathcal{X}$.
+
+                $$\forall y\in\mathcal{Y}. \exists x\in\mathcal{X}\ni:f(x)=y$$
+
+            \subsection*{Injektivnost}
+                Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{injektivna}, če se dva poljubna različna originala iz domene $\mathcal{X}$ preslikata v različni sliki v kodomeni $\mathcal{Y}$ -- vsak element kodomene $\mathcal{Y}$ je slika kvečjemu enega elementa iz domene $\mathcal{X}$.
+
+                $$\forall x,y\in\mathcal{X}: f(x)=f(y)\Rightarrow x=y$$
+
+
+
+            Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{bijektivna}, če je injektivna in surjektivna hkrati -- vsak element iz kodomene $\mathcal{Y}$ je slika natanko enega elementa domene $\mathcal{X}$.
+
+
+            %%%%%% naloge
+
+            \begin{naloga}
+                Zapišite in narišite grafe funkcij ter zapišite začetne vrednosti in ničle funkcije.
+                Določite, kje je funkcija naraščajoča oziroma padajoča, ter preverite surjektivnost in injektivnost.
+                    \begin{itemize}
+                        \item $f(x)=x \quad \quad D_f=\mathbb{R}$ 
+                        \item $g(x)=-2x+1 \quad \quad D_g=\mathbb{R}$ 
+                        \item $h(x)=x^2-1 \quad \quad D_h=\mathbb{R}$ 
+                        \item $i(x)=\dfrac{1}{x^2} \quad \quad D_i=\left\{-2, -1, -\frac{1}{2}, \frac{1}{2}, 1, 2\right\}$ 
+                        \item $j(x)=\dfrac{x+2}{x-3} \quad \quad D_j=\left\{-2, -1, 0, 1, 2\right\}$ 
+                    \end{itemize}
+            \end{naloga}                    
+
+
+
+
+
 
 \newpage
 
 
-    \section{Linearna funkcija}
-
-        \subsection*{Predpis linearne funkcije}
+        \section{Predpis linearne funkcije}
         
 
 
@@ -282,7 +375,7 @@
             \begin{naloga}
                 Taksist meri razdaljo, ki jo je prevozil. Vsak kilometer stane $2.5~€$, startnina pa $7~€$.
                 Zapišite funkcijo, po kateri taksist izračuna znesek za plačilo, ko prebere število prevoženih kilometrov $x$. 
-                Izračunajte, koliko bi pačali, če bi se peljali $12~km$. 
+                Izračunajte, koliko bi plačali, če bi se peljali $12~km$. 
             \end{naloga}
 
             \begin{naloga}
