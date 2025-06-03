@@ -495,55 +495,56 @@
         \begin{frame}
             \frametitle{Mere razpršenosti}
 
-            \begin{block}{}
+            \only<2->{\begin{block}{}
                 Informacijo o \textbf{porazdelitvi} oziroma \textbf{razpršenosti} podatkov lahko izračunamo s pomočjo: 
                 variacijskega razmika, interkvartilnega ranga, variance in standarnega odklona.
-            \end{block}
-            \begin{alertblock}{Variacijski razmik}
+            \end{block}}
+
+            \only<3->{\begin{alertblock}{Variacijski razmik}
                 \textbf{Variacijski razmik} $R$ je razlika med maksimalno in minimalno vrednostjo statistične spremenljivke:
                 $$R=x_{max}-x_{min}.$$
-            \end{alertblock}
+            \end{alertblock}}
 
-            \begin{block}{}
+            \only<4->{\begin{block}{}
                 Variacijski razmik je zelo odvisen od ekstremnih vrednosti, posebno osamelcev, 
                 zato ga uporabljamo le v kombinaciji z drugimi merami razpršenosti.
-            \end{block}
+            \end{block}}
 
         \end{frame}
 
         \begin{frame}
-            \begin{alertblock}{Interkvartilni rang}
+            \only<2->{\begin{alertblock}{Interkvartilni rang}
                 \textbf{Interkvartilni rang} oziroma \textbf{medčetrtinski razmik} $IR$ je razlika med vrednostjo prvega in tretjega kvartila:
                 $$IR=Q_3-Q_1.$$
-            \end{alertblock}
+            \end{alertblock}}
 
-            \begin{alertblock}{}
+            \only<3->{\begin{alertblock}{}
                 \textbf{Osamelec} je podatek, katerega vrednost je za več kot $3$-kratnik interkvartilnega ranga~$IR$ nad tretjim kvartilom $Q_3$ ali pod prvim kvartilom $Q_1$. \\
-                Podatek je ``pogojno osamelec'', če je njegova vrednosz za več kot $1.5$-kratnik interkvartilnega ranga~$IR$ nad tretjim kvartilom $Q_3$ ali pod prvim kvartilom $Q_1$.
+                Podatek je ``pogojno osamelec'', če je njegova vrednost za več kot $1.5$-kratnik interkvartilnega ranga~$IR$ nad tretjim kvartilom $Q_3$ ali pod prvim kvartilom $Q_1$.
 
-            \end{alertblock}
+            \end{alertblock}}
 
-            \begin{block}{}
+            \only<4->{\begin{block}{}
                 Interkvartilni rang je mera razpršenosti, ki ni občutljiva na osamelce.
-            \end{block}
+            \end{block}}
         \end{frame}
 
         \begin{frame}
 
-            \begin{alertblock}{Varianca}
+            \only<2->{\begin{alertblock}{Varianca}
                 \textbf{Varianca} $\sigma^2$ predstavlja aritmetično sredino kvadratov odmikov vrednosti statistične spremenljivke od aritmetične sredine:
                 $$\sigma^2=\dfrac{(x_1-\overline{x})^2+(x_2-\overline{x})^2+\cdots+(x_n-\overline{x})^2}{N}=\dfrac{1}{N}\sum_{i=1}^n(x_i-\overline{x})^2.$$
-            \end{alertblock}
+            \end{alertblock}}
 
             % \begin{block}{}
             %     Večja kot je varianca, bolj so podatki razpršeni.
             % \end{block}
 
-            \begin{alertblock}{Standardni odklon}
+            \only<3->{\begin{alertblock}{Standardni odklon}
                 \textbf{Standardni odklon} $\sigma$ izračunamo kot koren variance:
                 $$\sigma=\sqrt{\dfrac{(x_1-\overline{x})^2+(x_2-\overline{x})^2+\cdots+(x_n-\overline{x})^2}{N}}=\sqrt{\dfrac{1}{N}\sum_{i=1}^n(x_i-\overline{x})^2}.$$
                 Predstavlja povprečje odmikov vrednosti statistične spremenljivke od aritmetične sredine.
-            \end{alertblock}
+            \end{alertblock}}
         \end{frame}
 
 
