@@ -264,8 +264,19 @@
 
         \section{Predpis linearne funkcije}
         
+                \textbf{Linearna funkcija} je realna funkcija realne spremenljivke, podana s predpisom 
+                $$f(x)=kx+n;\quad k,n\in\mathbb{R},$$
+                kjer je $k$ \textbf{diferenčni kvocient/smerni koeficient}, $n$ pa \textbf{začetna vrednost} $f(0)=n$.
 
+                ~\\
+                Glede na predznak smernega koeficienta $k$ je linearna funkcija:
+                \begin{itemize}
+                    \item naraščajoča, če je $k>0$;
+                    \item konstanta, če je $k=0$ ali
+                    \item padajoča, če je $k<0$.
+                \end{itemize}
 
+                ~\\
         %%% naloge
 
         
@@ -347,12 +358,14 @@
         
             \begin{naloga}
                 Dana je linearna funkcija $f$. Zapišite predpis funkcije $g$ v obliki $g(x)=kx+n$.
-                    \begin{itemize}
+                \begin{multicols}{2} 
+                \begin{itemize}
                         \item $f(x)=2x-6, ~ g(x)=3f(x)$ 
                         \item $f(x)=5x-3; ~ g(x)=f(x+1)$ 
                         \item $f(x)=\dfrac{2x-5}{3}; ~ g(x)=f(1-x)$ 
                         \item $f(x)=\dfrac{10-4x}{7}; ~ g(x)=f(3x)$ 
                     \end{itemize}
+                \end{multicols}
             \end{naloga}
         
 
@@ -401,7 +414,94 @@
 \newpage
     \section{Graf linearne funkcije}
 
+    \noindent
+\begin{minipage}[c]{0.67\linewidth}
 
+    % \begin{multicols}{2}
+                \textbf{Graf linearne funkcije} $f(x)=kx+n$ je predstavljen kot množica točk 
+                $$\Gamma_f=\left\{(x,y)\in\mathbb{R}^2 | y=kx+n\right\}, $$
+                kar upodobimo kot \textbf{premico}.
+
+                ~\\
+                Premice z enako začetno vrednostjo se sekajo v skupni točki $(0,n)$ na ordinatni osi -- \textbf{šop premic}.
+                ~\\
+                Premice, ki imajo enak smerni koeficient so vzporedne -- \textbf{snop premic}.
+
+
+        \end{minipage}
+         % no space if you would like to put them side by side
+        \begin{minipage}[c]{0.3\linewidth}
+
+
+            \begin{figure}[H]
+                    \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+
+                    % Drawing 2D Cartesian system
+                    \draw (3.000000,3.000000) node [anchor=north east] { $0$ };%
+                    \draw [line width=0.016cm] (3.000000,2.925000) -- (3.000000,3.075000);%
+                    \draw (3.700000,3.000000) node [anchor=north] { $1$ };%
+                    \draw [line width=0.016cm] (3.700000,2.925000) -- (3.700000,3.075000);%
+                    % \draw (4.400000,3.000000) node [anchor=north] { $2$ };%
+                    \draw [line width=0.016cm] (4.400000,2.925000) -- (4.400000,3.075000);%
+                    % \draw (5.100000,3.000000) node [anchor=north] { $3$ };%
+                    \draw [line width=0.016cm] (5.100000,2.925000) -- (5.100000,3.075000);%
+                    % \draw (2.300000,3.000000) node [anchor=north] { $-1$ };%
+                    \draw [line width=0.016cm] (2.300000,2.925000) -- (2.300000,3.075000);%
+                    % \draw (1.600000,3.000000) node [anchor=north] { $-2$ };%
+                    \draw [line width=0.016cm] (1.600000,2.925000) -- (1.600000,3.075000);%
+                    \draw (3.000000,3.700000) node [anchor=east] { $1$ };%
+                    \draw [line width=0.016cm] (2.925000,3.700000) -- (3.075000,3.700000);%
+                    % \draw (3.000000,4.400000) node [anchor=east] { $2$ };%
+                    \draw [line width=0.016cm] (2.925000,4.400000) -- (3.075000,4.400000);%
+                    % \draw (3.000000,5.100000) node [anchor=east] { $3$ };%
+                    \draw [line width=0.016cm] (2.925000,5.100000) -- (3.075000,5.100000);%
+                    % \draw (3.000000,5.800000) node [anchor=east] { $4$ };%
+                    \draw [line width=0.016cm] (2.925000,5.800000) -- (3.075000,5.800000);%
+                    % \draw (3.000000,2.300000) node [anchor=east] { $-1$ };%
+                    \draw [line width=0.016cm] (2.925000,2.300000) -- (3.075000,2.300000);%
+                    % \draw (3.000000,1.600000) node [anchor=east] { $-2$ };%
+                    \draw [line width=0.016cm] (2.925000,1.600000) -- (3.075000,1.600000);%
+                    \draw (5.700000,3.000000) node [anchor=north] { $x$ };%
+                    \draw (3.000000,6.400000) node [anchor=east] { $y$ };%
+                    \draw [line width=0.016cm] (1.200000,3.000000) -- (5.700000,3.000000);%
+                    \draw [line width=0.016cm] (5.402567,3.039158) -- (5.700000,3.000000);%
+                    \draw [line width=0.016cm] (5.402567,3.039158) -- (5.600000,3.000000);%
+                    \draw [line width=0.016cm] (5.402567,2.960842) -- (5.700000,3.000000);%
+                    \draw [line width=0.016cm] (5.402567,2.960842) -- (5.600000,3.000000);%
+                    \draw [line width=0.016cm] (3.000000,1.600000) -- (3.000000,6.400000);%
+                    \draw [line width=0.016cm] (2.960842,6.102567) -- (3.000000,6.400000);%
+                    \draw [line width=0.016cm] (2.960842,6.102567) -- (3.000000,6.300000);%
+                    \draw [line width=0.016cm] (3.039158,6.102567) -- (3.000000,6.400000);%
+                    \draw [line width=0.016cm] (3.039158,6.102567) -- (3.000000,6.300000);%
+
+                    % Changing color 204 0 0
+                    \definecolor{r204g0b0}{rgb}{0.800000,0.000000,0.000000}%
+                    \color{r204g0b0}% 
+
+                    % Drawing line l
+                    \draw [line width=0.032cm] (5.200000,1.600000) -- (2.166667,6.000000);%
+
+                    % Marking point n
+                    \draw (3.000000,4.750000) node [anchor=east] { $n$ };%
+
+                    % Marking point k/n
+                    \draw (4.120000,2.900000) node [anchor=north] { $-\frac{k}{n}$ };%
+                    \color{black}
+                    }
+                    \end{tikzpicture}
+            \end{figure}
+
+
+            \end{minipage}
+
+        % \end{multicols}
+
+
+
+    ~
+    % naloge
 
         
             \begin{naloga}
