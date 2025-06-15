@@ -136,7 +136,7 @@
 \fancyhead[L]{\textbf{\MakeUppercase{\predmet}, \razred}}
 \fancyhead[R]{\textbf{\stUre.\ ura}}
 % Noga
-\fancyfoot[L]{\ucitelj,\ \textit{\sola}}
+\fancyfoot[L]{\ucitelj;\ \textit{\sola}}
 \fancyfoot[R]{\datum\quad Stran \thepage{} od \pageref{LastPage}}
 
 
