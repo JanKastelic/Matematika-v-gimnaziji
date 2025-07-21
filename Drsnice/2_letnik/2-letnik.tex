@@ -15,6 +15,15 @@
 \usepackage{tkz-euclide}
 \usepackage{xfp}
 % \usepackage{pgf}
+\usepackage{colortbl}
+\usepackage{hhline}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{wasysym}
+\usepackage[gen]{eurosym}
+\usepackage{newunicodechar}
+\newunicodechar{€}{\euro}
+
 
 \pgfplotsset{compat=1.18} 
 
@@ -40,7 +49,7 @@
 \subtitle{2. letnik -- splošna gimnazija}
 \date{\today}
 \author{Jan Kastelic}
-\institute[FMF]{Fakulteta za matematiko in fiziko, \\ Univerza v Ljubljani}
+\institute[GAA]{Gimnazija Antona Aškerca, \\ Šolski center Ljubljana}
 
 \newtheorem{izrek}{Izrek}
 \newcommand{\Vir}[1]{\color{gray}{\tiny{Vir: #1}}}
@@ -59,14 +68,17 @@
 	\tableofcontents[hideallsubsections]
 \end{frame}
 	
-\include{Geometrija_na_ravnini_in_v_prostoru}
-
+\include{Geometrija_v_ravnini}
+\include{Kotne_funkcije}
 \include{Vektorji}
+\include{Potence_in_koreni}
+\include{Funkcije}
+\include{Potencna_funkcija}
+\include{Korenska_funkcija}
+\include{Kvadratna_funkcija}
+\include{Kompleksna_stevila}
+\include{Eksponentna_funkcija}
+\include{Logaritemska_funkcija}
 
-\include{Koreni_lastnosti_funkcij_potencna_funkcija}
-
-\include{Kvadratna_funkcija_kompleksna_stevila}
-
-\include{Eksponentna_in_logaritemska_funkcija}
 
 \end{document}
