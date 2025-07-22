@@ -199,6 +199,7 @@
         \begin{frame}
             \frametitle{Kotne funkcije komplementarnih kotov}
 
+            \vskip-1em
             \begin{alertblock}{}
                 Sinus kota je enak kosinusu komplementarnega kota in obratno.
                 $$ \sin\left({\frac{\pi}{2}-\varphi}\right) = \cos\varphi $$
@@ -285,7 +286,6 @@
                 Izračunajte višino stolpa, če je točka gledišča na višini $1.7~m$.
             \end{exampleblock}}
 
-
         \end{frame}
 
 
@@ -311,7 +311,6 @@
                 V rombu je dolžina diagonale $e$ dvakrat tolikšna kot dolžina diagonale $f$.
                 Na minuto natančno izračunajte velikost kota $\alpha$.
             \end{exampleblock}}
-
 
         \end{frame}
 
@@ -399,21 +398,23 @@
         \begin{frame}
             \frametitle{Kotne funkcije v enotskem krogu}
 
+            \vskip-2em
             \begin{columns}
-                \column{0.43\textwidth}
+                \column{0.48\textwidth}
                     \begin{alertblock}{}
                         \textbf{Enotska krožnica} je krožnica s polmerom ene enote in s središčem v koordinatnem izhodišču.
                     \end{alertblock}
 
                     \begin{alertblock}{}
-                        Kot $\varphi$ z vrhom v koordinatnem izhodišču:
+                        Kot $\varphi$ z vrhom v koordinatnem izhodišču določata:
                         \begin{itemize}
-                            \item prvi (fiksni) krak kota leži na pozitivnem delu abscisne osi;
-                            \item drugi (premični) krak določa velikost kota in leži v enem izmed štirih kvadrantov.
+                            \item \textbf{fiksni/nepremični krak} kota leži na pozitivnem delu abscisne osi in
+                            \item \textbf{premični krak} določa velikost kota in leži v enem izmed štirih kvadrantov ter seka enotsko krožnico v točki $(\cos{x},\sin{x})$.
                         \end{itemize}
                     \end{alertblock}
 
-                \column{0.55\textwidth}
+                \column{0.50\textwidth}
+                    \begin{block}{}
                     \begin{figure}
                         \begin{tikzpicture}
                             % \clip (0,0) rectangle (14.000000,10.000000);
@@ -673,7 +674,7 @@
                             \draw (6.400000,3.000000) node [anchor=south] { $\textrm{fiksni~krak}$ };%
                             
                             % Marking point \textrm{premični~krak}
-                            \draw (6.050000,5.500000) node [anchor=west] { $\textrm{premični~krak}$ };%
+                            \draw (6.050000,5.500000) node [anchor=south] { $\textrm{premični~krak}$ };%
 
                             % Drawing segment S L
                             \draw [line width=0.032cm] (3.040000,3.000000) -- (5.460000,3.000000);%
@@ -689,6 +690,7 @@
                             }
                         \end{tikzpicture}
                     \end{figure}
+                \end{block}
             \end{columns}
             ~\\
             ~\\
@@ -699,9 +701,9 @@
         \end{frame}
 
         \begin{frame}
-
+            \vskip-1.1em
             \begin{columns}
-                \column{0.43\textwidth}
+                \column{0.48\textwidth}
                     \begin{alertblock}{}
                         \textbf{Sinus} kota $\varphi$ je enak oridnati presečišča premičnega kraka z enotsko krožnico.
                     \end{alertblock}
@@ -711,14 +713,15 @@
                     \end{alertblock}
 
                     \begin{alertblock}{}
-                        \textbf{Tangens} kota $\varphi$ je enak ordinati presečišča premičnega kraka z navpično tangento enotskega kroga v točki $(1,0)$.
+                        \textbf{Tangens} kota $\varphi$ je enak ordinati presečišča nosilke premičnega kraka z navpično tangento enotskega kroga v točki $(1,0)$.
                     \end{alertblock}
 
                     \begin{alertblock}{}
-                        \textbf{Kotangens} kota $\varphi$ je enak abscisi presečišča premičnega kraka z vodoravno tangento enotskega korga v točki $(0,1)$.
+                        \textbf{Kotangens} kota $\varphi$ je enak abscisi presečišča nosilke premičnega kraka z vodoravno tangento enotskega korga v točki $(0,1)$.
                     \end{alertblock}
 
-                \column{0.55\textwidth}
+                \column{0.50\textwidth}
+                \begin{block}{} ~
                     \begin{figure}
                         \begin{tikzpicture}
                             % \clip (0,0) rectangle (14.000000,10.000000);
@@ -1040,6 +1043,7 @@
                             }
                         \end{tikzpicture}                    
                     \end{figure}
+                \end{block}
             \end{columns}
 
         \end{frame}
@@ -1048,14 +1052,14 @@
         
         \begin{frame}
             \frametitle{Stopinje in radiani}
-
+            \vskip-1em
             \begin{alertblock}{Radian}
                 Loku na krožnici, ki je enako dolg kot polmer krožnice, pripada središčni kot, velik $1 \ \textrm{radian}$.
                 $$ 1 \ \textrm{rad}=\frac{180^\circ}{\pi}\doteq 57,3^\circ$$
             \end{alertblock}
 
             \begin{exampleblock}{Pretvorba med stopinjami in radiani}
-                Naj bo $\varphi$ kot podan v radianih, $\phi$ pa njemu pripadajoči kot podan v stopinjah. Potem velja:
+                Naj bo kot $\varphi$ podan v radianih, $\phi$ pa njemu pripadajoči kot podan v stopinjah. Potem velja:
                 $$ \varphi = \frac{\pi}{180^\circ}\phi$$
                 in 
                 $$ \phi = \frac{180^\circ}{\pi} \varphi.$$
@@ -2128,9 +2132,197 @@
     
             \end{frame}
 
+
+
+    %%%%%% naloge
+
         \begin{frame}
-            \frametitle{Kotne funkcije poljubnih kotov}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Izrazite s kotno funkcijo kota, manjšega od $45^\circ$.
+                \begin{itemize}
+                    \begin{columns}
+                        \column{0.26\textwidth}
+                            \item $\sin{200^\circ} $ \\~
+                            \item $\cos{115^\circ} $ \\~
+                            \item $\tan{170^\circ} $ \\~
+                            \item $\sin{299^\circ} $ \\~
+                            \item $\cos{355^\circ} $ \\~
+                        \column{0.26\textwidth}
+                            \item $\cot{335^\circ} $ \\~
+                            \item $\tan{163^\circ} $ \\~
+                            \item $\cos{255^\circ} $ \\~
+                            \item $\sin{190^\circ} $ \\~
+                            \item $\cot{203^\circ} $ \\~
+                        \column{0.26\textwidth}
+                            \item $\cos{154^\circ} $ \\~
+                            \item $\sin{245^\circ} $ \\~
+                            \item $\tan{140^\circ} $ \\~
+                            \item $\cos{218^\circ} $ \\~
+                            \item $\tan{179^\circ} $ \\~
+                    \end{columns}
+                \end{itemize}
+            \end{exampleblock}}
+
         \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Najprej izrazite vrednost dane kotne funkcije s kotno funkcijo ostrega kota in nato izračunajte njeno natančno vrednost.
+                \begin{itemize}
+                    \begin{columns}
+                        \column{0.42\textwidth}
+                            \item $\sin{300^\circ} $ \\~
+                            \item $\cos{330^\circ} $ \\~
+                            \item $\tan{315^\circ} $ \\~
+                            \item $\cos{225^\circ} $ \\~
+                        \column{0.42\textwidth}
+                            \item $\sin{240^\circ} $ \\~
+                            \item $\tan{150^\circ} $ \\~
+                            \item $\cos{120^\circ} $ \\~
+                            \item $\sin{180^\circ} $ \\~
+                    \end{columns}
+                \end{itemize}
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Natančno izračunajte.
+                \begin{itemize}
+                    \begin{columns}
+                        \column{0.42\textwidth}
+                            \item $\displaystyle \dfrac{\cos{300^\circ}-\sin{210^\circ}-\sin{0^\circ}}{\tan{300^\circ}+\tan{135^\circ}} $ \\~\\~
+                            \item $\displaystyle \left(\sin{150^\circ}-\cos{210^\circ}\right)^2+\tan^2{315^\circ} $ \\~\\~
+                            \item $\displaystyle \dfrac{\cos{135^\circ}+\sin{225^\circ}}{\tan{300^\circ}-\tan{120^\circ}-\sin{270^\circ}} $ \\~\\~
+                        \column{0.42\textwidth}
+                            \item $\displaystyle \sin{120^\circ}-\cos{150^\circ}+\tan{225^\circ} $ \\~\\~
+                            \item $\displaystyle \dfrac{\cos{240^\circ}+\tan{135^\circ}-\sin^2{315^\circ}}{den} $ \\~\\~
+                    \end{columns}
+                \end{itemize}
+            \end{exampleblock}}
+
+        \end{frame}
+
+        
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Za kot $x$ je podana vrednost ene kotne funkcije in območje velikost kota.
+                Izračunajte natančni vrednosti drugih kotnih funkcij za kot $x$.
+                \begin{itemize}
+                    \begin{columns}
+                        \column{0.42\textwidth}
+                            \item $x\in[180^\circ,270^\circ]$; $\sin{x}=-0.6 $ \\~
+                            \item $x\in[90^\circ,180^\circ]$; $\cos{x}=\dfrac{\sqrt{2}}{3}$ \\~
+                            \item $IV.$ kvadrant; $\tan{x}=-\sqrt{3} $ \\~
+                            \item $II.$ kvadrant; $\tan{x}=-2 $ \\~
+                            \item $III.$ kvadrant; $\tan{x}=3 $ \\~
+                        \column{0.42\textwidth}
+                            \item $II.$ kvadrant; $\sin{x}=\dfrac{3}{4} $ \\~
+                            \item $x\in[270^\circ,360^\circ]$; $\cos{x}=\dfrac{1}{3}$ \\~
+                            \item $x\in[180^\circ,270^\circ]$; $\cos{x}=-\dfrac{4}{5}$ \\~
+                            \item $IV.$ kvadrant; $\sin{x}=-\dfrac{15}{17} $ \\~
+                    \end{columns}
+                \end{itemize}
+            \end{exampleblock}}
+
+        \end{frame}
+
+  
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Podana je vrednost ene kotne funkcije za kot $x$. 
+                Izračunajte velikost kota $x$ glede na pogoj o njegovi velikosti.
+                \begin{itemize}
+                    \begin{columns}
+                        \column{0.42\textwidth}
+                            \item $x\in[270^\circ,360^\circ]$; $\cos{x}=0.5 $ \\~
+                            \item $x\in[0^\circ,360^\circ]$; $\tan{x}=-1$ \\~
+                            \item $x\in[180^\circ,360^\circ]$; $\sin{x}=\dfrac{\sqrt{2}}{2}$ \\~
+                            \item $x\in[0^\circ,360^\circ]$; $\cos{x}=\dfrac{\sqrt{2}}{2}$ \\~
+                            \item $x\in[180^\circ,360^\circ]$; $\cos{x}=-1$ \\~
+                        \column{0.42\textwidth}
+                            \item $x\in[0^\circ,180^\circ]$; $\tan{x}=1$ \\~
+                            \item $x\in[180^\circ,270^\circ]$; $\sin{x}=\dfrac{\sqrt{3}}{2}$ \\~
+                            \item $x\in[0^\circ,360^\circ]$; $\cos{x}=\dfrac{\sqrt{3}}{2}$ \\~
+                            \item $x\in[0^\circ,270^\circ]$; $\tan{x}=-\sqrt{3}$ \\~
+                    \end{columns}
+                \end{itemize}
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                V enotski krožnici narišite vse kote, za ketere velja dani podatek.
+                Izračunajte velikosti kotov na štiri decimalna mesta natančno.
+                \begin{itemize}
+                    \begin{columns}
+                        \column{0.42\textwidth}
+                            \item $\sin{x}=0.6 $ \\~
+                            \item $\cos{x}=0.3 $ \\~
+                            \item $\tan{x}=0.8 $ \\~
+                            \item $\sin{x}=-\dfrac{2}{3} $ \\~
+                        \column{0.42\textwidth}
+                            \item $\cos{x}=-\dfrac{3}{5} $ \\~
+                            \item $\tan{x}=-\dfrac{3}{2} $ \\~
+                            \item $\tan{x}=2 $ \\~
+                    \end{columns}
+                \end{itemize}
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Natančno izračunajte.
+                $$\displaystyle \dfrac{\sin{315^\circ}+\cos{135^\circ}-\tan^2{120^\circ}}{\sin^2{150^\circ}-\cos^2{225^\circ}} $$
+            \end{exampleblock}}
+
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Poenostavite izraz.
+                $$\displaystyle 1+\left(\dfrac{\sin^2{x}+\tan^{-1}{x}\cdot\sin{x}\cdot\cos{x}}{\dfrac{1}{\sin^2{x}}-1}\right)^{-1} $$
+            \end{exampleblock}}
+
+
+            \only<4->{\begin{exampleblock}{Naloga}
+                Za $\tan{x}=-5$ in $270^\circ\leq x\leq 360^\circ$ izračunajte velikost kota $x$, na minuto natančno, in natančne vrednosti preostalih kotnih funkcij.
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Zapišite s kotno funkcijo kota, manjšega od $45^\circ$.
+                \begin{itemize}
+                    \item $\sin{355^\circ} $
+                    \item $\cos{291^\circ} $
+                    \item $\tan{174^\circ} $
+                    \item $\sin{247^\circ} $ 
+                \end{itemize}
+            \end{exampleblock}}
+
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Voznik podmornice na višini $-200~m$ vidi razbitino ladje, ki leži potopljena na višini $-1200~m$, pod kotom $8.4^\circ$.
+                Izračunajte razdaljo, ki jo mora prevoziti, da bo točno nad razbitino, če se vozi s hitrostjo $40~km/h$.
+                Koliko časa potrebuje za to pot?
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+
+
+        % \begin{frame}
+        %     \frametitle{Kotne funkcije poljubnih kotov}
+        % \end{frame}
 
     % \subsection{Izrazi s kotnimi funkcijami}
 
