@@ -8,23 +8,7 @@
     \tableofcontents[currentsection, hideothersubsections]
 \end{frame}
 
-    \subsection{Kotne funkcije poljubnih kotov}
-
-        \begin{frame}
-            \frametitle{Stopinje in radiani}
-
-            \begin{alertblock}{Radian}
-                Loku na krožnici, ki je enako dolg kot polmer krožnice, pripada središčni kot, velik $1 \ \textrm{radian}$.
-                $$ 1 \ \textrm{rad}=\frac{180^\circ}{\pi}\doteq 57,3^\circ$$
-            \end{alertblock}
-
-            \begin{exampleblock}{Pretvorba med stopinjami in radiani}
-                Naj bo $\varphi$ kot podan v radianih, $\phi$ pa njemu pripadajoči kot podan v stopinjah. Potem velja:
-                $$ \varphi = \frac{\pi}{180^\circ}\phi$$
-                in 
-                $$ \phi = \frac{180^\circ}{\pi} \varphi.$$
-            \end{exampleblock}
-        \end{frame}
+    \subsection{Definicija kotnih funkcij v pravokotnem trikotniku}
 
         
         \begin{frame}
@@ -132,6 +116,86 @@
         \end{frame}
 
 
+        %%% naloge
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                V pravokotnem trikotniku sta dolžini katet $a=12~cm$ in $b=5~cm$. 
+                Natančno izračunajte vrednosti kotnih funkcij kota $\beta$.
+            \end{exampleblock}}
+
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                V pravokotnem trikotniku sta dolžini katet $a=6~cm$ in $b=5~cm$. 
+                Natančno izračunajte vrednosti kotnih funkcij kota $\beta$.
+            \end{exampleblock}}
+
+
+            \only<4->{\begin{exampleblock}{Naloga}
+                V pravokotnem trikotniku je dolžina hipotenuze $c=10$ in dolžina katete $a=6$. 
+                Natančno izračunajte vrednosti kotnih funkcij za kot $\alpha$.
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Načrtajte pravokotni trikotnik $\triangle ABC$, v katerem velja:
+                \begin{itemize}
+                    \item $\sin\alpha=\dfrac{2}{5}$ \\~
+                    \item $\cos\alpha=\dfrac{5}{6}$ \\~
+                    \item $\tan\alpha=\dfrac{3}{7}$ \\~
+                    \item $\cos\beta=\dfrac{4}{7}$ \\~
+                    \item $\tan\beta=\dfrac{0.3}{0.2}$ \\~
+                \end{itemize}
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+
+        
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \subsection{Računanje vrednosti kotnih funkcij}
+
+        \begin{frame}
+            \frametitle{Vrednosti kotnih funkcij nekaterih kotov}
+
+            % \large\textbf{Vrednosti kotnih funkcij nekaterih kotov}
+            % ~\\
+            % \normalsize
+
+            \only<2->{\begin{block}{}
+                \begin{table}
+                    \centering
+                    \large
+                    \addtolength{\tabcolsep}{6pt}
+                    \renewcommand{\arraystretch}{1.5}                
+                    \begin{tabular}{||c|c||c|c|c|c||} 
+                        \hhline{|t:==:t:====:t|}
+                        \rowcolor[rgb]{0.863,0.745,0.745}  
+                                $\varphi~\left[\textrm{rad}\right] $ & $\varphi~\left[^\circ\right] $ & $\sin\varphi$ & $\cos\varphi$ & $\tan\varphi$ & $\cot\varphi$  \\ 
+                        \hhline{|:==::====:|}
+                                $0$ & $0$  & $0$ & $1$ & $0$ & /  \\ 
+                        \hline
+                                $\frac{\pi}{6}$ & $30^\circ$ & $\frac{1}{2}$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{3}}{3}$ & $\sqrt{3}$  \\ 
+                        \hline
+                                $\frac{\pi}{4}$ & $45^\circ$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{2}}{2}$ & $1$ & $1$  \\ 
+                        \hline
+                                $\frac{\pi}{3}$ & $60^\circ$ & $\frac{\sqrt{3}}{2}$ & $\frac{1}{2}$ & $\sqrt{3}$ & $\frac{\sqrt{3}}{3}$  \\ 
+                        \hline
+                                $\frac{\pi}{2}$ & $90^\circ$ & $1$ & $0$ & / & $0$  \\  
+                        % \hline
+                        %         $\pi$ & $180^\circ$ & $0$ & $-1$ & $0$ & /  \\ 
+                        % \hline
+                        %         $\frac{3\pi}{2}$ & $270^\circ$ & $-1$ & $0$ & / & $0$  \\ 
+                        \hhline{|b:==:b:====:b|}
+                    \end{tabular}
+                \end{table}
+            \end{block}}
+        \end{frame}
+
         \begin{frame}
             \frametitle{Kotne funkcije komplementarnih kotov}
 
@@ -147,7 +211,135 @@
                 $$ \cot\left({\frac{\pi}{2}-\varphi}\right) = \tan\varphi $$
             \end{alertblock}
         \end{frame}
-        
+
+
+        %%%% naloge
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Na štiri decimalna mesta natančno izračunajte vrednosti kotnih funkcij za kot $x$.
+                \begin{itemize}
+                    \item $x=55^\circ$
+                    \item $x=39^\circ$
+                    \item $x=12^\circ$
+                \end{itemize}
+            \end{exampleblock}}
+
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                Na minuto natančno izračunaj velikost kota, če je:
+                \begin{itemize}
+                    \item $\sin{x}=0.25$
+                    \item $\cos{x}=0.6$
+                    \item $\tan{x}=3$
+                    \item $\sin{x}=2$
+                    \item $\cos{x}=\dfrac{2}{5}$
+                \end{itemize}
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Natančno izračunajte vrednost izraza.
+                \begin{itemize}
+                    \begin{columns}
+                        \column{0.42\textwidth}
+                            \item $\sin{90^\circ}+\cos{0^\circ}+\tan{45^\circ}$ \\~\\~
+                            \item $\dfrac{\tan{30^\circ}}{\sin{60^\circ}}-\dfrac{\tan{60^\circ}}{\cos{60^\circ}}$ \\~\\~
+                            \item $\tan{30^\circ}\cdot\dfrac{\sin{45^\circ}}{\cos{30^\circ}}$ \\~\\~
+                            \item $\sin{60^\circ}+\cos{30^\circ}-\tan{45^\circ}$ \\~
+                        \column{0.42\textwidth}
+                            \item $\dfrac{\sin{30^\circ}}{\cos{30^\circ}}$ \\~\\~
+                            \item $\dfrac{1-\sin{45^\circ}}{\cos{45^\circ}}$ \\~\\~
+                            \item $\dfrac{\sin{90^\circ}}{1-\tan{30^\circ}}$ \\~\\~
+                            \item $\cos{45^\circ}+\sin{45^\circ}-3\tan{30^\circ}$ \\~
+                    \end{columns}
+                \end{itemize}
+            \end{exampleblock}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                V pravokotniku meri stranica $a=10~cm$, diagonala pa $14~cm$.
+                Izračunajte natančno dolžino druge stranice in velikost kota med stranico $a$ in diagonalo na dve decimalki stopinje natančno.
+            \end{exampleblock}}
+
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                V enakokrakem trikotniku meri višina na osnovnico $24~cm$, osnovnica pa $14~cm$.
+                Izračunajte dolžino kraka in velikost kota med krakom in osnovnico na dve decimalki stopinje natančno.
+            \end{exampleblock}}
+
+
+            \only<4->{\begin{exampleblock}{Naloga}
+                Enakokraki trapez ima osnovnici dolgi $45~cm$ in $23~cm$, višina pa je $60~cm$.
+                Izračunajte dolžino kraka in velikost kota med krakom in osnovnico na minuto natančno.
+            \end{exampleblock}}
+
+            \only<5->{\begin{exampleblock}{Naloga}
+                Vrh stolpa vidimo pod kotom $19.17^\circ$, če pa se mu približamo za $50~m$, ga vidimo pod kotom $34.23^\circ$.
+                Izračunajte višino stolpa, če je točka gledišča na višini $1.7~m$.
+            \end{exampleblock}}
+
+
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Koliko meri središčni kot nad lokom $AB$ v krogu s polmerom $8~cm$, če je $\lvert AB \rvert=6~cm$?
+                Kot izrazite v stopinjah na štiri decimalke natančno.
+            \end{exampleblock}}
+
+
+            \only<3->{\begin{exampleblock}{Naloga}
+                V enakokrakem trapezu z osnovnicama $12~cm$ in $6~cm$  kot ob osnovnici meri $\alpha=73^\circ$.
+                Izračunajte dolžino kraka.
+            \end{exampleblock}}
+
+
+            \only<4->{\begin{exampleblock}{Naloga}
+                Pravokotnik ima stranici dolgi $5~cm$ in $6~cm$. Na minuto natančno izračunajte kot,
+                ki ga oklepata diagonali v pravokotniku.
+            \end{exampleblock}}
+
+            \only<5->{\begin{exampleblock}{Naloga}
+                V rombu je dolžina diagonale $e$ dvakrat tolikšna kot dolžina diagonale $f$.
+                Na minuto natančno izračunajte velikost kota $\alpha$.
+            \end{exampleblock}}
+
+
+        \end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+    \subsection{Zveze med kotnimi funkcijami}
+
+        \begin{frame}
+            \frametitle{Zveze med kotnimi funkcijami}
+                           
+            
+        \end{frame}
+
+
+        %%% naloge
+
+
+
+
+
+
+
+
+    \subsection{Razširitev pojma kotne funkcije do polnega kota}
+
 
         \begin{frame}
             \frametitle{Kotne funkcije v enotskem krogu}
@@ -468,7 +660,7 @@
                     \end{alertblock}
 
                     \begin{alertblock}{}
-                        \textbf{Kotangens} kota $\varphi$ je enak abscisi presečišča premičnega kraka z vodoravno tangento enotskega korga v točko $(0,1)$.
+                        \textbf{Kotangens} kota $\varphi$ je enak abscisi presečišča premičnega kraka z vodoravno tangento enotskega korga v točki $(0,1)$.
                     \end{alertblock}
 
                 \column{0.55\textwidth}
@@ -796,6 +988,25 @@
             \end{columns}
 
         \end{frame}
+
+
+        
+        \begin{frame}
+            \frametitle{Stopinje in radiani}
+
+            \begin{alertblock}{Radian}
+                Loku na krožnici, ki je enako dolg kot polmer krožnice, pripada središčni kot, velik $1 \ \textrm{radian}$.
+                $$ 1 \ \textrm{rad}=\frac{180^\circ}{\pi}\doteq 57,3^\circ$$
+            \end{alertblock}
+
+            \begin{exampleblock}{Pretvorba med stopinjami in radiani}
+                Naj bo $\varphi$ kot podan v radianih, $\phi$ pa njemu pripadajoči kot podan v stopinjah. Potem velja:
+                $$ \varphi = \frac{\pi}{180^\circ}\phi$$
+                in 
+                $$ \phi = \frac{180^\circ}{\pi} \varphi.$$
+            \end{exampleblock}
+        \end{frame}
+
 
 
         \begin{frame}
@@ -1866,110 +2077,110 @@
             \frametitle{Kotne funkcije poljubnih kotov}
         \end{frame}
 
-    \subsection{Izrazi s kotnimi funkcijami}
+    % \subsection{Izrazi s kotnimi funkcijami}
 
-        \begin{frame}
-            \frametitle{Izrazi s kotnimi funkcijami}
-        \end{frame}
+    %     \begin{frame}
+    %         \frametitle{Izrazi s kotnimi funkcijami}
+    %     \end{frame}
 
-    \subsection{Adicijski izreki}
+    % \subsection{Adicijski izreki}
 
-        \begin{frame}
-            \frametitle{Adicijski izreki}
-        \end{frame}
+    %     \begin{frame}
+    %         \frametitle{Adicijski izreki}
+    %     \end{frame}
 
-    \subsection{Posledice adicijskih izrekov}
+    % \subsection{Posledice adicijskih izrekov}
 
-        \begin{frame}
-            \frametitle{Posledice adicijskih izrekov}
-        \end{frame}
+    %     \begin{frame}
+    %         \frametitle{Posledice adicijskih izrekov}
+    %     \end{frame}
 
-    \subsection{Grafa funkcij sinus in kosinus}
+    % \subsection{Grafa funkcij sinus in kosinus}
 
-        \begin{frame}
-            \frametitle{Grafa funkcij sinus in kosinus}
-        \end{frame}
+    %     \begin{frame}
+    %         \frametitle{Grafa funkcij sinus in kosinus}
+    %     \end{frame}
 
-    \subsection{Grafa funkcij tangens in kotangens}
+    % \subsection{Grafa funkcij tangens in kotangens}
 
-        \begin{frame}
-            \frametitle{Grafa funkcij tangens in kotangens}
-        \end{frame}
+    %     \begin{frame}
+    %         \frametitle{Grafa funkcij tangens in kotangens}
+    %     \end{frame}
 
-    \subsection{Krožne funkcije}
+    % \subsection{Krožne funkcije}
 
-        \begin{frame}
-            \frametitle{Krožne funkcije}
-        \end{frame}
+    %     \begin{frame}
+    %         \frametitle{Krožne funkcije}
+    %     \end{frame}
 
-    \subsection{Trigonometrijske enačbe}
+    % \subsection{Trigonometrijske enačbe}
 
-        \begin{frame}
-            \frametitle{Trigonometrijske enačbe}
-        \end{frame}
+    %     \begin{frame}
+    %         \frametitle{Trigonometrijske enačbe}
+    %     \end{frame}
 
-    \subsection{Problemske naloge}
+    % \subsection{Problemske naloge}
 
-        \begin{frame}
-            \frametitle{Problemske naloge}
-        \end{frame}
+    %     \begin{frame}
+    %         \frametitle{Problemske naloge}
+    %     \end{frame}
 
-        \begin{frame}
-            \frametitle{Vaje, vaje, vaje ...}
+    %     \begin{frame}
+    %         \frametitle{Vaje, vaje, vaje ...}
 
-            \only<2->{\begin{exampleblock}{Naloga 1}
-                Natančno izračunaj $\displaystyle \tan\left(\frac{\pi}{4}-\alpha\right)$, če je $\displaystyle \sin\alpha=-\frac{5}{13}$ in $\pi<\alpha<\frac{3\pi}{2}$.
-            \end{exampleblock}}
+    %         \only<2->{\begin{exampleblock}{Naloga 1}
+    %             Natančno izračunaj $\displaystyle \tan\left(\frac{\pi}{4}-\alpha\right)$, če je $\displaystyle \sin\alpha=-\frac{5}{13}$ in $\pi<\alpha<\frac{3\pi}{2}$.
+    %         \end{exampleblock}}
 
-            \only<3->{\begin{exampleblock}{Naloga 2}
-                Poenostavi izraz $\displaystyle \sin\left(x+\frac{5\pi}{2}\right)-\cos\left(2\pi-x\right)+\cos\left(x+\frac{3\pi}{2}\right)-\sin\left(x-\pi\right)$.
-            \end{exampleblock}}
+    %         \only<3->{\begin{exampleblock}{Naloga 2}
+    %             Poenostavi izraz $\displaystyle \sin\left(x+\frac{5\pi}{2}\right)-\cos\left(2\pi-x\right)+\cos\left(x+\frac{3\pi}{2}\right)-\sin\left(x-\pi\right)$.
+    %         \end{exampleblock}}
 
-            \only<4->{\begin{exampleblock}{Naloga 3}
-                Pokaži, da velja: $\displaystyle \frac{\cot x\cdot\sin{2x}-1}{\left(\cos(-x)-\sin(-x)\right)^2-1}=\cot{2x}$.
-            \end{exampleblock}}
+    %         \only<4->{\begin{exampleblock}{Naloga 3}
+    %             Pokaži, da velja: $\displaystyle \frac{\cot x\cdot\sin{2x}-1}{\left(\cos(-x)-\sin(-x)\right)^2-1}=\cot{2x}$.
+    %         \end{exampleblock}}
 
-            \note{Avtorica nalog: Darja Turk}
-        \end{frame}
+    %         \note{Avtorica nalog: Darja Turk}
+    %     \end{frame}
 
-        \begin{frame}
-            \begin{exampleblock}{Naloga 4}
-                Na sliki je graf funkcije $\displaystyle f(x)=A\sin\left(Bx+C\right)+D$. Določi $A>0$, $B>0$, $C$ in $D$. $C$ izberi tako, da bo $|C|$ najmanjše možno število. Kratko utemelji.
+    %     \begin{frame}
+    %         \begin{exampleblock}{Naloga 4}
+    %             Na sliki je graf funkcije $\displaystyle f(x)=A\sin\left(Bx+C\right)+D$. Določi $A>0$, $B>0$, $C$ in $D$. $C$ izberi tako, da bo $|C|$ najmanjše možno število. Kratko utemelji.
             
-                \begin{figure}[H]
-                    \centering
-                    % \includegraphics[scale=0.3]{Slike in skice/vaje_vaje_vaje_sinus.png}
-                \end{figure}
-            \end{exampleblock}
+    %             \begin{figure}[H]
+    %                 \centering
+    %                 % \includegraphics[scale=0.3]{Slike in skice/vaje_vaje_vaje_sinus.png}
+    %             \end{figure}
+    %         \end{exampleblock}
 
-            \note{Avtorica nalog: Darja Turk}
+    %         \note{Avtorica nalog: Darja Turk}
 
-        \end{frame}
+    %     \end{frame}
 
-        \begin{frame}
-            \only<1->{\begin{exampleblock}{Naloga 5}
-                Brez uporabe računala natančno izračunaj. Zapiši vmesne izračune.
-                \begin{enumerate}[a]
-                    \item $\displaystyle \sin\frac{23\pi}{6}$
-                    \item $\displaystyle \cos\left(-1590^\circ\right)$
-                \end{enumerate}
-            \end{exampleblock}}
+    %     \begin{frame}
+    %         \only<1->{\begin{exampleblock}{Naloga 5}
+    %             Brez uporabe računala natančno izračunaj. Zapiši vmesne izračune.
+    %             \begin{enumerate}[a]
+    %                 \item $\displaystyle \sin\frac{23\pi}{6}$
+    %                 \item $\displaystyle \cos\left(-1590^\circ\right)$
+    %             \end{enumerate}
+    %         \end{exampleblock}}
 
-            \only<2->{\begin{exampleblock}{Naloga 6}
-                Reši enačbi:
-                \begin{enumerate}[a]
-                    \item $\displaystyle \sin{2x}+\sqrt{2}\cos x=0$
-                    \item $\displaystyle 2\cos^2{3x}-\cos{3x}-1=0$
-                \end{enumerate}
-            \end{exampleblock}}
+    %         \only<2->{\begin{exampleblock}{Naloga 6}
+    %             Reši enačbi:
+    %             \begin{enumerate}[a]
+    %                 \item $\displaystyle \sin{2x}+\sqrt{2}\cos x=0$
+    %                 \item $\displaystyle 2\cos^2{3x}-\cos{3x}-1=0$
+    %             \end{enumerate}
+    %         \end{exampleblock}}
 
-            \note{Avtorica nalog: Darja Turk}
+    %         \note{Avtorica nalog: Darja Turk}
 
-        \end{frame}
+    %     \end{frame}
 
 
-    \subsection{Naklonski kot premice, kot med dvema premicama}
+    % \subsection{Naklonski kot premice, kot med dvema premicama}
         
-        \begin{frame}
-            \frametitle{Naklonski kot premice, kot med dvema premicama}
-        \end{frame}
+    %     \begin{frame}
+    %         \frametitle{Naklonski kot premice, kot med dvema premicama}
+    %     \end{frame}
