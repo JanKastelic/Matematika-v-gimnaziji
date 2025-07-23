@@ -57,60 +57,93 @@
             %         }
             %     \end{tikzpicture}                    
             % \end{figure}
-
+            \vskip-2em
             \begin{columns}
-                \column{0.48\textwidth}
-                        \textbf{Sinus} kota $\alpha$ je količnik med kotu $\alpha$ nasprotno kateto in hipotenuzo: $$\sin\alpha = \frac{\textrm{nasprotna kateta}}{\textrm{hipotenuza}}.$$
-                        \textbf{Kosinus} kota $\alpha$ je količnik med kotu $\alpha$ priležno kateto in hipotenuzo: $$\cos\alpha = \frac{\textrm{priležna kateta}}{\textrm{hipotenuza}}.$$
-                        \textbf{Tangens} kota $\alpha$ je količnik med kotu $\alpha$ nasprotno kateto in priležno kateto: $$\tan\alpha = \frac{\textrm{nasprotna kateta}}{\textrm{priležna kateta}}.$$
+                \column{0.41\textwidth}
 
-                \column{0.48\textwidth}
-                    \begin{figure}
-                        \begin{tikzpicture}
+                    \only<2->{\begin{block}{}
+                        \begin{figure}
+                            \begin{tikzpicture}
                             % \clip (0,0) rectangle (14.000000,10.000000);
                             {\footnotesize
-                            
+
                             % Marking point C by circle
                             \draw [line width=0.016cm] (2.700000,3.500000) circle (0.040000);%
                             \draw (2.700000,3.500000) node [anchor=south] { $C$ };%
-                            
+
                             % Marking point A by circle
                             \draw [line width=0.016cm] (1.500000,1.500000) circle (0.040000);%
                             \draw (1.500000,1.500000) node [anchor=north] { $A$ };%
-                            
+
                             % Marking point B by circle
-                            \draw [line width=0.016cm] (6.000000,1.540000) arc (90:269:0.040000 and 0.040000) -- (6.000000,1.460000);%
+                            \draw [line width=0.016cm] (6.000000,1.500000) circle (0.040000);%
                             \draw (6.000000,1.500000) node [anchor=north] { $B$ };%
-                            
-                            % Drawing segment A C
-                            \draw [line width=0.016cm] (1.520580,1.534300) -- (2.679420,3.465700);%
-                            
-                            % Drawing segment A B
-                            \draw [line width=0.016cm] (1.540000,1.500000) -- (5.960000,1.500000);%
-                            
-                            % Drawing segment B C
-                            \draw [line width=0.016cm] (5.965792,1.520732) -- (2.734208,3.479268);%
-                            
+
                             % Marking point \alpha
-                            \draw (1.800000,1.500000) node [anchor=south] { $\alpha$ };%
-                            
+                            \draw (1.900000,1.550000) node [anchor=south] { $\alpha$ };%
+
                             % Marking point \frac{\pi}{2}
-                            \draw (2.800000,3.500000) node [anchor=north] { $\frac{\pi}{2}$ };%
-                            
-                            % Marking point h
-                            \draw (3.750000,1.500000) node [anchor=north] { $h$ };%
-                            
-                            % Marking point pk
-                            \draw (2.100000,2.500000) node [anchor=east] { $pk$ };%
-                            
-                            % Marking point nk
-                            \draw (4.350000,2.500000) node [anchor=south west] { $nk$ };%
+                            \draw (2.900000,3.100000) node [anchor=north] { $\gamma=90^\circ$ };%
+
+                            % Marking point \beta
+                            \draw (5.100000,1.500000) node [anchor=south] { $\beta$ };%
+
+                            % Changing color 255 0 0
+                            \definecolor{r255g0b0}{rgb}{1.000000,0.000000,0.000000}%
+                            \color{r255g0b0}% 
+
+                            % Drawing segment A B
+                            \draw [line width=0.032cm] (1.540000,1.500000) -- (5.960000,1.500000);%
+
+                            % Marking point c
+                            \draw (3.750000,1.500000) node [anchor=north] { $c$ };%
+
+                            % Changing color 0 255 0
+                            \definecolor{r0g255b0}{rgb}{0.000000,1.000000,0.000000}%
+                            \color{r0g255b0}% 
+
+                            % Drawing segment A C
+                            \draw [line width=0.032cm] (1.520580,1.534300) -- (2.679420,3.465700);%
+
+                            % Marking point b
+                            \draw (2.100000,2.500000) node [anchor=south east] { $b$ };%
+
+                            % Changing color 0 0 255
+                            \definecolor{r0g0b255}{rgb}{0.000000,0.000000,1.000000}%
+                            \color{r0g0b255}% 
+
+                            % Drawing segment B C
+                            \draw [line width=0.032cm] (5.965792,1.520732) -- (2.734208,3.479268);%
+
+                            % Marking point a
+                            \draw (4.350000,2.500000) node [anchor=south west] { $a$ };%
+                            \color{black}
                             }
                             \end{tikzpicture}
                         \end{figure}
-                        ~\\
-                        ~\\
-                        \textbf{Kotangens} kota $\alpha$ je količnik med kotu $\alpha$ priležno kateto in nasprotno kateto: $$\cot\alpha = \frac{\textrm{priležna kateta}}{\textrm{nasprotna kateta}}.$$
+                    \end{block}}
+
+                    \only<5->{\begin{alertblock}{}
+                        \textbf{Tangens} kota $\alpha$ je razmerje med dolžinama kotu $\alpha$ nasprotne katete in priležne katete: 
+                        $$\tan\alpha = \frac{\textrm{nasprotna kateta}}{\textrm{priležna kateta}}=\dfrac{\textcolor{blue}{a}}{\textcolor{green}{b}}.$$
+                    \end{alertblock}}
+
+                \column{0.55\textwidth}                        
+
+                    \only<3->{\begin{alertblock}{}
+                        \textbf{Sinus kota $\alpha$} je razmerje med dolžinama kotu $\alpha$ nasprotne katete in hipotenuze: 
+                        $$\sin\alpha = \dfrac{\textrm{nasprotna kateta}}{\textrm{hipotenuza}}=\dfrac{\textcolor{blue}{a}}{\textcolor{red}{c}}.$$
+                    \end{alertblock}}
+
+                    \only<4->{\begin{alertblock}{}
+                        \textbf{Kosinus kota $\alpha$} je razmerje med dolžinama kotu $\alpha$ priležne katete in hipotenuze: 
+                        $$\cos\alpha = \frac{\textrm{priležna kateta}}{\textrm{hipotenuza}}=\dfrac{\textcolor{green}{b}}{\textcolor{red}{c}}.$$
+                    \end{alertblock}}
+            
+                    % \only<6->{\begin{alertblock}{}
+                    %     \textbf{Kotangens kota $\alpha$} je razmerje med dolžinama kotu $\alpha$ priležne katete in nasprotne katete: 
+                    %     $$\cot\alpha = \frac{\textrm{priležna kateta}}{\textrm{nasprotna kateta}}=\dfrac{\textcolor{green}{b}}{\textcolor{blue}{a}}.$$
+                    % \end{alertblock}}
             \end{columns}
 
         \end{frame}
@@ -165,25 +198,25 @@
             % \large\textbf{Vrednosti kotnih funkcij nekaterih kotov}
             % ~\\
             % \normalsize
-
+            \vskip-1em
             \only<2->{\begin{block}{}
                 \begin{table}
                     \centering
-                    \large
-                    \addtolength{\tabcolsep}{6pt}
-                    \renewcommand{\arraystretch}{1.5}                
+                    % \large
+                    \addtolength{\tabcolsep}{8pt}
+                    \renewcommand{\arraystretch}{2.15}                
                     \begin{tabular}{||c|c||c|c|c|c||} 
                         \hhline{|t:==:t:====:t|}
                         \rowcolor[rgb]{0.863,0.745,0.745}  
                                 $\varphi~\left[\textrm{rad}\right] $ & $\varphi~\left[^\circ\right] $ & $\sin\varphi$ & $\cos\varphi$ & $\tan\varphi$ & $\cot\varphi$  \\ 
                         \hhline{|:==::====:|}
-                                $0$ & $0$  & $0$ & $1$ & $0$ & /  \\ 
+                                $0$ & $0^\circ$  & $0$ & $1$ & $0$ & /  \\ 
                         \hline
-                                $\frac{\pi}{6}$ & $30^\circ$ & $\frac{1}{2}$ & $\frac{\sqrt{3}}{2}$ & $\frac{\sqrt{3}}{3}$ & $\sqrt{3}$  \\ 
+                                $\frac{\pi}{6}$ & $30^\circ$ & $\dfrac{1}{2}$ & $\dfrac{\sqrt{3}}{2}$ & $\dfrac{\sqrt{3}}{3}$ & $\sqrt{3}$  \\ 
                         \hline
-                                $\frac{\pi}{4}$ & $45^\circ$ & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{2}}{2}$ & $1$ & $1$  \\ 
+                                $\frac{\pi}{4}$ & $45^\circ$ & $\dfrac{\sqrt{2}}{2}$ & $\dfrac{\sqrt{2}}{2}$ & $1$ & $1$  \\ 
                         \hline
-                                $\frac{\pi}{3}$ & $60^\circ$ & $\frac{\sqrt{3}}{2}$ & $\frac{1}{2}$ & $\sqrt{3}$ & $\frac{\sqrt{3}}{3}$  \\ 
+                                $\frac{\pi}{3}$ & $60^\circ$ & $\dfrac{\sqrt{3}}{2}$ & $\dfrac{1}{2}$ & $\sqrt{3}$ & $\dfrac{\sqrt{3}}{3}$  \\ 
                         \hline
                                 $\frac{\pi}{2}$ & $90^\circ$ & $1$ & $0$ & / & $0$  \\  
                         % \hline
@@ -199,19 +232,38 @@
         \begin{frame}
             \frametitle{Kotne funkcije komplementarnih kotov}
 
-            \vskip-1em
-            \begin{alertblock}{}
+            % \vskip-1em
+            \only<2->{\begin{alertblock}{}
                 Sinus kota je enak kosinusu komplementarnega kota in obratno.
-                $$ \sin\left({\frac{\pi}{2}-\varphi}\right) = \cos\varphi $$
-                $$ \cos\left({\frac{\pi}{2}-\varphi}\right) = \sin\varphi $$
-            \end{alertblock}
+                $$ \sin\left({90^\circ-\varphi}\right) = \cos\varphi $$
+                $$ \cos\left({90^\circ-\varphi}\right) = \sin\varphi $$
+            \end{alertblock}}
 
-            \begin{alertblock}{}
+            \only<3->{\begin{alertblock}{}
                 Tangens kota je enak kotangensu komplementarnega kota in obratno.
-                $$ \tan\left({\frac{\pi}{2}-\varphi}\right) = \cot\varphi $$
-                $$ \cot\left({\frac{\pi}{2}-\varphi}\right) = \tan\varphi $$
-            \end{alertblock}
+                $$ \tan\left({90^\circ-\varphi}\right) = \cot\varphi $$
+                $$ \cot\left({90^\circ-\varphi}\right) = \tan\varphi $$
+            \end{alertblock}}
         \end{frame}
+
+        % radiani:
+        % \begin{frame}
+        %     \frametitle{Kotne funkcije komplementarnih kotov}
+
+        %     \vskip-1em
+        %     \begin{alertblock}{}
+        %         Sinus kota je enak kosinusu komplementarnega kota in obratno.
+        %         $$ \sin\left({\frac{\pi}{2}-\varphi}\right) = \cos\varphi $$
+        %         $$ \cos\left({\frac{\pi}{2}-\varphi}\right) = \sin\varphi $$
+        %     \end{alertblock}
+
+        %     \begin{alertblock}{}
+        %         Tangens kota je enak kotangensu komplementarnega kota in obratno.
+        %         $$ \tan\left({\frac{\pi}{2}-\varphi}\right) = \cot\varphi $$
+        %         $$ \cot\left({\frac{\pi}{2}-\varphi}\right) = \tan\varphi $$
+        %     \end{alertblock}
+        % \end{frame}
+
 
 
         %%%% naloge
@@ -324,7 +376,37 @@
         \begin{frame}
             \frametitle{Zveze med kotnimi funkcijami}
                            
-            
+            \vskip-1em
+            \begin{columns}
+                \column{0.46\textwidth}
+                    \begin{block}{}
+                        $$\displaystyle \tan\varphi=\dfrac{b}{a}=\dfrac{\frac{a}{c}}{\frac{b}{c}}=\dfrac{\sin\varphi}{\cos\varphi}$$
+                    \end{block}
+
+                    \begin{block}{}
+                        $$\displaystyle \cot\varphi=\dfrac{a}{b}=\dfrac{\frac{b}{c}}{\frac{a}{c}}=\dfrac{\cos\varphi}{\sin\varphi}$$
+                    \end{block}
+
+                    \begin{block}{}
+                        $$\displaystyle \tan\varphi\cdot\cot\varphi=\dfrac{a}{b}\cdot\dfrac{b}{a}=1$$
+                    \end{block}
+
+                \column{0.46\textwidth}
+                    \begin{block}{}
+                        
+                        $$\displaystyle \begin{aligned}
+                            a^2&+b^2 =c^2 \\
+                            \dfrac{a^2}{c^2}&+\dfrac{b^2}{c^2} =\dfrac{c^2}{c^2} \\
+                            \left(\dfrac{a}{c}\right)^2&+\left(\dfrac{b}{c}\right)^2 =1 \\
+                            \sin^2\varphi&+\cos^2\varphi =1
+                        \end{aligned} $$
+                    \end{block}
+
+                    \begin{block}{}
+                        
+                    \end{block}
+
+            \end{columns}
         \end{frame}
 
 

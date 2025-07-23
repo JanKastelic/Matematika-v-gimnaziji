@@ -1,4 +1,4 @@
-area 10 10 60 40
+area 10 10 65 40
 
 point A 15 15
 point B 60 15
@@ -8,9 +8,6 @@ cmark_t C
 cmark_b A
 cmark_b B
 
-drawsegment A C
-drawsegment A B
-drawsegment B C
 
 point \alpha 18 15
 mark_t \alpha
@@ -18,10 +15,23 @@ mark_t \alpha
 point \frac{\pi}{2} 28 35
 mark_b \frac{\pi}{2}
 
-midpoint pk A C
-midpoint nk B C
-midpoint h A B
+point \beta 55 15
+mark_t \beta
 
-mark_b h
-mark_l pk
-mark_rt nk
+midpoint b A C
+midpoint a B C
+midpoint c A B
+
+
+double
+color 255 0 0
+drawsegment A B
+mark_b c
+
+color 0 255 0
+drawsegment A C
+mark_lt b
+
+color 0 0 255
+drawsegment B C
+mark_rt a
