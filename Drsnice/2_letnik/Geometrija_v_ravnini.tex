@@ -334,9 +334,13 @@
 
         \begin{frame}
             \begin{alertblock}{Definicija}
+                \begin{columns}
+                    \column{0.6\textwidth}
                 Dva poltraka s skupnim izhodiščem določata dva \textbf{kota}.
                 Izhodišče poltrakov imenujemo \textbf{vrh} kota, poltraka pa imenujemo \textbf{kraka} kota.
                 
+                \column{0.38\textwidth}
+                \vskip-2em
                 \begin{figure}[H]
                     \begin{tikzpicture}
                         % \clip (0,0) rectangle (14.000000,10.000000);
@@ -388,7 +392,7 @@
                         \draw (3.200000,2.800000) node [anchor=west] { $\varphi$ };%
 
                         % Marking point zun
-                        \draw (1.000000,3.000000) node  { zunanjost kota };%
+                        \draw (1.800000,3.500000) node  { zunanjost kota };%
 
                         % Marking point not
                         \draw (5.000000,3.000000) node  { notranjost kota };%
@@ -396,6 +400,7 @@
                         }
                     \end{tikzpicture}
                 \end{figure}
+            \end{columns}
             \end{alertblock}
 
             \begin{block}{}
@@ -410,6 +415,106 @@
                     \item $\alpha, \beta, \gamma, \dots$ -- z grškimi črkami.
                 \end{itemize}
             \end{block}
+        \end{frame}
+
+
+        \begin{frame}
+            \begin{alertblock}{Definicija}
+                Če poltraka s skupnim izhodiščem ležita na isti premici, vendar na različnih straneh izhodišča,
+                določata dva enaka konveksna kota -- \textbf{iztegnjena kota}.
+
+                \begin{figure}[H]
+                    \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+
+                        % Drawing line V h
+                        \draw [line width=0.016cm] (1.000000,2.000000) -- (2.960777,1.607845);%
+                        \draw [line width=0.016cm] (3.039223,1.592155) -- (5.000000,1.200000);%
+
+                        % Marking point V by circle
+                        \draw [line width=0.016cm] (3.000000,1.600000) circle (0.040000);%
+                        \draw (3.000000,1.600000) node [anchor=north] { $V$ };%
+
+                        % Changing color 139 0 0
+                        \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+                        \color{r139g0b0}% 
+
+                        % Drawing arc V h 180.00
+                        \draw [line width=0.032cm] (3.500000,1.500000) -- (3.500534,1.502706) arc (349:360:0.509902 and 0.509902) --(3.509902,1.600000) arc (0:168:0.509902 and 0.509902) -- (2.500000,1.700000);%
+
+                        % Marking point \varphi
+                        \draw (3.000000,2.050000) node [anchor=south] { $\varphi$ };%
+
+                        % Drawing arrow C A 1.00
+                        \draw [line width=0.032cm] (2.651137,1.959148) -- (2.500000,1.700000);%
+                        \draw [line width=0.032cm] (2.651137,1.959148) -- (2.538342,1.791430);%
+                        \draw [line width=0.032cm] (2.578914,1.989435) -- (2.500000,1.700000);%
+                        \draw [line width=0.032cm] (2.578914,1.989435) -- (2.538342,1.791430);%
+                        \color{black}
+                        }
+                    \end{tikzpicture}
+                \end{figure}
+            \end{alertblock}
+
+            \begin{alertblock}{Definicija}
+                Če se poltraka na isti premici prekrivata, določata \textbf{polni kot} ali \textbf{ničelni kot}.
+
+                \begin{figure}[H]
+                    \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+
+                        % Drawing line V h
+                        % \draw [line width=0.016cm] (1.000000,2.000000) -- (2.960777,1.607845);%
+                        \draw [line width=0.016cm] (3.039223,1.592155) -- (5.000000,1.200000);%
+
+                        % Marking point V by circle
+                        \draw [line width=0.016cm] (3.000000,1.600000) circle (0.040000);%
+                        \draw (3.000000,1.600000) node [anchor=north] { $V$ };%
+
+                        % Changing color 139 0 0
+                        \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+                        \color{r139g0b0}% 
+
+                        % Drawing arc V h 360.00
+                        \draw [line width=0.032cm] (3.000000,1.600000) circle (0.509902);%
+
+                        % Marking point \varphi
+                        \draw (3.000000,2.050000) node [anchor=south] { $\varphi$ };%
+
+                        % Drawing arrow k h 1.00
+                        \draw [line width=0.032cm] (3.331960,1.251479) -- (3.500000,1.500000);%
+                        \draw [line width=0.032cm] (3.331960,1.251479) -- (3.455661,1.411322);%
+                        \draw [line width=0.032cm] (3.402008,1.216456) -- (3.500000,1.500000);%
+                        \draw [line width=0.032cm] (3.402008,1.216456) -- (3.455661,1.411322);%
+                        \color{black}
+                        }
+                    \end{tikzpicture} ~~~~~
+                    \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+
+                        % Drawing line V h
+                        % \draw [line width=0.016cm] (1.000000,2.000000) -- (2.960777,1.607845);%
+                        \draw [line width=0.016cm] (3.039223,1.592155) -- (5.000000,1.200000);%
+
+                        % Marking point V by circle
+                        \draw [line width=0.016cm] (3.000000,1.600000) circle (0.040000);%
+                        \draw (3.000000,1.600000) node [anchor=north] { $V$ };%
+
+                        % Changing color 139 0 0
+                        \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+                        \color{r139g0b0}% 
+
+                        % Marking point \varphi
+                        \draw (3.500000,1.500000) node [anchor=south] { $\varphi$ };%
+                        \color{black}
+                        }
+                    \end{tikzpicture}
+                \end{figure}
+
+            \end{alertblock}
         \end{frame}
 
 
