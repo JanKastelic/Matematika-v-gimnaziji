@@ -518,6 +518,211 @@
         \end{frame}
 
 
+        \begin{frame}
+            \begin{alertblock}{Definicija}
+                Kota s skupnim vrhom, ki imata en skupen krak, presek njunih notranjosti pa je prazen, sta \textbf{sosedna kota}.
+
+                \begin{figure}[H]
+                    \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+
+                        % Drawing line V P
+                        \draw [line width=0.016cm] (4.000000,1.000000) -- (1.539223,1.492155);%
+                        % \draw [line width=0.016cm] (1.460777,1.507845) -- (1.000000,1.600000);%
+
+                        % Drawing line V Q
+                        % \draw [line width=0.016cm] (1.000000,1.333333) -- (1.462053,1.487351);%
+                        \draw [line width=0.016cm] (1.537947,1.512649) -- (4.000000,2.333333);%
+
+                        % Drawing line V R
+                        % \draw [line width=0.016cm] (1.000000,1.000000) -- (1.471716,1.471716);%
+                        \draw [line width=0.016cm] (1.528284,1.528284) -- (3.500000,3.500000);%
+
+                        % Marking point V by circle
+                        \draw [line width=0.016cm] (1.500000,1.500000) circle (0.040000);%
+                        \draw (1.500000,1.500000) node [anchor=east] { $V$ };%
+
+                        % Changing color 139 0 0
+                        \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+                        \color{r139g0b0}% 
+
+                        % Drawing arc V P 29.74
+                        \draw [line width=0.016cm] (3.000000,1.200000) -- (3.001601,1.208118) arc (349:360:1.529706 and 1.529706) --(3.029706,1.500000) arc (0:18:1.529706 and 1.529706) -- (2.951206,1.983735);%
+
+                        % Marking point \varphi
+                        \draw (3.200000,1.500000) node  { $\varphi$ };%
+
+                        % Changing color 0 139 0
+                        \definecolor{r0g139b0}{rgb}{0.000000,0.545098,0.000000}%
+                        \color{r0g139b0}% 
+
+                        % Drawing arc V Q 26.57
+                        \draw [line width=0.016cm] (3.000000,2.000000) -- (2.994996,2.014768) arc (19:45:1.581139 and 1.581139);%
+
+                        % Marking point \psi
+                        \draw (3.000000,2.500000) node  { $\psi$ };%
+                        \color{black}
+                        }
+                    \end{tikzpicture}
+                \end{figure}
+            % \end{alertblock}
+
+            % \begin{alertblock}{Definicija}
+                Sosedna kota, katerih kraka, ki  nista skupna, ležita na isti premici, sta \textbf{sokota}.
+                
+                \begin{figure}[H]
+                    \begin{tikzpicture}
+                        % \clip (0,0) rectangle (14.000000,10.000000);
+                        {\footnotesize
+
+                        % Drawing line V P
+                        \draw [line width=0.016cm] (1.200000,1.806667) -- (3.460351,1.505287);%
+                        \draw [line width=0.016cm] (3.539649,1.494713) -- (6.000000,1.166667);%
+
+                        % Drawing line V Q
+                        % \draw [line width=0.016cm] (2.700000,1.100000) -- (3.464223,1.482111);%
+                        \draw [line width=0.016cm] (3.535777,1.517889) -- (6.000000,2.750000);%
+
+                        % Marking point V by circle
+                        \draw [line width=0.016cm] (3.500000,1.500000) circle (0.040000);%
+                        \draw (3.500000,1.500000) node [anchor=north] { $V$ };%
+
+                        % Changing color 139 0 0
+                        \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+                        \color{r139g0b0}% 
+
+                        % Drawing arc V P 34.16
+                        \draw [line width=0.016cm] (5.000000,1.300000) -- (5.001995,1.315578) arc (353:360:1.513275 and 1.513275) --(5.013275,1.500000) arc (0:26:1.513275 and 1.513275) -- (4.853514,2.176757);%
+
+                        % Marking point \varphi
+                        \draw (5.200000,1.800000) node  { $\varphi$ };%
+
+                        % Changing color 0 139 0
+                        \definecolor{r0g139b0}{rgb}{0.000000,0.545098,0.000000}%
+                        \color{r0g139b0}% 
+
+                        % Drawing arc V Q 145.84
+                        \draw [line width=0.016cm] (4.500000,2.000000) -- (4.496176,2.007577) arc (27:172:1.118034 and 1.118034) -- (2.391774,1.647764);%
+
+                        % Marking point \psi
+                        \draw (3.000000,2.700000) node  { $\psi$ };%
+                        \color{black}
+                        }
+                    \end{tikzpicture}
+                \end{figure}
+            \end{alertblock}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \begin{alertblock}{Definicija}
+                Tri nekolinearne točke $A$, $B$ in $C$ določajo \textbf{trikotnik} $\triangle ABC$.
+                Točke $A$, $B$ in $C$ so \textbf{oglišča} trikotnika, daljice $AB$, $BC$ in $AC$ so njegove \textbf{stranice}.
+
+            \begin{figure}
+                \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+                    
+                    % Marking point A by circle
+                    \draw<2-> [line width=0.016cm] (2.000000,1.500000) circle (0.040000);%
+                    \draw<2-> (1.800000,1.530000) node [anchor=north west] { $A$ };%
+                    
+                    % Marking point B by circle
+                    \draw<2-> [line width=0.016cm] (6.000000,1.500000) circle (0.040000);%
+                    \draw<2-> (5.900000,1.500000) node [anchor=north] { $B$ };%
+                    
+                    % Marking point C by circle
+                    \draw<2-> [line width=0.016cm] (3.000000,4.000000) circle (0.040000);%
+                    \draw<2-> (2.950000,4.100000) node [anchor=south] { $C$ };%
+                    
+                    % Drawing line A B
+                    \draw<4-> [line width=0.016cm] (1.000000,1.500000) -- (1.960000,1.500000);%
+                    \draw<4-> [line width=0.016cm] (2.040000,1.500000) -- (5.960000,1.500000);%
+                    \draw<4-> [line width=0.016cm] (6.040000,1.500000) -- (7.000000,1.500000);%
+                    
+                    % Drawing line B C
+                    \draw<4-> [line width=0.016cm] (6.600000,1.000000) -- (6.030729,1.474393);%
+                    \draw<4-> [line width=0.016cm] (5.969271,1.525607) -- (3.030729,3.974393);%
+                    \draw<4-> [line width=0.016cm] (2.969271,4.025607) -- (2.400000,4.500000);%
+                    
+                    % Drawing line A C
+                    \draw<4-> [line width=0.016cm] (1.800000,1.000000) -- (1.985144,1.462861);%
+                    \draw<4-> [line width=0.016cm] (2.014856,1.537139) -- (2.985144,3.962861);%
+                    \draw<4-> [line width=0.016cm] (3.014856,4.037139) -- (3.200000,4.500000);%
+                    
+                    % Marking point c
+                    \draw<2-> (4.000000,1.500000) node [anchor=north] { $c$ };%
+                    
+                    % Marking point a
+                    \draw<2-> (4.500000,2.750000) node [anchor=south west] { $a$ };%
+                    
+                    % Marking point b
+                    \draw<2-> (2.500000,2.750000) node [anchor=south east] { $b$ };%
+                    
+                    % Marking point \gamma
+                    \draw<3-> (3.100000,3.700000) node [anchor=north] { $\gamma$ };%
+                    
+                    % Marking point \gamma'
+                    \draw<4-> (2.700000,4.200000) node [anchor=north] { $\gamma'$ };%
+                    
+                    % Marking point \beta
+                    \draw<3-> (5.300000,1.500000) node [anchor=south] { $\beta$ };%
+                    
+                    % Marking point \beta'
+                    \draw<4-> (6.200000,1.500000) node [anchor=south] { $\beta'$ };%
+                    
+                    % Marking point \alpha
+                    \draw<3-> (2.300000,1.500000) node [anchor=south] { $\alpha$ };%
+                    
+                    % Marking point \alpha'
+                    \draw<4-> (1.700000,1.500000) node [anchor=south] { $\alpha'$ };%
+                    
+                    % Drawing segment A B
+                    \draw<2-> [line width=0.032cm] (2.040000,1.500000) -- (5.960000,1.500000);%
+                    
+                    % Drawing segment B C
+                    \draw<2-> [line width=0.032cm] (5.969271,1.525607) -- (3.030729,3.974393);%
+                    
+                    % Drawing segment A C
+                    \draw<2-> [line width=0.032cm] (2.014856,1.537139) -- (2.985144,3.962861);%
+                    }
+                \end{tikzpicture}
+            \end{figure}
+
+                Koti $\alpha$, $\beta$ in $\gamma$ so \textbf{notranji koti}, 
+                njihovi sokoti $\alpha'$, $\beta'$ in $\gamma'$ pa so \textbf{zunanji koti} trikotnika.
+
+            \end{alertblock}
+
+            \begin{block}{}
+                Trikotnik je \textbf{pozitivno orientiran}, če si njegova oglišča sledijo v nasprotni smeri vrtenja urinega kazalca; 
+                če si sledijo v smeri vrtenja urinega kazalca, pa je \textbf{negativno orientiran}.
+            \end{block}
+        \end{frame}
+
+
+        \begin{frame}
+            \begin{alertblock}{Definicija}
+                Točke $A_1, A_2, A_3, \dots, A_n$ v ravnini, od katerih nobene zaporedne tri niso kolinearne, določajo \textbf{$n$-kotnik}.
+
+                Točke $A_1, A_2, A_3, \dots, A_n$ so \textbf{oglišča} $n$-kotnika;
+                daljice, ki povezujejo sosedni oglišči, $A_1A_2, A_2A_3, \dots, A_nA_1$ so \textbf{stranice} $n$-kotnika;
+                daljice, ki povezujejo po dve nesosedni oglišči, pa so \textbf{diagonale} $n$-kotnika.
+            \end{alertblock}
+
+            \begin{block}{}
+                Poljuben $n$-kotnika ima $$\dfrac{n(n-3)}{2}$$ diagonal -- iz vsakega od $n$ oglišč gre $n-3$ diagonal, vsaka pa je šteta dvakrat.
+            \end{block}
+
+            \begin{block}{}
+                Če za vsako nosilko stranice $n$-kotnika velja, da preostala oglišča ležijo na isti strani te nosilke, je $n$-kotnik \textbf{konveksen}.
+            \end{block}
+        \end{frame}
+
+
 
 
         %%%%% naloge
@@ -2142,7 +2347,6 @@
             % \end{figure}
 
             \begin{figure}
-                
                 \begin{tikzpicture}
                     % \clip (0,0) rectangle (14.000000,10.000000);
                     {\footnotesize
