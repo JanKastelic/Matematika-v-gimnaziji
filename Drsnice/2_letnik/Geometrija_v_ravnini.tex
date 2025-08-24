@@ -698,8 +698,8 @@
             \end{alertblock}
 
             \begin{block}{}
-                Trikotnik je \textbf{pozitivno orientiran}, če si njegova oglišča sledijo v nasprotni smeri vrtenja urinega kazalca; 
-                če si sledijo v smeri vrtenja urinega kazalca, pa je \textbf{negativno orientiran}.
+                Trikotnik je \textbf{pozitivno orientiran}, če si njegova oglišča sledijo v nasprotni smeri vrtenja urnega kazalca; 
+                če si sledijo v smeri vrtenja urnega kazalca, pa je \textbf{negativno orientiran}.
             \end{block}
         \end{frame}
 
@@ -800,7 +800,145 @@
     \subsection{Skladnost in merjenje}
 
         \begin{frame}
-            \frametitle{Kot}
+            \frametitle{Skladnost}
+
+            \begin{alertblock}{Definicija}
+                Dva lika $L$ in $L'$ sta \textbf{skladna}, če lahko lik $L$ prenesemo na lik $L'$ tako,
+                da se popolnoma prekrijeta.
+
+                Znak za skladnost je $\cong$.
+            \end{alertblock}
+
+            \begin{block}{}
+                \textbf{Skladnost} je v množici ravninskih likov \textit{ekvivalenčna relacija}, saj je:
+                \begin{itemize}
+                    \item \textit{refleksivna}: $L\cong L'$ -- vsaka množica je skladna sama s seboj;
+                    \item \textit{simetrična}: $L\cong L' \Rightarrow L'\cong L$ -- če je prva množica skladna z drugo, je tudi druga skladna s prvo;
+                    \item \textit{tranzitivna}: $L\cong L' \land L'\cong L'' \rightarrow L\cong L''$ -- če je prva množica skladna z drugo in druga skladna s tretjo, 
+                            je tudi prva množica skladna s tretjo množico.
+                \end{itemize}
+            \end{block}
+        \end{frame}
+
+
+        \begin{frame}
+            \begin{alertblock}{Definicija}
+                Kot, ki je skladen s svojim kotom, je \textbf{pravi kot}.
+
+                \begin{figure}[H]
+                    \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+
+                    % Drawing line V A
+                    \draw [line width=0.016cm] (1.000000,1.500000) -- (2.960000,1.500000);%
+                    \draw [line width=0.016cm] (3.040000,1.500000) -- (5.000000,1.500000);%
+
+                    % Drawing line V B
+                    % \draw [line width=0.016cm] (3.000000,1.000000) -- (3.000000,1.460000);%
+                    \draw [line width=0.016cm] (3.000000,1.540000) -- (3.000000,3.500000);%
+
+                    % Marking point V by circle
+                    \draw [line width=0.016cm] (3.000000,1.500000) circle (0.040000);%
+
+                    % Changing color 139 0 0
+                    \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+                    \color{r139g0b0}% 
+
+                    % Drawing arc V A 90.00
+                    \draw [line width=0.032cm] (3.800000,1.500000) arc (360:360:0.800000 and 0.800000) --(3.800000,1.500000) arc (0:90:0.800000 and 0.800000);%
+
+                    % Changing color 0 139 0
+                    \definecolor{r0g139b0}{rgb}{0.000000,0.545098,0.000000}%
+                    \color{r0g139b0}% 
+
+                    % Drawing arc V B 90.00
+                    \draw [line width=0.032cm] (3.000000,2.200000) arc (90:180:0.700000 and 0.700000);%
+                    \color{black}
+                    }
+                    \end{tikzpicture}
+
+                \end{figure}
+                
+            \end{alertblock}
+
+            \begin{block}{}
+                Če si kraka sledita v nasprotni smeri vrtenja urnega kazalca, je \textbf{orientacija kota pozitivna}, 
+                če pa si sledita v smeri vrtenja urnega kazalca, pa je \textbf{orientacija kota negativna}.
+
+                \begin{figure}[H]
+                    \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+
+                    % Drawing segment A b
+                    \draw [line width=0.016cm] (1.500000,1.500000) -- (4.500000,1.500000);%
+
+                    % Drawing segment A C
+                    \draw [line width=0.016cm] (1.500000,1.500000) -- (4.500000,2.785714);%
+
+                    % Changing color 139 0 0
+                    \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+                    \color{r139g0b0}% 
+
+                    % Drawing arc A B 23.20
+                    \draw [line width=0.032cm] (3.000000,1.500000) arc (360:360:1.500000 and 1.500000) --(3.000000,1.500000) arc (0:23:1.500000 and 1.500000) -- (2.878718,2.090879);%
+
+                    % Drawing arrow Bb U 1.00
+                    \draw [line width=0.032cm] (2.923918,1.794304) -- (2.878718,2.090879);%
+                    \draw [line width=0.032cm] (2.923918,1.794304) -- (2.906321,1.995655);%
+                    \draw [line width=0.032cm] (2.999137,1.816108) -- (2.878718,2.090879);%
+                    \draw [line width=0.032cm] (2.999137,1.816108) -- (2.906321,1.995655);%
+
+                    % Marking point +
+                    \draw (2.600000,1.700000) node  { $+$ };%
+                    \color{black}
+                    }
+                    \end{tikzpicture} ~~~~~
+                    \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+
+                    % Drawing segment A b
+                    \draw [line width=0.016cm] (1.500000,1.500000) -- (4.500000,1.500000);%
+
+                    % Drawing segment A C
+                    \draw [line width=0.016cm] (1.500000,1.500000) -- (4.500000,2.785714);%
+
+                    % Changing color 139 0 0
+                    \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+                    \color{r139g0b0}% 
+
+                    % Drawing arc A B 23.20
+                    \draw [line width=0.032cm] (3.000000,1.500000) arc (360:360:1.500000 and 1.500000) --(3.000000,1.500000) arc (0:23:1.500000 and 1.500000) -- (2.878718,2.090879);%
+
+                    % Drawing arrow Bb B 1.00
+                    \draw [line width=0.032cm] (3.001963,1.799994) -- (3.000000,1.500000);%
+                    \draw [line width=0.032cm] (3.001963,1.799994) -- (2.987703,1.598379);%
+                    \draw [line width=0.032cm] (2.924252,1.790280) -- (3.000000,1.500000);%
+                    \draw [line width=0.032cm] (2.924252,1.790280) -- (2.987703,1.598379);%
+
+                    % Marking point -
+                    \draw (2.600000,1.700000) node  { $-$ };%
+                    \color{black}
+                    }
+                    \end{tikzpicture}
+                \end{figure}
+            \end{block}
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Merjenje}
+
+            \begin{block}{}
+                Dve daljici $AB$ in $CD$, ki nista skladni, lahko premaknemo na poljubni premici v tako lego,
+                da levi krajišči sovpadata in da eno od obeh desnih krajišč, npr. $D$ leži med $A$ in $B$.
+                V tem primeru je daljica $AB$ \textbf{daljša} od daljice $CD$ oziroma je daljica $CD$ \textbf{krajša} od daljice $AB$.
+            \end{block}
+
+            \begin{alertblock}{Arhimedov aksiom}
+                
+            \end{alertblock}
         \end{frame}
 
 
@@ -1113,7 +1251,7 @@
 
         % \begin{frame}
             
-        %     Če smo kot  odmerili v smeri, ki je nasprotna smeri vrtenja urinega kazalca, smo točko $T$ zavrteli v \textbf{pozitivni smeri} za kot $\alpha$, sicer pa v \textbf{negativni smeri}. 
+        %     Če smo kot  odmerili v smeri, ki je nasprotna smeri vrtenja urnega kazalca, smo točko $T$ zavrteli v \textbf{pozitivni smeri} za kot $\alpha$, sicer pa v \textbf{negativni smeri}. 
         %     Namesto smeri vrtenja lahko usmerimo kot: vrtenju v pozitivni smeri ustreza \textbf{pozitivni kot}, vrtenju v negativni smeri pa \textbf{negativni kot}. \\
         %     ~\\
 
