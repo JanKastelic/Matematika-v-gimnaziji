@@ -793,6 +793,801 @@
 \section{Skladnost in merjenje}
 
 
+    \begin{definicija}
+        Dva lika $L$ in $L'$ sta \textbf{skladna}, če lahko lik $L$ prenesemo na lik $L'$ tako,
+        da se popolnoma prekrijeta.
+
+        Znak za skladnost je $\cong$.
+    \end{definicija}
+
+    
+        \textbf{Skladnost} je v množici ravninskih likov \textit{ekvivalenčna relacija}, saj je:
+        \begin{itemize}
+            \item \textit{refleksivna}: $L\cong L'$ -- vsaka množica je skladna sama s seboj;
+            \item \textit{simetrična}: $L\cong L' \Rightarrow L'\cong L$ -- če je prva množica skladna z drugo, je tudi druga skladna s prvo;
+            \item \textit{tranzitivna}: $L\cong L' \land L'\cong L'' \rightarrow L\cong L''$ -- če je prva množica skladna z drugo in druga skladna s tretjo, 
+                    je tudi prva množica skladna s tretjo množico.
+        \end{itemize}
+    
+
+~
+
+
+    \begin{definicija}
+        Kot, ki je skladen s svojim kotom, je \textbf{pravi kot}.
+
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+            % \clip (0,0) rectangle (14.000000,10.000000);
+            {\footnotesize
+
+            % Drawing line V A
+            \draw [line width=0.016cm] (1.000000,1.500000) -- (2.960000,1.500000);%
+            \draw [line width=0.016cm] (3.040000,1.500000) -- (5.000000,1.500000);%
+
+            % Drawing line V B
+            % \draw [line width=0.016cm] (3.000000,1.000000) -- (3.000000,1.460000);%
+            \draw [line width=0.016cm] (3.000000,1.540000) -- (3.000000,3.500000);%
+
+            % Marking point V by circle
+            \draw [line width=0.016cm] (3.000000,1.500000) circle (0.040000);%
+
+            % Changing color 139 0 0
+            \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+            \color{r139g0b0}% 
+
+            % Drawing arc V A 90.00
+            \draw [line width=0.032cm] (3.800000,1.500000) arc (360:360:0.800000 and 0.800000) --(3.800000,1.500000) arc (0:90:0.800000 and 0.800000);%
+
+            % Changing color 0 139 0
+            \definecolor{r0g139b0}{rgb}{0.000000,0.545098,0.000000}%
+            \color{r0g139b0}% 
+
+            % Drawing arc V B 90.00
+            \draw [line width=0.032cm] (3.000000,2.200000) arc (90:180:0.700000 and 0.700000);%
+            \color{black}
+            }
+            \end{tikzpicture}
+
+        \end{figure}
+        
+    \end{definicija}
+
+    
+        Če si kraka sledita v nasprotni smeri vrtenja urnega kazalca, je \textbf{orientacija kota pozitivna}, 
+        če pa si sledita v smeri vrtenja urnega kazalca, pa je \textbf{orientacija kota negativna}.
+
+        \begin{figure}[H]
+                \centering
+            \begin{tikzpicture}
+            % \clip (0,0) rectangle (14.000000,10.000000);
+            {\footnotesize
+
+            % Drawing segment A b
+            \draw [line width=0.016cm] (1.500000,1.500000) -- (4.500000,1.500000);%
+
+            % Drawing segment A C
+            \draw [line width=0.016cm] (1.500000,1.500000) -- (4.500000,2.785714);%
+
+            % Changing color 139 0 0
+            \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+            \color{r139g0b0}% 
+
+            % Drawing arc A B 23.20
+            \draw [line width=0.032cm] (3.000000,1.500000) arc (360:360:1.500000 and 1.500000) --(3.000000,1.500000) arc (0:23:1.500000 and 1.500000) -- (2.878718,2.090879);%
+
+            % Drawing arrow Bb U 1.00
+            \draw [line width=0.032cm] (2.923918,1.794304) -- (2.878718,2.090879);%
+            \draw [line width=0.032cm] (2.923918,1.794304) -- (2.906321,1.995655);%
+            \draw [line width=0.032cm] (2.999137,1.816108) -- (2.878718,2.090879);%
+            \draw [line width=0.032cm] (2.999137,1.816108) -- (2.906321,1.995655);%
+
+            % Marking point +
+            \draw (2.600000,1.700000) node  { $+$ };%
+            \color{black}
+            }
+            \end{tikzpicture} ~~~~~
+            \begin{tikzpicture}
+            % \clip (0,0) rectangle (14.000000,10.000000);
+            {\footnotesize
+
+            % Drawing segment A b
+            \draw [line width=0.016cm] (1.500000,1.500000) -- (4.500000,1.500000);%
+
+            % Drawing segment A C
+            \draw [line width=0.016cm] (1.500000,1.500000) -- (4.500000,2.785714);%
+
+            % Changing color 139 0 0
+            \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+            \color{r139g0b0}% 
+
+            % Drawing arc A B 23.20
+            \draw [line width=0.032cm] (3.000000,1.500000) arc (360:360:1.500000 and 1.500000) --(3.000000,1.500000) arc (0:23:1.500000 and 1.500000) -- (2.878718,2.090879);%
+
+            % Drawing arrow Bb B 1.00
+            \draw [line width=0.032cm] (3.001963,1.799994) -- (3.000000,1.500000);%
+            \draw [line width=0.032cm] (3.001963,1.799994) -- (2.987703,1.598379);%
+            \draw [line width=0.032cm] (2.924252,1.790280) -- (3.000000,1.500000);%
+            \draw [line width=0.032cm] (2.924252,1.790280) -- (2.987703,1.598379);%
+
+            % Marking point -
+            \draw (2.600000,1.700000) node  { $-$ };%
+            \color{black}
+            }
+            \end{tikzpicture}
+        \end{figure}
+    
+
+
+
+
+        ~
+
+    
+        Daljici $AB$ in $CD$, ki nista skladni, lahko premaknemo na poljubni premici tako,
+        da levi krajišči sovpadata in da eno od desnih krajišč, npr. $D$ leži med $A$ in $B$.
+        V tem primeru je daljica $AB$ \textbf{daljša} od daljice $CD$ oziroma je daljica $CD$ \textbf{krajša} od daljice $AB$.
+    
+
+    \begin{aksiom}[Arhimedov aksiom]
+        Obstaja tako naravno število $n$, pri katerem je vsota $n$ krajših daljic $CD$ daljša od daljice $AB$,
+        vsota $n-1$ krajših daljic $CD$ pa je kvečjemu skladna z daljico $AB$.
+        $$n\cdot |CD|>|AB| \quad \quad (n-1)\cdot |CD|\leq |AB|$$
+
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+            % \clip (0,0) rectangle (14.000000,10.000000);
+            {\footnotesize
+
+            % Drawing line A B
+            \draw [line width=0.016cm] (1.000000,1.500000) -- (1.460000,1.500000);%
+            \draw [line width=0.016cm] (1.540000,1.500000) -- (2.460000,1.500000);%
+            \draw [line width=0.016cm] (2.540000,1.500000) -- (3.460000,1.500000);%
+            \draw [line width=0.016cm] (3.540000,1.500000) -- (4.460000,1.500000);%
+            \draw [line width=0.016cm] (4.540000,1.500000) -- (5.460000,1.500000);%
+            \draw [line width=0.016cm] (5.540000,1.500000) -- (6.460000,1.500000);%
+            \draw [line width=0.016cm] (6.540000,1.500000) -- (7.160000,1.500000);%
+            \draw [line width=0.016cm] (7.240000,1.500000) -- (7.460000,1.500000);%
+            \draw [line width=0.016cm] (7.540000,1.500000) -- (8.100000,1.500000);%
+
+            % Marking point A by circle
+            \draw [line width=0.016cm] (1.500000,1.500000) circle (0.040000);%
+            \draw (1.500000,1.500000) node [anchor=south] { $A$ };%
+
+            % Marking point B by circle
+            \draw [line width=0.016cm] (7.200000,1.500000) circle (0.040000);%
+            \draw (7.200000,1.500000) node [anchor=south] { $B$ };%
+
+            % Marking point C by circle
+            \draw [line width=0.016cm] (1.500000,1.500000) circle (0.040000);%
+            \draw (1.500000,1.500000) node [anchor=north] { $C$ };%
+
+            % Marking point D by circle
+            \draw [line width=0.016cm] (2.500000,1.500000) circle (0.040000);%
+            \draw (2.500000,1.500000) node [anchor=north] { $D$ };%
+
+            % Marking point E by circle
+            \draw [line width=0.016cm] (3.500000,1.500000) circle (0.040000);%
+
+            % Marking point F by circle
+            \draw [line width=0.016cm] (4.500000,1.500000) circle (0.040000);%
+
+            % Marking point G by circle
+            \draw [line width=0.016cm] (5.500000,1.500000) circle (0.040000);%
+
+            % Marking point H by circle
+            \draw [line width=0.016cm] (6.500000,1.500000) circle (0.040000);%
+
+            % Marking point I by circle
+            \draw [line width=0.016cm] (7.500000,1.500000) circle (0.040000);%
+            }
+            \end{tikzpicture}
+        \end{figure}
+    \end{aksiom}
+
+    % 
+        Daljico $CD$, s katero smo izmerili daljico $AB$, imenujemo \textbf{enotska daljica}.
+        Tako smo daljici $AB$ priredili natančno določeno število -- \textbf{dolžino} daljice $AB$ oziroma \textbf{razdaljo} točk $A$ in $B$.
+        $$ |AB|=d(A,B)$$
+    % 
+    
+        % Daljico $CD$ imenujemo \textbf{enotska daljica}.
+        % Daljici $AB$ smo priredili natančno določeno število -- \textbf{dolžino} daljice $AB$ oziroma \textbf{razdaljo} točk $A$ in $B$.
+
+        % $$ |AB|=d(A,B)$$
+    
+
+
+
+
+
+    \begin{aksiom}
+        Če je $AB$ poljubna daljica, $A'$ pa točka na poljubnem poltraku, obstaja na tem poltraku natančno določena točka $B'$,
+        da je daljica $A'B'$ skladna z daljico $AB$.
+
+        $$A'B'\cong AB$$
+    \end{aksiom}
+
+    \begin{izrek}
+        Skladni daljici imata enako dolžino.
+        % $$|A'B'|=|AB|$$
+    \end{izrek}
+
+    ~ 
+
+    \begin{aksiom}
+        Naj daljici $AB$ in $BC$ ležita na isti premici in naj imata skupno le točko $B$.
+        Daljici $A'B'$ in $B'C'$ naj ležita na tej ali neki drugi premici in naj imata skupno točko $B'$.
+        Če velja $AB\cong A'B'$ in $BC\cong B'C'$, potem velja tudi $AC\cong A'C'$.
+    \end{aksiom}
+
+    \begin{izrek}
+        Dolžina vsote daljic je enaka vsoti dolžin posameznih daljic.
+    \end{izrek}
+
+
+
+
+    \subsection*{Enote}
+
+
+    
+        Osnovna enota za merjenje dolžine je \textbf{meter}.
+
+        Iz nje izpeljane enote pa so \textit{decimeter}, \textit{centimeter}, \textit{milimeter}, \textit{kilometer} itd.
+        $$ 1~m=10~dm=100~cm=1000~mm$$  $$1~km=1000~m$$ 
+    
+
+    
+        Enota za merjenje kotov je \textbf{kotna stopinja} -- velikost $\dfrac{1}{360}$ polnega kota.
+        
+        Izpeljani enoti sta \textit{(kotna) minuta} in \textit{(kotna) sekunda}.
+        $$1^\circ=60'=3600''$$ 
+    
+
+    
+        Velikost kota nič je $0^\circ$, pravega kota je $90^\circ$, iztegnjenega kota je $180^\circ$, polnega kota pa je $360^\circ$.
+    
+
+~
+
+
+    \begin{definicija}
+        Kota $\varphi$ in $\psi$, katerih vsota meri $180^\circ$, sta \textbf{suplementarna kota}.
+
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+            % \clip (0,0) rectangle (14.000000,10.000000);
+            {\footnotesize
+
+            % Drawing line V P
+            \draw [line width=0.016cm] (1.200000,1.500000) -- (3.460000,1.500000);%
+            \draw [line width=0.016cm] (3.540000,1.500000) -- (6.000000,1.500000);%
+
+            % Drawing line V Q
+            % \draw [line width=0.016cm] (3.100000,1.100000) -- (3.471716,1.471716);%
+            \draw [line width=0.016cm] (3.528284,1.528284) -- (5.000000,3.000000);%
+
+            % Marking point V by circle
+            \draw [line width=0.016cm] (3.500000,1.500000) circle (0.040000);%
+
+            % Changing color 139 0 0
+            \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+            \color{r139g0b0}% 
+
+            % Drawing arc V P 45.00
+            \draw [line width=0.016cm] (5.000000,1.500000) arc (360:360:1.500000 and 1.500000) --(5.000000,1.500000) arc (0:45:1.500000 and 1.500000);%
+
+            % Marking point \varphi
+            \draw (5.200000,1.80000) node  { $\varphi$ };%
+
+            % Changing color 0 139 0
+            \definecolor{r0g139b0}{rgb}{0.000000,0.545098,0.000000}%
+            \color{r0g139b0}% 
+
+            % Drawing arc V Q 135.00
+            \draw [line width=0.016cm] (4.500000,2.500000) arc (45:180:1.414214 and 1.414214);%
+
+            % Marking point \psi
+            \draw (3.000000,2.650000) node  { $\psi$ };%
+            \color{black}
+            }
+            \end{tikzpicture}
+        \end{figure}
+    \end{definicija}
+
+                
+    \begin{definicija}
+        Kota $\varphi$ in $\psi$, katerih vsota meri $90^\circ$, sta \textbf{komplementarna kota}.
+
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+            % \clip (0,0) rectangle (14.000000,10.000000);
+            {\footnotesize
+
+            % Drawing line V P
+            % \draw [line width=0.016cm] (2.800000,1.500000) -- (3.460000,1.500000);%
+            \draw [line width=0.016cm] (3.540000,1.500000) -- (5.800000,1.500000);%
+
+            % Drawing line V Q
+            % \draw [line width=0.016cm] (3.050000,1.100000) -- (3.470104,1.473425);%
+            \draw [line width=0.016cm] (3.529896,1.526575) -- (5.412500,3.200000);%
+
+            % Drawing line V R
+            % \draw [line width=0.016cm] (3.500000,1.100000) -- (3.500000,1.460000);%
+            \draw [line width=0.016cm] (3.500000,1.540000) -- (3.500000,3.200000);%
+
+            % Marking point V by circle
+            \draw [line width=0.016cm] (3.500000,1.500000) circle (0.040000);%
+
+            % Changing color 139 0 0
+            \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+            \color{r139g0b0}% 
+
+            % Drawing arc V P 41.63
+            \draw [line width=0.016cm] (5.000000,1.500000) arc (360:360:1.500000 and 1.500000) --(5.000000,1.500000) arc (0:41:1.500000 and 1.500000) -- (4.621114,2.496546);%
+
+            % Marking point \varphi
+            \draw (5.200000,1.800000) node  { $\varphi$ };%
+
+            % Changing color 0 139 0
+            \definecolor{r0g139b0}{rgb}{0.000000,0.545098,0.000000}%
+            \color{r0g139b0}% 
+
+            % Drawing arc V Q 48.37
+            \draw [line width=0.016cm] (4.400000,2.300000) -- (4.394865,2.305740) arc (42:90:1.204159 and 1.204159);%
+
+            % Marking point \psi
+            \draw (4.000000,2.800000) node  { $\psi$ };%
+            \color{black}
+            }
+            \end{tikzpicture}
+        \end{figure}
+    \end{definicija}
+
+    
+        Sokota sta vedno suplementarna kota.
+    
+
+
+
+
+    \subsection*{Skladnost trikotnikov}
+
+
+    \begin{definicija}
+        Dva trikotnika sta \textbf{skladna}, če imata paroma skladne vse stranice in tem stranicam nasprotne kote.
+    \end{definicija}
+
+    \begin{aksiom}
+        Dva trikotnika sta skladna, če se ujemata v dveh stranicah in v vmesnem kotu.
+    \end{aksiom}
+
+    \begin{izrek}
+        Trikotnika $\triangle ABC$ in $\triangle A'B'C'$ sta skladna, če se ujemata:
+        \begin{enumerate}
+            \item v vseh treh stranicah;
+            \item v eni stranici in obeh priležnih kotih;
+            \item v dveh stranicah in kotu, ki leži nasproti daljši od obeh stranic.
+        \end{enumerate}
+    \end{izrek}
+
+
+
+
+%%%% naloge
+
+
+~\\~~\\~\\
+
+
+    \begin{naloga}
+        Izračunajte dolžino daljice, če ena polovica meri $2x-7$ enot, druga polovica pa $x+8$ enot.
+    \end{naloga}
+
+    \begin{naloga}
+        Izračunaj dolžino $x$ daljice $AB$, če je točka $S$ njeno razpolovišče, točka $R$ pa razpolovišče daljice $SB$ in je $\lvert SR \rvert = \dfrac{x}{3}-1$.
+    \end{naloga}
+
+    \begin{naloga}
+        Izračunajte velikosti kotov $\angle AVM$ in $\angle FVE$, če poltrak $VM$ obakrat razpolavlja kot.
+
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                % \clip (0,0) rectangle (14.000000,10.000000);
+                {\footnotesize
+
+                % Marking point V by circle
+                \draw [line width=0.016cm] (1.500000,1.500000) circle (0.040000);%
+                \draw (1.470000,1.530000) node [anchor=north west] { $V$ };%
+
+                % Marking point A by circle
+                \draw [line width=0.016cm] (3.000000,2.000000) circle (0.040000);%
+                \draw (3.000000,2.000000) node [anchor=north] { $A$ };%
+
+                % Drawing line V A
+                % \draw [line width=0.016cm] (1.200000,1.400000) -- (1.462053,1.487351);%
+                \draw [line width=0.016cm] (1.537947,1.512649) -- (2.962053,1.987351);%
+                \draw [line width=0.016cm] (3.037947,2.012649) -- (3.500000,2.166667);%
+
+                % Marking point M by circle
+                \draw [line width=0.016cm] (2.666950,2.566878) circle (0.040000);%
+                \draw (2.666950,2.666878) node [anchor=south] { $M$ };%
+
+                % Marking point B by circle
+                \draw [line width=0.016cm] (2.132124,2.949283) circle (0.040000);%
+                \draw (2.162124,2.919283) node [anchor=south east] { $B$ };%
+
+                % Drawing line V B
+                % \draw [line width=0.016cm] (1.369151,1.200000) -- (1.484008,1.463336);%
+                \draw [line width=0.016cm] (1.515992,1.536664) -- (2.116132,2.912618);%
+                \draw [line width=0.016cm] (2.148115,2.985947) -- (2.372326,3.500000);%
+
+                % Drawing line V M
+                % \draw [line width=0.016cm] (1.200000,1.225727) -- (1.470478,1.473010);%
+                \draw [line width=0.016cm] (1.529522,1.526990) -- (2.637428,2.539888);%
+                \draw [line width=0.016cm] (2.696472,2.593868) -- (3.500000,3.328489);%
+
+                % Marking point {3x+6^\circ}
+                \draw (3.033475,2.283439) node  { ${3x+6^\circ}$ };%
+
+                % Marking point {4x}
+                \draw (2.299537,2.658080) node  { ${4x}$ };%
+                }
+            \end{tikzpicture} ~
+            \begin{tikzpicture}
+                % \clip (0,0) rectangle (14.000000,10.000000);
+                {\footnotesize
+
+                % Marking point V by circle
+                \draw [line width=0.016cm] (4.000000,4.000000) circle (0.040000);%
+                \draw (3.970000,4.070000) node [anchor=south west] { $V$ };%
+
+                % Marking point M by circle
+                \draw [line width=0.016cm] (4.000000,2.500000) circle (0.040000);%
+                \draw (3.970000,2.530000) node [anchor=north west] { $M$ };%
+
+                % Drawing line V M
+                \draw [line width=0.016cm] (4.000000,2.200000) -- (4.000000,2.460000);%
+                \draw [line width=0.016cm] (4.000000,2.540000) -- (4.000000,3.960000);%
+                % \draw [line width=0.016cm] (4.000000,4.040000) -- (4.000000,4.200000);%
+
+                % Marking point F by circle
+                \draw [line width=0.016cm] (2.756444,3.161211) circle (0.040000);%
+                \draw (2.756444,3.161211) node [anchor=south] { $F$ };%
+
+                % Marking point E by circle
+                \draw [line width=0.016cm] (5.243556,3.161211) circle (0.040000);%
+                \draw (5.243556,3.161211) node [anchor=south] { $E$ };%
+
+                % Drawing line V E
+                % \draw [line width=0.016cm] (3.703488,4.200000) -- (3.966838,4.022368);%
+                \draw [line width=0.016cm] (4.033162,3.977632) -- (5.210395,3.183578);%
+                \draw [line width=0.016cm] (5.276718,3.138843) -- (6.000000,2.650983);%
+
+                % Drawing line V F
+                % \draw [line width=0.016cm] (4.296512,4.200000) -- (4.033162,4.022368);%
+                \draw [line width=0.016cm] (3.966838,3.977632) -- (2.789605,3.183578);%
+                \draw [line width=0.016cm] (2.723282,3.138843) -- (2.000000,2.650983);%
+
+                % Marking point {8x-16^\circ}
+                \draw (3.278222,2.830605) node  { ${8x-16^\circ}$ };%
+
+                % Marking point {4x+20^\circ}
+                \draw (4.721778,2.830605) node  { ${4x+20^\circ}$ };%
+                }
+            \end{tikzpicture}
+
+
+        \end{figure}
+    \end{naloga}
+
+
+    \begin{multicols}{2}
+    \begin{naloga}
+        Izračunajte velikosti kotov $\alpha$ in $\beta$, če je $\alpha=\beta$.
+        Podatke razberite s skice.
+
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                % \clip (0,0) rectangle (14.000000,10.000000);
+                {\footnotesize
+
+                % Marking point A by circle
+                \draw [line width=0.016cm] (3.000000,3.000000) circle (0.040000);%
+
+                % Drawing segment A B
+                \draw [line width=0.016cm] (3.000000,1.500000) -- (3.000000,2.960000);%
+
+                % Drawing segment A C
+                \draw [line width=0.016cm] (3.030729,2.974393) -- (4.500000,1.750000);%
+
+                % Drawing segment A D
+                \draw [line width=0.016cm] (2.969271,2.974393) -- (1.500000,1.750000);%
+
+                % Drawing segment A E
+                \draw [line width=0.016cm] (3.006576,3.039456) -- (3.166667,4.000000);%
+
+                % Marking point \beta
+                \draw (3.500000,2.200000) node  { $\beta$ };%
+
+                % Marking point \alpha
+                \draw (2.500000,2.200000) node  { $\alpha$ };%
+
+                % Marking point {125^\circ}
+                \draw (3.500000,3.300000) node  { ${125^\circ}$ };%
+
+                % Marking point {135^\circ}
+                \draw (2.500000,3.300000) node  { ${135^\circ}$ };%
+                }
+            \end{tikzpicture}
+
+        \end{figure}
+    \end{naloga}
+
+
+
+
+    \begin{naloga}
+        Iz podatkov na skici izračunajte neznano velikost kota $x$.
+
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                % \clip (0,0) rectangle (14.000000,10.000000);
+                {\footnotesize
+
+                % Marking point A by circle
+                \draw [line width=0.016cm] (3.000000,3.000000) circle (0.040000);%
+
+                % Drawing line A B
+                \draw [line width=0.016cm] (3.000000,2.000000) -- (3.000000,2.960000);%
+                \draw [line width=0.016cm] (3.000000,3.040000) -- (3.000000,3.700000);%
+
+                % Drawing line A C
+                \draw [line width=0.016cm] (4.200000,2.000000) -- (3.030729,2.974393);%
+                \draw [line width=0.016cm] (2.969271,3.025607) -- (2.160000,3.700000);%
+
+                % Drawing segment A E
+                \draw [line width=0.016cm] (3.040000,3.000000) -- (4.500000,3.000000);%
+
+                % Marking point x
+                \draw (3.800000,2.700000) node  { $x$ };%
+
+                % Marking point {90^\circ}
+                \draw (3.500000,3.300000) node  { ${90^\circ}$ };%
+
+                % Marking point {130^\circ}
+                \draw (2.500000,2.800000) node  { ${130^\circ}$ };%
+                }
+            \end{tikzpicture}
+
+        \end{figure}
+    \end{naloga}
+
+\end{multicols}
+
+
+
+
+
+    \begin{multicols}{2}
+        
+    \begin{naloga}
+        Izračunajte velikost kota $\angle PVQ$, če je $\angle PVR=94^\circ$.
+
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                % \clip (0,0) rectangle (14.000000,10.000000);
+                {\footnotesize
+
+                % Marking point V by circle
+                \draw [line width=0.016cm] (3.500000,1.500000) circle (0.040000);%
+                \draw (3.500000,1.500000) node [anchor=east] { $V$ };%
+
+                % Marking point P by circle
+                \draw [line width=0.016cm] (5.000000,2.000000) circle (0.040000);%
+                \draw (5.000000,2.000000) node [anchor=north] { $P$ };%
+
+                % Drawing line V P
+                % \draw [line width=0.016cm] (2.600000,1.200000) -- (3.462053,1.487351);%
+                \draw [line width=0.016cm] (3.537947,1.512649) -- (4.962053,1.987351);%
+                \draw [line width=0.016cm] (5.037947,2.012649) -- (5.500000,2.166667);%
+
+                % Marking point Q by circle
+                \draw [line width=0.016cm] (4.648153,2.587081) circle (0.040000);%
+                \draw (4.648153,2.587081) node [anchor=south] { $Q$ };%
+
+                % Marking point R by circle
+                \draw [line width=0.016cm] (2.896583,2.961468) circle (0.040000);%
+                \draw (2.866583,2.931468) node [anchor=south west] { $R$ };%
+
+                % Drawing line V R
+                % \draw [line width=0.016cm] (3.623865,1.200000) -- (3.515265,1.463027);%
+                \draw [line width=0.016cm] (3.484735,1.536973) -- (2.911849,2.924495);%
+                \draw [line width=0.016cm] (2.881318,2.998440) -- (2.756809,3.300000);%
+
+                % Drawing line V Q
+                % \draw [line width=0.016cm] (3.183146,1.200000) -- (3.470954,1.472499);%
+                \draw [line width=0.016cm] (3.529046,1.527501) -- (4.619106,2.559580);%
+                \draw [line width=0.016cm] (4.677199,2.614582) -- (5.401122,3.300000);%
+
+                % Marking point {x+7^\circ}
+                \draw (4.924076,2.293541) node  { ${x+7^\circ}$ };%
+
+                % Marking point {3x+15^\circ}
+                \draw (3.772368,2.774275) node  { ${3x+15^\circ}$ };%
+                }
+            \end{tikzpicture}
+
+        \end{figure}
+    \end{naloga}
+
+
+    \begin{naloga}
+        Izračunajte velikost kota $\angle SVR$, če je $\angle QVS=50^\circ$.
+
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                % \clip (0,0) rectangle (14.000000,10.000000);
+                {\footnotesize
+
+                % Marking point V by circle
+                \draw [line width=0.016cm] (3.500000,1.500000) circle (0.040000);%
+                \draw (3.500000,1.500000) node [anchor=north] { $V$ };%
+
+                % Marking point P by circle
+                \draw [line width=0.016cm] (5.000000,2.000000) circle (0.040000);%
+                \draw (5.000000,2.000000) node [anchor=north] { $P$ };%
+
+                % Drawing line V P
+                % \draw [line width=0.016cm] (2.600000,1.200000) -- (3.462053,1.487351);%
+                \draw [line width=0.016cm] (3.537947,1.512649) -- (4.962053,1.987351);%
+                \draw [line width=0.016cm] (5.037947,2.012649) -- (5.500000,2.166667);%
+
+                % Marking point S by circle
+                \draw [line width=0.016cm] (4.081159,2.970460) circle (0.040000);%
+                \draw (4.081159,2.970460) node [anchor=south east] { $S$ };%
+
+                % Marking point R by circle
+                \draw [line width=0.016cm] (2.085787,2.207107) circle (0.040000);%
+                \draw (2.055787,2.177107) node [anchor=south] { $R$ };%
+
+                % Drawing line V R
+                % \draw [line width=0.016cm] (4.100000,1.200000) -- (3.535777,1.482111);%
+                \draw [line width=0.016cm] (3.464223,1.517889) -- (2.121564,2.189218);%
+                \draw [line width=0.016cm] (2.050009,2.224995) -- (1.800000,2.350000);%
+
+                % Drawing line V S
+                % \draw [line width=0.016cm] (3.381433,1.200000) -- (3.485298,1.462800);%
+                \draw [line width=0.016cm] (3.514702,1.537200) -- (4.066457,2.933260);%
+                \draw [line width=0.016cm] (4.095862,3.007660) -- (4.211401,3.300000);%
+
+                % Marking point {2x-6^\circ}
+                \draw (4.640580,2.485230) node  { ${2x-6^\circ}$ };%
+
+                % Marking point {3x+1^\circ}
+                \draw (3.083473,2.588784) node  { ${3x+1^\circ}$ };%
+                }
+            \end{tikzpicture}
+
+        \end{figure}
+    \end{naloga}
+
+
+    \end{multicols}
+
+        
+
+
+    \begin{naloga}
+        Kot $\varphi=76^\circ 36'53''$ zapišite v stopinjah na štiri mesta natančno, 
+        kot $\psi=34.78^\circ$ pa zapišite v stopinjah, minutah in sekundah.
+    \end{naloga}
+
+    \begin{naloga}
+        Kotu $\varphi=37^\circ 16'43''$ izračunajte suplementarni in komplementarni kot.
+    \end{naloga}
+
+    \begin{naloga}
+        Razika dveh komplementarnih kotov je $37^\circ 16'$. Izračunajte velikosti kotov.
+    \end{naloga}
+
+    \begin{naloga}
+        Izračunajte velikost kota $\varphi$, ki je petkratnik svojega komplementarnega kota.
+    \end{naloga}
+
+
+
+
+
+    \begin{naloga}
+        Za vsako od spodnjih izjav ugotovite, ali je pravilna ali nepravilna.
+        \begin{itemize}
+            \item Sokota sta suplementarna.
+            % \item Kota z vzporednimi kraki sta skladna.
+            \item Kot z velikostjo $45^\circ$ je komplementaren samemu sebi.
+            \item Dve premici, ki se sekata, lahko določata kota z velikostjo $43^\circ$ in $137^\circ$.
+            \item Vsota velikosti dveh komplementarnih kotov je pravi kot.
+            \item Suplementarna kota sta  vedno tudi sokota.
+        \end{itemize}
+    \end{naloga}
+
+    \begin{naloga}
+        Poltrak $VD$ razpolavlja $\angle CVE$, $\angle BVC$ je pravi kot.
+        Določite velikosti kotov $\angle AVD$ in $\angle BVE$.
+
+        \begin{figure}[H]
+            \centering
+            \begin{tikzpicture}
+                % \clip (0,0) rectangle (14.000000,10.000000);
+                {\footnotesize
+
+                % Marking point V by circle
+                \draw [line width=0.016cm] (4.000000,1.500000) circle (0.040000);%
+                \draw (4.000000,1.500000) node [anchor=north] { $V$ };%
+
+                % Marking point A by circle
+                \draw [line width=0.016cm] (5.500000,1.500000) circle (0.040000);%
+                \draw (5.500000,1.500000) node [anchor=north] { $A$ };%
+
+                % Marking point E by circle
+                \draw [line width=0.016cm] (2.500000,1.500000) circle (0.040000);%
+                \draw (2.500000,1.500000) node [anchor=north] { $E$ };%
+
+                % Drawing line A E
+                \draw [line width=0.016cm] (2.000000,1.500000) -- (2.460000,1.500000);%
+                \draw [line width=0.016cm] (2.540000,1.500000) -- (3.960000,1.500000);%
+                \draw [line width=0.016cm] (4.040000,1.500000) -- (5.460000,1.500000);%
+                \draw [line width=0.016cm] (5.540000,1.500000) -- (6.000000,1.500000);%
+
+                % Marking point B by circle
+                \draw [line width=0.016cm] (5.299038,2.250000) circle (0.040000);%
+                \draw (5.299038,2.250000) node [anchor=south] { $B$ };%
+
+                % Marking point C by circle
+                \draw [line width=0.016cm] (3.250000,2.799038) circle (0.040000);%
+                \draw (3.250000,2.799038) node [anchor=west] { $C$ };%
+
+                % Marking point D by circle
+                \draw [line width=0.016cm] (2.700962,2.250000) circle (0.040000);%
+                \draw (2.700962,2.250000) node [anchor=south] { $D$ };%
+
+                % Drawing line V D
+                % \draw [line width=0.016cm] (4.519615,1.200000) -- (4.034641,1.480000);%
+                \draw [line width=0.016cm] (3.965359,1.520000) -- (2.735603,2.230000);%
+                \draw [line width=0.016cm] (2.666321,2.270000) -- (2.000000,2.654701);%
+
+                % Drawing line V C
+                % \draw [line width=0.016cm] (4.173205,1.200000) -- (4.020000,1.465359);%
+                \draw [line width=0.016cm] (3.980000,1.534641) -- (3.270000,2.764397);%
+                \draw [line width=0.016cm] (3.230000,2.833679) -- (3.133975,3.000000);%
+
+                % Drawing line V B
+                % \draw [line width=0.016cm] (3.480385,1.200000) -- (3.965359,1.480000);%
+                \draw [line width=0.016cm] (4.034641,1.520000) -- (5.264397,2.230000);%
+                \draw [line width=0.016cm] (5.333679,2.270000) -- (6.000000,2.654700);%
+
+                % Marking point {30^\circ}
+                \draw (5.000000,1.500000) node [anchor=south] { ${30^\circ}$ };%
+
+                % Marking point {90^\circ}
+                \draw (4.100000,1.800000) node [anchor=south] { ${90^\circ}$ };%
+                }
+            \end{tikzpicture}
+
+        \end{figure}
+    \end{naloga}
+
+
 
 
 
