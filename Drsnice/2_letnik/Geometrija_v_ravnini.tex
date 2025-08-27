@@ -1594,7 +1594,213 @@
 
         \begin{frame}
             \frametitle{Vzporednost}
+            
+            \begin{alertblock}{Aksiom o vzporednici}
+                Skozi izbrano točko, ki ne leži na premici, lahko tej premici narišemo natanko eno vzporednico.
+
+                \begin{figure}[H]
+                    \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+
+                    % Drawing line p
+                    \draw [line width=0.016cm] (1.000000,1.454545) -- (6.000000,1.909091);%
+
+                    % Drawing line q
+                    \draw [line width=0.016cm] (1.000000,1.818182) -- (2.960164,1.996379);%
+                    \draw [line width=0.016cm] (3.039836,2.003621) -- (6.000000,2.272727);%
+
+                    % Marking point T by circle
+                    \draw [line width=0.016cm] (3.000000,2.000000) circle (0.040000);%
+                    \draw (3.000000,2.000000) node [anchor=south] { $T$ };%
+                    }
+                    \end{tikzpicture}
+
+                \end{figure}
+
+            \end{alertblock}
+
+            \begin{block}{}
+                \textbf{Vzporednost} je v množici premic na ravnini \textit{ekvivalenčna relacija}, saj je:
+                \begin{itemize}
+                    \item \textit{refleksivna}: $p\parallel p$ -- vsaka premica je vzporedna sama sebi;
+                    \item \textit{simetrična}: $p\parallel q \Rightarrow q\parallel p$ -- če je premica $p$ vzporedna premici $q$, je tudi premica $q$ vzporedna premici $p$;
+                    \item \textit{tranzitivna}: $p\parallel q \land q \parallel r \rightarrow p \parallel r$ -- če je premica $p$ vzporedna premici $q$, premica $q$ pa vzporedna premici $r$, 
+                        je tudi premica $p$ vzporedna premici $r$.
+                \end{itemize}
+            \end{block}
+
         \end{frame}
+
+        
+        \begin{frame}
+            \begin{block}{}
+                Če vzporednici sekamo s premico, dobimo dve presečišči, ob njiju pa pare \textbf{kotov z vzporednimi kraki}:
+                
+                \begin{figure}[H]
+                    \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+
+                    % Drawing line p
+                    \draw [line width=0.016cm] (1.300000,1.315385) -- (5.405096,1.946938);%
+                    \draw [line width=0.016cm] (5.484166,1.959102) -- (7.200000,2.223077);%
+
+                    % Drawing line q
+                    \draw [line width=0.016cm] (1.300000,2.469231) -- (3.139995,2.752307);%
+                    \draw [line width=0.016cm] (3.219065,2.764472) -- (7.200000,3.376923);%
+
+                    % Drawing line r
+                    \draw [line width=0.016cm] (1.300000,3.426667) -- (3.141842,2.771790);%
+                    \draw [line width=0.016cm] (3.217219,2.744989) -- (5.406942,1.966421);%
+                    \draw [line width=0.016cm] (5.482319,1.939620) -- (7.200000,1.328889);%
+
+                    % Marking point U by circle
+                    \draw [line width=0.016cm] (5.444631,1.953020) circle (0.040000);%
+
+                    % Marking point V by circle
+                    \draw [line width=0.016cm] (3.179530,2.758389) circle (0.040000);%
+
+                    % Changing color 139 0 0
+                    \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+                    \color{r139g0b0}% 
+
+                    % Drawing arc V L 28.32
+                    \draw [line width=0.032cm] (2.191446,3.109708) -- (2.187982,3.099807) arc (161:188:1.048682 and 1.048682) -- (2.143042,2.598930);%
+
+                    % Drawing arc V M 28.32
+                    \draw [line width=0.032cm] (4.167614,2.407070) -- (4.171079,2.416971) arc (341:360:1.048682 and 1.048682) --(4.228212,2.758389) arc (0:8:1.048682 and 1.048682) -- (4.216018,2.917849);%
+
+                    % Drawing arc U N 28.32
+                    \draw [line width=0.032cm] (4.487996,2.293157) -- (4.484642,2.283571) arc (161:188:1.015305 and 1.015305) -- (4.441133,1.798636);%
+
+                    % Drawing arc U O 28.32
+                    \draw [line width=0.032cm] (6.401266,1.612883) -- (6.404620,1.622469) arc (341:360:1.015305 and 1.015305) --(6.459935,1.953020) arc (0:8:1.015305 and 1.015305) -- (6.448129,2.107404);%
+
+                    % Marking point \alpha
+                    \draw (2.350000,2.850000) node  { $\alpha$ };%
+
+                    % Marking point \beta
+                    \draw (4.000000,2.700000) node  { $\beta$ };%
+
+                    % Marking point \gamma
+                    \draw (4.650000,2.000000) node  { $\gamma$ };%
+
+                    % Marking point \delta
+                    \draw (6.250000,1.900000) node  { $\delta$ };%
+
+                    % Changing color 0 139 0
+                    \definecolor{r0g139b0}{rgb}{0.000000,0.545098,0.000000}%
+                    \color{r0g139b0}% 
+
+                    % Drawing arc V J 151.68
+                    \draw [line width=0.032cm] (3.837639,2.859637) -- (3.837184,2.862551) arc (9:160:0.665852 and 0.665852) -- (2.552155,2.981456);%
+
+                    % Drawing arc V K 151.68
+                    \draw [line width=0.032cm] (2.521421,2.657142) -- (2.521876,2.654227) arc (189:340:0.665852 and 0.665852) -- (3.806905,2.535322);%
+
+                    % Drawing arc U P 151.68
+                    \draw [line width=0.032cm] (6.184950,2.066915) -- (6.184438,2.070194) arc (9:160:0.749029 and 0.749029) -- (4.738885,2.203952);%
+
+                    % Drawing arc U R 151.68
+                    \draw [line width=0.032cm] (4.704312,1.839125) -- (4.704824,1.835846) arc (189:340:0.749029 and 0.749029) -- (6.150377,1.702088);%
+
+                    % Marking point \alpha'
+                    \draw (3.150000,3.250000) node  { $\alpha'$ };%
+
+                    % Marking point \beta'
+                    \draw (3.150000,2.250000) node  { $\beta'$ };%
+
+                    % Marking point \gamma'
+                    \draw (5.500000,2.450000) node  { $\gamma'$ };%
+
+                    % Marking point \delta'
+                    \draw (5.500000,1.400000) node  { $\delta'$ };%
+                    \color{black}
+                    }
+                    \end{tikzpicture}
+                    
+                \end{figure}
+
+                \begin{itemize}
+                    \item pari kotov $(\alpha, \gamma)$, $(\beta, \delta)$, $(\alpha', \gamma')$, $(\beta', \delta')$ imajo oba kraka vzporedna v isto smer;
+                    \item pari kotov z istim vrhom $(\alpha, \beta)$; $(\gamma, \delta)$, $(\alpha', \beta')$; $(\gamma', \delta')$ imajo oba kraka vzporedna v nasprotno smer -- \textbf{sovršni koti};
+                    \item pari kotov $(\alpha, \alpha')$, $(\beta, \beta')$, $(\gamma,\gamma')$, $(\delta,\delta')$ imajo en krak vzporeden v isto smer, drugi krak pa vzporeden v nasprotno smer.
+                \end{itemize}
+            \end{block}
+        \end{frame}
+
+
+        \begin{frame}
+            \begin{alertblock}{Izrek}
+                Para konveksnih kotov z vzporednimi kraki sta ali skladna ali suplementarna.
+
+                \begin{figure}[H]
+                    
+                \end{figure}
+            \end{alertblock}
+
+            \begin{block}{}
+                Sovršna kota sta skladna -- imata isti sokot.
+
+                \begin{figure}[H]
+                    \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+
+                    % Drawing line p
+
+                    % Drawing line q
+                    \draw [line width=0.016cm] (1.300000,2.469231) -- (3.139995,2.752307);%
+                    \draw [line width=0.016cm] (3.219065,2.764472) -- (5.000000,3.038462);%
+
+                    % Drawing line r
+                    \draw [line width=0.016cm] (1.300000,3.426667) -- (3.141842,2.771790);%
+                    \draw [line width=0.016cm] (3.217219,2.744989) -- (5.000000,2.111111);%
+
+                    % Marking point U by circle
+
+                    % Marking point V by circle
+                    \draw [line width=0.016cm] (3.179530,2.758389) circle (0.040000);%
+
+                    % Changing color 139 0 0
+                    \definecolor{r139g0b0}{rgb}{0.545098,0.000000,0.000000}%
+                    \color{r139g0b0}% 
+
+                    % Drawing arc V L 28.32
+                    \draw [line width=0.032cm] (2.191446,3.109708) -- (2.187982,3.099807) arc (161:188:1.048682 and 1.048682) -- (2.143042,2.598930);%
+
+                    % Drawing arc V M 28.32
+                    \draw [line width=0.032cm] (4.167614,2.407070) -- (4.171079,2.416971) arc (341:360:1.048682 and 1.048682) --(4.228212,2.758389) arc (0:8:1.048682 and 1.048682) -- (4.216018,2.917849);%
+
+                    % Marking point \alpha
+                    \draw (2.350000,2.850000) node  { $\alpha$ };%
+
+                    % Marking point \beta
+                    \draw (4.000000,2.650000) node  { $\beta$ };%
+
+                    % Changing color 0 139 0
+                    \definecolor{r0g139b0}{rgb}{0.000000,0.545098,0.000000}%
+                    \color{r0g139b0}% 
+
+                    % Drawing arc V J 151.68
+                    \draw [line width=0.032cm] (3.837639,2.859637) -- (3.837184,2.862551) arc (9:160:0.665852 and 0.665852) -- (2.552155,2.981456);%
+
+                    % Drawing arc V K 151.68
+                    \draw [line width=0.032cm] (2.521421,2.657142) -- (2.521876,2.654227) arc (189:340:0.665852 and 0.665852) -- (3.806905,2.535322);%
+
+                    % Marking point \alpha'
+                    \draw (3.150000,3.55000) node  { $\alpha'=\beta'$ };%
+
+                    % Marking point \beta'
+                    \draw (3.150000,1.95000) node  { $\beta'=\alpha'$ };%
+                    \color{black}
+                    }
+                    \end{tikzpicture}
+                \end{figure}
+            \end{block}
+        \end{frame}
+
 
 
 
