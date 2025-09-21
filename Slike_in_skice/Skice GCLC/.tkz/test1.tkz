@@ -1,0 +1,66 @@
+\begin{tikzpicture}
+\clip (0,0) rectangle (14.000000,10.000000);
+{\footnotesize
+
+% Marking point A by circle
+\draw [line width=0.016cm] (1.500000,3.000000) circle (0.040000);%
+\draw (1.500000,3.000000) node [anchor=east] { $A$ };%
+
+% Marking point C by circle
+\draw [line width=0.016cm] (6.000000,3.500000) circle (0.040000);%
+\draw (6.000000,3.500000) node [anchor=west] { $C$ };%
+
+% Marking point S by circle
+\draw [line width=0.016cm] (3.750000,3.250000) circle (0.040000);%
+\draw (3.750000,3.250000) node [anchor=south] { $S$ };%
+
+% Drawing circle k
+\draw [line width=0.016cm] (6.013846,3.249999) arc (360:360:2.263846 and 2.263846) --(6.013846,3.250000) arc (0:5:2.263846 and 2.263846) -- (6.004066,3.460207);%
+\draw [line width=0.016cm] (5.995232,3.539715) -- (5.991815,3.565066) arc (8:55:2.263846 and 2.263846) -- (5.037857,5.111833);%
+\draw [line width=0.016cm] (4.971273,5.156172) -- (4.949656,5.169850) arc (58:185:2.263846 and 2.263846) -- (1.495934,3.039794);%
+\draw [line width=0.016cm] (1.504768,2.960286) -- (1.508185,2.934934) arc (188:295:2.263846 and 2.263846) -- (4.718466,1.203766);%
+\draw [line width=0.016cm] (4.790157,1.239260) -- (4.812811,1.251142) arc (298:360:2.263846 and 2.263846) --(6.013846,3.250000) arc (0:0:2.263846 and 2.263846);%
+
+% Drawing segment A C
+\draw [line width=0.016cm] (1.539755,3.004417) -- (3.710245,3.245583);%
+\draw [line width=0.016cm] (3.789755,3.254417) -- (5.960245,3.495583);%
+
+% Marking point D by circle
+\draw [line width=0.016cm] (5.004761,5.134297) circle (0.040000);%
+\draw (5.004761,5.134297) node [anchor=south] { $D$ };%
+
+% Drawing segment A D
+\draw [line width=0.016cm] (1.534164,3.020805) -- (4.970597,5.113492);%
+
+% Drawing segment D C
+\draw [line width=0.016cm] (5.025566,5.100133) -- (5.979195,3.534164);%
+
+% Marking point B by circle
+\draw [line width=0.016cm] (4.754469,1.221197) circle (0.040000);%
+\draw (4.754469,1.221197) node [anchor=north] { $B$ };%
+
+% Drawing segment A B
+\draw [line width=0.016cm] (1.535099,2.980816) -- (4.719369,1.240381);%
+
+% Drawing segment D B
+\draw [line width=0.016cm] (5.002208,5.094379) -- (4.757022,1.261115);%
+
+% Drawing segment B C
+\draw [line width=0.016cm] (4.773653,1.256296) -- (5.980816,3.464901);%
+
+% Marking point x
+\draw (4.500000,1.500000) node [anchor=south] { $x$ };%
+
+% Marking point y
+\draw (4.700000,4.900000) node [anchor=north] { $y$ };%
+
+% Marking point z
+\draw (2.300000,3.300000) node [anchor=west] { $z$ };%
+
+% Marking point U
+\draw (2.300000,3.100000) node [anchor=north] { $U$ };%
+
+% Marking point V
+\draw (5.600000,3.700000) node [anchor=east] { $V$ };%
+}
+\end{tikzpicture}
