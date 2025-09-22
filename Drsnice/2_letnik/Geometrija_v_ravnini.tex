@@ -5501,7 +5501,7 @@
                 Paralelograme delimo na \textit{pravokotne} in \textit{poševnokotne} oziroma na \textit{enakostranične} in \textit{raznostranične}.
             \end{block}
 
-            \begin{alertblock}{Definicja}
+            \begin{alertblock}{Definicija}
                 \textbf{Pravokotnik} je pravokotni raznostranični paralelogram.
 
                 \begin{figure}[H]
@@ -5594,7 +5594,7 @@
 
 
         \begin{frame}
-            \begin{alertblock}{Definicja}
+            \begin{alertblock}{Definicija}
                 \textbf{Kvadrat} je pravokotni enakostranični paralelogram.
 
                 \begin{figure}[H]
@@ -5685,7 +5685,7 @@
 
 
         \begin{frame}
-            \begin{alertblock}{Definicja}
+            \begin{alertblock}{Definicija}
                 \textbf{Romb} je poševnokotni enakostranični paralelogram.
 
                 \begin{figure}[H]
@@ -6367,9 +6367,9 @@
                 \end{itemize}
             \end{exampleblock}
 
-            \begin{exampleblock}{Naloga}
+            % \begin{exampleblock}{Naloga}
                 
-            \end{exampleblock}
+            % \end{exampleblock}
         \end{frame}
 
 
@@ -6381,20 +6381,119 @@
         \begin{frame}
             \frametitle{Središčni razteg}
 
+            \begin{alertblock}{Definicija}
+                \textbf{Središčni razteg} ali \textbf{homotetija} s središčem v neki točki $O$ in faktorjem $k\neq 0$ je podobnostna preslikava,
+                ki daljico $OA$ preslika v daljico $OA'$, pri čemer velja $|OA'|=|k|\cdot|OA|$.
+
+                \begin{figure}[H]
+                    \centering
+
+                \end{figure}
+
+                $$ |OA'|:|OA|=k \quad\quad |OB'|:|OB|=k \quad\quad |OC'|:|OC|=k $$
+                $$ |A'B'|:|AB|=k \quad\quad |B'C'|:|BC|=k \quad\quad |A'C'|:|AC|=k $$
+            \end{alertblock}
         \end{frame}    
+
+        
+        \begin{frame}
+            \begin{block}{Lastnosti}
+                Središčni razteg s središčem v točki $O$ in faktorjem $k\neq 0$:
+                \begin{itemize}
+                    \item ohranja velikosti kotov;
+                    \item vse razdalje pomnoži s $|k|$, pri čemer:
+                        \begin{itemize}
+                            \item $|k|>1$ pomeni razteg,
+                            \item $k=1$ pomeni identiteto,
+                            \item $|k|<1$ pomeni skrčitev,
+                            \item $k=-1$ pomeni zrcaljenje čez točko $O$;
+                        \end{itemize}
+                    \item premico preslika v vzporedno premico;
+                    \item daljico $AB$ preslika na vzporedno daljico $A'B'$;
+                    \item ohranja premice, ki gredo skozi točko $O$.
+                \end{itemize}
+            \end{block}
+        \end{frame}
 
 
         \begin{frame}
             \frametitle{Podobnost}
 
-            
+            \vskip-0.75em
+            \begin{alertblock}{Definicija}
+                \textbf{Podobnostna preslikava} je preslikava, sestavljena iz togega premika in središčnega raztega.
+            \end{alertblock}
 
+            \begin{alertblock}{Definicija}
+                Dva lika sta \textbf{podobna}, če med njima obstaja podobnostna preslikava.
+            \end{alertblock}
+
+            \begin{block}{}
+                Podobnost je v množici ravninskih likov \textit{ekvivalenčna relacija}, saj je:
+                \begin{itemize}
+                    \item \textit{refleksivna}: $L\sim L$ -- vsaka množica je podobna sami sebi (koeficient podobnosti $k=1$);
+                    \item \textit{simetrična}: $L\sim L' \Rightarrow L'\sim L$ -- če je prva množica podobna drugi, je tudi druga podobna prvi (koeficienta podobnosti $k$ in $\frac{1}{k}$);
+                    \item \textit{tranzitivna}: $L\sim L' \land L'\sim L'' \rightarrow L\sim L''$ -- če je prva množica podobna drugi in druga podobna tretji, 
+                            je tudi prva množica podobna tretji množici (koeficienti podobnosti $k_1$, $k_2$ in $k_1k_2$).
+                \end{itemize}
+            \end{block}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \begin{block}{Izrek (Talesov izrek o sorazmerjih)}
+                Če premici, ki se sekata v eni točki, sekamo z množico vzporednic, 
+                je razmerje odsekov na eni premici šopa enako razmerju enakoležnih odsekov na drugi premici istega šopa.
+
+                \begin{figure}[H]
+                    \centering
+
+                \end{figure}
+
+                $$ |VA|:|VA'|=|VB|:|VB'| $$
+                $$ |VA|:|AB|=|VA'|:|A'B'| $$
+                $$ |VA|:|AA'|=|VB|:|BB'| $$
+            \end{block}
         \end{frame}
 
 
         \begin{frame}
             \frametitle{Podobnost trikotnikov}
 
+            \begin{alertblock}{Definicija}
+                Trikotnika $\triangle ABC$ in $\triangle A'B'C'$ sta podobna, če imata enaka razmerja istoležnih vseh stranic in enake vse notranje kote.
+            
+                \begin{figure}[H]
+                    \centering
+
+                \end{figure}
+
+                $$ a:b:c=a':b':c' $$
+                $$ \alpha=\alpha' \quad\quad \beta=\beta' \quad\quad \gamma=\gamma' $$
+            \end{alertblock}
+
+
+        \end{frame}
+
+        
+        \begin{frame}
+            \begin{block}{Izrek (o podobnosti trikotnikov)}
+                Dva trikotnika sta si podobna, če se ujemata:
+                \begin{enumerate}
+                    \item v razmerjih po dveh enakoležnih stranic ($a:a'=b:b'=c:c'=k$);
+                    \item v dveh notranjih kotih (npr. $\alpha=\alpha'$, $\beta=\beta'$);
+                    \item v razmerju dveh stranic in v vmesnem kotu (npr. $b:c=b':c'$, $\alpha=\alpha'$);
+                    \item v razmerju dveh stranic in v kotu nasproti daljše.
+                \end{enumerate}
+            \end{block}
+
+            \begin{block}{Izrek}
+                Podobna trikotnika imata sorazmerna obsega, koeficient podobnosti je $k$, isti kot za dolžine stranic.
+                Sorazmerni sta tudi višini trikotnikov.
+
+                Ploščini podobnih trikotnikov sta sorazmerni s koeficientom podobnosti $k^2$.
+            \end{block}
         \end{frame}
 
         
@@ -6403,7 +6502,5 @@
         \end{frame}
 
         
-        \begin{frame}
-            \frametitle{Podobnost v pravokotnem trikotniku}
-        \end{frame}
 
+        
