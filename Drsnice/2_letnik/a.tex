@@ -1,134 +1,207 @@
+    \section{Podobnost}
 
-    \section{Štirikotnik in pravilni $n$-kotnik}
+        
+            \subsection*{Središčni razteg}
 
-                 
-                \textbf{Štirikotnike} delimo glede na število parov vzporednih stranic v tri skupine:
+            \begin{definicija}
+                \textbf{Središčni razteg} ali \textbf{homotetija} s središčem v neki točki $O$ in faktorjem $k\neq 0$ je podobnostna preslikava,
+                ki daljico $OA$ preslika v daljico $OA'$, pri čemer velja $|OA'|=|k|\cdot|OA|$.
+
+                \begin{figure}[H]
+                    \centering
+                    \begin{tikzpicture}
+                    % \clip (0,0) rectangle (14.000000,10.000000);
+                    {\footnotesize
+
+                    % Drawing line O A
+                    \draw [line width=0.016cm] (1.000000,3.500000) -- (1.460000,3.500000);%
+                    \draw [line width=0.016cm] (1.540000,3.500000) -- (4.460000,3.500000);%
+                    \draw [line width=0.016cm] (4.540000,3.500000) -- (6.460000,3.500000);%
+                    \draw [line width=0.016cm] (6.540000,3.500000) -- (9.000000,3.500000);%
+
+                    % Drawing line O B
+                    \draw [line width=0.016cm] (5.875000,1.000000) -- (5.034730,1.480154);%
+                    \draw [line width=0.016cm] (4.965270,1.519846) -- (3.634730,2.280154);%
+                    \draw [line width=0.016cm] (3.565270,2.319846) -- (1.534730,3.480154);%
+                    \draw [line width=0.016cm] (1.465270,3.519846) -- (1.000000,3.785714);%
+
+                    % Drawing line O C
+                    \draw [line width=0.016cm] (1.000000,3.583333) -- (1.460544,3.506576);%
+                    \draw [line width=0.016cm] (1.539456,3.493424) -- (5.060544,2.906576);%
+                    \draw [line width=0.016cm] (5.139456,2.893424) -- (7.460544,2.506576);%
+                    \draw [line width=0.016cm] (7.539456,2.493424) -- (9.000000,2.250000);%
+
+                    % Drawing segment A B
+                    \draw [line width=0.016cm] (4.476000,3.468000) -- (3.624000,2.332000);%
+
+                    % Drawing segment B C
+                    \draw [line width=0.016cm] (3.637139,2.314856) -- (5.062861,2.885144);%
+
+                    % Drawing segment A C
+                    \draw [line width=0.016cm] (4.528284,3.471716) -- (5.071716,2.928284);%
+
+                    % Drawing segment A' B'
+                    \draw [line width=0.016cm] (6.476000,3.468000) -- (5.024000,1.532000);%
+
+                    % Drawing segment B' C'
+                    \draw [line width=0.016cm] (5.037139,1.514856) -- (7.462861,2.485144);%
+
+                    % Drawing segment A' C'
+                    \draw [line width=0.016cm] (6.528284,3.471716) -- (7.471716,2.528284);%
+
+                    % Marking point O by circle
+                    \draw [line width=0.032cm] (1.500000,3.500000) circle (0.040000);%
+                    \draw (1.500000,3.500000) node [anchor=south] { $O$ };%
+
+                    % Marking point A by circle
+                    \draw [line width=0.032cm] (4.500000,3.500000) circle (0.040000);%
+                    \draw (4.500000,3.500000) node [anchor=south] { $A$ };%
+
+                    % Marking point A' by circle
+                    \draw [line width=0.032cm] (6.500000,3.500000) circle (0.040000);%
+                    \draw (6.500000,3.500000) node [anchor=south] { $A'$ };%
+
+                    % Marking point B by circle
+                    \draw [line width=0.032cm] (3.600000,2.300000) circle (0.040000);%
+                    \draw (3.600000,2.300000) node [anchor=north] { $B$ };%
+
+                    % Marking point B' by circle
+                    \draw [line width=0.032cm] (5.000000,1.500000) circle (0.040000);%
+                    \draw (5.000000,1.500000) node [anchor=north] { $B'$ };%
+
+                    % Marking point C by circle
+                    \draw [line width=0.032cm] (5.100000,2.900000) circle (0.040000);%
+                    \draw (5.070000,2.870000) node [anchor=south west] { $C$ };%
+
+                    % Marking point C' by circle
+                    \draw [line width=0.032cm] (7.500000,2.500000) circle (0.040000);%
+                    \draw (7.470000,2.470000) node [anchor=south west] { $C'$ };%
+                    }
+                    \end{tikzpicture}
+                \end{figure}
+
+
+                $$ |OA'|:|OA|=k \quad\quad |OB'|:|OB|=k \quad\quad |OC'|:|OC|=k $$
+                $$ |A'B'|:|AB|=k \quad\quad |B'C'|:|BC|=k \quad\quad |A'C'|:|AC|=k $$
+            \end{definicija}
+            
+
+        
+        
+            \subsubsection*{Lastnosti}
+                Središčni razteg s središčem v točki $O$ in faktorjem $k\neq 0$:
                 \begin{itemize}
-                    \item \textbf{paralelograme}, ki imajo dva para vzporednih stranic;
-                    \item \textbf{trapeze}, ki imajo en par vzporednih stranic;
-                    \item \textbf{trapezoide}, ki nimajo nobenega para vzporednih stranic.
+                    \item ohranja velikosti kotov;
+                    \item vse razdalje pomnoži s $|k|$, pri čemer:
+                        \begin{itemize}
+                            \item $|k|>1$ pomeni razteg,
+                            \item $k=1$ pomeni identiteto,
+                            \item $|k|<1$ pomeni skrčitev,
+                            \item $k=-1$ pomeni zrcaljenje čez točko $O$;
+                        \end{itemize}
+                    \item premico preslika v vzporedno premico;
+                    \item daljico $AB$ preslika na vzporedno daljico $A'B'$;
+                    \item ohranja premice, ki gredo skozi točko $O$.
+                \end{itemize}
+            
+        
+
+
+        
+            \subsection*{Podobnost}
+
+
+            \begin{definicija}
+                \textbf{Podobnostna preslikava} je preslikava, sestavljena iz togega premika in središčnega raztega.
+            \end{definicija}
+
+            \begin{definicija}
+                Dva lika sta \textbf{podobna}, če med njima obstaja podobnostna preslikava.
+            \end{definicija}
+
+            
+            Podobnost je v množici ravninskih likov \textit{ekvivalenčna relacija}, saj je:
+                \begin{itemize}
+                    \item \textit{refleksivna}: $L\sim L$ -- vsaka množica je podobna sami sebi (koeficient podobnosti $k=1$);
+                    \item \textit{simetrična}: $L\sim L' \Rightarrow L'\sim L$ -- če je prva množica podobna drugi, je tudi druga podobna prvi (koeficienta podobnosti $k$ in $\frac{1}{k}$);
+                    \item \textit{tranzitivna}: $L\sim L' \land L'\sim L'' \rightarrow L\sim L''$ -- če je prva množica podobna drugi in druga podobna tretji, 
+                            je tudi prva množica podobna tretji množici (koeficienti podobnosti $k_1$, $k_2$ in $k_1k_2$).
                 \end{itemize}
             
 
-            
-                Vsak štirikotnik ima dve diagonali. 
-
-                Diagonala $e$ povezuje oglišči $A$ in $C$, diagonala $f$ pa oglišči $B$ in $D$.
-            
-
-            \begin{izrek}
-                Vsota notranjih kotov štirikotnika je $360^\circ$. 
-                $$\alpha + \beta + \gamma + \delta = 360^\circ$$
-            \end{izrek}
         
 
 
         
-            \subsection*{Paralelogram}
-            
-            
+            \begin{izrek}[Talesov izrek o sorazmerjih]
+                Če premici, ki se sekata v eni točki, sekamo z množico vzporednic, 
+                je razmerje odsekov na eni premici šopa enako razmerju enakoležnih odsekov na drugi premici istega šopa.
+
                 \begin{figure}[H]
                     \centering
                     \begin{tikzpicture}
                     % \clip (0,0) rectangle (14.000000,10.000000);
                     {\footnotesize
 
-                    % Marking point a
-                    \draw (4.250000,1.500000) node [anchor=north] { $a$ };%
-
-                    % Marking point a
-                    \draw (3.250000,3.500000) node [anchor=south] { $a$ };%
-
-                    % Marking point b
-                    \draw (5.500000,2.500000) node [anchor=west] { $b$ };%
-
-                    % Marking point b
-                    \draw (2.000000,2.500000) node [anchor=east] { $b$ };%
-
-                    % Drawing segment A C
-                    \draw [line width=0.016cm] (2.531235,1.524988) -- (3.718765,2.475012);%
-                    \draw [line width=0.016cm] (3.781235,2.524988) -- (4.968765,3.475012);%
-
-                    % Drawing segment B D
-                    \draw [line width=0.016cm] (5.963448,1.516246) -- (3.786552,2.483754);%
-                    \draw [line width=0.016cm] (3.713448,2.516246) -- (1.536552,3.483754);%
-
-                    % Marking point S by circle
-                    \draw [line width=0.016cm] (3.750000,2.500000) circle (0.040000);%
-
-                    % Marking point e
-                    \draw (3.125000,2.000000) node [anchor=south] { $e$ };%
-
-                    % Marking point f
-                    \draw (4.875000,2.000000) node [anchor=south] { $f$ };%
-
-                    % Marking point \alpha
-                    \draw (2.500000,1.500000) node [anchor=south west] { $\alpha$ };%
-
-                    % Marking point \beta
-                    \draw (5.800000,1.500000) node [anchor=south east] { $\beta$ };%
-
-                    % Marking point \alpha
-                    \draw (5.000000,3.500000) node [anchor=north east] { $\alpha$ };%
-
-                    % Marking point \beta
-                    \draw (1.700000,3.500000) node [anchor=north west] { $\beta$ };%
-
-                    % Drawing segment A B
-                    \draw [line width=0.032cm] (2.540000,1.500000) -- (5.960000,1.500000);%
-
-                    % Drawing segment B C
-                    \draw [line width=0.032cm] (5.982111,1.535777) -- (5.017889,3.464223);%
-
-                    % Drawing segment C D
-                    \draw [line width=0.032cm] (4.960000,3.500000) -- (1.540000,3.500000);%
-
-                    % Drawing segment D A
-                    \draw [line width=0.032cm] (1.517889,3.464223) -- (2.482111,1.535777);%
+                    % Marking point V by circle
+                    \draw [line width=0.032cm] (1.500000,1.900000) circle (0.040000);%
+                    \draw (1.500000,1.900000) node [anchor=north] { $V$ };%
 
                     % Marking point A by circle
-                    \draw [line width=0.032cm] (2.500000,1.500000) circle (0.040000);%
-                    \draw (2.500000,1.500000) node [anchor=north] { $A$ };%
+                    \draw [line width=0.032cm] (5.000000,1.500000) circle (0.040000);%
+                    \draw (5.030000,1.530000) node [anchor=north east] { $A$ };%
 
                     % Marking point B by circle
-                    \draw [line width=0.032cm] (6.000000,1.500000) circle (0.040000);%
-                    \draw (6.000000,1.500000) node [anchor=north] { $B$ };%
+                    \draw [line width=0.032cm] (4.500000,2.700000) circle (0.040000);%
+                    \draw (4.470000,2.700000) node [anchor=south west] { $B$ };%
 
-                    % Marking point C by circle
-                    \draw [line width=0.032cm] (5.000000,3.500000) circle (0.040000);%
-                    \draw (5.000000,3.500000) node [anchor=south] { $C$ };%
+                    % Drawing line a
+                    \draw [line width=0.032cm] (1.000000,1.957143) -- (1.460259,1.904542);%
+                    \draw [line width=0.032cm] (1.539741,1.895458) -- (4.960259,1.504542);%
+                    \draw [line width=0.032cm] (5.039741,1.495458) -- (6.666509,1.309542);%
+                    \draw [line width=0.032cm] (6.745991,1.300458) -- (7.500000,1.214286);%
 
-                    % Marking point D by circle
-                    \draw [line width=0.032cm] (1.500000,3.500000) circle (0.040000);%
-                    \draw (1.500000,3.500000) node [anchor=south] { $D$ };%
+                    % Drawing line b
+                    \draw [line width=0.032cm] (7.500000,3.500000) -- (6.001149,3.100307);%
+                    \draw [line width=0.032cm] (5.923851,3.079693) -- (4.538649,2.710307);%
+                    \draw [line width=0.032cm] (4.461351,2.689693) -- (1.538649,1.910307);%
+                    \draw [line width=0.032cm] (1.461351,1.889693) -- (1.000000,1.766667);%
+
+                    % Marking point A' by circle
+                    \draw [line width=0.032cm] (6.706250,1.305000) circle (0.040000);%
+                    \draw (6.736250,1.335000) node [anchor=north east] { $A'$ };%
+
+                    % Marking point B' by circle
+                    \draw [line width=0.032cm] (5.962500,3.090000) circle (0.040000);%
+                    \draw (5.932500,3.100000) node [anchor=south west] { $B'$ };%
+
+                    % Drawing line A B
+                    \draw [line width=0.032cm] (5.208333,1.000000) -- (5.015385,1.463077);%
+                    \draw [line width=0.032cm] (4.984615,1.536923) -- (4.515385,2.663077);%
+                    \draw [line width=0.032cm] (4.484615,2.736923) -- (4.166667,3.500000);%
+
+                    % Drawing line A' B'
+                    \draw [line width=0.032cm] (6.833333,1.000000) -- (6.721635,1.268077);%
+                    \draw [line width=0.032cm] (6.690865,1.341923) -- (5.977885,3.053077);%
+                    \draw [line width=0.032cm] (5.947115,3.126923) -- (5.791667,3.500000);%
                     }
                     \end{tikzpicture}
-
                 \end{figure}
-            
 
-            \begin{izrek}
-                Naslednje trditve so enakovredne in karakterizirajo paralelogram:
-                \begin{enumerate}
-                    \item Poljubni nasprotni stranici sta skladni ($|AB|=|CD|=a$ in $|AD|=|BC|=b$).
-                    \item Diagionali se razpolavljata.
-                    \item Poljubna sosednja kota sta suplementarna ($\alpha+\beta=180^\circ$).
-                    \item Poljubna nasprotna kota sta skladna.
-                \end{enumerate}
+
+                $$ |VA|:|VA'|=|VB|:|VB'| $$
+                $$ |VA|:|AB|=|VA'|:|A'B'| $$
+                $$ |VA|:|AA'|=|VB|:|BB'| $$
             \end{izrek}
-
-            
-                Višina paralelograma je razdalja med vzporednima stranicama.
-            
         
 
+
         
-            
-                Paralelograme delimo na \textit{pravokotne} in \textit{poševnokotne} oziroma na \textit{enakostranične} in \textit{raznostranične}.
-            
+            \subsection*{Podobnost trikotnikov}
+
 
             \begin{definicija}
-                \textbf{Pravokotnik} je pravokotni raznostranični paralelogram.
+                Trikotnika $\triangle ABC$ in $\triangle A'B'C'$ sta podobna, če imata enaka razmerja vseh istoležnih stranic in enake vse notranje kote.
 
                 \begin{figure}[H]
                     \centering
@@ -136,58 +209,50 @@
                     % \clip (0,0) rectangle (14.000000,10.000000);
                     {\footnotesize
 
-                    % Marking point a
-                    \draw (3.250000,1.500000) node [anchor=north] { $a$ };%
-
-                    % Marking point a
-                    \draw (3.250000,3.500000) node [anchor=south] { $a$ };%
-
-                    % Marking point b
-                    \draw (5.000000,2.500000) node [anchor=west] { $b$ };%
-
-                    % Marking point b
-                    \draw (1.500000,2.500000) node [anchor=east] { $b$ };%
-
-                    % Drawing segment A C
-                    \draw [line width=0.016cm] (1.534730,1.519846) -- (3.215270,2.480154);%
-                    \draw [line width=0.016cm] (3.284730,2.519846) -- (4.965270,3.480154);%
-
-                    % Drawing segment B D
-                    \draw [line width=0.016cm] (4.965270,1.519846) -- (3.284730,2.480154);%
-                    \draw [line width=0.016cm] (3.215270,2.519846) -- (1.534730,3.480154);%
-
-                    % Marking point S by circle
-                    \draw [line width=0.016cm] (3.250000,2.500000) circle (0.040000);%
-
-                    % Marking point e
-                    \draw (2.375000,2.000000) node [anchor=south] { $e$ };%
-
-                    % Marking point f
-                    \draw (4.125000,2.000000) node [anchor=south] { $f$ };%
-
                     % Marking point \alpha
-                    \draw (1.500000,1.500000) node [anchor=south west] { $\alpha$ };%
+                    \draw (1.700000,1.500000) node [anchor=south west] { $\alpha$ };%
+
+                    % Marking point \alpha'
+                    \draw (5.700000,1.500000) node [anchor=south west] { $\alpha'$ };%
 
                     % Marking point \beta
-                    \draw (5.000000,1.500000) node [anchor=south east] { $\alpha$ };%
+                    \draw (4.800000,1.500000) node [anchor=south east] { $\beta$ };%
 
-                    % Marking point \alpha
-                    \draw (5.000000,3.500000) node [anchor=north east] { $\alpha$ };%
+                    % Marking point \beta'
+                    \draw (10.300000,1.500000) node [anchor=south east] { $\beta'$ };%
 
-                    % Marking point \beta
-                    \draw (1.500000,3.500000) node [anchor=north west] { $\alpha$ };%
+                    % Marking point \gamma
+                    \draw (3.900000,3.800000) node [anchor=north] { $\gamma$ };%
+
+                    % Marking point \gamma'
+                    \draw (9.000000,4.800000) node [anchor=north] { $\gamma'$ };%
+
+                    % Marking point c
+                    \draw (3.250000,1.500000) node [anchor=north] { $c$ };%
+
+                    % Marking point c'
+                    \draw (8.000000,1.500000) node [anchor=north] { $c'$ };%
+
+                    % Marking point a
+                    \draw (4.500000,2.750000) node [anchor=south west] { $a$ };%
+
+                    % Marking point a'
+                    \draw (9.785000,3.285000) node [anchor=south west] { $a'$ };%
+
+                    % Marking point b
+                    \draw (2.750000,2.750000) node [anchor=south east] { $b$ };%
+
+                    % Marking point b'
+                    \draw (7.285000,3.285000) node [anchor=south east] { $b'$ };%
 
                     % Drawing segment A B
                     \draw [line width=0.032cm] (1.540000,1.500000) -- (4.960000,1.500000);%
 
                     % Drawing segment B C
-                    \draw [line width=0.032cm] (5.000000,1.540000) -- (5.000000,3.460000);%
+                    \draw [line width=0.032cm] (4.985144,1.537139) -- (4.014856,3.962861);%
 
-                    % Drawing segment C D
-                    \draw [line width=0.032cm] (4.960000,3.500000) -- (1.540000,3.500000);%
-
-                    % Drawing segment D A
-                    \draw [line width=0.032cm] (1.500000,3.460000) -- (1.500000,1.540000);%
+                    % Drawing segment A C
+                    \draw [line width=0.032cm] (1.528284,1.528284) -- (3.971716,3.971716);%
 
                     % Marking point A by circle
                     \draw [line width=0.032cm] (1.500000,1.500000) circle (0.040000);%
@@ -196,751 +261,154 @@
                     % Marking point B by circle
                     \draw [line width=0.032cm] (5.000000,1.500000) circle (0.040000);%
                     \draw (5.000000,1.500000) node [anchor=north] { $B$ };%
-
-                    % Marking point C by circle
-                    \draw [line width=0.032cm] (5.000000,3.500000) circle (0.040000);%
-                    \draw (5.000000,3.500000) node [anchor=south] { $C$ };%
-
-                    % Marking point D by circle
-                    \draw [line width=0.032cm] (1.500000,3.500000) circle (0.040000);%
-                    \draw (1.500000,3.500000) node [anchor=south] { $D$ };%
-                    }
-                    \end{tikzpicture}
-                \end{figure}
-            \end{definicija}
-
-            
-                Diagonali v pravokotniku sta skladni ($e=f$) in se razpolavljata;
-                vsi notranji koti so pravi ($\alpha=90^\circ$);
-                višine so stranice same.
-            
-
-
-        
-
-
-        
-            \begin{definicija}
-                \textbf{Kvadrat} je pravokotni enakostranični paralelogram.
-
-                \begin{figure}[H]
-                    \centering
-                    \begin{tikzpicture}
-                    % \clip (0,0) rectangle (14.000000,10.000000);
-                    {\footnotesize
-
-                    % Marking point a
-                    \draw (2.750000,1.500000) node [anchor=north] { $a$ };%
-
-                    % Marking point a
-                    \draw (2.750000,4.000000) node [anchor=south] { $a$ };%
-
-                    % Marking point a
-                    \draw (4.000000,2.750000) node [anchor=west] { $a$ };%
-
-                    % Marking point a
-                    \draw (1.500000,2.750000) node [anchor=east] { $a$ };%
-
-                    % Drawing segment A C
-                    \draw [line width=0.016cm] (1.528284,1.528284) -- (2.721716,2.721716);%
-                    \draw [line width=0.016cm] (2.778284,2.778284) -- (3.971716,3.971716);%
-
-                    % Drawing segment B D
-                    \draw [line width=0.016cm] (3.971716,1.528284) -- (2.778284,2.721716);%
-                    \draw [line width=0.016cm] (2.721716,2.778284) -- (1.528284,3.971716);%
-
-                    % Marking point S by circle
-                    \draw [line width=0.016cm] (2.750000,2.750000) circle (0.040000);%
-
-                    % Marking point e
-                    \draw (2.125000,2.125000) node [anchor=south] { $e$ };%
-
-                    % Marking point f
-                    \draw (3.375000,2.125000) node [anchor=south] { $f$ };%
-
-                    % Marking point \alpha
-                    \draw (1.500000,1.500000) node [anchor=south west] { $\alpha$ };%
-
-                    % Marking point \alpha
-                    \draw (4.000000,1.500000) node [anchor=south east] { $\alpha$ };%
-
-                    % Marking point \alpha
-                    \draw (4.000000,4.000000) node [anchor=north east] { $\alpha$ };%
-
-                    % Marking point \alpha
-                    \draw (1.500000,4.000000) node [anchor=north west] { $\alpha$ };%
-
-                    % Drawing segment A B
-                    \draw [line width=0.032cm] (1.540000,1.500000) -- (3.960000,1.500000);%
-
-                    % Drawing segment B C
-                    \draw [line width=0.032cm] (4.000000,1.540000) -- (4.000000,3.960000);%
-
-                    % Drawing segment C D
-                    \draw [line width=0.032cm] (3.960000,4.000000) -- (1.540000,4.000000);%
-
-                    % Drawing segment D A
-                    \draw [line width=0.032cm] (1.500000,3.960000) -- (1.500000,1.540000);%
-
-                    % Marking point A by circle
-                    \draw [line width=0.032cm] (1.500000,1.500000) circle (0.040000);%
-                    \draw (1.500000,1.500000) node [anchor=north] { $A$ };%
-
-                    % Marking point B by circle
-                    \draw [line width=0.032cm] (4.000000,1.500000) circle (0.040000);%
-                    \draw (4.000000,1.500000) node [anchor=north] { $B$ };%
 
                     % Marking point C by circle
                     \draw [line width=0.032cm] (4.000000,4.000000) circle (0.040000);%
                     \draw (4.000000,4.000000) node [anchor=south] { $C$ };%
 
-                    % Marking point D by circle
-                    \draw [line width=0.032cm] (1.500000,4.000000) circle (0.040000);%
-                    \draw (1.500000,4.000000) node [anchor=south] { $D$ };%
+                    % Drawing segment A' B'
+                    \draw [line width=0.032cm] (5.540000,1.500000) -- (10.460000,1.500000);%
+
+                    % Drawing segment B' C'
+                    \draw [line width=0.032cm] (10.485126,1.537132) -- (9.084874,5.032868);%
+
+                    % Drawing segment A' C'
+                    \draw [line width=0.032cm] (5.528284,1.528284) -- (9.041716,5.041716);%
+
+                    % Marking point A' by circle
+                    \draw [line width=0.032cm] (5.500000,1.500000) circle (0.040000);%
+                    \draw (5.500000,1.500000) node [anchor=north] { $A'$ };%
+
+                    % Marking point B' by circle
+                    \draw [line width=0.032cm] (10.500000,1.500000) circle (0.040000);%
+                    \draw (10.500000,1.500000) node [anchor=north] { $B'$ };%
+
+                    % Marking point C' by circle
+                    \draw [line width=0.032cm] (9.070000,5.070000) circle (0.040000);%
+                    \draw (9.070000,5.070000) node [anchor=south] { $C'$ };%
                     }
                     \end{tikzpicture}
                 \end{figure}
+
+
+                $$ a:b:c=a':b':c' \quad \land \quad \alpha=\alpha', \beta=\beta', \gamma=\gamma' \quad \Rightarrow \quad \triangle ABC \sim \triangle A'B'C' $$
             \end{definicija}
 
-            
-                Diagonali v kvadratu sta skladni ($e=f$) in se razpolavljata in razpolavljata notranje kote, sekata se pod pravim kotom;
-                vsi notranji koti so pravi ($\alpha=90^\circ$);
-                višina je stranica sama.
-            
-        
-
 
         
-            \begin{definicija}
-                \textbf{Romb} je poševnokotni enakostranični paralelogram.
 
+        
+        
+            \begin{izrek}[o podobnosti trikotnikov]
+                Dva trikotnika sta si podobna, če se ujemata:
+                \begin{enumerate}
+                    \item v razmerjih po dveh enakoležnih stranic ($a:a'=b:b'=c:c'=k$);
+                    \item v dveh notranjih kotih (npr. $\alpha=\alpha'$, $\beta=\beta'$);
+                    \item v razmerju dveh stranic in v vmesnem kotu (npr. $b:c=b':c'$, $\alpha=\alpha'$);
+                    \item v razmerju dveh stranic in v kotu nasproti daljše.
+                \end{enumerate}
+            \end{izrek}
+
+            \begin{izrek}
+                Podobna trikotnika imata sorazmerna obsega, koeficient podobnosti je $k$, isti kot za dolžine stranic.
+                Sorazmerni sta tudi višini trikotnikov.
+
+                Ploščini podobnih trikotnikov sta sorazmerni s koeficientom podobnosti $k^2$.
+            \end{izrek}
+        
+
+        
+        
+            \subsection*{Izreki v pravokotnem trikotniku}
+
+
+            
                 \begin{figure}[H]
                     \centering
                     \begin{tikzpicture}
                     % \clip (0,0) rectangle (14.000000,10.000000);
                     {\footnotesize
-
-                    % Marking point a
-                    \draw (3.850000,1.500000) node [anchor=north] { $a$ };%
-
-                    % Marking point a
-                    \draw (2.850000,4.000000) node [anchor=south] { $a$ };%
-
-                    % Marking point a
-                    \draw (4.700000,2.750000) node [anchor=west] { $a$ };%
-
-                    % Marking point a
-                    \draw (2.000000,2.750000) node [anchor=east] { $a$ };%
-
-                    % Drawing segment A C
-                    \draw [line width=0.016cm] (2.522492,1.533077) -- (3.327508,2.716923);%
-                    \draw [line width=0.016cm] (3.372492,2.783077) -- (4.177508,3.966923);%
-
-                    % Drawing segment B D
-                    \draw [line width=0.016cm] (5.166856,1.522394) -- (3.383144,2.727606);%
-                    \draw [line width=0.016cm] (3.316856,2.772394) -- (1.533144,3.977606);%
-
-                    % Marking point S by circle
-                    \draw [line width=0.016cm] (3.350000,2.750000) circle (0.040000);%
-
-                    % Marking point e
-                    \draw (2.925000,2.125000) node [anchor=south] { $e$ };%
-
-                    % Marking point f
-                    \draw (4.275000,2.125000) node [anchor=south] { $f$ };%
-
-                    % Marking point \alpha
-                    \draw (2.500000,1.500000) node [anchor=south west] { $\alpha$ };%
-
-                    % Marking point \beta
-                    \draw (5.000000,1.500000) node [anchor=south east] { $\beta$ };%
-
-                    % Marking point \alpha
-                    \draw (4.200000,4.000000) node [anchor=north east] { $\alpha$ };%
-
-                    % Marking point \beta
-                    \draw (1.700000,4.000000) node [anchor=north west] { $\beta$ };%
-
-                    % Drawing segment A B
-                    \draw [line width=0.032cm] (2.540000,1.500000) -- (5.160000,1.500000);%
-
-                    % Drawing segment B C
-                    \draw [line width=0.032cm] (5.185144,1.537139) -- (4.214856,3.962861);%
-
-                    % Drawing segment C D
-                    \draw [line width=0.032cm] (4.160000,4.000000) -- (1.540000,4.000000);%
-
-                    % Drawing segment D A
-                    \draw [line width=0.032cm] (1.514856,3.962861) -- (2.485144,1.537139);%
-
-                    % Marking point A by circle
-                    \draw [line width=0.032cm] (2.500000,1.500000) circle (0.040000);%
-                    \draw (2.500000,1.500000) node [anchor=north] { $A$ };%
-
-                    % Marking point B by circle
-                    \draw [line width=0.032cm] (5.200000,1.500000) circle (0.040000);%
-                    \draw (5.200000,1.500000) node [anchor=north] { $B$ };%
-
-                    % Marking point C by circle
-                    \draw [line width=0.032cm] (4.200000,4.000000) circle (0.040000);%
-                    \draw (4.200000,4.000000) node [anchor=south] { $C$ };%
-
-                    % Marking point D by circle
-                    \draw [line width=0.032cm] (1.500000,4.000000) circle (0.040000);%
-                    \draw (1.500000,4.000000) node [anchor=south] { $D$ };%
-                    }
-                    \end{tikzpicture}
-                \end{figure}
-            \end{definicija}
-
-            
-                Diagonali v rombu se razpolavljata in razpolavljata notranje kote, sekata se pod pravim kotom.
-            
-        
-
-
-
-        
-            \subsection*{Trapez}
-            
-            \begin{definicija}
-                \textbf{Trapez} je štirikotnik, ki ima en par vzporednih stranic.
-
-                Vzporedni stranici imenujemo \textbf{osnovnici} trapeza, preostali dve stranici pa \textbf{kraka} trapeza.
-                \begin{figure}[H]
-                    \centering
-                    \begin{tikzpicture}
-                    % \clip (0,0) rectangle (14.000000,10.000000);
-                    {\footnotesize
-
-                    % Marking point a
-                    \draw (4.500000,1.500000) node [anchor=north] { $a$ };%
-
-                    % Marking point c
-                    \draw (4.000000,3.500000) node [anchor=south] { $c$ };%
-
-                    % Marking point b by circle
-                    \draw [line width=0.016cm] (5.750000,2.500000) circle (0.040000);%
-                    \draw (5.750000,2.500000) node [anchor=west] { $b$ };%
-
-                    % Marking point d by circle
-                    \draw [line width=0.016cm] (2.750000,2.500000) circle (0.040000);%
-                    \draw (2.750000,2.500000) node [anchor=east] { $d$ };%
-
-                    % Drawing segment b d
-                    \draw [line width=0.016cm] (5.710000,2.500000) -- (2.790000,2.500000);%
-
-                    % Marking point s
-                    \draw (4.250000,2.500000) node [anchor=north] { $s$ };%
-
-                    % Drawing segment A C
-                    \draw [line width=0.016cm] (2.531235,1.524988) -- (4.135432,2.808346);%
-                    \draw [line width=0.016cm] (4.197901,2.858321) -- (4.968765,3.475012);%
-
-                    % Drawing segment B D
-                    \draw [line width=0.016cm] (6.465270,1.519846) -- (4.201396,2.813488);%
-                    \draw [line width=0.016cm] (4.131937,2.853179) -- (3.034730,3.480154);%
-
-                    % Marking point S by circle
-                    \draw [line width=0.016cm] (4.166667,2.833333) circle (0.040000);%
-
-                    % Marking point e
-                    \draw (3.133333,2.066667) node [anchor=south] { $e$ };%
-
-                    % Marking point f
-                    \draw (5.533333,2.066667) node [anchor=south] { $f$ };%
-
-                    % Marking point \alpha
-                    \draw (2.500000,1.500000) node [anchor=south west] { $\alpha$ };%
-
-                    % Marking point \beta
-                    \draw (6.200000,1.500000) node [anchor=south east] { $\beta$ };%
-
-                    % Marking point \gamma
-                    \draw (5.000000,3.500000) node [anchor=north east] { $\gamma$ };%
-
-                    % Marking point \delta
-                    \draw (3.000000,3.500000) node [anchor=north west] { $\delta$ };%
-
-                    % Drawing segment C N
-                    \draw [line width=0.016cm] (5.000000,3.460000) -- (5.000000,1.500000);%
 
                     % Marking point v
-                    \draw (5.000000,2.000000) node [anchor=east] { $v$ };%
+                    \draw (5.500000,3.081139) node [anchor=east] { $v$ };%
 
-                    % Drawing segment A B
-                    \draw [line width=0.032cm] (2.540000,1.500000) -- (6.460000,1.500000);%
-
-                    % Drawing segment B C
-                    \draw [line width=0.032cm] (6.476000,1.532000) -- (5.774000,2.468000);%
-                    \draw [line width=0.032cm] (5.726000,2.532000) -- (5.024000,3.468000);%
-
-                    % Drawing segment C D
-                    \draw [line width=0.032cm] (4.960000,3.500000) -- (3.040000,3.500000);%
-
-                    % Drawing segment D A
-                    \draw [line width=0.032cm] (2.990299,3.461194) -- (2.759701,2.538806);%
-                    \draw [line width=0.032cm] (2.740299,2.461194) -- (2.509701,1.538806);%
-
-                    % Marking point A by circle
-                    \draw [line width=0.032cm] (2.500000,1.500000) circle (0.040000);%
-                    \draw (2.500000,1.500000) node [anchor=north] { $A$ };%
-
-                    % Marking point B by circle
-                    \draw [line width=0.032cm] (6.500000,1.500000) circle (0.040000);%
-                    \draw (6.500000,1.500000) node [anchor=north] { $B$ };%
-
-                    % Marking point C by circle
-                    \draw [line width=0.032cm] (5.000000,3.500000) circle (0.040000);%
-                    \draw (5.000000,3.500000) node [anchor=south] { $C$ };%
-
-                    % Marking point D by circle
-                    \draw [line width=0.032cm] (3.000000,3.500000) circle (0.040000);%
-                    \draw (3.000000,3.500000) node [anchor=south] { $D$ };%
-                    }
-                    \end{tikzpicture}
-                \end{figure}
-
-            \end{definicija}
-
-            \begin{definicija}
-                \textbf{Srednica} trapeza je daljica, ki povezuje razpolovišči krakov trapeza.
-            \end{definicija}
-
-            \begin{izrek}
-                Srednica je vzporedna je osnovnicama, njena dolžina je enaka aritmetični sredini dolžin obeh osnovnic:
-                $$s=\frac{a+c}{2}.$$
-            \end{izrek}
-
-            
-                Višina trapeza je razdalja med osnovnicama.
-            
-
-            \begin{trditev}
-                Kota ob istem kraku sta suplementarna ($\alpha+\delta=180^\circ$ in $\beta+\gamma=180^\circ$).
-            \end{trditev}
-        
-
-        
-            \begin{definicija}
-                \textbf{Enakokraki trapez} je trapez, katerega kraka sta skladna.
-
-                \begin{figure}[H]
-                    \centering
-                    \begin{tikzpicture}
-                    % \clip (0,0) rectangle (14.000000,10.000000);
-                    {\footnotesize
+                    % Marking point b
+                    \draw (3.500000,3.081139) node [anchor=south east] { $b$ };%
 
                     % Marking point a
-                    \draw (4.500000,1.500000) node [anchor=north] { $a$ };%
+                    \draw (6.750000,3.081139) node [anchor=south west] { $a$ };%
 
                     % Marking point c
-                    \draw (4.500000,3.500000) node [anchor=south] { $c$ };%
+                    \draw (4.750000,1.500000) node [anchor=north] { $c$ };%
 
-                    % Marking point b by circle
-                    \draw [line width=0.016cm] (6.250000,2.500000) circle (0.040000);%
-                    \draw (6.250000,2.500000) node [anchor=west] { $b$ };%
+                    % Marking point a_1
+                    \draw (3.500000,1.500000) node [anchor=south] { $b_1$ };%
 
-                    % Marking point d by circle
-                    \draw [line width=0.016cm] (2.750000,2.500000) circle (0.040000);%
-                    \draw (2.750000,2.500000) node [anchor=east] { $b$ };%
+                    % Marking point b_1
+                    \draw (6.750000,1.500000) node [anchor=south] { $a_1$ };%
 
-                    % Drawing segment b d
-                    \draw [line width=0.016cm] (6.210000,2.500000) -- (2.790000,2.500000);%
+                    % Marking point \alpha
+                    \draw (1.900000,1.500000) node [anchor=south west] { $\alpha$ };%
 
-                    % Marking point s
-                    \draw (4.500000,2.500000) node [anchor=north] { $s$ };%
+                    % Marking point \beta
+                    \draw (7.700000,1.500000) node [anchor=south east] { $\beta$ };%
+
+                    % Marking point \alpha
+                    \draw (5.500000,4.200000) node [anchor=north west] { $\alpha$ };%
+
+                    % Marking point \beta
+                    \draw (5.450000,4.300000) node [anchor=north east] { $\beta$ };%
+
+                    % Drawing segment C N
+                    \draw [line width=0.016cm] (5.500000,4.622278) -- (5.500000,1.540000);%
+
+                    % Marking point N by circle
+                    \draw [line width=0.016cm] (5.500000,1.500000) circle (0.040000);%
+                    \draw (5.500000,1.500000) node [anchor=north] { $N$ };%
+
+                    % Drawing segment A B
+                    \draw [line width=0.032cm] (1.540000,1.500000) -- (5.460000,1.500000);%
+                    \draw [line width=0.032cm] (5.540000,1.500000) -- (7.960000,1.500000);%
 
                     % Drawing segment A C
-                    \draw [line width=0.016cm] (2.534730,1.519846) -- (4.465270,2.623012);%
-                    \draw [line width=0.016cm] (4.534730,2.662703) -- (5.965270,3.480154);%
-
-                    % Drawing segment B D
-                    \draw [line width=0.016cm] (6.465270,1.519846) -- (4.534730,2.623012);%
-                    \draw [line width=0.016cm] (4.465270,2.662703) -- (3.034730,3.480154);%
-
-                    % Marking point S by circle
-                    \draw [line width=0.016cm] (4.500000,2.642857) circle (0.040000);%
-
-                    % Marking point e
-                    \draw (3.500000,2.071429) node [anchor=south] { $e$ };%
-
-                    % Marking point f
-                    \draw (5.500000,2.071429) node [anchor=south] { $f$ };%
-
-                    % Marking point \alpha
-                    \draw (2.500000,1.500000) node [anchor=south west] { $\alpha$ };%
-
-                    % Marking point \beta
-                    \draw (6.200000,1.500000) node [anchor=south east] { $\beta$ };%
-
-                    % Marking point \gamma
-                    \draw (6.000000,3.500000) node [anchor=north east] { $\gamma$ };%
-
-                    % Marking point \delta
-                    \draw (3.000000,3.500000) node [anchor=north west] { $\delta$ };%
-
-                    % Drawing segment A B
-                    \draw [line width=0.032cm] (2.540000,1.500000) -- (6.460000,1.500000);%
+                    \draw [line width=0.032cm] (1.531379,1.524807) -- (5.468621,4.637471);%
 
                     % Drawing segment B C
-                    \draw [line width=0.032cm] (6.490299,1.538806) -- (6.259701,2.461194);%
-                    \draw [line width=0.032cm] (6.240299,2.538806) -- (6.009701,3.461194);%
-
-                    % Drawing segment C D
-                    \draw [line width=0.032cm] (5.960000,3.500000) -- (3.040000,3.500000);%
-
-                    % Drawing segment D A
-                    \draw [line width=0.032cm] (2.990299,3.461194) -- (2.759701,2.538806);%
-                    \draw [line width=0.032cm] (2.740299,2.461194) -- (2.509701,1.538806);%
+                    \draw [line width=0.032cm] (7.975193,1.531379) -- (5.524807,4.630899);%
 
                     % Marking point A by circle
-                    \draw [line width=0.032cm] (2.500000,1.500000) circle (0.040000);%
-                    \draw (2.500000,1.500000) node [anchor=north] { $A$ };%
+                    \draw [line width=0.032cm] (1.500000,1.500000) circle (0.040000);%
+                    \draw (1.500000,1.500000) node [anchor=north] { $A$ };%
 
                     % Marking point B by circle
-                    \draw [line width=0.032cm] (6.500000,1.500000) circle (0.040000);%
-                    \draw (6.500000,1.500000) node [anchor=north] { $B$ };%
+                    \draw [line width=0.032cm] (8.000000,1.500000) circle (0.040000);%
+                    \draw (8.000000,1.500000) node [anchor=north] { $B$ };%
 
                     % Marking point C by circle
-                    \draw [line width=0.032cm] (6.000000,3.500000) circle (0.040000);%
-                    \draw (6.000000,3.500000) node [anchor=south] { $C$ };%
-
-                    % Marking point D by circle
-                    \draw [line width=0.032cm] (3.000000,3.500000) circle (0.040000);%
-                    \draw (3.000000,3.500000) node [anchor=south] { $D$ };%
+                    \draw [line width=0.032cm] (5.500000,4.662278) circle (0.040000);%
+                    \draw (5.500000,4.662278) node [anchor=south] { $C$ };%
                     }
                     \end{tikzpicture}
                 \end{figure}
-            \end{definicija}
-
             
-                Enakokraki trapez ima skladni diagonali ($e=f$) in skladna para kotov ob isti osnovnici ($\alpha=\beta$ in $\gamma=\delta$).
-            
-            
-        
 
-        
+            \begin{izrek}[višinski izrek]
+                Kvadrat višine v pravokotnem trikotniku je enak produktu pravokotnih projekcij katet na hipotenuzo.
+                $$ v^2=a_1b_1 $$
+            \end{izrek}        
 
-        
-            \subsection*{Trapezoid}
-            
-            \begin{definicija}
-                \textbf{Deltoid} je štirikotnik, ki ima dva para sosednjih skladnih nevzporednih stranic.         
-                
-                \begin{figure}[H]
-                    \centering
-                    \begin{tikzpicture}
-                    % \clip (0,0) rectangle (14.000000,10.000000);
-                    {\footnotesize
-
-                    % Marking point a
-                    \draw (4.275000,1.900000) node [anchor=north] { $a$ };%
-
-                    % Marking point b
-                    \draw (2.500000,4.000000) node [anchor=south] { $b$ };%
-
-                    % Marking point a
-                    \draw (4.750000,2.750000) node [anchor=south west] { $a$ };%
-
-                    % Marking point b
-                    \draw (2.025000,3.150000) node [anchor=north east] { $b$ };%
-
-                    % Drawing segment A C
-                    \draw [line width=0.016cm] (2.569513,2.334918) -- (3.006672,3.117202);%
-                    \draw [line width=0.016cm] (3.045697,3.187037) -- (3.480487,3.965082);%
-
-                    % Drawing segment B D
-                    \draw [line width=0.016cm] (5.965034,1.519426) -- (3.061151,3.132694);%
-                    \draw [line width=0.016cm] (2.991218,3.171545) -- (1.534966,3.980574);%
-
-                    % Marking point S by circle
-                    \draw [line width=0.016cm] (3.026185,3.152120) circle (0.040000);%
-
-                    % Marking point e
-                    \draw (2.788092,2.726060) node [anchor=south] { $e$ };%
-
-                    % Marking point f
-                    \draw (4.513092,2.326060) node [anchor=south] { $f$ };%
-
-                    % Marking point \alpha
-                    \draw (2.550000,2.300000) node [anchor=south west] { $\alpha$ };%
-
-                    % Marking point \beta
-                    \draw (5.600000,1.600000) node [anchor=south east] { $\beta$ };%
-
-                    % Marking point \gamma
-                    \draw (3.500000,4.000000) node [anchor=north east] { $\gamma$ };%
-
-                    % Marking point \delta
-                    \draw (1.700000,4.000000) node [anchor=north west] { $\delta$ };%
-
-                    % Drawing segment A B
-                    \draw [line width=0.032cm] (2.588966,2.290964) -- (5.961034,1.509036);%
-
-                    % Drawing segment B C
-                    \draw [line width=0.032cm] (5.971716,1.528284) -- (3.528284,3.971716);%
-
-                    % Drawing segment C D
-                    \draw [line width=0.032cm] (3.460000,4.000000) -- (1.540000,4.000000);%
-
-                    % Drawing segment D A
-                    \draw [line width=0.032cm] (1.521020,3.965968) -- (2.528980,2.334032);%
-
-                    % Marking point A by circle
-                    \draw [line width=0.032cm] (2.550000,2.300000) circle (0.040000);%
-                    \draw (2.550000,2.300000) node [anchor=north] { $A$ };%
-
-                    % Marking point B by circle
-                    \draw [line width=0.032cm] (6.000000,1.500000) circle (0.040000);%
-                    \draw (6.000000,1.500000) node [anchor=north] { $B$ };%
-
-                    % Marking point C by circle
-                    \draw [line width=0.032cm] (3.500000,4.000000) circle (0.040000);%
-                    \draw (3.500000,4.000000) node [anchor=south] { $C$ };%
-
-                    % Marking point D by circle
-                    \draw [line width=0.032cm] (1.500000,4.000000) circle (0.040000);%
-                    \draw (1.500000,4.000000) node [anchor=south] { $D$ };%
-                    }
-                    \end{tikzpicture}
-                \end{figure}
-            \end{definicija}
-
-            
-                Diagonali deltoida se sekata pod pravim kotom. 
-                Daljša diagonala razpolavlja krajšo in oba notranja kota. 
-                Preostala kota sta skladna.
-            
-        
-
-
-        
-            \begin{definicija}
-                \textbf{Tetivni štirikotnik} je štirikotnik, katerega stranice so tetive neke krožnice.
-
-                \begin{figure}[H]
-                    \centering
-                    \begin{tikzpicture}
-                    % \clip (0,0) rectangle (14.000000,10.000000);
-                    {\footnotesize
-
-                    % Marking point a
-                    \draw (3.500000,2.000000) node [anchor=north] { $a$ };%
-
-                    % Marking point b
-                    \draw (4.801881,2.603211) node [anchor=west] { $b$ };%
-
-                    % Marking point c
-                    \draw (3.827443,3.727651) node [anchor=south] { $c$ };%
-
-                    % Marking point d
-                    \draw (2.525561,3.124440) node [anchor=east] { $d$ };%
-
-                    % Marking point \alpha
-                    \draw (2.381966,2.000000) node [anchor=south west] { $\alpha$ };%
-
-                    % Marking point \beta
-                    \draw (4.618034,2.000000) node [anchor=south east] { $\beta$ };%
-
-                    % Marking point \gamma
-                    \draw (4.985729,3.306422) node [anchor=north east] { $\gamma$ };%
-
-                    % Marking point \delta
-                    \draw (2.669157,4.148879) node [anchor=north west] { $\delta$ };%
-
-                    % Drawing circle k
-                    \draw [line width=0.016cm] (5.000000,3.000000) arc (360:360:1.500000 and 1.500000) --(5.000000,3.000000) arc (0:6:1.500000 and 1.500000) -- (4.990705,3.166733);%
-                    \draw [line width=0.016cm] (4.979696,3.245965) -- (4.977212,3.260472) arc (10:122:1.500000 and 1.500000) -- (2.702753,4.270589);%
-                    \draw [line width=0.016cm] (2.636152,4.226282) -- (2.618322,4.213526) arc (126:220:1.500000 and 1.500000) -- (2.355699,2.030167);%
-                    \draw [line width=0.016cm] (2.409028,1.970544) -- (2.420990,1.958013) arc (224:316:1.500000 and 1.500000) -- (4.590972,1.970544);%
-                    \draw [line width=0.016cm] (4.644300,2.030167) -- (4.649066,2.035818) arc (320:360:1.500000 and 1.500000);%
-
-                    % Marking point S by circle
-                    \draw [line width=0.016cm] (3.500000,3.000000) circle (0.040000);%
-                    \draw (3.500000,3.000000) node [anchor=south] { $S$ };%
-
-                    % Drawing segment A B
-                    \draw [line width=0.032cm] (2.421966,2.000000) -- (4.578034,2.000000);%
-
-                    % Drawing segment B C
-                    \draw [line width=0.032cm] (4.629696,2.038262) -- (4.974067,3.168160);%
-
-                    % Drawing segment C D
-                    \draw [line width=0.032cm] (4.949252,3.222837) -- (2.705634,4.232465);%
-
-                    % Drawing segment D A
-                    \draw [line width=0.032cm] (2.664090,4.209202) -- (2.387033,2.039678);%
-
-                    % Marking point A by circle
-                    \draw [line width=0.032cm] (2.381966,2.000000) circle (0.040000);%
-                    \draw (2.381966,2.000000) node [anchor=north] { $A$ };%
-
-                    % Marking point B by circle
-                    \draw [line width=0.032cm] (4.618034,2.000000) circle (0.040000);%
-                    \draw (4.618034,2.000000) node [anchor=north] { $B$ };%
-
-                    % Marking point C by circle
-                    \draw [line width=0.032cm] (4.985729,3.206422) circle (0.040000);%
-                    \draw (4.985729,3.206422) node [anchor=south] { $C$ };%
-
-                    % Marking point D by circle
-                    \draw [line width=0.032cm] (2.669157,4.248879) circle (0.040000);%
-                    \draw (2.669157,4.248879) node [anchor=south] { $D$ };%
-                    }
-                    \end{tikzpicture}
-                \end{figure}
-            \end{definicija}
-
-            \begin{izrek}
-                Nasprotna kota tetivnega štirikotnika sta suplementarna:
-                
-                $$\alpha+\gamma=\beta+\delta=180^\circ.$$
+            \begin{izrek}[Evklidov izrek]
+                Kvadrat katete v pravokotnem trikotniku je enak produktu hipotenuze in pravokotne projekcije te katete na hipotenuzo.
+                $$ a^2=a_1c \quad \text{in} \quad b^2=b_1c $$
             \end{izrek}
 
-            \begin{trditev}
-                Če sta v štirikotniku nasprotna kota suplementarna, mu lahko očrtamo krožnico.
-            \end{trditev}
-        
-
-
-        
-            \begin{definicija}
-                \textbf{Tangentni štirikotnik} je štirikotnik, katerega stranice so odseki na tangentah neke krožnice.
-
-                \begin{figure}[H]
-                    \centering
-                    \begin{tikzpicture}
-                    % \clip (0,0) rectangle (14.000000,10.000000);
-                    {\footnotesize
-
-                    % Marking point a
-                    \draw (3.650000,1.500000) node [anchor=north] { $a$ };%
-
-                    % Marking point b
-                    \draw (4.600000,2.450000) node [anchor=west] { $b$ };%
-
-                    % Marking point c
-                    \draw (3.440000,3.520000) node [anchor=south] { $c$ };%
-
-                    % Marking point d
-                    \draw (2.490000,2.570000) node [anchor=east] { $d$ };%
-
-                    % % Marking point \alpha
-                    % \draw (2.300000,1.500000) node [anchor=south west] { $\alpha$ };%
-
-                    % % Marking point \beta
-                    % \draw (5.000000,1.500000) node [anchor=south east] { $\beta$ };%
-
-                    % % Marking point \gamma
-                    % \draw (4.200000,3.400000) node [anchor=north east] { $\gamma$ };%
-
-                    % % Marking point \delta
-                    % \draw (2.680000,3.640000) node [anchor=north west] { $\delta$ };%
-
-                    % Drawing circle k
-                    \draw [line width=0.016cm] (3.500000,2.500000) circle (1.000000);%
-
-                    % Marking point S by circle
-                    \draw [line width=0.016cm] (3.500000,2.500000) circle (0.040000);%
-                    \draw (3.500000,2.500000) node [anchor=south] { $S$ };%
-
-                    % Drawing segment A B
-                    \draw [line width=0.032cm] (2.340000,1.500000) -- (4.960000,1.500000);%
-
-                    % Drawing segment B C
-                    \draw [line width=0.032cm] (4.984478,1.536865) -- (4.215522,3.363135);%
-
-                    % Drawing segment C D
-                    \draw [line width=0.032cm] (4.160489,3.406239) -- (2.719511,3.633761);%
-
-                    % Drawing segment D A
-                    \draw [line width=0.032cm] (2.673007,3.600616) -- (2.306993,1.539384);%
-
-                    % Marking point A by circle
-                    \draw [line width=0.032cm] (2.300000,1.500000) circle (0.040000);%
-                    \draw (2.300000,1.500000) node [anchor=north] { $A$ };%
-
-                    % Marking point B by circle
-                    \draw [line width=0.032cm] (5.000000,1.500000) circle (0.040000);%
-                    \draw (5.000000,1.500000) node [anchor=north] { $B$ };%
-
-                    % Marking point C by circle
-                    \draw [line width=0.032cm] (4.200000,3.400000) circle (0.040000);%
-                    \draw (4.200000,3.400000) node [anchor=south] { $C$ };%
-
-                    % Marking point D by circle
-                    \draw [line width=0.032cm] (2.680000,3.640000) circle (0.040000);%
-                    \draw (2.680000,3.640000) node [anchor=south] { $D$ };%
-                    }
-                    \end{tikzpicture}
-                \end{figure}
-            \end{definicija}
-
-            \begin{izrek}
-                Vsota dolžin nasprotnih stranic tangentnega štirikotnika je enaka vsoti dolžin drugih dveh nasprotnih stranic:
-                
-                $$a+c=b+d.$$
-            \end{izrek}
-        
-
-
-        
-            \subsection*{Pravilni $n$-kotnik}
-
-            \begin{definicija}
-                \textbf{Pravlni $n$-kotnik} ima vse stranice enako dolge in vse kote enako velike.
-
-                \begin{figure}[H]
-                    \centering
-
-                \end{figure}
-            \end{definicija}
-
-            \begin{izrek}
-                Vsota notranjih kotov trikotnika je $(n-2)\cdot 180^\circ$.
+            \begin{izrek}[Pitagorov izrek]
+                Kvadrat hipotenuze v pravokotnem trikotniku je enak vsoti kvadratov obeh katet.
+                $$ c^2=a^2+b^2 $$
             \end{izrek}
 
-            
-                Notranji kot pravilnega $n$-kotnika meri $\frac{n-2}{n} 180^\circ$.
-            
+        
 
         
 
-
-        
-            \begin{naloga}
-                Konstruirajte paralelogram $ABCD$ s podatki:
-                \begin{itemize}
-                    \item $a=4~cm$, $b=3~cm$, $e=6~cm$;
-                    \item $\alpha=60^\circ$, $a=5~cm$, $b=3~cm$;
-                    \item $e=f=4~cm$, $a=3~cm$.
-                \end{itemize}
-            \end{naloga}
-
-            \begin{naloga}
-                Konstruirajte trapez $ABCD$ s podatki:
-                \begin{itemize}
-                    \item $a=5~cm$, $b=4~cm$, $d=3.5~cm$, $\beta=60^\circ$;
-                    \item $a=4~cm$, $v=3~cm$, $e=5~cm$, $f=4~cm$;
-                    \item $\alpha=60^\circ$, $a=5~cm$, $e=f=4.5~cm$;
-                    \item $\alpha=60^\circ$, $b=5~cm$, $c=2~cm$, $v=4~cm$.
-                \end{itemize}
-            \end{naloga}
-
-        
-
-
-        
-            \begin{naloga}
-                Konstruirajte deltoid $ABCD$ s podatki:
-                \begin{itemize}
-                    \item $b=3.5~cm$, $e=4~cm$, $f=5~cm$;
-                    \item $a=4~cm$, $b=3~cm$, $\delta=90^\circ$.
-                \end{itemize}
-            \end{naloga}
-
-            \begin{naloga}
-                
-            \end{naloga}
         
