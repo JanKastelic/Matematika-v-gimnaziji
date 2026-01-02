@@ -15,6 +15,497 @@
             \frametitle{Lastnosti funkcij}
         \end{frame}
 
+
+        \begin{frame}
+            \frametitle{Preslikava}
+
+            \vskip-2em
+            \begin{columns}
+                \column{0.73\textwidth}
+                    \only<2->{\begin{alertblock}{Preslikava}
+                        \only<3->{Naj bosta $\mathcal{X}$ in $\mathcal{Y}$ neprazni množici. \\} 
+                        \only<4->{\textbf{Preslikava} $f$ sestoji iz:}
+                        \begin{itemize}
+                            \item<5-> množice $\mathcal{X}$, ki ji pravimo \textbf{domena},
+                            \item<6-> množice $\mathcal{Y}$, ki ji pravimo \textbf{kodomena} in 
+                            \item<7-> \textbf{prirejanja}, ki vsakemu elementu $x$ domene priredi natanko en element $y$ kodomene.
+                        \end{itemize}
+                    \end{alertblock}}
+
+                \column{0.24\textwidth}
+
+                    \only<4->{\begin{alertblock}{}
+                        $$\begin{aligned}
+                            f&: \only<5->{\mathcal{X}}\only<6->{\to\mathcal{Y}} \\ \only<7->{f&: x\mapsto y}
+                        \end{aligned}  $$
+                    \end{alertblock}}
+            
+        \end{columns}
+
+        \vskip-0.4em
+        \only<8->{\begin{alertblock}{}
+            Elemente $x$ kodomene $\mathcal{X}$ imenujemo \textbf{originali} preslikave.
+             \only<9->{\\ Če elementu $x$ priredimo element $y$ iz kodomene, potem $y$ imenujemo \textbf{slika} elemeta $x$.}
+        \end{alertblock}}
+
+        \vskip-0.4em
+        \only<10->{\begin{block}{}
+            Preslikavo lahko podamo s predpisom, puščičnim diagramom, besednim opisom ...
+        \end{block}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \frametitle{Funkcija}
+
+            \only<2->{\begin{alertblock}{Funkcija}
+                \only<3->{Naj bosta $\mathcal{X}$ in $\mathcal{Y}$ neprazni številski množici. \\}
+                \only<4->{\textbf{Funkcija} $f$ je preslikava med številskima množicama $\mathcal{X}$ in $\mathcal{Y}$:}
+                \vskip-0.5em
+                \only<5->{$$f: \mathcal{X}\to\mathcal{Y}.$$}
+            \end{alertblock}}
+
+
+            \only<6->{\begin{alertblock}{}
+                Število $y$ je \textbf{funkcijska vrednost} števila $x$, če se število $x$ preslika v število $y$. 
+                \vskip-0.5em
+                \only<6->{$$ f(x)=y $$}
+            \end{alertblock}}
+
+            \only<7->{\begin{block}{}
+                $x$ je neodvisna spremenljivka, $f(x)$ je od $x$ odvisna spremenljivka.
+            \end{block}}
+
+        \end{frame}
+
+        
+        \begin{frame}
+            
+            \only<2->{\begin{block}{}
+                V nekaterih primerih za opis funkcije uporabimo poseben izraz:
+                \begin{itemize}
+                    \item<3-> $f:\mathcal{X}\to\mathbb{R}; \mathcal{X}\subseteq\mathbb{R}$ -- realna funkcija realne spremenljivke;
+                    \item<4-> $f:\mathcal{X}\to\mathbb{R}; \mathcal{X}\subseteq\mathbb{N}$ -- realna funkcija naravne spremenljivke;
+                    \item<5-> $f:\mathcal{X}\to\mathbb{N}; \mathcal{X}\subseteq\mathbb{R}$ -- naravna funkcija realne spremenljivke;
+                    \item<6-> $f:\mathcal{X}\to\mathbb{N}; \mathcal{X}\subseteq\mathbb{N}$ -- naravna funkcija naravne spremenljivke.
+                \end{itemize}
+            \end{block}}
+        \end{frame}
+
+        \begin{frame}
+            \frametitle{Definicijsko območje in zaloga vrednosti funkcije}
+
+            \only<2->{\begin{alertblock}{Definicijsko območje}
+                \only<3->{\textbf{Definicijsko območje $D_f$} preslikave ali funkcije $f:\mathcal{X}\to\mathcal{Y}$ je množica vseh originalov, ki jih v danem primeru opazujemo.}            
+            \end{alertblock}}
+
+            \vskip-0.5em
+            \only<4->{\begin{block}{}
+                Za definicijsko območje navadno vzamemo največjo možno množico, za katero je predpis funkcije veljaven/definiran.
+            \end{block}}
+
+            \only<5->{\begin{alertblock}{Zaloga vrednosti}
+                \only<6->{\textbf{Zaloga vrednosti $Z_f$} preslikave ali funkcije $f:\mathcal{X}\to\mathcal{Y}$ je množica vseh slik oziroma funkcijskih vrednosti.}
+            \end{alertblock}}
+
+            \vskip-0.5em
+            \only<7->{\begin{block}{}
+                Zaloga vrednosti $Z_f$ je podmnožica kodomene $\mathcal{Y}$: $Z_f\subseteq \mathcal{Y}$.
+            \end{block}}
+
+        \end{frame}
+
+
+
+
+
+        \begin{frame}
+            \frametitle{Ničla in začetna vrednost funkcije}
+
+            \only<2->{\begin{alertblock}{Ničla funkcije}
+                \only<3->{\textbf{Ničla} funkcije $f:\mathcal{X}\to\mathcal{Y}$ je tista vrednost $x_0\in\mathcal{X}$ neodvisne spremenljivke, 
+                pri kateri je vrednost funkcije $f$ enaka $0$: $f(x_0)=0$.}
+            \end{alertblock}}
+
+            \vskip-0.5em
+            \only<4->{\begin{block}{}
+                Ničle funkcije $f$ poiščemo tako, da rešimo enačbo $f(x)=0$. \\
+                \only<5->{Ničle so le tiste izmed vrednosti, ki ležijo v definicijskem območju $D_f$ funkcije $f$.}
+            \end{block}}
+
+            \only<6->{\begin{alertblock}{Začetna vrednost}
+                \only<7->{\textbf{Začetna vrednost} funkcije $f:\mathcal{X}\to\mathcal{Y}$ je funkcijska vrednost pri $x=0$, to je $f(0)$.}
+            \end{alertblock}}
+
+            \vskip-0.5em
+            \only<8->{\begin{block}{}
+                Začetna vrednost obstaja le, če je $0$ v definicijskem območju funkcije $f$: $0\in D_f$.
+            \end{block}}
+        \end{frame}
+
+
+
+
+
+        \begin{frame}
+            \frametitle{Graf funkcije}
+
+            \only<2->{\begin{alertblock}{Graf funkcije}
+                \only<3->{\textbf{Graf} $\Gamma_f$ funkcije $f:\mathcal{X}\to\mathcal{Y}$ je množica urejenih parov $(x,y)\in\mathcal{X}\times\mathcal{Y}$, 
+                kjer element $x$ preteče celotno definicijsko območje $D_f$ funkcije, element $y$ pa je slika pripadajočega $x$, torej $y=f(x)$.}
+                \only<4->{$$ \Gamma_f=\left\{(x,y)\in\mathcal{X}\times\mathcal{Y}; x\in D_f \land y=f(x)\right\} $$}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{}
+                Urejene pare iz množice $\Gamma_f$ lahko upodobimo v koordinatnem sistemu. \\
+                \only<6->{Vsakemu elementu $(x,f(x))$ iz zgornje množice pripada natanko ena točka v koordinatnem sistemu, 
+                katere abscisa je enaka $x$, ordinata pa je njegova slika $f(x)$.}
+            \end{block}}
+
+            \only<7->{\begin{block}{}
+                V ničli, če obstaja, graf funkcije seka ali se dotika abscisne osi, v začetni vrednosti, če obstaja, pa seka ordinatno os.
+            \end{block}}
+        \end{frame}
+
+
+
+        
+        \begin{frame}
+            \frametitle{Naraščanje in padanje funkcije}
+
+            \only<2->{\begin{alertblock}{Naraščajoča funkcija}
+                \only<3->{Funkcija $f$ je na intervalu $(a,b)$ \textbf{naraščajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)\leq f(x_2)$.}
+                
+                \only<4->{Funkcija $f$ je na intervalu $(a,b)$ \textbf{strogo naraščajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)<f(x_2)$.}
+            \end{alertblock}}
+
+            \only<5->{\begin{alertblock}{Padajoča funkcija}
+                \only<6->{Funkcija $f$ je na intervalu $(a,b)$ \textbf{padajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)\geq f(x_2)$.}
+                
+                \only<7->{Funkcija $f$ je na intervalu $(a,b)$ \textbf{strogo padajoča}, če za poljubna $x_1,x_2\in(a,b)$, kjer je $x_1<x_2$, velja $f(x_1)>f(x_2)$.}
+            \end{alertblock}}
+
+        \end{frame}
+
+
+
+        
+        \begin{frame}
+            \frametitle{Injektivnost in surjektivnost}
+
+            \vskip-1em
+            \only<2->{\begin{alertblock}{Surjektivnost}
+                \only<3->{Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{surjektivna}, če je zaloga vrednosti $Z_f$ funkcije enaka njeni kodomeni $\mathcal{Y}$ -- vsak element kodomene $\mathcal{Y}$ je slika vsaj enega elementa iz domene $\mathcal{X}$.}
+                \vskip-1em
+                \only<4->{$$\forall y\in\mathcal{Y}. \exists x\in\mathcal{X}\ni:f(x)=y$$}
+            \end{alertblock}}
+
+            \vskip-0.3em
+            \only<5->{\begin{alertblock}{Injektivnost}
+                \only<6->{Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{injektivna}, če se dva poljubna različna originala iz domene $\mathcal{X}$ preslikata v različni sliki v kodomeni $\mathcal{Y}$ -- vsak element kodomene $\mathcal{Y}$ je slika kvečjemu enega elementa iz domene $\mathcal{X}$.}
+                \vskip-1em
+                \only<7->{$$\forall x,y\in\mathcal{X}: f(x)=f(y)\Rightarrow x=y$$}
+            \end{alertblock}}
+
+            \vskip-0.5em
+            \only<8->{\begin{alertblock}{}
+                Funkcija $f:\mathcal{X}\to\mathcal{Y}$ je \textbf{bijektivna}, če je injektivna in surjektivna hkrati -- vsak element iz kodomene $\mathcal{Y}$ je slika natanko enega elementa domene $\mathcal{X}$.
+            \end{alertblock}}
+        \end{frame}
+
+
+
+        \begin{frame}
+            \frametitle{Omejenost funckije}
+
+            \vskip-1em
+            \only<2->{\begin{alertblock}{Omejenost navzgor}
+                \only<3->{Funkcija $f$ je \textbf{navzgor omejena}, če obstaja tako realno število $M$, da je $f(x)\leq M$ za vsak $x\in D_f$.
+                Število $M$ imenujemo \textit{zgornja meja}.}
+                \vskip-1em
+                \only<4->{$$\exists M\in\mathbb{R}. \forall x\in D_f \ni:f(x)\leq M$$}
+            \end{alertblock}}
+
+            \vskip-0.3em
+            \only<5->{\begin{alertblock}{Omejenost navzdol}
+                \only<6->{Funkcija $f$ je \textbf{navzdol omejena}, če obstaja tako realno število $m$, da je $f(x)\geq m$ za vsak $x\in D_f$.
+                Število $m$ imenujemo \textit{spodnja meja}.}
+                \vskip-1em
+                \only<7->{$$\exists m\in\mathbb{R}. \forall x\in D_f \ni:f(x)\geq m$$}
+            \end{alertblock}}
+
+            \vskip-0.5em
+            \only<8->{\begin{alertblock}{Omejenost}
+                \only<9->{Funkcija $f$ je \textbf{omejena}, če je navzgor omejena in navzdol omejena.}
+                \only<10->{$$\exists m,M\in\mathbb{R}. \forall x\in D_f \ni:f(x)\in\left[m,M\right]$$}
+            \end{alertblock}}
+        \end{frame}
+        
+
+        \begin{frame}
+
+            \only<2->{\begin{alertblock}{Neomejenost navzgor}
+                \only<3->{Funkcija $f$ je \textbf{navzgor neomejena}, če za vsako pozitivno realno število $M$ obstaja tak $x\in D_f$, da je $f(x)>M$.}
+                \vskip-1em
+                \only<4->{$$\forall M\in\mathbb{R}^+. \exists x\in D_f \ni:f(x)> M$$}
+            \end{alertblock}}
+
+            \vskip-0.3em
+            \only<5->{\begin{alertblock}{Neomejenost navzdol}
+                \only<6->{Funkcija $f$ je \textbf{navzdol neomejena}, če za vsako negativno realno število $N$ obstaja tak $x\in D_f$, da je $f(x)<N$.}
+                \vskip-1em
+                \only<7->{$$\forall N\in\mathbb{R}^-. \exists x\in D_f \ni:f(x)<N $$}
+            \end{alertblock}}
+
+            \vskip-0.5em
+            \only<8->{\begin{alertblock}{Neomejenost}
+                \only<9->{Funkcija $f$ je \textbf{neomejena}, če je navzgor neomejena in navzdol neomejena.}
+            \end{alertblock}}
+        \end{frame}
+
+
+
+        \begin{frame}
+            \frametitle{Predznak funkcije}
+
+            \only<2->{\begin{alertblock}{Pozitivnost}
+                \only<3->{Funkcija $f$ je na intervalu $(a,b)$ \textbf{pozitivna}, če za vsak $x\in(a,b)$ velja $f(x)>0$.}
+                
+                \only<4->{$$ \forall x\in(a,b)\cap D_f \ni: f(x)>0 $$}
+            \end{alertblock}}
+
+            \only<5->{\begin{alertblock}{Negativnost}
+                \only<6->{Funkcija $f$ je na intervalu $(a,b)$ \textbf{negativna}, če za vsak $x\in(a,b)$ velja $f(x)<0$.}
+                
+                \only<7->{$$ \forall x\in(a,b)\cap D_f \ni: f(x)>0 $$}
+            \end{alertblock}}
+
+        \end{frame}
+
+
+
+        \begin{frame}
+            \frametitle{Sodost in lihost funkcije}
+
+            \only<2->{\begin{alertblock}{Sodost}
+                \only<3->{Funkcija $f$ je  \textbf{soda}, če za vsak $x\in D_f$ velja $f(-x)=f(x)$.}
+                
+                \only<4->{$$ \forall x\in D_f : f(-x)=f(x) $$}
+            \end{alertblock}}
+
+            \only<5->{\begin{block}{}
+                Graf sode funkcije je simetričen glede na ordinatno os.
+            \end{block}}
+
+            \only<6->{\begin{alertblock}{Lihost}
+                \only<7->{Funkcija $f$ je  \textbf{liha}, če za vsak $x\in D_f$ velja $f(-x)=-f(x)$.}
+                
+                \only<8->{$$ \forall x\in D_f : f(-x)=-f(x) $$}
+            \end{alertblock}}
+
+            \only<9->{\begin{block}{}
+                Graf lihe funkcije je simetričen glede na koordinatno izhodišče.
+            \end{block}}
+
+
+        \end{frame}
+
+
+
+        \begin{frame}
+            \frametitle{Konveksnost in konkavnost funkcije}
+
+            \vskip-1.5em
+            \begin{columns}
+                \column{0.47\textwidth}
+
+                \only<2->{\begin{alertblock}{Konveksnost}
+                    \only<3->{Funkcija $f$ je na intervalu $(a,b)$ \textbf{konveksna}, če za poljubna $x_1,x_2\in(a,b)$ velja, da je graf funkcije pod zveznico točk $(x_1,f(x_1))$ in $(x_2,f(x_2))$.}
+                    
+                    \only<4->{}
+                \end{alertblock}}
+
+
+                \column{0.47\textwidth}
+                \only<5->{\begin{alertblock}{Konkavnost}
+                    \only<6->{Funkcija $f$ je na intervalu $(a,b)$ \textbf{konkavna}, če za poljubna $x_1,x_2\in(a,b)$ velja, da je graf funkcije nad zveznico točk $(x_1,f(x_1))$ in $(x_2,f(x_2))$.}
+                    
+                    \only<7->{}
+                \end{alertblock}}
+
+            \end{columns}
+
+        \end{frame}
+        
+
+
+%%%%%%%%%%%%%%%%%%%% naloge
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Za katere $x$ je dana funkcija definirana? Zapišite definicijsko območje.
+                \vskip-0.5em
+                \begin{columns}
+                    \column{0.5\textwidth}
+                    \begin{itemize}
+                        \item $f(x)=\dfrac{1}{x}$ \\~
+                        \item $g(x)=2x-3$ \\~
+                        \item $h(x)=\dfrac{x}{x-3}$ \\~
+                        \item $i(x)=x^2-2x+1$ \\~
+                        \item $j(x)=\dfrac{x-1}{x+1}$ \\~
+ 
+                    \end{itemize}
+
+                    \column{0.47\textwidth}
+                    \begin{itemize}
+                        \item $k(x)=\sqrt{x-4}$ \\~
+                        \item $l(x)=\left(x-3\right)^{-2}$ \\~
+                        \item $m(x)=\sqrt{3x+4}$ \\~
+                        \item $n(x)=\dfrac{x-1}{x^2+5x+6}$ \\~
+                        \item $o(x)=\sqrt{3-6x}$ \\~
+                    \end{itemize}
+                \end{columns}
+
+            \end{exampleblock}}
+        \end{frame}
+
+
+        
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Izračunajte začetno vrednost in ničle funkcije.
+                \vskip-0.5em
+                \begin{columns}
+                    \column{0.5\textwidth}
+                    \begin{itemize}
+                        \item $f(x)=2x-4$ \\~
+                        \item $g(x)=x^2-4$ \\~
+                        \item $h(x)=5x+2$ \\~
+                        \item $i(x)=\dfrac{x+3}{x-3}$ \\~
+                        \item $j(x)=\left(x-1\right)^{-2}-1$ \\~
+                    \end{itemize}
+
+                    \column{0.47\textwidth}
+                    \begin{itemize}
+                        \item $k(x)=\dfrac{1}{x}$ \\~
+                        \item $l(x)=\dfrac{2x+4}{2x^2-1}$ \\~
+                        \item $m(x)=\sqrt{x+5}$ \\~
+                        \item $n(x)=\sqrt{2x+6}$ \\~
+                    \end{itemize}
+                \end{columns}
+
+            \end{exampleblock}}
+        \end{frame}
+
+
+        \begin{frame}
+            \only<2->{\begin{exampleblock}{Naloga}
+                Narišite graf funkcije. Izračunajte ničle in začetno vrednost ter vrednosti preverite na grafu.
+                \vskip-0.5em
+                \begin{columns}
+                    \column{0.5\textwidth}
+                    \begin{itemize}
+                        \item $f(x)=x-3$ \\~
+                        \item $g(x)=2x+1$ \\~
+                        \item $h(x)=-2x+1$ \\~
+                    \end{itemize}
+
+                    \column{0.47\textwidth}
+                    \begin{itemize}
+                        \item $p(x)=-\frac{1}{2}x+1$ \\~
+                        \item $q(x)=\dfrac{2-x}{4}$ \\~
+                        \item $r(x)=\left\lvert 2x-4 \right\rvert -1$ \\~
+                    \end{itemize}
+                \end{columns}
+
+            \end{exampleblock}}
+        \end{frame}
+
+
+
+        
+
+            \begin{frame}
+                \only<2->{\begin{exampleblock}{Naloga}
+                    Z grafa funkcije razberite, kam funkcija preslika originale $x=-1$, $x=0$, $x=1$ in $x=2$.
+                    \\ ~
+
+                \end{exampleblock}}
+            \end{frame}
+        
+
+
+            \begin{frame}
+                \only<2->{\begin{exampleblock}{Naloga}
+                    Narisan je graf funkcije. Zapišite:
+                    \begin{itemize}
+                        \item začetno vrednost funkcije,
+                        \item intervale, kjer funkcija narašča oziroma pada,
+                        \item natančno zgornjo in spodnjo mejo, če je funkcija navzgor ali navzdol omejena.
+                    \end{itemize}
+                     ~
+
+                \end{exampleblock}}
+            \end{frame}
+
+
+            \begin{frame}
+                \only<2->{\begin{exampleblock}{Naloga}
+                    Računsko preverite, ali je dana funkcija soda ali liha.
+                \vskip-0.5em
+                \begin{columns}
+                    \column{0.5\textwidth}
+                    \begin{itemize}
+                        \item $f(x)=3x$ \\~
+                        \item $g(x)=-3x+1$ \\~
+                        \item $h(x)=2|x|+4$ \\~
+                        \item $i(x)=x^2+1$ \\~
+                    \end{itemize}
+
+                    \column{0.47\textwidth}
+                    \begin{itemize}
+                        \item $j(x)=x^2+3x-1$ \\~
+                        \item $k(x)=x^3+2x$ \\~
+                        \item $l(x)=5x^3-4x+1$ \\~
+                        \item $m(x)=\dfrac{x^3-2x}{7x^3+x}$ \\~
+                    \end{itemize}
+                \end{columns}
+
+
+                \end{exampleblock}}
+            \end{frame}
+
+
+            \begin{frame}
+                \only<2->{\begin{exampleblock}{Naloga}
+                    Z grafa funkcije razberite, ali je funkcija soda ali liha.
+                    \\ ~
+
+                \end{exampleblock}}
+            \end{frame}
+
+
+            \begin{frame}
+                \only<2->{\begin{exampleblock}{Naloga}
+                    Z grafa funkcije razberite, na katerih intervalih je funkcija konveksna in na katerih konkavna.
+                    \\ ~
+
+                \end{exampleblock}}
+            \end{frame}
+
+
+            \begin{frame}
+                \only<2->{\begin{exampleblock}{Naloga}
+                    Z grafa funkcije razberite, ali je realna funkcija realne spremenljivke injektivna, surjektivna, bijektivna.
+                    \\ ~
+
+                \end{exampleblock}}
+            \end{frame}
+            
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
     \subsection{Transformacije na ravnini}
 
         \begin{frame}
