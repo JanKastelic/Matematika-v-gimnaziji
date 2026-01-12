@@ -560,8 +560,8 @@
 \draw [line width=0.032cm] (4.036000,1.296521) -- (4.029000,1.508396);%
 \draw [line width=0.032cm] (4.039079,1.200000) -- (4.036000,1.296521);%
 
-% Marking point k_1f(x)
-\draw (3.525000,5.400000) node [anchor=south] { $k_1f(x)$ };%
+% Marking point f(k_1x)
+\draw (3.490000,5.400000) node [anchor=south] { $f(k_1x)$ };%
 
 % Changing color 0 204 0
 \definecolor{r0g204b0}{rgb}{0.000000,0.800000,0.000000}%
@@ -1029,8 +1029,8 @@
 \draw [line width=0.032cm] (5.303000,1.285730) -- (5.296000,1.382167);%
 \draw [line width=0.032cm] (5.309126,1.200000) -- (5.303000,1.285730);%
 
-% Marking point k_2f(x)
-\draw (4.925000,5.400000) node [anchor=south] { $k_2f(x)$ };%
+% Marking point f(k_2x)
+\draw (4.960000,5.400000) node [anchor=south] { $f(k_2x)$ };%
 \color{black}
 }
 \end{tikzpicture}
