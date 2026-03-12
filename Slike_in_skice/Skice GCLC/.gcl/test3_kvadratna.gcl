@@ -52,7 +52,7 @@ ang_drawsystem_p 2 1 1 1 2
 
 color 204 0 0
 double
-ang_draw_parametric_curve x {-14;x<15;x+0.0005}{x;(-2)*sqrt(x+5)+3}
+ang_draw_parametric_curve x {-14;x<15;x+0.0005}{x;0.5*pow(x+2,2)-3}
 
 
 
