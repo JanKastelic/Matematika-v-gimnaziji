@@ -9754,13 +9754,19 @@
         \begin{frame}
             \frametitle{Povezava med koeficienti $a,b,c$ in koordinatama temena $p$ in $q$}
 
-            \begin{alertblock}{Diskriminanta}
+            \only<2->{\begin{alertblock}{Diskriminanta}
                 Število $D=b^2-4ac$ imenujemo \textbf{diskriminanta} kvadratne funkcije.
-            \end{alertblock}
+            \end{alertblock}}
 
-            \begin{block}{}
-                Koordinati temena sta $p=-\dfrac{b}{2a}$ in $q=-\dfrac{D}{4a}$, kjer je $D=b^2-4ac$.
-            \end{block}
+            \only<3->{\begin{block}{}
+                Koordinati temena sta $p=-\dfrac{b}{2a}$ in $q=-\dfrac{D}{4a}$, kjer je $D=b^2-4ac$, torej $T\left(-\dfrac{b}{2a},-\dfrac{D}{4a}\right)$.
+            \end{block}}
+
+            \only<4->{\begin{block}{}
+                Vsako parabolo tako lahko zapišemo v temenski obliki:
+                $$ f(x)=a\left(x+\dfrac{b}{2a}\right)^2-\dfrac{D}{4a}.$$
+            \end{block}}
+
         \end{frame}
 
 
