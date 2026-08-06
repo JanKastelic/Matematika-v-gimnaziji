@@ -9735,7 +9735,7 @@
             \frametitle{Povezava med koeficienti $a,b,c$ in koordinatama temena $p$ in $q$}
 
             \vskip-1em
-            \begin{block}{Primerjava koeficientov}
+            \only<2->{\begin{block}{1. način -- primerjava koeficientov}
                 Primerjamo koeficiente pri istih potencah v splošni in razčlenjeni temenski obliki.
                 $$\begin{aligned}
                     ax^2+bx+c &= a(x-p)^2+q \\
@@ -9745,12 +9745,50 @@
                 Dobimo $ a=a$, $b=-2ap$ in $c=ap^2+q$
                 ter izrazimo
                 $$ p=-\dfrac{b}{2a} \quad \text{in}$$ $$q=c-ap^2=c-a\left(-\dfrac{b}{2a}\right)^2=c-\dfrac{ab^2}{4a^2}=c-\dfrac{b^2}{4a}=\dfrac{4ac-b^2}{4a}=-\dfrac{b^2-4ac}{4a}.$$
-            \end{block}
+            \end{block}}
 
         \end{frame}
 
 
+
+
+        \begin{frame}
+            \frametitle{Povezava med koeficienti $a,b,c$ in koordinatama temena $p$ in $q$}
+
+            \vskip-1em
+            \only<2->{\begin{block}{2. način -- dopolnjevanje do popolnega kvadrata}
+                Splošno obliko predpisa dopolnimo do popolnega kvadrata -- temenska oblika.
+                \vskip-1em
+                \begin{columns}
+                    \column{0.38\textwidth}
+                    ~\\
+                        \begin{itemize}
+                            \item splošna oblika:
+                            \item izpostavimo vodilni koeficient iz prvih dveh členov: \\~
+                            \item dopolnimo do popolnega kvadrata:
+                            ~\\~\\~\\
+                            \item poenostavimo:
+                        \end{itemize}
+
+                    \column{0.58\textwidth}
+                        $$\begin{aligned}
+                            f(x)&=ax^2+bx+c \\
+                            f(x)&= a\left(x^2+\frac{b}{a}x\right)+c \\
+                            f(x)&= a\left(x^2+2\cdot\frac{b}{2a}x\right)+c \\
+                            % f(x)&= a\left(x^2+2\cdot\frac{b}{2a}x+\left(\frac{b}{2a}\right)^2-\left(\frac{b}{2a}\right)^2\right)+c \\
+                            f(x)&= a\left(x^2+2\cdot\frac{b}{2a}x+\left(\frac{b}{2a}\right)^2\right)-\frac{b^2}{4a}+c \\
+                            f(x)&= a\left(x+\frac{b}{2a}\right)^2-\frac{b^2-4ac}{4a}
+                        \end{aligned}$$
+
+                \end{columns}
+                
+                
+            \end{block}}
+
+        \end{frame}
+
         
+
         \begin{frame}
             \frametitle{Povezava med koeficienti $a,b,c$ in koordinatama temena $p$ in $q$}
 
@@ -9767,7 +9805,12 @@
                 $$ f(x)=a\left(x+\dfrac{b}{2a}\right)^2-\dfrac{D}{4a}.$$
             \end{block}}
 
+            \only<5->{\begin{block}{}
+                Če je koeficient $b=0$, potem sta splošna in temenska oblika enaki.
+            \end{block}}
         \end{frame}
+
+
 
 
 %%%%%% naloge
@@ -10007,11 +10050,77 @@
     \subsection{Ničle kvadratne funkcije in rešitve kvadratne enačbe}
 
         \begin{frame}
-            \frametitle{Kvadratna funkcija in parabola}
+            \frametitle{Ničle kvadratne funkcije in kvadratna enačba}
+
+            \only<2->{\begin{alertblock}{Ničle kvadratne funkcije}
+                \textbf{Ničle kvadratne funkcije $f$} so tiste vrednosti spremenljivke $x$, 
+                kjer je vrednost kvadratne funkcije $f(x)=0$.
+            \end{alertblock}}
+
+            \only<3->{\begin{alertblock}{Kvadratna enačba}
+                \textbf{Kvadratna enačba} je enačba oblike $$ax^2+bx+c=0, \quad a\neq 0,$$
+                kjer so $a,b,c\in\mathbb{R}$.
+            \end{alertblock}}
+
+            \only<4->{\begin{block}{}
+                Kvadratna enačba je pogoj za izračun ničel kvadratne funkcije.
+            \end{block}}
         \end{frame}
         
 
+        \begin{frame}
+            \frametitle{Reševanje kvadratne enačbe}
 
+            \vskip-1em
+            \only<2->{\begin{block}{}
+                Za reševanje uporabimo temensko obliko enačbe: $ax^2+bx+c=a\left(x+\frac{b}{2a}\right)^2-\frac{D}{4a}$.
+
+                % \vskip-0.5em
+                \begin{columns}
+                    \column{0.5\textwidth}
+                        $$\begin{aligned}
+                            a\left(x+\frac{b}{2a}\right)^2-\frac{D}{4a} &=0 \\
+                            \left(x+\frac{b}{2a}\right)^2-\frac{D}{4a^2} &=0 \\
+                            \left(x+\frac{b}{2a}\right)^2 &=\frac{D}{4a^2} \\
+                            x+\frac{b}{2a} &=\pm\sqrt{\frac{D}{4a^2}} \\
+                            x &=-\frac{b}{2a}\pm\frac{\sqrt{D}}{2a}
+                        \end{aligned}$$           
+                        
+                    \column{0.46\textwidth}
+                    ~\\
+                        \begin{itemize}
+                            \item delimo z $a$ \\~
+                            \item na obeh straneh prištejemo $\frac{D}{4a^2}$ \\~
+                            \item korenimo obe strani enačbe, če je $D\geq 0$ \\~
+                            \item prištejemo $-\frac{b}{2a}$
+                        \end{itemize}
+
+                \end{columns}
+
+            \end{block}}
+
+        \end{frame}
+
+
+
+        \begin{frame}
+            \frametitle{Rešitve kvadratne enačbe}
+
+            \only<2->{\begin{alertblock}{Rešitve kvadratne enačbe}
+                \textbf{Rešitvi kvadratne enačbe} $ax^2+bx+c=0$ sta
+                $$x_1=\dfrac{-b-\sqrt{D}}{2a} \quad \text{in} \quad x_2=\dfrac{-b+\sqrt{D}}{2a},$$
+                kjer je $D=b^2-4a$ diskriminanta kvadratne enačbe.
+            \end{alertblock}}
+
+            \only<3->{\begin{block}{}
+                Rešitvi enačbe imenujemo tudi \textit{korena enačbe}.
+            \end{block}}
+
+            \only<4->{\begin{block}{}
+                Število rešitev kvadratne enačbe je odvisno od predznaka diskriminante $D$.
+            \end{block}}
+
+        \end{frame}
 
 
 
