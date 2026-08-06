@@ -16,7 +16,7 @@
     \subsection{Kvadratna funkcija v splošni in temenski obliki}
 
         \begin{frame}
-            \frametitle{Kvadratna funkcija}
+            \frametitle{Kvadratna funkcija v splošni obliki}
 
             \vskip-2.5em
             \begin{columns}
@@ -8594,9 +8594,9 @@
 
 
         \begin{frame}
-            \frametitle{}
+            \frametitle{Kvadratna funkcija v temenski obliki}
 
-            \vskip-1em
+            \vskip-2em
             \begin{columns}
             \column{0.56\textwidth}    
             \only<2->{\begin{alertblock}{Kvadratna funkcija v temenski obliki}
@@ -13621,6 +13621,76 @@
         \end{frame}
 
 
+
+        \begin{frame}
+            \frametitle{Kvadratna funkcija v faktorizirani obliki}
+
+            \vskip-2em
+            \begin{columns}
+            \column{0.48\textwidth}    
+            \only<2->{\begin{alertblock}{Kvadratna funkcija v faktorizirani obliki}
+                \textbf{Kvadratna funkcija v faktorizirani/ničelni obliki} je podana s predpisom  
+                $$f(x)=a(x-x_1)(x-x_2);\quad a\neq 0,$$
+                kjer sta $x_1$ in $x_2$ ničli kvadratne funkcije.
+            \end{alertblock}}
+
+            \vskip-0.7em
+            \only<3->{\begin{block}{}
+                Zapisa $ax^2+bx+c$ in $a(x-x_1)(x-x_2)$ sta enakovredna.
+            \end{block}}
+
+
+            \column{0.48\textwidth}
+            \only<4->{\begin{block}{Prehod iz splošne v faktorizirano obliko}
+                $$\begin{aligned}
+                    f(x)&= ax^2+bx+c \\
+                        &= a\left[\left(x+\frac{b}{2a}\right)^2-\frac{D}{4a^2}\right] \\   
+                        &= a\left[\left(x+\frac{b}{2a}\right)^2-\left(\frac{\sqrt{D}}{2a}\right)^2\right] \\
+                        &= a\left(x+\frac{b}{2a}+\frac{\sqrt{D}}{2a}\right)\left(x+\frac{b}{2a}-\frac{\sqrt{D}}{2a}\right) \\
+                        &= a\left(x-x_1\right)\left(x-x_2\right)
+                \end{aligned} $$
+            \end{block}}
+            \end{columns}
+
+        \end{frame}
+
+
+
+        \begin{frame}
+            \frametitle{Povezava med koeficienti $a,b,c$ in ničlama funkcije $x_1$ in $x_2$}
+
+            \vskip-1.25em
+            \only<2->{\begin{block}{}
+                % Do zveze med splošno in faktorizirano obliko pridemo na naslednji način.
+                \vskip-1em
+                \begin{columns}
+                    \column{0.6\textwidth}
+                        \vskip-1em
+                        $$\begin{aligned}
+                            ax^2+bx+c &= a(x-x_1)(x-x_2) \\
+                            a\left(x^2+\frac{b}{a}x+\frac{c}{a}\right) &= a(x-x_1)(x-x_2) \\
+                            x^2+\frac{b}{a}x+\frac{c}{a} &= (x-x_1)(x-x_2) \\
+                            x^2+\frac{b}{a}x+\frac{c}{a} &= x^2-(x_1+x_2)x+x_1x_2 \\
+                        \end{aligned}$$
+
+                    \column{0.36\textwidth}
+                        \begin{itemize}
+                            \item izpostavimo $a$ \\~
+                            \item delimo z $a$ ($a\neq 0$) \\~
+                            \item razčlenimo desno stran
+                        \end{itemize}
+                \end{columns}
+                
+            \end{block}}
+
+            % \vskip-0.5em
+            \only<3->{\begin{alertblock}{Vi\'etovi formuli}
+                Med ničlama kvadratne funkcije $x_1$ in $x_2$ ter koeficienti $a$, $b$ in $c$ splošne oblike veljata zvezi:
+                $$ x_1+x_2=-\frac{b}{a} \quad \text{in} \quad x_1x_2=\frac{c}{a},$$
+                ki ju imenujemo \textbf{Vi\'etovi formuli}.
+            \end{alertblock}}
+
+        \end{frame}
 
 
 %%%%%% naloge
