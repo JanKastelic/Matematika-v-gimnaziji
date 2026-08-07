@@ -8607,7 +8607,7 @@
 
             \vskip-0.7em
             \only<3->{\begin{block}{}
-                Simetrijsko os predstavlja premica $x=p$
+                Simetrijsko os predstavlja premica $x=p$.
             \end{block}}
 
             \vskip-0.7em
@@ -13879,9 +13879,104 @@
 
         \begin{frame}
             \frametitle{Kvadratna neenačba}
+
+            \vskip-1em
+            \begin{columns} 
+                \column{0.48\textwidth}
+                \only<2->{\begin{alertblock}{Kvadratna neenačba}
+                    \textbf{Kvadratna neenačba} je neenačba, ki ustreza eni od naslednjih oblik:
+                    $$\begin{aligned}
+                        ax^2+bx+c &> 0 \\
+                        ax^2+bx+c &\geq 0 \\
+                        ax^2+bx+c &< 0 \\
+                        ax^2+bx+c &\leq 0,
+                    \end{aligned} $$
+                    kjer so $a,b,c\in\mathbb{R}$ in $a\neq 0$.
+                \end{alertblock}}
+
+                \column{0.48\textwidth}
+                \only<3->{\begin{block}{Reševanje kvadratne neenačbe}
+                    \begin{enumerate}
+                        \item Poiščemo rešitve kvadratne enačbe/ničle funkcije.
+                        \item Skiciramo graf parabole v odvisnosti od ničel in predznaka vodilnega koeficienta.
+                        \item Razberemo rešitev.
+                    \end{enumerate}
+                \end{block}}
+
+                \only<4->{\begin{block}{Rešitve kvadratne neenačbe}
+                    Rešitve kvadratnih neenačb so lahko: (omejeni in neomejeni) intervali, unije intervalov, enojci ali prazna množica.
+                \end{block}}
+
+            \end{columns}
         \end{frame}
 
 
+        \begin{frame}
+            \frametitle{Možne rešitve kvadratne neenačbe}
+
+            \vskip-0.75em
+            \only<2->{\begin{block}{Možne rešitve kvadratne neenačbe ($a>0$)}
+                \begin{table}
+                    \centering
+                    \begin{tabular}{||>{\columncolor[rgb]{0.843,0.718,0.718}}c||c|c|c||} 
+                    \hhline{|t:=:t:===:t|}
+                    \rowcolor[rgb]{0.843,0.718,0.718} $a>0$ & $D>0$ & $D=0$ & $D<0$  \\ 
+                    \hhline{||~||---||}
+                      ~ & 
+                      \input{../../Slike_in_skice/Skice_GCLC/.tkz/kvadratna_a+_D+.tkz}
+                      & 
+                      \input{../../Slike_in_skice/Skice_GCLC/.tkz/kvadratna_a+_D0.tkz}
+                      & 
+                      \input{../../Slike_in_skice/Skice_GCLC/.tkz/kvadratna_a+_D-.tkz}
+                      \\
+                    \hhline{|:=::===:|}
+                    $ax^2+bx+c>0$  &  $\left(-\infty,x_1\right)\cup\left(x_2,\infty\right) $  &  $\mathbb{R}-\left\{x_0\right\} $  &  $\mathbb{R} $                   \\ 
+                    \hhline{||-||---||}
+                    $ax^2+bx+c\geq 0$  &  $\left(-\infty,x_1\right]\cup\left[x_2,\infty\right) $  &  $\mathbb{R} $  &  $\mathbb{R} $                   \\ 
+                    \hhline{||-||---||}
+                    $ax^2+bx+c<0$  &  $\left(x_1,x_2\right) $  &  $\emptyset $  &  $\emptyset $                   \\ 
+                    \hhline{||-||---||}
+                    $ax^2+bx+c\leq 0$  &  $\left[x_1,x_2\right] $  &  $\left\{x_0\right\} $  &  $\emptyset $                   \\ 
+                    \hhline{|b:=:b:===:b|}
+                    \end{tabular}                    
+                \end{table}
+            \end{block}}
+
+        \end{frame}
+
+
+        \begin{frame}
+            \frametitle{Možne rešitve kvadratne neenačbe}
+
+            \vskip-0.75em
+            \only<2->{\begin{block}{Možne rešitve kvadratne neenačbe ($a<0$)}
+                \begin{table}
+                    \centering
+                    \begin{tabular}{||>{\columncolor[rgb]{0.843,0.718,0.718}}c||c|c|c||} 
+                    \hhline{|t:=:t:===:t|}
+                    \rowcolor[rgb]{0.843,0.718,0.718} $a<0$ & $D>0$ & $D=0$ & $D<0$  \\ 
+                    \hhline{||~||---||}
+                      ~ & 
+                      \input{../../Slike_in_skice/Skice_GCLC/.tkz/kvadratna_a-_D+.tkz}
+                      & 
+                      \input{../../Slike_in_skice/Skice_GCLC/.tkz/kvadratna_a-_D0.tkz}
+                      & 
+                      \input{../../Slike_in_skice/Skice_GCLC/.tkz/kvadratna_a-_D-.tkz}
+                      \\
+                    \hhline{|:=::===:|}
+                    $ax^2+bx+c>0$  &  $\left(x_1,x_2\right) $  &  $\emptyset $  &  $\emptyset $                   \\ 
+                    \hhline{||-||---||}
+                    $ax^2+bx+c\geq 0$  &  $\left[x_1,x_2\right] $  &  $\left\{x_0\right\} $  &  $\emptyset $                   \\ 
+                    \hhline{||-||---||}
+                    $ax^2+bx+c<0$  &  $\left(-\infty,x_1\right)\cup\left(x_2,\infty\right) $  &  $\mathbb{R}-\left\{x_0\right\} $  &  $\mathbb{R} $                   \\ 
+                    \hhline{||-||---||}
+                    $ax^2+bx+c\leq 0$  &  $\left(-\infty,x_1\right]\cup\left[x_2,\infty\right) $  &  $\mathbb{R} $  &  $\mathbb{R} $                   \\ 
+                    \hhline{|b:=:b:===:b|}
+                    \end{tabular}                    
+                \end{table}
+            \end{block}}
+
+        \end{frame}
 
 
 %%%%% naloge
@@ -13980,11 +14075,21 @@
     \subsection{Presečišča dveh krivulj}
 
         \begin{frame}
-            \frametitle{Presečišča parabol}
+            \frametitle{Medsebojna lega parabole in premice}
+
+
         \end{frame}
 
 
 
+
+
+
+        \begin{frame}
+            \frametitle{Medsebojna lega dveh parabol}
+
+            
+        \end{frame}
 
         
 %%%%%%% naloge

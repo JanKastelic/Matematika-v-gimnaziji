@@ -13,7 +13,7 @@
 
 % Marking point x_1=x_2 by circle
 \draw [line width=0.016cm] (4.100000,1.700000) circle (0.040000);%
-\draw (4.100000,1.700000) node [anchor=north] { $x_1=x_2$ };%
+\draw (4.100000,1.700000) node [anchor=north] { $x_0$ };%
 
 % Changing color 204 0 0
 \definecolor{r204g0b0}{rgb}{0.800000,0.000000,0.000000}%
